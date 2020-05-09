@@ -1,0 +1,90 @@
+#################################################################
+###################### Hexo Configuration #######################
+#################################################################
+
+title: NexT
+
+keywords: "Hexo, NexT"
+
+language: en
+
+index_generator:
+  per_page: 4
+  order_by: -date
+
+archive_generator:
+  per_page: 12
+  yearly: true
+  monthly: true
+  daily: false
+
+category_generator:
+  per_page: 5
+
+tag_generator:
+  per_page: 5
+  enable_index_page: false
+
+timezone: UTC
+
+url: https://theme-next.org
+root: /
+permalink: :title/
+permalink_defaults:
+
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives/
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+
+skip_render:
+  - 'robots.txt'
+
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link: true
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: false
+  auto_detect: false
+  tab_replace:
+
+default_category: uncategorized
+category_map:
+tag_map:
+
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+per_page: 5
+pagination_dir: page
+
+theme: next
+
+server:
+  port: 4000
+
+marked:
+  # For preserve original quotes in code blocks.
+  smartypants: false
+
+search:
+  path: search.json
+  field: all
+
+symbols_count_time:
+  symbols: false
+  time: false
+  total_symbols: false
+  total_time: false
+  awl: 4
+  wpm: 275

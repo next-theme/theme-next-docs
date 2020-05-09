@@ -1,0 +1,266 @@
+#################################################################
+###################### NexT Configuration #######################
+#################################################################
+
+# ============================================================= #
+# ============= Theme Core Configuration Settings ============= #
+# ============================================================= #
+
+custom_file_path:
+  footer: source/_data/footer.swig
+  variable: source/_data/variables.styl
+  style: source/_data/styles.styl
+
+
+# ============================================================= #
+# ================= Site Information Settings ================= #
+# ============================================================= #
+
+footer:
+  since: 2014
+  icon:
+    name: fa fa-heart
+    animated: true
+    color: "#808080"
+  copyright: NexT
+  powered: false
+
+creative_commons:
+  license: by-nc-sa
+  sidebar: true
+
+
+# ============================================================= #
+# ====================== Scheme Settings ====================== #
+# ============================================================= #
+
+#scheme: Muse
+#scheme: Mist
+#scheme: Pisces
+scheme: Gemini
+
+darkmode: true
+
+
+# ============================================================= #
+# ======================= Menu Settings ======================= #
+# ============================================================= #
+
+menu:
+  home: / || fa fa-bullhorn
+
+  Docs:
+    default: /docs/ || fa fa-book
+
+    Getting Started:
+      default: /getting-started/ || fa fa-flag
+      Installation: /installation.html || fa fa-download
+      Deployment: /deployment.html || fa fa-upload
+      Configuration: /configuration.html || fa fa-wrench
+      Update from 5.x: /update-from-v5.html || fa fa-retweet
+
+    Theme Settings:
+      default: /theme-settings/ || fa fa-star
+      Footer: /footer.html || far fa-sun
+      Sidebar: /sidebar.html || fa fa-bars
+      Posts: /posts.html || far fa-edit
+      Custom Pages: /custom-pages.html || far fa-file-alt
+      Custom Files: /custom-files.html || far fa-file
+      SEO: /seo.html || fa fa-external-link-square-alt
+      Front Matter: /front-matter.html || fa fa-heading
+
+    Third Party Services:
+      default: /third-party-services/ || fa fa-plug
+      Math Equations: /math-equations.html || fa fa-superscript
+      Comment Systems: /comments.html || far fa-comments
+      Statistics and Analytics: /statistics-and-analytics.html || fa fa-chart-bar
+      Post Widgets: /post-widgets.html || fa fa-share-square
+      Search Services: /search-services.html || fa fa-search-plus
+      Chat Services: /chat-services.html || fa fa-comment
+      External Libraries: /external-libraries.html || fa fa-puzzle-piece
+
+    Tag Plugins:
+      default: /tag-plugins/ || fa fa-rocket
+      Note: /note.html || fa fa-comment
+      Tabs: /tabs.html || fa fa-columns
+      PDF: /pdf.html || far fa-file-pdf
+      Mermaid: /mermaid.html || fa fa-tasks
+      Label: /label.html || fa fa-font
+      Video: /video.html || fa fa-video
+      Button: /button.html || fa fa-square
+      Caniuse: /caniuse.html || fa fa-signal
+      Group Pictures: /group-pictures.html || far fa-file-image
+
+    Advanced Settings: /advanced-settings.html || fa fa-cogs
+    FAQ's: /faqs.html || fa fa-life-ring
+    Troubleshooting: /troubleshooting.html || fa fa-bug
+  archives: /archives/ || fa fa-archive
+  #sitemap: /sitemap.xml || fa fa-sitemap
+  #commonweal: /404/ || fa fa-heartbeat
+
+menu_settings:
+  icons: true
+  badges: true
+
+
+# ============================================================= #
+# ===================== Sidebar Settings ====================== #
+# ============================================================= #
+
+sidebar:
+  position: left
+  display: post
+  padding: 18
+  offset: 12
+  onmobile: true
+
+avatar:
+  url: /images/apple-touch-icon-next.png
+  rounded: true
+
+social:
+  GitHub: https://github.com/theme-next || fab fa-github
+  E-Mail: mailto:support@theme-next.org || fa fa-envelope
+  RSS: /atom.xml || fa fa-rss
+
+  Gitter: https://gitter.im/theme-next || fab fa-github-alt
+  Riot: https://riot.im/app/#/room/#NexT:matrix.org || fa fa-comment-dots
+
+  Telegram: https://t.me/theme_next || fab fa-telegram
+
+social_icons:
+  enable: true
+  icons_only: true
+  transition: true
+
+toc:
+  enable: true
+  number: true
+  wrap: true
+
+
+# ============================================================= #
+# ======================= Post Settings ======================= #
+# ============================================================= #
+
+post_meta:
+  updated_at:
+    enable: false
+
+symbols_count_time:
+  separated_meta: true
+  item_text_post: true
+  item_text_total: true
+
+post_edit:
+  enable: true
+  url: https://github.com/next-theme/theme-next-docs/edit/master/source/
+
+
+# ============================================================= #
+# ==================== Misc Theme Settings ==================== #
+# ============================================================= #
+
+mobile_layout_economy: true
+
+codeblock:
+  theme:
+    light: default
+    dark: tomorrow-night
+  copy_button:
+    enable: true
+    show_result: true
+    style: default
+
+back2top:
+  enable: true
+  sidebar: false
+  scrollpercent: true
+
+github_banner:
+  enable: true
+  permalink: https://github.com/next-theme/hexo-theme-next
+  title: Fork NexT on GitHub
+
+
+# ============================================================= #
+# ======================= SEO Settings ======================== #
+# ============================================================= #
+
+index_with_subtitle: true
+
+exturl: true
+
+yandex_site_verification: 3ac9ae36ddebb425
+
+
+# ============================================================= #
+# =============== Third Party Services Settings =============== #
+# ============================================================= #
+
+math:
+  per_page: true
+  mathjax:
+    enable: true
+
+pjax: true
+
+mediumzoom: true
+
+lazyload: true
+
+
+# ============================================================= #
+# =================== Comments and Widgets ==================== #
+# ============================================================= #
+
+comments:
+  lazyload: true
+
+disqus:
+  enable: true
+  shortname: theme-next
+  count: true
+
+
+# ============================================================= #
+# ================= Statistics and Analytics ================== #
+# ============================================================= #
+
+
+# ============================================================= #
+# ====================== Search Services ====================== #
+# ============================================================= #
+
+local_search:
+  enable: true
+  trigger: auto
+  top_n_per_article: 1
+
+
+# ============================================================= #
+# ======================== Tag Plugins ======================== #
+# ============================================================= #
+
+note:
+  style: simple
+  icons: true
+  light_bg_offset: -3
+
+tabs:
+  transition:
+    tabs: true
+    labels: true
+
+
+# ============================================================= #
+# ==================== External Libraries ===================== #
+# ============================================================= #
+
+motion:
+  enable: false
+
+vendors:
+  anime: //cdn.jsdelivr.net/npm/animejs@3/lib/anime.min.js
+  fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css
+  pjax: //cdn.jsdelivr.net/gh/next-theme/pjax@0/pjax.min.js

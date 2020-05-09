@@ -1,0 +1,22 @@
+en:
+  name: English
+  subtitle: Theme for Hexo
+  author: Theme NexT
+  description: Stay Simple. Stay NexT.
+ru:
+  name: Русский
+  subtitle: Тема для Hexo
+  author: Тема NexT
+  description: Ставь просто. Ставь NexT.
+  menu:
+    News: Новости
+    Docs: Документация
+    Getting Started: Начало работы
+    Theme Settings: Настройки темы
+    Third Party Services: Сторонние приложения
+    Algolia Search: Поиск Algolia
+    Tag Plugins: Плагины тэгов
+    Advanced Settings: Расширенные настройки
+    FAQ's: ЧаВо
+zh-TW:
+  name: Chinese

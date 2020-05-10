@@ -113,31 +113,24 @@ Scheme Mist does not support custom logo setting.
 ### Codeblock Style
 
 {% tabs codeblock %}
-<!-- tab <code>highlight_theme</code> -->
+<!-- tab <code>theme</code> -->
 
 Code Highlight Theme
 
-NexT uses [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) to support code highlight.
-Default style is white (`normal`) and there are 8 styles to choose:
+NexT uses the [highlight.js](https://highlightjs.org) package to support code highlight. Default style is white and there are more than 90 styles to choose.
 
-* `normal`
-* `night`
-* `night blue`
-* `night bright`
-* `night eighties`
-* `solarized`
-* `solarized dark`
-* `galactic`
-
-Change the value of `highlight_theme` to choose the highlight style you like, for example:
+Change the value of `theme` to choose the highlight style you like, for example:
 
 ```yml next/_config.yml
 codeblock:
   # Code Highlight theme
-  # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
-  # https://github.com/chriskempson/tomorrow-theme
-  highlight_theme: night
+  # See: https://github.com/highlightjs/highlight.js/tree/master/src/styles
+  theme:
+    light: tomorrow
+    dark: tomorrow-night
 ```
+
+If Dark Mode is enabled, dark code highlighting themes will be available.
 <!-- endtab -->
 
 <!-- tab <code>copy_button</code> -->

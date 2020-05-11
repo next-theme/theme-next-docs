@@ -54,20 +54,17 @@ echo " ${yellow}Checking Hexo version...${norm}"
 echo "=============================================================="
     alias hexo="npx hexo"
     hexo -v
-    cat package.json
+    npm ls --depth 0
 
 echo
 echo "=============================================================="
-echo " ${lpurple}Creating Schemes directory...${norm}"
+echo " ${lpurple}Generating content for Muse...${norm}"
 echo "=============================================================="
-    mkdir -v schemes
-
-echo
-echo "=============================================================="
-echo " ${lpurple}Generating content for 'muse.theme-next.org' subdomain...${norm}"
-echo "=============================================================="
-    hexo config url https://muse.theme-next.org
+    hexo config url https://theme-next.js.org/muse
     echo "${yellow}Setted url:${norm} ${lcyan}`hexo config url`${norm}"
+
+    hexo config root /muse/
+    echo "${yellow}Setted root:${norm} ${lcyan}`hexo config root`${norm}"
 
     hexo config theme_config.scheme Muse
     echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
@@ -79,14 +76,17 @@ echo "=============================================================="
     echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
 
     hexo clean && hexo g --silent
-    echo "${lred}`mv -v public schemes/muse`${norm}"
+    echo "${lred}`mv -v public muse`${norm}"
 
 echo
 echo "=============================================================="
-echo " ${lpurple}Generating content for 'mist.theme-next.org' subdomain...${norm}"
+echo " ${lpurple}Generating content for Mist...${norm}"
 echo "=============================================================="
-    hexo config url https://mist.theme-next.org
+    hexo config url https://theme-next.js.org/mist
     echo "${yellow}Setted url:${norm} ${lcyan}`hexo config url`${norm}"
+
+    hexo config root /mist/
+    echo "${yellow}Setted root:${norm} ${lcyan}`hexo config root`${norm}"
 
     hexo config theme_config.scheme Mist
     echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
@@ -98,14 +98,17 @@ echo "=============================================================="
     echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
 
     hexo clean && hexo g --silent
-    echo "${lred}`mv -v public schemes/mist`${norm}"
+    echo "${lred}`mv -v public mist`${norm}"
 
 echo
 echo "=============================================================="
-echo " ${lpurple}Generating content for 'pisces.theme-next.org' subdomain...${norm}"
+echo " ${lpurple}Generating content for Pisces...${norm}"
 echo "=============================================================="
-    hexo config url https://pisces.theme-next.org
+    hexo config url https://theme-next.js.org/pisces
     echo "${yellow}Setted url:${norm} ${lcyan}`hexo config url`${norm}"
+
+    hexo config root /pisces/
+    echo "${yellow}Setted root:${norm} ${lcyan}`hexo config root`${norm}"
 
     hexo config theme_config.scheme Pisces
     echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
@@ -117,14 +120,17 @@ echo "=============================================================="
     echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
 
     hexo clean && hexo g --silent
-    echo "${lred}`mv -v public schemes/pisces`${norm}"
+    echo "${lred}`mv -v public pisces`${norm}"
 
 echo
 echo "=============================================================="
-echo " ${lpurple}Prepairing content for main 'theme-next.org' domain...${norm}"
+echo " ${lpurple}Prepairing content for Gemini...${norm}"
 echo "=============================================================="
-    hexo config url https://theme-next.org
+    hexo config url https://theme-next.js.org
     echo "${yellow}Setted url:${norm} ${lcyan}`hexo config url`${norm}"
+
+    hexo config root /
+    echo "${yellow}Setted root:${norm} ${lcyan}`hexo config root`${norm}"
 
     hexo config theme_config.scheme Gemini
     echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
@@ -141,15 +147,17 @@ echo "=============================================================="
     echo "User-agent: *
 Disallow: /page/*/
 Disallow: /archives/*
-Disallow: /schemes/*
-Host: https://theme-next.org" > public/robots.txt
+Disallow: /muse/*
+Disallow: /mist/*
+Disallow: /pisces/*
+Host: https://theme-next.js.org" > public/robots.txt
     cat public/robots.txt
 
 echo
 echo "=============================================================="
 echo " ${lpurple}Moving all schemes to public directory...${norm}"
 echo "=============================================================="
-    echo "${lred}`mv -v schemes public`${norm}"
+    echo "${lred}`mv -v muse mist pisces -t public`${norm}"
 
 echo
 echo "=============================================================="
@@ -175,15 +183,6 @@ echo "=============================================================="
 echo " ${yellow}Checking 'public' directory structure...${norm}"
 echo "=============================================================="
     cd public
-    echo "${lcyan}`pwd`${norm}"
-    du -sh
-    du -sh *
-
-echo
-echo "=============================================================="
-echo " ${yellow}Checking 'schemes' directory structure...${norm}"
-echo "=============================================================="
-    cd schemes
     echo "${lcyan}`pwd`${norm}"
     du -sh
     du -sh *

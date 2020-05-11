@@ -19,7 +19,7 @@ mermaid:
 {% mermaid type %}
 {% endmermaid %}
 
-type : type of the mermaid chart, visit https://github.com/knsv/mermaid for more information.
+type : type of the mermaid chart, visit https://github.com/mermaid-js/mermaid for more information.
 ```
 
 ### Examples

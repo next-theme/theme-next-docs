@@ -27,7 +27,7 @@ tag_generator:
 
 timezone: UTC
 
-url: https://theme-next.org
+url: https://theme-next.js.org
 root: /
 permalink: :title/
 permalink_defaults:

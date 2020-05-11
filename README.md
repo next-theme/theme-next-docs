@@ -16,5 +16,5 @@
 ```bash
 git clone https://github.com/next-theme/theme-next-docs
 cd theme-next-docs
-sh ./hexo-theme-next-autoinstall.sh
+sh ./install.sh
 ```

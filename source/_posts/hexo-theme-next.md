@@ -1,6 +1,6 @@
 ---
 title: Welcome to the NexT Organization!
-date: 2018-01-01 12:55:56
+date: 2020-03-01 12:00:00
 link: https://github.com/theme-next
 ---
 

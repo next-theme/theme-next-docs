@@ -28,9 +28,9 @@ By using different styles in NexT (also called Scheme), you simply change what y
 
 Thanks to the contribution of our users and developers, [NexT now supports over 20 languages](/docs/getting-started/#Choosing-Language).
 
-### Five Code Highlighting Themes
+### Code Highlighting Themes
 
-NexT uses code highlighting themes from the [highlight.js](https://highlightjs.org) package, and makes more than 90 code highlight themes available to you.
+NexT uses code highlighting themes from the [highlight.js](https://highlightjs.org) package, and makes more than 90 themes available to you.
 
 {% gp 5-2 %}
 ![Tomorrow Normal](/images/docs/tomorrow.png)

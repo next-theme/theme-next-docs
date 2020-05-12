@@ -100,7 +100,7 @@ Now you can open `http://localhost:4000` in your browser, and check whether the 
 
 {% note success %}
 If you find your site looks like this picture, you have installed it correctly. That's default NexT scheme – Muse.
-![Default Scheme – Muse](/images/docs/next-default-scheme-linux.png)
+![Default Scheme – Muse](/images/docs/next-default-scheme.png)
 {% endnote %}
 
 Now you've installed and enabled NexT. In next steps we will change some settings including personalization and third-party services integration.

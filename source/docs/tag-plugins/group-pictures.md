@@ -17,36 +17,36 @@ description: NexT User Docs – NexT Supported Tags – Group Pictures
 
 ```md
 {% grouppicture 6-3 %}
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
 {% endgrouppicture %}
 ```
 {% grouppicture 6-3 %}
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
 {% endgrouppicture %}
 
 ```md
 {% gp 5-2 %}
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
 {% endgp %}
 ```
 {% gp 5-2 %}
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
-  ![](/images/docs/github.png)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
+  ![](/images/docs/next.svg)
 {% endgp %}

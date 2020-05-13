@@ -30,7 +30,7 @@ function parse(data) {
     let time = release.published_at.replace('T', ' ').replace('Z', '');
     let body = release.body
       .replace(/#(\d{1,4})/g, '[#$1](https://github.com/next-theme/hexo-theme-next/pull/$1)')
-      .replace(/([0-9a-f]{7})([0-9a-f]{33})/g, '[$1](http://github.com/next-theme/hexo-theme-next/commit/$1$2)')
+      .replace(/([0-9a-f]{7})([0-9a-f]{33})/g, '[$1](https://github.com/next-theme/hexo-theme-next/commit/$1$2)')
       .replace(/\r\n/g, '\n');
     let content = `---
 title: NexT ${version} Released

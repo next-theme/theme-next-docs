@@ -4,7 +4,7 @@ description: NexT User Docs – Third-party Service Integration – Math Equatio
 mathjax: true
 ---
 
-NexT provides two render engines for displaying Math Equations: MathJax and KaTeX.
+NexT provides two render engines for displaying Math Equations: [MathJax](https://www.mathjax.org) and [KaTeX](https://khan.github.io/KaTeX/).
 
 To use this feature, you just need to choose a render engine and turn on `enable` for it (located in {% label primary@theme config file %}). Then you need to install the **corresponding Hexo Renderer** to fully support the display of Math Equations - Only turn on `enable` **may not let you see the displayed equations correctly**. The corresponding Hexo Renderer engine will be [provided below](#Render-Engines).
 
@@ -74,7 +74,7 @@ title: Not Render Math Either
 
 ### Render Engines
 
-For now, NexT provides two Render Engines: [MathJax](https://www.mathjax.org) and [KaTeX](https://khan.github.io/KaTeX/).
+For now, NexT provides two Render Engines: MathJax and KaTeX.
 
 {% tabs render-engines %}
 <!-- tab <strong><code>mathjax</code></strong> -->
@@ -82,17 +82,18 @@ For now, NexT provides two Render Engines: [MathJax](https://www.mathjax.org) an
 {% note warning %}
 **Render Choosing**
 
-If you use MathJax to render Math Equations, you can choose one of renderers below:
+If you use MathJax to render Math Equations, you can choose one of the renderers below:
 
 * [hexo-renderer-pandoc](https://github.com/wzpan/hexo-renderer-pandoc) (Need to install [pandoc](https://github.com/jgm/pandoc))
 * [hexo-renderer-kramed](https://github.com/sun11/hexo-renderer-kramed) (Deprecated, not recommended)
 
+as the renderer for Markdown.
 {% endnote %}
 
 {% note primary %}
 **Installation**
 
-1. Need to uninstall the original renderer `hexo-renderer-marked` and install one of selected by you renderer:
+1. Firstly, you need to uninstall the original renderer `hexo-renderer-marked`, and install one of the renderer above:
 
    ```bash
    $ npm un hexo-renderer-marked
@@ -119,11 +120,11 @@ If you use MathJax to render Math Equations, you can choose one of renderers bel
 
 <!-- tab <code>katex</code> -->
 {% note success %}
-The [KaTeX engine is a much faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php) math render engine compared to MathJax. And it could survive without JavaScript.
+[KaTeX is a faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php) math render engine compared to MathJax 3. And it could survive without JavaScript.
 {% endnote %}
 
 {% note danger %}
-But, for now [KaTeX support less things](https://github.com/Khan/KaTeX/wiki/Things-that-KaTeX-does-not-%28yet%29-support) than MathJax. Here is a list of [TeX functions supported by KaTeX](https://khan.github.io/KaTeX/function-support.html).
+But, for now [KaTeX supports less features](https://github.com/Khan/KaTeX/wiki/Things-that-KaTeX-does-not-%28yet%29-support) than MathJax. Here is a list of [TeX functions supported by KaTeX](https://khan.github.io/KaTeX/function-support.html).
 {% endnote %}
 
 {% note warning %}
@@ -138,7 +139,9 @@ If you use KaTeX to render Math Equations, you can choose one of renderers below
 <!-- tab {% label warning@Chosen hexo-renderer-markdown-it? %} -->
 If you use `hexo-renderer-markdown-it`, you also need to add `markdown-it-katex` as its plugin:
 
-    $ npm i markdown-it-katex
+```bash
+npm i markdown-it-katex
+```
 
 And then in {% label info@site config file %} you need to add `markdown-it-katex` as a plugin for `hexo-renderer-markdown-it`:
 
@@ -162,7 +165,7 @@ markdown:
 {% note primary %}
 **Installation**
 
-1. Need to uninstall the original renderer `hexo-renderer-marked` and install one of selected by you renderer:
+1. Firstly, you need to uninstall the original renderer `hexo-renderer-marked` and install one of selected by you renderer:
 
    ```bash
    $ npm un hexo-renderer-marked

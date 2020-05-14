@@ -82,7 +82,7 @@ menu:
 
     Tag Plugins:
       default: /tag-plugins/ || fa fa-rocket
-      Note: /note.html || fa fa-comment
+      Note: /note.html || fa fa-adjust
       Tabs: /tabs.html || fa fa-columns
       PDF: /pdf.html || far fa-file-pdf
       Mermaid: /mermaid.html || fa fa-tasks
@@ -92,8 +92,7 @@ menu:
       Caniuse: /caniuse.html || fa fa-signal
       Group Pictures: /group-pictures.html || far fa-file-image
 
-    Advanced Settings: /advanced-settings.html || fa fa-cogs
-    FAQ's: /faqs.html || fa fa-life-ring
+    Advanced Settings: /advanced-settings.html || fa fa-cog
     Troubleshooting: /troubleshooting.html || fa fa-bug
   archives: /archives/ || fa fa-archive
   #sitemap: /sitemap.xml || fa fa-sitemap

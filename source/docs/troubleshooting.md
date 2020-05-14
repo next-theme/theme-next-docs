@@ -3,6 +3,21 @@ title: Troubleshooting
 description: NexT User Docs – Troubleshooting
 ---
 
+### Quick debug instructions
+
+Before submitting an Issue on GitHub, you can follow the steps below to debug:
+
+* If the error comes from a third-party service, such as the Gitalk comment system, please submit an Issue to their GitHub repository.
+* Execute `hexo clean`, clear the browser cache and disable all CDN services (e.g. Cloudflare Rocket Loader) - This may take some time to take effect.
+* Disable browser plug-ins or use other devices and browsers to test, because bugs may only occur in specific browsers.
+* Switch to another theme and check if the bug still exists (e.g. default theme landscape). In other words, prove that this is a bug of NexT, not Hexo.
+* Upgrade theme NexT to the latest version.
+* Upgrade Hexo and Hexo plugins to the latest version.
+* Upgrade Node.js and `npm` to the latest version.
+* Uninstall all non-essential Hexo plugins, or reinstall all plugins using `npm install --save`.
+
+If you get an error message from Hexo or your browser, please search in Google / Stackoverflow / GitHub Issues, or report it to us when submitting a new Issue.
+
 ### Keep up indentation
 
 When you edit any YAML configs, always need to keep up indents.
@@ -104,14 +119,6 @@ This mean somewhere in your posts, blocks with tags was commented with `{% raw %
 {% endnote %}
 <!-- endtab -->
 {% endtabs %}
-
-### Favicon Set but Doesn't Work (Need to redocs)
-
-Put your `favicon` under {% label info@site's %} `source` dir. If you find that your Favicon doesn't work, please clean your browser's cache first and then visit your Favicon's URL directly, which should be `http(s)://your-domain.com/favicon.ico`.
-
-{% note warning %}
-If your site is in a subdirectory please set it to `favicon: favicon.ico`.
-{% endnote %}
 
 ### TOC Issues
 

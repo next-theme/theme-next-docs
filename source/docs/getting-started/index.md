@@ -319,6 +319,14 @@ favicon:
   ms_browserconfig: /images/browserconfig.xml
 ```
 
+##### Favicon Set but Doesn't Work (Need to redocs)
+
+Put your `favicon` under {% label info@site's %} `source` dir. If you find that your Favicon doesn't work, please clean your browser's cache first and then visit your Favicon's URL directly, which should be `http(s)://your-domain.com/favicon.ico`.
+
+{% note warning %}
+If your site is in a subdirectory please set it to `favicon: favicon.ico`.
+{% endnote %}
+
 #### Configuring Avatar
 
 By default NexT doesn't show avatar in sidebar. You can configure it by editing values under `avatar` setting in {% label primary@theme config file %}.

@@ -290,3 +290,24 @@ font:
     external: true
     family: PT Mono
 ```
+
+If you still need more customization, following change will cover Fonts Customization function. Edit `source/_data/variables.styl` in {% label primary@Hexo root directory %} and add two varibles:
+
+```styl hexo/source/_data/variables.styl
+// Title Font, set it to font family you want.
+$font-family-headings = Georgia, sans
+
+// Set it to font family you want.
+$font-family-base = "Microsoft YaHei", Verdana, sans-serif
+
+// Code Font.
+$code-font-family = "Input Mono", "PT Mono", Consolas, Monaco, Menlo, monospace
+
+// Font size of articles.
+$font-size-base = 16px
+
+// Font size of code.
+$code-font-size = 13px
+```
+
+Then uncomment `variable` under the `custom_file_path` section in {% label primary@theme config file %}.

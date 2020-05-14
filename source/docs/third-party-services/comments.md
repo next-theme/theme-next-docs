@@ -157,3 +157,14 @@ comments:
     #gitalk:
     #  order: -2
 ```
+
+### How to Disable Comments on Page
+
+When you enabled comment service like Disqus, all new page will have comment service automatically. If you want to disable it in one page, just add `comments` key to Front-matter and set it's value to `false`. Like following:
+
+```md your-post.md
+title: All tags
+type: "tags"
+comments: false
+---
+```

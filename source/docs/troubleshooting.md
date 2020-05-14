@@ -3,7 +3,7 @@ title: Troubleshooting
 description: NexT User Docs – Troubleshooting
 ---
 
-### Quick debug instructions
+### Quick Debug Instructions
 
 Before submitting an Issue on GitHub, you can follow the steps below to debug:
 
@@ -18,7 +18,7 @@ Before submitting an Issue on GitHub, you can follow the steps below to debug:
 
 If you get an error message from Hexo or your browser, please search in Google / Stackoverflow / GitHub Issues, or report it to us when submitting a new Issue.
 
-### Keep up indentation
+### Keep Up Indentation
 
 When you edit any YAML configs, always need to keep up indents.
 Currently, in all Hexo and NexT configuration files parameters uses **2 spaces indents** from parent option.

@@ -107,13 +107,13 @@ By default, NexT has setted font color and size for tagcloud in tags page.
 From NexT v7.0.2 you can customize them, just set related values in {% label primary@theme config file %}:
 
 ```yml next/_config.yml
+# TagCloud settings for tags page.
 tagcloud:
-  # All values below are same as default, change them by yourself
-  min: 12 # min font size in px
-  max: 30 # max font size in px
-  start: '#ccc' # start color (hex, rgba, hsla or color keywords)
-  end: '#111' # end color (hex, rgba, hsla or color keywords)
-  amount: 200 # amount of tags, chage it if you have more than 200 tags
+  min: 12 # Minimun font size in px
+  max: 30 # Maxium font size in px
+  amount: 200 # Total amount of tags
+  orderby: name # Order of tags
+  order: 1 # Sort order
 ```
 
 #### Adding «Categories» Page

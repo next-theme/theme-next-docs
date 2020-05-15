@@ -98,17 +98,17 @@ Valine is a fast, simple & efficient Leancloud based no back end comment system.
 
     ```yml next/_config.yml
     # Valine
-    # You can get your appid and appkey from https://leancloud.cn
-    # more info please open https://valine.js.org
+    # For more information: https://valine.js.org, https://github.com/xCss/Valine
     valine:
-      enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
-      appid:  # your leancloud application appid
-      appkey:  # your leancloud application appkey
-      notify: false # mail notifier , https://github.com/xCss/Valine/wiki
-      verify: false # Verification code
+      enable: false
+      appId:  # your leancloud application appid
+      appKey:  # your leancloud application appkey
       placeholder: Just go go # comment box placeholder
       avatar: mm # gravatar style
-      guest_info: nick,mail,link # custom comment header
+      meta: # Custom comment header
+        - nick
+        - mail
+        - link
       pageSize: 10 # pagination size
       visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
       comment_count: true # If false, comment count will only be displayed in post page, not in home page
@@ -156,15 +156,4 @@ comments:
     #  order: -1
     #gitalk:
     #  order: -2
-```
-
-### How to Disable Comments on Page
-
-When you enabled comment service like Disqus, all new page will have comment service automatically. If you want to disable it in one page, just add `comments` key to Front-matter and set it's value to `false`. Like following:
-
-```md your-post.md
-title: All tags
-type: "tags"
-comments: false
----
 ```

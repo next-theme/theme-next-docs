@@ -45,29 +45,13 @@ If there are any new options in new releases, you just need to copy those option
 {% endnote %}
 
 {% note warning %}
-This method relies on Hexo [Data files](https://hexo.io/docs/configuration.html). Because Data files is introduced in Hexo 3, so you need upgrade Hexo to 3.0 (or above) to use this feature.
+This method relies on Hexo [Data files](https://hexo.io/docs/data-files.html). Because Data files is introduced in Hexo 3, so you need upgrade Hexo to 3.0 (or above) to use this feature.
 {% endnote %}
 
 **Usage**
 
 1. Please ensure you are using Hexo 3 (or above).
 2. Create a file named `next.yml` in `hexo/source/_data` directory (create `_data` directory if it does not exist).
-
-   {% note warning %}
-   After that steps there are **2 variants**, need to **choose only one** of them and **resume next steps**.
-   {% endnote %}
-
-   {% subtabs variant %}
-   <!-- tab <strong><code>override: false</code></strong> -->
-   1\. In `next.yml` `override` option must not be defined or set on `false`.
-   2\. Copy **needed options** from both {% label info@site config file %} and {% label primary@theme config file %} into `hexo/source/_data/next.yml`.
-   <!-- endtab -->
-
-   <!-- tab <code>override: true</code> -->
-   1\. In `next.yml` set `override` option on `true`.
-   2\. Copy **all NexT theme options** from {% label primary@theme config file %} into `hexo/source/_data/next.yml`.
-   <!-- endtab -->
-   {% endsubtabs %}
 3. Then, in main {% label info@site config file %} need to define `theme: next` option (and if needed, `source_dir: source`).
 4. Use standart parameters to start server, generate or deploy (`hexo clean && hexo g -d && hexo s`).
 

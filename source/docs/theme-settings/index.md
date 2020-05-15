@@ -157,7 +157,7 @@ codeblock:
 <!-- endtab -->
 <!-- tab <code>style</code> -->
 With `style` option, you can change your copy button style.
-There are three style available currently: `default`(Just leave it empty), `flat` and `mac`.
+There are three style available currently: `default` (Just leave it empty), `flat` and `mac`.
 
 ```yml next/_config.yml
 codeblock:

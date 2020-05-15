@@ -118,7 +118,7 @@ If your site is deployed to any free hosting service (Github, Gitlab, etc.), CDN
 
 {% tabs adding-plugins %}
 <!-- tab Local -->
-In NexT config now you can find dependencies on each module which was moved to external repositories which can be found by [main organization link](https://github.com/theme-next). For example, you want to use `pjax` in your site. Go to {% label primary@theme config file %} and see:
+In NexT config now you can find dependencies on each module which was moved to external repositories which can be found by [main organization link](https://github.com/next-theme). For example, you want to use `pjax` in your site. Go to {% label primary@theme config file %} and see:
 
 ```yml next/_config.yml
 # Easily enable fast Ajax navigation on your website.

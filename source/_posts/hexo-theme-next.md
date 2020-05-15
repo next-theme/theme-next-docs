@@ -1,7 +1,7 @@
 ---
 title: Welcome to the NexT Organization!
 date: 2020-03-01 12:00:00
-link: https://github.com/theme-next
+link: https://github.com/next-theme
 ---
 
 «[NexT][docs]» is a high quality elegant theme for [Hexo][]. It is crafted from scratch, with love.
@@ -13,7 +13,7 @@ It's easy to set up NexT theme. Just follow [documentation][] and create your pe
 ### Feedback
 
 * Visit the [Awesome NexT][awesome-next-url] list to share plugins and tutorials with other users.
-* Join our [Telegram][t-chat-url] / [Gitter][gitter-url] / [Riot][riot-url] chats.
+* Join our [Gitter][gitter-url] chats.
 * [Add or improve translation][i18n-url] in few seconds.
 * Report a bug in [GitHub Issues][issues-bug-url].
 * Request a new feature on [GitHub][issues-feat-url].
@@ -23,9 +23,7 @@ It's easy to set up NexT theme. Just follow [documentation][] and create your pe
 [docs]: /docs/
 [documentation]: /docs/getting-started/
 
-[t-chat-url]: https://t.me/theme_next
-[gitter-url]: https://gitter.im/theme-next
-[riot-url]: https://riot.im/app/#/room/#NexT:matrix.org
+[gitter-url]: https://gitter.im/hexo-next
 [i18n-url]: https://i18n.theme-next.org
 
 [awesome-next-url]: https://github.com/next-theme/awesome-next

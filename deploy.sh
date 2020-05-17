@@ -24,9 +24,6 @@ white='\033[1;37m'
 norm='\033[0m'
 bold='\033[1m'
 
-# NexT website repo directory
-DIR_NAME="next-source"
-
 echo
 echo "=============================================================="
 echo " ${yellow}Checking starting directory structure...${norm}"
@@ -163,17 +160,6 @@ echo
 echo "=============================================================="
 echo " ${yellow}Checking 'repo' directory structure...${norm}"
 echo "=============================================================="
-    echo "${lcyan}`pwd`${norm}"
-    du -sh
-    du -sh *
-
-echo
-echo "=============================================================="
-echo " ${yellow}Checking '$DIR_NAME' directory structure...${norm}"
-echo "=============================================================="
-    mkdir -vp $DIR_NAME
-    echo "${lred}`mv -v public $DIR_NAME`${norm}"
-    cd $DIR_NAME
     echo "${lcyan}`pwd`${norm}"
     du -sh
     du -sh *

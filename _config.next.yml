@@ -66,7 +66,7 @@ menu:
       Sidebar: /sidebar.html || fa fa-bars
       Posts: /posts.html || far fa-edit
       Custom Pages: /custom-pages.html || far fa-file-alt
-      Custom Files: /custom-files.html || far fa-file
+      Custom Files: /custom-files.html || far fa-palette
       SEO: /seo.html || fa fa-external-link-square-alt
       Front Matter: /front-matter.html || fa fa-heading
 

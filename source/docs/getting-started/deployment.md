@@ -18,11 +18,11 @@ If you are using macOS with `hexo-deployer-git`, make sure that `lib/` directory
 * Edit the file directly online, effective immediately
 * Automatic deployment, simultaneous deployment to multiple locations
 
-{% tabs CI %}
-<!-- tab Travis CI -->
+#### Travis CI
+
 Travis CI enables your team to test and ship your apps with confidence. It’s built for everyone and for projects and teams of all sizes, supporting over 20 different languages out of the box, including Javascript and Node.js, Ruby, PHP, Python, Mac/iOS, as well as Docker, while giving you full control over the build environment to customize it to your own needs.
 
-{% subtabs CI1 %}
+{% tabs CI1 %}
 <!-- tab Get permissions → -->
 There are two ways to obtain the necessary permissions for Travis CI. Deploy Key has the advantage of high security, while Access Token has the advantage of being more flexible.
 
@@ -97,8 +97,7 @@ git:
 
 cache:
  apt: true
- directories:
-   - node_modules
+ npm: true
 
 before_install:
  # Git Config
@@ -131,17 +130,15 @@ script:
 ```
 
 <!-- endtab -->
-{% endsubtabs %}
+{% endtabs %}
 
-<!-- endtab -->
-
-<!-- tab Gitlab CI -->
+#### Gitlab CI
 
 GitLab offers a continuous integration service and pages service. If you add a `.gitlab-ci.yml` file to the root directory of your repository, and configure your GitLab project to use a Runner, then each commit or push, triggers your CI pipeline. The `.gitlab-ci.yml` file tells the GitLab runner what to do. By default it runs a pipeline with three stages: build, test, and deploy. You don't need to use all three stages; stages with no jobs are simply ignored. And at the end, your websites will be published on GitLab Host automatically.
 
 1. Add `.gitlab-ci.yml` to the root directory of your repository, and configure it.
     ```yml hexo/.gitlab-ci.yml
-    image: node:8.11.2
+    image: node:lts
 
     before_script:
       # Set TimeZone, eg: Asia/Shanghai
@@ -157,9 +154,6 @@ GitLab offers a continuous integration service and pages service. If you add a `
       script:
       - npm install hexo-cli -g
       - npm install
-      # NEXT NPM installation start
-      - npm install hexo-symbols-count-time
-      # NEXT NPM installation end
       # NEXT External Libraries installation start
       - git clone https://github.com/next-theme/theme-next-pace themes/next/source/lib/pace
       # NEXT External Libraries installation end
@@ -184,7 +178,7 @@ Now, your static website is available at `https://yourname.gitlab.io/project` th
 
 Of course, you also can pulish static website on GitHub Pages or others pages service. There are two ways to configure `.gitlab-ci.yml`:
 
-{% subtabs Gitlab-CI-1 %}
+{% tabs Gitlab-CI-1 %}
 <!-- tab <code>HTTPS</code> -->
 
 * Get the Access Token: `Settings` → `Developer settings` → `Personal access token` → `Generate new token`. Set access rights according to the actual situation. It should be noted that the access token is only displayed once on this page, and it should be copied, otherwise it can only be regenerated.
@@ -252,7 +246,7 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
       # - wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
       # - dpkg -i ./pandoc-1.19.2.1-1-amd64.deb
 
-    image: node:8.11.2
+    image: node:lts
 
     pages:
       cache:
@@ -261,9 +255,6 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
       script:
       - npm install -g hexo-cli
       - npm install
-      # NEXT NPM installation start
-      - npm install hexo-symbols-count-time
-      # NEXT NPM installation end
       # NEXT External Libraries installation start
       - git clone https://github.com/next-theme/theme-next-pace themes/next/source/lib/pace
       # NEXT External Libraries installation end
@@ -276,12 +267,8 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
         - master
     ```
 <!-- endtab -->
-{% endsubtabs %}
+{% endtabs %}
 
 {% note danger %}
 Variables are not masked, and their values can be shown in the job logs if explicitly asked to do so. So make sure gitlab pipelines can only be viewed by yourself.
 {% endnote %}
-
-<!-- endtab -->
-
-{% endtabs %}

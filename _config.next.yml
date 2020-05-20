@@ -48,7 +48,7 @@ darkmode: true
 # ============================================================= #
 
 menu:
-  home: / || fa fa-bullhorn
+  home: / || fa fa-bell
 
   Docs:
     default: /docs/ || fa fa-book
@@ -62,23 +62,23 @@ menu:
 
     Theme Settings:
       default: /theme-settings/ || fa fa-star
-      Footer: /footer.html || far fa-sun
+      Footer: /footer.html || far fa-sticky-note
       Sidebar: /sidebar.html || fa fa-bars
-      Posts: /posts.html || far fa-edit
-      Custom Pages: /custom-pages.html || far fa-file-alt
+      Posts: /posts.html || far fa-paragraph
+      Custom Pages: /custom-pages.html || far fa-edit
       Custom Files: /custom-files.html || far fa-palette
       SEO: /seo.html || fa fa-external-link-square-alt
       Front Matter: /front-matter.html || fa fa-heading
 
     Third Party Services:
-      default: /third-party-services/ || fa fa-plug
-      Math Equations: /math-equations.html || fa fa-superscript
-      Comment Systems: /comments.html || far fa-comments
+      default: /third-party-services/ || fa fa-puzzle-piece
+      Math Equations: /math-equations.html || fa fa-square-root-alt
+      Comment Systems: /comments.html || far fa-comment
       Statistics and Analytics: /statistics-and-analytics.html || fa fa-chart-bar
       Post Widgets: /post-widgets.html || fa fa-share-square
       Search Services: /search-services.html || fa fa-search-plus
-      Chat Services: /chat-services.html || fa fa-comment
-      External Libraries: /external-libraries.html || fa fa-puzzle-piece
+      Chat Services: /chat-services.html || fa fa-comments
+      External Libraries: /external-libraries.html || fa fa-plug
 
     Tag Plugins:
       default: /tag-plugins/ || fa fa-rocket
@@ -90,10 +90,10 @@ menu:
       Video: /video.html || fa fa-video
       Button: /button.html || fa fa-square
       Caniuse: /caniuse.html || fa fa-signal
-      Group Pictures: /group-pictures.html || far fa-file-image
+      Group Pictures: /group-pictures.html || far fa-images
 
     Advanced Settings: /advanced-settings.html || fa fa-cog
-    Troubleshooting: /troubleshooting.html || fa fa-bug
+    Troubleshooting: /troubleshooting.html || fa fa-life-ring
   archives: /archives/ || fa fa-archive
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat

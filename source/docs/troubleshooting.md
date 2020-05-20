@@ -122,7 +122,7 @@ This mean somewhere in your posts, blocks with tags was commented with `{% raw %
 
 ### TOC Issues
 
-Do not hava a skip-level directory in the post. For example, a third level directory `###` followed by a `#####` is not recommended.
+Do not write a skip-level heading in the post. For example, a third-tier heading `###` followed by a `#####` is not recommended.
 See: https://github.com/theme-next/hexo-theme-next/issues/882
 
 If you are using `hexo-renderer-markdown-it`, it's recommended to install `markdown-it-named-headings` to make the TOC work correctly.

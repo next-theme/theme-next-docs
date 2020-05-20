@@ -97,13 +97,11 @@ post_meta:
 
 #### Post Wordcount
 
-3rd-party plugin [`hexo-wordcount`](https://github.com/willin/hexo-wordcount) was replaced by [`hexo-symbols-count-time`](https://github.com/theme-next/hexo-symbols-count-time) in 6.x versions because `hexo-symbols-count-time` no have any external nodejs dependencies, no have [language filter](https://github.com/willin/hexo-wordcount/issues/7) which causes better performance on speed at site generation.
-
 {% tabs wordcount %}
 <!-- tab Installation → -->
-Install `hexo-symbols-count-time` by run following command in {% label info@site root dir %}:
+Install `hexo-word-counter` by run following command in {% label info@site root dir %}:
 
-    $ npm install hexo-symbols-count-time
+    $ npm install hexo-word-counter
 
 <!-- endtab -->
 

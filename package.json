@@ -36,7 +36,6 @@
     "hexo-renderer-marked": "2.0.0",
     "hexo-renderer-stylus": "1.1.0",
     "hexo-server": "1.0.0",
-    "hexo-symbols-count-time": "0.7.1",
     "hexo-theme-next": "8.0.0-rc.2"
   },
   "engines": {

@@ -35,7 +35,7 @@ sidebar:
 ```
 
 {% note warning %}
-This option commented out by default and values are:
+This option is commented out by default and values are:
 
 * For Muse | Mist schemes: `320`
 * For Pisces | Gemini schemes: `240`

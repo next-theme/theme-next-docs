@@ -96,7 +96,7 @@ So, upgrade to Hexo 4.0 or higher, if you need to use backtick code block inside
 
 {% note danger %}
 Sometimes during generate you can see «{% label danger@Error: Unmatched placeholder remains! %}» message.
-This mean somewhere in your posts, blocks with tags was commented with `{% raw %}{#{% endraw %}` and `{% raw %}#}{% endraw %}` symbols:
+This mean somewhere in your posts, blocks with tags was commented out with `{% raw %}{#{% endraw %}` and `{% raw %}#}{% endraw %}` symbols:
 
 {% tabs unmatched-placeholder-remains %}
 <!-- tab {% label danger@Error %} -->

@@ -214,8 +214,10 @@ NexT now supports following languages:
 | Ukrainian                   | Український           | `uk`    |
 | Vietnamese                  | Tiếng Việt            | `vi`    |
 
+If you would like to customize the default translation, you do not need to modify the translation files in the `languages` directory. You can override all translations using [Data files](/docs/theme-settings/custom-files#Override-Default-Translations).
+
 {% note primary %}
-If you want to add or improve language for NexT theme, you can do it easily with [crowdin](https://i18n.theme-next.org) service.
+The files in the `language` directory are automatically generated, you do not need to modify them directly. Please submit translations via [Crowdin](https://crowdin.com/project/hexo-theme-next) if you would like to add or improve translation for NexT theme.
 {% endnote %}
 
 #### Configuring Menu Items
@@ -241,11 +243,8 @@ Names of that icons can be found in [Font Awesome](https://fontawesome.com) site
 <!-- endtab -->
 {% endtabs %}
 
-By default NexT provides `home` and `archives` items. To customize menu items, edit the following content in {% label primary@theme config file %}:
-
-{% note warning %}
-All custom pages which commented by default under `menu` section need to create manually. See [«Custom Page Support»](/docs/theme-settings/#Custom-Page-Support)
-{% endnote %}
+By default, all menu items are commented out to ensure that you can override them in the `next.yml` configuration file.
+To customize menu items, edit the following content in {% label primary@theme config file %}:
 
 ```yml next/_config.yml
 menu:
@@ -258,6 +257,10 @@ menu:
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
 ```
+
+{% note warning %}
+Except `home` and `archives`, all custom pages under `menu` section need to be created manually. See [«Custom Page Support»](/docs/theme-settings/#Custom-Page-Support)
+{% endnote %}
 
 Dynamic sub-menu within hierarchy structure is also supported. Add your sub-menu items in `menu` section in {% label primary@theme config file %} as following:
 

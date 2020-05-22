@@ -29,10 +29,18 @@ custom_file_path:
   #style: source/_data/styles.styl
 ```
 
-You can also to rename all items in `next/languages` files or metas related in your favorite languages using [Data files](/docs/getting-started/configuration).
+{% note info %}
+If you still need a custom file in the theme directory, download the [js script](https://gist.github.com/jiangtj/016596bbf9c49f3bd1afbc408d499127) and place it under Hexo or the theme's scripts. (It is not recommended or guaranteed to support this practice in the future)
+{% endnote %}
 
-1. creat a `languages.yml` in `source\_data`.
-2. insert following codes: (be careful about the two-space indent)
+In addition to `custom_file_path`, we also provide a more flexible way to customize, you can read the [Theme Inject](/docs/advanced-settings#Injects) in documentation.
+
+### Override Default Translations
+
+If you want to customize the default translation, you do not need to modify the translation files in the `languages` directory. You can override all translations using [Data files](/docs/getting-started/configuration).
+
+1. Creat a `languages.yml` in `source/_data`.
+2. Insert following codes: (be careful about the two-space indent)
 
     ```yaml
     # language
@@ -42,6 +50,9 @@ You can also to rename all items in `next/languages` files or metas related in y
         copyright:
           # the translation you perfer
           author: 本文博主
+    en:
+      menu:
+        schedule: Calendar
     ```
 
 This situation is also available for off-list items. For example, Next uses [Theme Inject](/docs/advanced-settings#Injects) to introduce the commments systems. You can rename the returned value in chinese as followed:
@@ -52,14 +63,8 @@ zh-CN:
   # items
   post:
     comments:
-      valine:  评论
+      valine: 评论
 ```
-
-{% note info %}
-If you still need a custom file in the theme directory, download the [js script](https://gist.github.com/jiangtj/016596bbf9c49f3bd1afbc408d499127) and place it under Hexo or the theme's scripts. (It is not recommended or guaranteed to support this practice in the future)
-{% endnote %}
-
-In addition to `custom_file_path`, we also provide a more flexible way to customize, you can read the [Theme Inject](/docs/advanced-settings#Injects) in documentation.
 
 ### How to Change Content Width
 

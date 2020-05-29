@@ -212,7 +212,7 @@ links:
 
 {% tabs toc %}
 <!-- tab <code>enable</code> -->
-By default NexT shows `Table Of Contents (TOC)` in the Sidebar. You can disable it by setting `toc.enable` to `false` in {% label primary@theme config file %}.
+By default NexT shows `Table Of Contents (TOC)` in the sidebar. You can disable it by setting `toc.enable` to `false` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 toc:

@@ -4,7 +4,7 @@ description: NexT User Docs – Theme Settings - Front Matter
 ---
 
 > Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Front-matter is terminated by three dashes when written in YAML or three semicolons when written in JSON.  
---- from hexo site.
+— from [Hexo site](https://hexo.io/docs/front-matter).
 
 **YAML**
 ```yaml
@@ -23,14 +23,16 @@ date: 2013/7/13 20:46:25
 
 Next extends and provide more variables. It allows users to configure a single page.
 
-# Settings & Their Default Values
+### Settings & Their Default Values
 
 Setting | Type | Description | Default
 --- | --- | --- | ---
 `mathjax` | `boolean` | MathJax support | `!math.per_page` in `_config.yml`
-`toc` | `object` (1) | Table of Contents in the Sidebar | From `_config.yml`
+`sidebar` | `boolean` | Whether the sidebar will be shown | Depends on `sidebar.display` in `_config.yml`
+`header` | `boolean` | Whether to display the post header in index page | `true`
+`toc` | `object` (1) | Table of Contents in the sidebar | From `_config.yml`
 `reward_settings` | `object` (1) | Reward settings | From `_config.yml`
-`quicklink` | `object` (1) | Quicklink Support | From `_config.yml`
+`quicklink` | `object` (1) | Quicklink support | From `_config.yml`
 
 (1): they have same structure with the configuration file.
 

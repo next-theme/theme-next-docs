@@ -31,7 +31,7 @@ cache:
 This feature is currently a bit simplistic, and we will further improve it in the future.
 {% endnote %}
 
-NexT allows to minify hexo generation. Set the value `minify` to `true` in {% label primary@theme config file %} as following:
+NexT allows to minify Hexo generation. Set the value `minify` to `true` in {% label primary@theme config file %} as following:
 
 ```yml next/_config.yml
 # Remove unnecessary files after hexo generate.

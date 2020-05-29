@@ -5,7 +5,7 @@ description: NexT User Docs – Third-party Service Integration – Search Servi
 
 ### Algolia Search
 
-NexT provides Algolia search plugin for index your hexo website content. What you should note here is that only turn on `enable` of `algolia_search` in {% label primary@theme config file %} cannot let you use the algolia search correctly, you need to install corresponding [Hexo Algolia](https://github.com/oncletom/hexo-algolia) plugin to seach your website with Algolia. Follow the steps described below to complete the installation of Algolia search.
+NexT provides Algolia search plugin for index your Hexo website content. What you should note here is that only turn on `enable` of `algolia_search` in {% label primary@theme config file %} cannot let you use the algolia search correctly, you need to install corresponding [Hexo Algolia](https://github.com/oncletom/hexo-algolia) plugin to seach your website with Algolia. Follow the steps described below to complete the installation of Algolia search.
 
 {% tabs algolia-search %}
 <!-- tab Registration → -->

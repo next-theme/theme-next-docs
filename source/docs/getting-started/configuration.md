@@ -38,7 +38,7 @@ If there are any new options in new releases, you just need to copy those option
 <!-- tab NexT-Way -->
 With this way, you can put all your configurations into one place (`hexo/source/_data/next.yml`).
 You don't need to edit {% label primary@theme config file %} (`next/_config.yml`).
-But option may not accurately procces all hexo external libraries with their additional options (for example, `hexo-server` module options may be readed only in default hexo config).
+But option may not accurately procces all Hexo external libraries with their additional options (for example, `hexo-server` module options may be readed only in default Hexo config).
 
 {% note info %}
 If there are any new options in new releases, you just need to copy those options from {% label primary@theme config file %}, paste into `hexo/source/_data/next.yml` and set their values to whatever you want.

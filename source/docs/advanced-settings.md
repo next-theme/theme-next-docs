@@ -173,7 +173,7 @@ vendors:
 
 ### Injects
 
-We extended the hexo filter and added `theme_inject`, so user can add the desired custom content to any injection point.
+We extended the Hexo filter and added `theme_inject`, so user can add the desired custom content to any injection point.
 
 #### Synopsis
 

@@ -27,12 +27,16 @@ Next extends and provide more variables. It allows users to configure a single p
 
 Setting | Type | Description | Default
 --- | --- | --- | ---
+`author` | `string` | Author name for post copyright | `author` in Hexo `_config.yml`
+`description` | `string` | Docs [here](/docs/theme-settings/posts#Preamble-Text) | None
+`direction` | `string` | Available value: `rtl` | None
+`header` | `boolean` | Whether to display the post header in index page | `true`
 `mathjax` | `boolean` | MathJax support | `!math.per_page` in `_config.yml`
 `sidebar` | `boolean` | Whether the sidebar will be shown | Depends on `sidebar.display` in `_config.yml`
-`header` | `boolean` | Whether to display the post header in index page | `true`
-`toc` | `object` (1) | Table of Contents in the sidebar | From `_config.yml`
-`reward_settings` | `object` (1) | Reward settings | From `_config.yml`
+`sticky` | `number` | [hexo-generator-indexed](http://github.com/next-theme/hexo-generator-indexed) plugin required | 0
 `quicklink` | `object` (1) | Quicklink support | From `_config.yml`
+`reward_settings` | `object` (1) | Reward settings | From `_config.yml`
+`toc` | `object` (1) | Table of Contents in the sidebar | From `_config.yml`
 
 (1): they have same structure with the configuration file.
 
@@ -53,3 +57,12 @@ quicklink:
   priority: true
   ignores:
 ```
+
+### Undocumented Front Matter Variables
+
+The following variables are not mentioned in the Hexo documentation, but are required by [hexo-theme-unit-test](https://github.com/hexojs/hexo-theme-unit-test).
+
+Setting | Type | Example
+--- | --- | ---
+`link` | `string` | [link-post](https://github.com/hexojs/hexo-theme-unit-test/blob/master/source/_posts/link-post.md)
+`photos` | `array` | [gallery-post](https://github.com/hexojs/hexo-theme-unit-test/blob/master/source/_posts/gallery-post.md)

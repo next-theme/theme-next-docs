@@ -70,4 +70,6 @@ codeblock:
 - Update README ([1fd2923](https://github.com/next-theme/hexo-theme-next/commit/1fd29235a6dc040e829fc8006db82741ce9acb35))
 - Update docs ([3dcd359](https://github.com/next-theme/hexo-theme-next/commit/3dcd3594d14cf3b15d964f8762f13f948c2f0ad5))
 
-[Detailed changes for NexT v8.0.0-rc.2](https://github.com/next-theme/hexo-theme-next/releases/tag/v8.0.0-rc.2)
+***
+
+For full changes, see the [comparison between v8.0.0-rc.1 and v8.0.0-rc.2](https://github.com/next-theme/hexo-theme-next/compare/v8.0.0-rc.1...v8.0.0-rc.2)

@@ -15,6 +15,7 @@ Tag Plugin is a way to make special style contents supported by Hexo. For exampl
 * [Button](/docs/tag-plugins/button)
 * [Caniuse](/docs/tag-plugins/caniuse)
 * [Group Pictures](/docs/tag-plugins/group-pictures)
+* [Link Grid](/docs/tag-plugins/link-grid)
 
 These tag plugins are only available in the theme NexT. If you switch to other Hexo themes, they may cause rendering errors.
 

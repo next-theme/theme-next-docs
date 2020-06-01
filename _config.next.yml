@@ -74,8 +74,8 @@ menu:
       default: /third-party-services/ || fa fa-puzzle-piece
       Math Equations: /math-equations.html || fa fa-square-root-alt
       Comment Systems: /comments.html || far fa-comment
-      Statistics and Analytics: /statistics-and-analytics.html || fa fa-chart-bar
-      Post Widgets: /post-widgets.html || fa fa-share-square
+      Statistics and Analytics: /statistics-and-analytics.html || fa fa-chart-pie
+      Post Widgets: /post-widgets.html || fa fa-gift
       Search Services: /search-services.html || fa fa-search-plus
       Chat Services: /chat-services.html || fa fa-comments
       External Libraries: /external-libraries.html || fa fa-plug
@@ -85,12 +85,13 @@ menu:
       Note: /note.html || fa fa-adjust
       Tabs: /tabs.html || fa fa-columns
       PDF: /pdf.html || far fa-file-pdf
-      Mermaid: /mermaid.html || fa fa-tasks
+      Mermaid: /mermaid.html || fa fa-project-diagram
       Label: /label.html || fa fa-font
-      Video: /video.html || fa fa-video
-      Button: /button.html || fa fa-square
+      Video: /video.html || fa fa-play-circle
+      Button: /button.html || fa fa-cube
       Caniuse: /caniuse.html || fa fa-signal
       Group Pictures: /group-pictures.html || far fa-images
+      Link Grid: /link-grid.html || fa fa-grip-vertical
 
     Advanced Settings: /advanced-settings.html || fa fa-cog
     Troubleshooting: /troubleshooting.html || fa fa-life-ring

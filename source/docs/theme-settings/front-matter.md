@@ -7,7 +7,7 @@ description: NexT User Docs – Theme Settings - Front Matter
 — from [Hexo site](https://hexo.io/docs/front-matter).
 
 **YAML**
-```yaml
+```yml
 ---
 title: Hello World
 date: 2013/7/13 20:46:25
@@ -42,7 +42,7 @@ Setting | Type | Description | Default
 
 **Example**
 
-``` yaml
+```yml
 toc:
   enable: true
   number: false

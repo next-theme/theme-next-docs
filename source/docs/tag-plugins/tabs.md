@@ -174,7 +174,7 @@ Unique name   : Unique name of tabs block tag without comma.
 **This is Tab 1.**
 <!-- endtab -->
 
-<!-- tab @amazon -->
+<!-- tab @font -->
 **This is Tab 2.**
 <!-- endtab -->
 
@@ -189,7 +189,7 @@ Unique name   : Unique name of tabs block tag without comma.
 **This is Tab 1.**
 <!-- endtab -->
 
-<!-- tab @amazon -->
+<!-- tab @font -->
 **This is Tab 2.**
 <!-- endtab -->
 
@@ -206,7 +206,7 @@ Unique name   : Unique name of tabs block tag without comma.
 **This is Tab 1.**
 <!-- endtab -->
 
-<!-- tab Solution 2 @amazon -->
+<!-- tab Solution 2 @font -->
 **This is Tab 2.**
 <!-- endtab -->
 
@@ -221,7 +221,7 @@ Unique name   : Unique name of tabs block tag without comma.
 **This is Tab 1.**
 <!-- endtab -->
 
-<!-- tab Solution 2 @amazon -->
+<!-- tab Solution 2 @font -->
 **This is Tab 2.**
 <!-- endtab -->
 

@@ -117,7 +117,7 @@ Scheme Mist does not support custom logo setting.
 
 Code Highlight Theme
 
-NexT uses the [highlight.js](https://highlightjs.org) package to support code highlight. Default style is white and there are more than 90 styles to choose.
+NexT uses the [highlight.js](https://highlightjs.org) package to support code highlight. Default style is `tomorrow` and there are more than 90 styles to choose.
 
 Change the value of `theme` to choose the highlight style you like, for example:
 
@@ -230,7 +230,7 @@ NexT gives you 5 specific font settings, they are:
 
 * Global Font: Font used in the whole site.
 * Title Font: Font used by site title.
-* Headlines Font: Font used by titles in articles (h1, h2, h3, h4, h5, h6).
+* Headlines Font: Font used by headings in articles (h1, h2, h3, h4, h5, h6).
 * Article Font: Font used by articles.
 * Code Font: Font used by code blocks in articles.
 
@@ -306,8 +306,8 @@ $code-font-family = "Input Mono", "PT Mono", Consolas, Monaco, Menlo, monospace
 // Font size of articles.
 $font-size-base = 16px
 
-// Font size of code.
-$code-font-size = 13px
+// Font size of table and code.
+$table-font-size = 13px
 ```
 
 Then uncomment `variable` under the `custom_file_path` section in {% label primary@theme config file %}.

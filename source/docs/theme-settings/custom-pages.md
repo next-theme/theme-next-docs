@@ -199,7 +199,7 @@ In your terminal emulator, change to the `source` folder of Hexo site dir. Creat
 <!-- endtab -->
 
 <!-- tab Editting Page → -->
-If you would like to enable `commonweal 404`(A service provided by Tencent in China), Edit `404/index.md` like this:
+If you would like to enable `commonweal 404` (A service provided by Tencent in China), Edit `404/index.md` like this:
 
     ---
     title: 404

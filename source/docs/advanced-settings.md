@@ -22,7 +22,7 @@ You can set it to a proper CDN URL, which can make static assets (JavaScript Thi
 | Name               | Original Link                                            | Internal Version      |
 | ------------------ | -------------------------------------------------------- | --------------------- |
 | Anime.js           | [animejs.com](https://animejs.com)                       | 3.1.0                 |
-| FontAwesome        | [fontawesome.io](http://fontawesome.io)                  | 4.7.0                 |
+| FontAwesome        | [fontawesome.io](http://fontawesome.io)                  | 5.13.0                |
 | VelocityJS         | [velocityjs.org](http://velocityjs.org)                  | 1.2.1                 |
 | VelocityJS UI Pack | [velocityjs.org/#uiPack](http://velocityjs.org/#uiPack)  | 1.2.1                 |
 
@@ -113,7 +113,7 @@ vendors:
   # Valine
   # Example:
   # valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js
-  # valine: //cdnjs.cloudflare.com/ajax/libs/valine/1.3.4/Valine.min.js
+  # valine: //cdnjs.cloudflare.com/ajax/libs/valine/1.4.14/Valine.min.js
   valine:
 
   # Gitalk

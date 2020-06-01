@@ -64,9 +64,9 @@ menu:
       default: /theme-settings/ || fa fa-star
       Footer: /footer.html || far fa-sticky-note
       Sidebar: /sidebar.html || fa fa-bars
-      Posts: /posts.html || far fa-paragraph
+      Posts: /posts.html || fa fa-paragraph
       Custom Pages: /custom-pages.html || far fa-edit
-      Custom Files: /custom-files.html || far fa-palette
+      Custom Files: /custom-files.html || fa fa-palette
       SEO: /seo.html || fa fa-external-link-square-alt
       Front Matter: /front-matter.html || fa fa-heading
 
@@ -86,7 +86,7 @@ menu:
       Tabs: /tabs.html || fa fa-columns
       PDF: /pdf.html || far fa-file-pdf
       Mermaid: /mermaid.html || fa fa-project-diagram
-      Label: /label.html || fa fa-font
+      Label: /label.html || fa fa-hat-wizard
       Video: /video.html || fa fa-play-circle
       Button: /button.html || fa fa-cube
       Caniuse: /caniuse.html || fa fa-signal

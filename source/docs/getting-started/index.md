@@ -148,7 +148,7 @@ And jsDelivr CDN is recommended to deliver our third-party plugins because it is
 
 And it could automatically minify the JS and CSS files, even if you don't have the minified version. Just use the `filename.min.js` or the `filename.min.css` to replace the file above.
 
-And we also provide other optional CDNs, including the famous [CDNJS](https://cdnjs.com/) and the [Bootcss](http://www.bootcdn.cn/) which has the quite high access speed in China.
+And we also provide other optional CDNs, including the famous [CDNJS](https://cdnjs.com/).
 
 <!-- endtab -->
 {% endtabs %}

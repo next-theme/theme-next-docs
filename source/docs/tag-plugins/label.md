@@ -12,7 +12,6 @@ description: NexT User Docs – NexT Supported Tags – Label
           '@Text' can be specified with or without space
           E.g. 'success @text' similar to 'success@text'.
           If not specified, default class will be selected.
-
 ```
 
 ### Examples

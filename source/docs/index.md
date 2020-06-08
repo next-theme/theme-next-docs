@@ -22,7 +22,7 @@ Theme NexT has the following features:
 
 By using different Schemes in NexT, you can simply change the style of your blog, and nearly all options can be used in all schemes.
 
-![NexT Schemes](https://user-images.githubusercontent.com/16272760/63487983-da41b080-c4df-11e9-951c-64883a8a5e9b.png)
+![NexT Schemes](/images/docs/next-schemes.png)
 
 ### Multilingual Support
 

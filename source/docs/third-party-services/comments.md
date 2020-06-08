@@ -105,10 +105,7 @@ Valine is a fast, simple & efficient Leancloud based no back end comment system.
       appKey:  # your leancloud application appkey
       placeholder: Just go go # comment box placeholder
       avatar: mm # gravatar style
-      meta: # Custom comment header
-        - nick
-        - mail
-        - link
+      meta: [nick, mail, link] # Custom comment header
       pageSize: 10 # pagination size
       visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
       comment_count: true # If false, comment count will only be displayed in post page, not in home page

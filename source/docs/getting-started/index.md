@@ -67,8 +67,8 @@ $ git clone https://github.com/next-theme/hexo-theme-next themes/next
 
 <!-- tab Stable Version -->
 1. Go to NexT version [Release Page](https://github.com/next-theme/hexo-theme-next/releases).
-2. Choose the version you need and download the Source Code (zip) in the Download section. For example v6.0.0.
-3. Extract the zip file to site's themes directory and rename the extracted folder (`hexo-theme-next-6.0.0`) to `next`.
+2. Choose the version you need and download the Source Code (zip) in the Download section. For example v8.0.0-rc.3.
+3. Extract the zip file to site's themes directory and rename the extracted folder (`hexo-theme-next-8.0.0-rc.3`) to `next`.
 <!-- endtab -->
 {% endtabs %}
 
@@ -77,7 +77,7 @@ You also can read [detailed installation instructions](/docs/getting-started/ins
 {% endnote %}
 
 {% note warning %}
-If you are still using NexT version 5, you can read [instructions for update from v5 to v6](/docs/getting-started/update-from-v5).
+If you are still using NexT version 5, you can read [instructions for update from v5 to v8](/docs/getting-started/update-from-v5).
 {% endnote %}
 
 #### Enabling NexT

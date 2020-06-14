@@ -30,7 +30,7 @@ Thanks to the contribution of our users and developers, [NexT now supports over 
 
 ### Code Highlighting Themes
 
-NexT uses code highlighting themes from the [highlight.js](https://highlightjs.org) package, and makes more than 90 themes available to you.
+NexT uses code highlighting themes from the [Highlight.js](https://highlightjs.org) and [Prism](https://prismjs.com) package, and makes more than 90 themes available to you.
 
 {% gp 5-2 %}
 ![Tomorrow Normal](/images/docs/tomorrow.png)

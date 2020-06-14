@@ -41,11 +41,6 @@ This option is commented out by default and values are:
 * For Pisces | Gemini schemes: `240`
 
 {% endnote %}
-
-{% note danger %}
-From version {% label danger@6.0.4 %} to {% label danger@6.3.0 %} option was called `sidebar_width` and was available for Gemini Scheme only.
-From {% label danger@6.4.0 %} version or higher, option renamed to `sidebar.width` and available for all schemes.
-{% endnote %}
 <!-- endtab -->
 
 <!-- tab <code>display</code> -->
@@ -72,10 +67,6 @@ Set up sidebar paddingin pixels by changing the value of `sidebar.padding`:
 sidebar:
   padding: 18
 ```
-
-{% note danger %}
-For now only Pisces / Gemini Schemes supports `offset` setting under **6.0.x** version or higher.
-{% endnote %}
 <!-- endtab -->
 
 <!-- tab <code>offset</code> -->
@@ -174,11 +165,11 @@ You can add blog rolls within sidebar in NexT.
 
 {% tabs blogrolls %}
 <!-- tab <code>links_settings</code> -->
-By default NexT shows the `link` icon {% btn #,, link %} before `title`. The name of icon can be found in [Font Awesome](https://fontawesome.com) site. You can configure it by editing values in `links_settings` section in {% label primary@theme config file %}.
+By default NexT shows the `globe` icon {% btn #,, globe %} before `title`. The name of icon can be found in [Font Awesome](https://fontawesome.com) site. You can configure it by editing values in `links_settings` section in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 links_settings:
-  icon: fa fa-link
+  icon: fa fa-globe
 ```
 
 By default NexT uses `Links` as the name of blogroll. You can configure it by editing values in `links_settings` section in {% label primary@theme config file %}.

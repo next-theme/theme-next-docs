@@ -39,19 +39,19 @@ Get tags list:
 $ cd themes/next
 $ git tag -l
 …
-v6.0.0
-v6.0.1
-v6.0.2
+v8.0.0-rc.1
+v8.0.0-rc.2
+v8.0.0-rc.3
 ...
 ```
 
-For example, you want to switch on `v6.0.1` tagged release version. Input the following command:
+For example, you want to switch on `v8.0.0-rc.3` tagged release version. Input the following command:
 
 ```bash
-$ git checkout tags/v6.0.1
-Note: checking out 'tags/v6.0.1'.
+$ git checkout tags/v8.0.0-rc.3
+Note: switching to 'tags/v8.0.0-rc.3'.
 …
-HEAD is now at da9cdd2... Release v6.0.1
+HEAD is now at 036d2d3 Release v8.0.0-rc.3
 
 # If you want to switch on latest release version without defining tag (optional)
 $ git checkout $(git describe --tags $(git rev-list --tags --max-count=1))
@@ -91,12 +91,12 @@ At some cases useful for developers.
 **Option 2: Download [Tagged Release Version](https://github.com/next-theme/hexo-theme-next/releases)**
 
 In rare cases useful, but not recommended.
-You must define version. Replace `v6.0.0` with any version from [tags list](https://github.com/next-theme/hexo-theme-next/tags).
+You must define version. Replace `v8.0.0-rc.3` with any version from [tags list](https://github.com/next-theme/hexo-theme-next/tags).
 
 {% subtabs tagged-release-version %}
 <!-- tab Git -->
 ```bash
-$ git clone --branch v6.0.0 https://github.com/next-theme/hexo-theme-next themes/next
+$ git clone --branch v8.0.0-rc.3 https://github.com/next-theme/hexo-theme-next themes/next
 ```
 
 This variant will give to you the **defined release version** (with `.git` directory inside).
@@ -106,7 +106,7 @@ And in any time you can switch to any tagged release, but with limit to defined 
 <!-- tab cURL & tar -->
 ```bash
 $ mkdir themes/next
-$ curl -L https://api.github.com/repos/next-theme/hexo-theme-next/tarball/v6.0.0 | tar -zxv -C themes/next --strip-components=1
+$ curl -L https://api.github.com/repos/next-theme/hexo-theme-next/tarball/v8.0.0-rc.3 | tar -zxv -C themes/next --strip-components=1
 ```
 
 Same as before under `curl & tar & wget` variant, but will download **only concrete version**.

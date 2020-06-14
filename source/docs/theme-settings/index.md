@@ -117,7 +117,7 @@ Scheme Mist does not support custom logo setting.
 
 Code Highlight Theme
 
-NexT uses the [highlight.js](https://highlightjs.org) package to support code highlight. Default style is `tomorrow` and there are more than 90 styles to choose.
+NexT uses the [Highlight.js](https://highlightjs.org) and [Prism](https://prismjs.com) package to support code highlight. Default style is `tomorrow` and there are more than 90 styles to choose.
 
 Change the value of `theme` to choose the highlight style you like, for example:
 
@@ -128,6 +128,10 @@ codeblock:
   theme:
     light: tomorrow
     dark: tomorrow-night
+  # See: https://github.com/PrismJS/prism/tree/master/themes
+  prism:
+    light: prism
+    dark: prism-dark
 ```
 
 If Dark Mode is enabled, dark code highlighting themes will be available.

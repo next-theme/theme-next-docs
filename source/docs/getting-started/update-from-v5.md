@@ -3,7 +3,7 @@ title: Update from Version 5
 description: NexT User Docs – Update from v5.x / v7.x
 ---
 
-NexT version 5 works fine with Hexo 3, but for frequent users, you maybe need to upgrade version 5 to 7 to get features and supports in new [Theme-Next](https://github.com/next-theme/hexo-theme-next) repository.
+NexT version 5 works fine with Hexo 3, but for frequent users, you maybe need to upgrade version 5 to 8 to get features and supports in new [Theme-Next](https://github.com/next-theme/hexo-theme-next) repository.
 
 There are no hard breaking changes between 5.1.x and the latest version. It's change major version to 8 because:
 

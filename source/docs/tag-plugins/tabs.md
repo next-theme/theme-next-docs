@@ -321,7 +321,7 @@ Permalink for > [Tab two 3](#tab-two-3).
 2. Two
 3. Three
 
-4-spaces code block:
+Indented code block:
 
     nano /etc
 
@@ -443,7 +443,7 @@ Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorp
 2. Two
 3. Three
 
-4-spaces code block:
+Indented code block:
 
     nano /etc
 

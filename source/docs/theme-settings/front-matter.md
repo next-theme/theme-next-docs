@@ -28,7 +28,7 @@ Next extends and provide more variables. It allows users to configure a single p
 Setting | Type | Description | Default
 --- | --- | --- | ---
 `author` | `string` | Author name for post copyright | `author` in Hexo `_config.yml`
-`description` | `string` | Docs [here](/docs/theme-settings/posts#Preamble-Text) | None
+`description` | `string` | Docs [here](/docs/theme-settings/posts.html#Preamble-Text) | None
 `direction` | `string` | Available value: `rtl` | None
 `header` | `boolean` | Whether to display the post header in index page | `true`
 `mathjax` | `boolean` | MathJax support | `!math.per_page` in `_config.yml`

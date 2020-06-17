@@ -100,9 +100,10 @@ post_meta:
 {% tabs wordcount %}
 <!-- tab Installation → -->
 Install `hexo-word-counter` by run following command in {% label info@site root dir %}:
-
-    $ npm install hexo-word-counter
-
+```bash
+$ npm install hexo-word-counter
+$ hexo clean
+```
 <!-- endtab -->
 
 <!-- tab Hexo Config → -->

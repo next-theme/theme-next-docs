@@ -71,17 +71,17 @@ algolia_search:
 
 If you want to use a different version from CDN, please follow the instructions below.
 
-   You need to **set vendors** in {% label primary@theme config file %}:
-   ```yml next/_config.yml
-   vendors:
-     ...
-     # Algolia Search
-     # algolia_search: //cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
-     # instant_search: //cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
-     algolia_search: //cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
-     instant_search: //cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
-     ...
-   ```
+You need to **set vendors** in {% label primary@theme config file %}:
+```yml next/_config.yml
+vendors:
+  ...
+  # Algolia Search
+  # algolia_search: //cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
+  # instant_search: //cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
+  algolia_search: //cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
+  instant_search: //cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
+  ...
+```
 <!-- endtab -->
 {% endtabs %}
 
@@ -101,9 +101,9 @@ Local search no need any external 3rd-party services and can be extra indexed by
 {% tabs local-search %}
 <!-- tab Installation → -->
 Install `hexo-generator-searchdb` by run following command in {% label info@site root dir %}:
-
-    $ npm install hexo-generator-searchdb
-
+```bash
+$ npm install hexo-generator-searchdb
+```
 <!-- endtab -->
 
 <!-- tab Hexo Config → -->

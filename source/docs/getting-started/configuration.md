@@ -44,21 +44,12 @@ But option may not accurately procces all Hexo external libraries with their add
 If there are any new options in new releases, you just need to copy those options from {% label primary@theme config file %}, paste into `hexo/source/_data/next.yml` and set their values to whatever you want.
 {% endnote %}
 
-{% note warning %}
-This method relies on Hexo [Data files](https://hexo.io/docs/data-files.html). Because Data files is introduced in Hexo 3, so you need upgrade Hexo to 3.0 (or above) to use this feature.
-{% endnote %}
-
 **Usage**
 
 1. Please ensure you are using Hexo 3 (or above).
 2. Create a file named `next.yml` in `hexo/source/_data` directory (create `_data` directory if it does not exist).
 3. Then, in main {% label info@site config file %} need to define `theme: next` option (and if needed, `source_dir: source`).
 4. Use standart parameters to start server, generate or deploy (`hexo clean && hexo g -d && hexo s`).
-
-{% note danger %}
-**Known Issues**
-NexT before version 7.5.0 uses `lodash/merge` to merge configs from `next.yml`, which might lead to the incorrect order of menu item. Since `lodash/merge` is using deep copy, even if you set the order of the menu items, they will follow the default order in `_config.yml`.
-{% endnote %}
 
 <!-- endtab -->
 {% endtabs %}

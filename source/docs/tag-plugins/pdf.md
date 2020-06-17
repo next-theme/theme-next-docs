@@ -17,9 +17,13 @@ pdf:
 ```md pdf.js
 {% pdf url [height] %}
 
-[url]    : Relative path to PDF file.
+[url]    : The URL (Absolute path) of the PDF file.
 [height] : Optional. Height of the PDF display element, e.g. 800px.
 ```
+
+{% note warning %}
+The loading of pdf.js or pdf file might be blocked by CORS policy. If you want to load resources from another website, make sure the Access-Control-Allow-Origin header is set correctly. See also [Access-Control-Allow-Origin - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin).
+{% endnote %}
 
 ### Examples
 

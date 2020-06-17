@@ -80,11 +80,3 @@ marked:
 search:
   path: search.json
   field: all
-
-symbols_count_time:
-  symbols: false
-  time: false
-  total_symbols: false
-  total_time: false
-  awl: 4
-  wpm: 275

@@ -29,42 +29,7 @@ custom_file_path:
   #style: source/_data/styles.styl
 ```
 
-{% note info %}
-If you still need a custom file in the theme directory, download the [js script](https://gist.github.com/jiangtj/016596bbf9c49f3bd1afbc408d499127) and place it under Hexo or the theme's scripts. (It is not recommended or guaranteed to support this practice in the future)
-{% endnote %}
-
-In addition to `custom_file_path`, we also provide a more flexible way to customize, you can read the [Theme Inject](/docs/advanced-settings#Injects) in documentation.
-
-### Override Default Translations
-
-If you want to customize the default translation, you do not need to modify the translation files in the `languages` directory. You can override all translations using [Data files](/docs/getting-started/configuration).
-
-1. Creat a `languages.yml` in `source/_data`.
-2. Insert following codes: (be careful about the two-space indent)
-
-    ```yml
-    # language
-    zh-CN:
-      # items
-      post:
-        copyright:
-          # the translation you perfer
-          author: 本文博主
-    en:
-      menu:
-        schedule: Calendar
-    ```
-
-This situation is also available for off-list items. For example, Next uses [Theme Inject](/docs/advanced-settings#Injects) to introduce the commments systems. You can rename the returned value in chinese as followed:
-
-```yml
-# language
-zh-CN:
-  # items
-  post:
-    comments:
-      valine: 评论
-```
+In addition to `custom_file_path`, we also provide a more flexible way to customize, you can read the [Theme Inject](/docs/advanced-settings.html#Injects) in documentation.
 
 ### How to Change Content Width
 
@@ -137,3 +102,15 @@ So, if you want to add any variables or styles to both Pisces and Gemini schemes
 {% endtabs %}
 
 Then uncomment `variable` under the `custom_file_path` section in {% label primary@theme config file %}.
+
+### Overriding default style
+
+Edit `source/_data/styles.styl` in {% label primary@Hexo root directory %} and add styles:
+
+```css
+.archive .collection-title {
+  display: none !important;
+}
+```
+
+Then uncomment `style` under the `custom_file_path` section in {% label primary@theme config file %}.

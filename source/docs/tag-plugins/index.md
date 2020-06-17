@@ -6,16 +6,16 @@ description: NexT User Docs – NexT Supported Tags
 Tag Plugin is a way to make special style contents supported by Hexo. For example, we cannot show a image with custom size in standard Markdown. And then we can use tag plugins to solve it. [Hexo has a lot of tags](https://hexo.io/docs/tag-plugins) which can help user. And Hexo also have interfaces to themes which make themes able to create their own tags. Following tags are provided by NexT:
 
 * [Centered Quote](#Centered-Quote)
-* [Note](/docs/tag-plugins/note)
-* [Tabs](/docs/tag-plugins/tabs)
-* [PDF](/docs/tag-plugins/pdf)
-* [Mermaid](/docs/tag-plugins/mermaid)
-* [Label](/docs/tag-plugins/label)
-* [Video](/docs/tag-plugins/video)
-* [Button](/docs/tag-plugins/button)
-* [Caniuse](/docs/tag-plugins/caniuse)
-* [Group Pictures](/docs/tag-plugins/group-pictures)
-* [Link Grid](/docs/tag-plugins/link-grid)
+* [Note](/docs/tag-plugins/note.html)
+* [Tabs](/docs/tag-plugins/tabs.html)
+* [PDF](/docs/tag-plugins/pdf.html)
+* [Mermaid](/docs/tag-plugins/mermaid.html)
+* [Label](/docs/tag-plugins/label.html)
+* [Video](/docs/tag-plugins/video.html)
+* [Button](/docs/tag-plugins/button.html)
+* [Caniuse](/docs/tag-plugins/caniuse.html)
+* [Group Pictures](/docs/tag-plugins/group-pictures.html)
+* [Link Grid](/docs/tag-plugins/link-grid.html)
 
 These tag plugins are only available in the theme NexT. If you switch to other Hexo themes, they may cause rendering errors.
 

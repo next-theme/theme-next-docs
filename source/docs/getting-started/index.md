@@ -10,7 +10,7 @@ description: NexT User Docs – Starting to Use
 [Hexo](https://hexo.io) is a fast and powerful static blog generating framework, it's based on [Node.js](https://nodejs.org). By using Hexo you can write articles easily with Markdown, and besides the grammer of Markdown, you can also use [tag plugins](https://hexo.io/docs/tag-plugins) provided by Hexo to insert special formated content simply. In this page we assume you have installed Hexo and created a site with it.
 
 {% note info %}
-You can visit [Hexo Docs](https://hexo.io/docs/) to see how to install Hexo.
+You can visit [Hexo Docs](https://hexo.io/docs/) to see how to install Hexo. Make sure that the version of Node.js and Hexo in the environment is higher than [the minimum requirements](https://github.com/next-theme/hexo-theme-next#readme) of the NexT theme, and then continue with the following steps.
 {% endnote %}
 
 ### Documentation Variables
@@ -73,11 +73,11 @@ $ git clone https://github.com/next-theme/hexo-theme-next themes/next
 {% endtabs %}
 
 {% note primary %}
-You also can read [detailed installation instructions](/docs/getting-started/installation) if you want any other installation variant.
+You also can read [detailed installation instructions](/docs/getting-started/installation.html) if you want any other installation variant.
 {% endnote %}
 
 {% note warning %}
-If you are still using NexT version 5, you can read [instructions for update from v5 to v8](/docs/getting-started/update-from-v5).
+If you are still using NexT version 5, you can read [instructions for update from v5 to v8](/docs/getting-started/update-from-v5.html).
 {% endnote %}
 
 #### Enabling NexT
@@ -94,7 +94,9 @@ Now you have installed NexT theme, next we will verify whether it is enabled cor
 
 First start Hexo local server, and enable debug parameter (by adding `--debug`), the whole command is `hexo s --debug`. You can see the output while running, and if you find problem, you can use the output to help others locate error better. When it prints:
 
-    INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
+```
+INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
+```
 
 Now you can open `http://localhost:4000` in your browser, and check whether the site works correctly.
 
@@ -175,50 +177,16 @@ scheme: Gemini
 
 #### Dark Mode
 
-You can enable Dark Mode by editing {% label primary@theme config file %}, searching `darkmode` keyword. Theme NexT automatically shows Dark Mode if the OS prefered theme is dark. CSS `mix-blend-mode` is used the to bring Dark Mode to all 4 schemes above, make sure your browser supports this property.
+You can enable Dark Mode by setting `darkmode` to `true` in {% label primary@theme config file %}. The `prefers-color-scheme` CSS media feature is used to bring Dark Mode to all 4 schemes above, make sure your browser supports it.
 
 ```yml next/_config.yml
 darkmode: true
 ```
 
-#### Choosing Language
-
-Edit {% label info@site config file %}, set the value of `language` to the language you need. For example, English looks like this:
-
-```yml hexo/_config.yml
-language: en
-```
-
-NexT now supports following languages:
-
-| Language                    | Example               | Code    |
-| --------------------------- | --------------------- | ------- |
-| Arabic                      | عربي                  | `ar`    |
-| Chinese (Simplified)        | 简体中文               | `zh-CN` |
-| Chinese (Traditional)       | 繁體中文               | `zh-TW` |
-| Chinese (Hong Kong)         | 繁體中文-香港           | `zh-HK` |
-| Dutch                       | Niederländisch        | `nl`    |
-| English                     | English               | `en`    |
-| French                      | Français              | `fr`    |
-| German                      | Deutsch               | `de`    |
-| Indonesian                  | Indonesia             | `id`    |
-| Italian                     | Italiano              | `it`    |
-| Japanese                    | 日本語                 | `ja`    |
-| Korean                      | 한국어                 | `ko`    |
-| Persian                     | فارسی                 | `fa`    |
-| Portuguese                  | Português             | `pt`    |
-| Portuguese (Brazilian)      | Português (Brazilian) | `pt-BR` |
-| Russian                     | Русский               | `ru`    |
-| Spanish                     | Español               | `es`    |
-| Turkish                     | Türk                  | `tr`    |
-| Ukrainian                   | Український           | `uk`    |
-| Vietnamese                  | Tiếng Việt            | `vi`    |
-
-If you would like to customize the default translation, you do not need to modify the translation files in the `languages` directory. You can override all translations using [Data files](/docs/theme-settings/custom-files#Override-Default-Translations).
-
-{% note primary %}
-The files in the `language` directory are automatically generated, you do not need to modify them directly. Please submit translations via [Crowdin](https://crowdin.com/project/hexo-theme-next) if you would like to add or improve translation for NexT theme.
-{% endnote %}
+Theme NexT automatically shows Dark Mode if the OS prefered theme is dark. It's supported by macOS Mojave, iOS 13 and Android 10 or above. Relevant docs:
+[How to use Dark Mode on your Mac](https://support.apple.com/en-us/HT208976)
+[Use Dark Mode on your iPhone, iPad, or iPod touch](https://support.apple.com/en-us/HT210332)
+[Dark theme | Android Developers](https://developer.android.com/guide/topics/ui/look-and-feel/darktheme)
 
 #### Configuring Menu Items
 
@@ -419,4 +387,4 @@ Edit {% label info@site config file %} and set the value of `description` to you
 description:
 ```
 
-After that we can [configure deployment](/docs/getting-started/deployment).
+After that we can [configure deployment](/docs/getting-started/deployment.html).

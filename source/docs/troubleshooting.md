@@ -7,14 +7,14 @@ description: NexT User Docs – Troubleshooting
 
 Before submitting an Issue on GitHub, you can follow the steps below to debug:
 
-* If the error comes from a third-party service, such as the Gitalk comment system, please submit an Issue to their GitHub repository.
+* If the error comes from a third-party service, such as the Gitalk comment system, please submit an Issue to its GitHub repository.
 * Execute `hexo clean`, clear the browser cache and disable all CDN services (e.g. Cloudflare Rocket Loader) - This may take some time to take effect.
 * Disable browser plug-ins or use other devices and browsers to test, because bugs may only occur in specific browsers.
 * Switch to another theme and check if the bug still exists (e.g. default theme landscape). In other words, prove that this is a bug of NexT, not Hexo.
 * Upgrade theme NexT to the latest version.
 * Upgrade Hexo and Hexo plugins to the latest version.
-* Upgrade Node.js and `npm` to the latest version.
-* Uninstall all non-essential Hexo plugins, or reinstall all plugins using `npm install --save`.
+* Upgrade or downgrade Node.js to the latest LTS version.
+* Uninstall all non-essential Hexo plugins, or delete `node_modules` and then reinstall all plugins using `npm install --force`.
 
 If you get an error message from Hexo or your browser, please search in Google / Stackoverflow / GitHub Issues, or report it to us when submitting a new Issue.
 
@@ -23,7 +23,7 @@ If you get an error message from Hexo or your browser, please search in Google /
 When you edit any YAML configs, always need to keep up indents.
 Currently, in all Hexo and NexT configuration files parameters uses **2 spaces indents** from parent option.
 
-For example, we want to change NexT scheme from standart `Muse` to `Gemini` and want to use `theme_config` feature with [Hexo way](/docs/getting-started/configuration#option-1) option.
+For example, we want to change NexT scheme from standart `Muse` to `Gemini` and want to use `theme_config` feature with [Hexo way](/docs/getting-started/configuration.html#option-1) option.
 
 {% tabs keep-up-indentation %}
 <!-- tab NexT Config → -->

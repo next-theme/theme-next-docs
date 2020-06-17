@@ -42,7 +42,7 @@ The `per_page` option is to control whether to render Math Equations every page.
 * `false` → Equations will be processed on every page. Even if they not exists on one or another page.
 
 {% note default %}
-**Examples with `true` option **
+**Examples with `true` option**
 
 ```md
 <!-- This post will render the Math Equations -->

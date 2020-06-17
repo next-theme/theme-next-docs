@@ -10,10 +10,10 @@ Next allows users to add custom pages in menu.
 {% tabs adding-custom-page %}
 <!-- tab Adding New Page → -->
 In your terminal emulator, change to Hexo site dir. Use `hexo new page custom_name` to create a new `custom_name` page:
-
-    $ cd your-hexo-site
-    $ hexo new page custom_name
-
+```bash
+$ cd your-hexo-site
+$ hexo new page custom_name
+```
 <!-- endtab -->
 
 <!-- tab Setting Front-matter Values → -->
@@ -68,10 +68,10 @@ Adding «Tags» page and show «Tags» link in menu. «Tags» page will show all
 {% tabs adding-tags-page %}
 <!-- tab Adding New Page → -->
 In your terminal emulator, change to Hexo site dir. Use `hexo new page tags` to create a new `tags` page:
-
-    $ cd your-hexo-site
-    $ hexo new page tags
-
+```bash
+$ cd your-hexo-site
+$ hexo new page tags
+```
 <!-- endtab -->
 
 <!-- tab Setting Page Type → -->
@@ -98,7 +98,7 @@ menu:
 
 {% note warning %}
 If you enable any comment system for your site, comments will be shown for all posts and pages.
-See [«How to Disable Comments on Page»](/docs/faqs/#How-to-Disable-Comments-on-Page) if you want to do it for pages like `tags` or `categories`.
+See [«How to Disable Comments on Page»](/docs/third-party-services/#How-to-Disable-Comments-on-Page) if you want to do it for pages like `tags` or `categories`.
 {% endnote %}
 
 #### Tagcloud
@@ -127,10 +127,10 @@ tagcloud:
 {% tabs calendar %}
 <!-- tab Adding Schedule Page → -->
 In your terminal emulator, change to Hexo site dir. Use `hexo new page schedule` to create a new `schedule` page:
-
-    $ cd your-hexo-site
-    $ hexo new page schedule
-
+```bash
+$ cd your-hexo-site
+$ hexo new page schedule
+```
 <!-- endtab -->
 
 <!-- tab Setting Front-matter Values → -->
@@ -191,24 +191,24 @@ calendar:
 {% tabs custom-404-page %}
 <!-- tab Adding New Page → -->
 In your terminal emulator, change to the `source` folder of Hexo site dir. Create a new folder called `404`, then create a new page in it:
-
-    $ cd your-hexo-site/source
-    $ mkdir 404
-    $ touch 404/index.md
-
+```bash
+$ cd your-hexo-site/source
+$ mkdir 404
+$ touch 404/index.md
+```
 <!-- endtab -->
 
 <!-- tab Editting Page → -->
 If you would like to enable `commonweal 404` (A service provided by Tencent in China), Edit `404/index.md` like this:
-
-    ---
-    title: 404
-    date: 1970-01-01 00:00:00
-    ---
-    <script src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js"
-            charset="utf-8" homePageUrl="/" homePageName="Back to home">
-    </script>
-
+```md
+---
+title: 404
+date: 1970-01-01 00:00:00
+---
+<script src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js"
+        charset="utf-8" homePageUrl="/" homePageName="Back to home">
+</script>
+```
 You can also add any content you want to it.
 <!-- endtab -->
 

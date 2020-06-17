@@ -58,6 +58,7 @@ menu:
       Installation: /installation.html || fa fa-download
       Deployment: /deployment.html || fa fa-upload
       Configuration: /configuration.html || fa fa-wrench
+      Internationalization: /internationalization.html || fa fa-globe
       Update from 5.x: /update-from-v5.html || fa fa-retweet
 
     Theme Settings:

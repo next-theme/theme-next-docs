@@ -142,21 +142,12 @@ NexT supports the copy-and-paste functionality of codeblock.
 
 {% subtabs codeblock1 %}
 <!-- tab <code>enable</code> -->
-You can enable it by setting value `copy_button.enable` to `true` in {% label primary@theme config file %}.
+You can enable it by setting value `copy_button.enable` to `true` in {% label primary@theme config file %}. By default NexT shows copy result of the copy-and-paste functionality.
 
 ```yml next/_config.yml
 codeblock:
   copy_button:
     enable: true
-```
-<!-- endtab -->
-<!-- tab <code>show_result</code> -->
-By default NexT doesn't show copy results of the copy-and-paste functionality. You can also enable it by setting value `copy_button.show_result` to `true` in {% label primary@theme config file %}.
-
-```yml next/_config.yml
-codeblock:
-  copy_button:
-    show_result: true
 ```
 <!-- endtab -->
 <!-- tab <code>style</code> -->

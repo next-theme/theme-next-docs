@@ -9,7 +9,7 @@ description: NexT User Docs – Theme Settings – Sidebar
 
 By default sidebar only shows in posts (have a table of content), and is placed in left side. You can change it by editing values under `sidebar` setting in {% label primary@theme config file %}.
 
-Sidebar has several options, but for now we will consider `position`, `width`, `display`, `offset`, `onmobile` and `dimmer` options.
+Sidebar has several options, including `position`, `width`, `display`, `padding` and `offset`.
 
 {% tabs setting-sidebar %}
 <!-- tab <code>position</code> -->
@@ -61,7 +61,7 @@ sidebar:
 <!-- endtab -->
 
 <!-- tab <code>padding</code> -->
-Set up sidebar paddingin pixels by changing the value of `sidebar.padding`:
+Set up sidebar padding in pixels by changing the value of `sidebar.padding`:
 
 ```yml next/_config.yml
 sidebar:
@@ -82,24 +82,11 @@ For now only Pisces / Gemini Schemes supports `offset` setting under **6.0.x** v
 {% endnote %}
 <!-- endtab -->
 
-<!-- tab <code>onmobile</code> -->
-Set the value `sidebar.onmobile` to `true` to enable sidebar on narrow view for mobile device as following:
-
-```yml next/_config.yml
-sidebar:
-  onmobile: true
-```
-
-{% note danger %}
-For now only Muse / Mist Schemes supports `onmobile` setting under **6.0.x** version or higher.
-{% endnote %}
-<!-- endtab -->
-
 {% endtabs %}
 
 #### Sidebar Site State
 
-By default NexT shows the categories and counts of Posts / Categories / Tags in sidebar. You can configure it by editing values in `site_state` section in {% label primary@theme config file %}.
+By default NexT shows the categories and counts of Posts / Categories / Tags in sidebar. You can configure it by editing value `site_state` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 site_state: true
@@ -131,7 +118,7 @@ By default NexT shows the icons of social links in sidebar.
 
 {% tabs social_icons %}
 <!-- tab <code>enable</code> -->
-You can configure it by editing values in `social_icons.enable` section in {% label primary@theme config file %}.
+You can configure it by editing value `enable` in `social_icons` section in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 social_icons:
@@ -165,21 +152,21 @@ You can add blog rolls within sidebar in NexT.
 
 {% tabs blogrolls %}
 <!-- tab <code>links_settings</code> -->
-By default NexT shows the `globe` icon {% btn #,, globe %} before `title`. The name of icon can be found in [Font Awesome](https://fontawesome.com) site. You can configure it by editing values in `links_settings` section in {% label primary@theme config file %}.
+By default NexT shows the `globe` icon {% btn #,, globe %} before `title`. The name of icon can be found in [Font Awesome](https://fontawesome.com) site. You can configure it by editing value `icon` in `links_settings` section in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 links_settings:
   icon: fa fa-globe
 ```
 
-By default NexT uses `Links` as the name of blogroll. You can configure it by editing values in `links_settings` section in {% label primary@theme config file %}.
+By default NexT uses `Links` as the name of blogroll. You can configure it by editing value `title` in `links_settings` section in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 links_settings:
   title: Links
 ```
 
-By default all blogrolls are displayed in block. You can configure it to `inline` by editing values in `links_settings` section in {% label primary@theme config file %}.
+By default all blogrolls are displayed in block. You can configure it to `inline` by editing value `layout` in `links_settings` section in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 links_settings:

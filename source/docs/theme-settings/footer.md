@@ -16,7 +16,7 @@ footer:
 
 #### Site Footer Icon
 
-By default NexT shows black `user` icon {% btn #,, user %} without animation between year and copyright information in the footer. You can configure it by editing values in `icon` section in {% label primary@theme config file %}.
+By default NexT shows red `heart` icon {% btn #,, heart %} with animation between year and copyright information in the footer. You can configure it by editing values in `icon` section in {% label primary@theme config file %}.
 
 {% tabs icon %}
 <!-- tab <code>name</code> -->
@@ -33,8 +33,8 @@ footer:
 <!-- tab <code>animated</code> -->
 Set up animated of footer icon by changing the value of `icon.animated`:
 
-* `true` → Icon will be animated.
-* **`false`** → Icon will not be animated.
+* **`true`** → Icon will be animated.
+* `false` → Icon will not be animated.
 
 ```yml next/_config.yml
 footer:

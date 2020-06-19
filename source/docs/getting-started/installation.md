@@ -71,7 +71,7 @@ $ cd themes/next
 $ git pull
 ```
 
-And if you see any error message during update (something like **«Commit your changes or stash them before you can merge»**), recommended to learn [Data Files](/docs/getting-started/configuration.html) feature. Howbeit, you can bypass update errors by `Commit`, `Stash` or `Discard` local changes. See [here](https://stackoverflow.com/a/15745424/5861495) how to do it.
+And if you see any error message during update (something like **«Commit your changes or stash them before you can merge»**), recommended to learn [Alternate Theme Config](/docs/getting-started/configuration.html) feature. Howbeit, you can bypass update errors by `Commit`, `Stash` or `Discard` local changes. See [here](https://stackoverflow.com/a/15745424/5861495) how to do it.
 <!-- endtab -->
 
 <!-- tab cURL & Tar -->
@@ -129,7 +129,7 @@ $ curl -s https://api.github.com/repos/next-theme/hexo-theme-next/releases/lates
 
 This variant will give to you **only latest release version** (without `.git` directory inside).
 So, there is impossible to update this version with `git` later.
-Instead you always can use separate configuration (e.g. [Data Files](/docs/getting-started/configuration.html)) and download new version inside old directory (or create new directory and redefine `theme` in {% label info@site config file %}), without losing your old configuration.
+Instead you always can use separate configuration (e.g. [Alternate Theme Config](/docs/getting-started/configuration.html)) and download new version inside old directory (or create new directory and redefine `theme` in {% label info@site config file %}), without losing your old configuration.
 <!-- endtab -->
 {% endsubtabs %}
 

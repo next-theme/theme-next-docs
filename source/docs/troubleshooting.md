@@ -23,7 +23,7 @@ If you get an error message from Hexo or your browser, please search in Google /
 When you edit any YAML configs, always need to keep up indents.
 Currently, in all Hexo and NexT configuration files parameters uses **2 spaces indents** from parent option.
 
-For example, we want to change NexT scheme from standart `Muse` to `Gemini` and want to use `theme_config` feature with [Hexo way](/docs/getting-started/configuration.html#option-1) option.
+For example, we want to change NexT scheme from standart `Muse` to `Gemini` and want to use `theme_config` feature with [Alternate Theme Config](/docs/getting-started/configuration.html#theme-config).
 
 {% tabs keep-up-indentation %}
 <!-- tab NexT Config → -->

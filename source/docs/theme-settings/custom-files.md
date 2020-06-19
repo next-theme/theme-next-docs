@@ -9,7 +9,7 @@ PR [#868](https://github.com/theme-next/hexo-theme-next/pull/868) has adjusted t
 
 It is a good practice to separate the custom files from the theme files, so that you can add custom content without modifying the original source code of the theme, and avoid conflicts due to `git merge`.
 
-As with "Next Data files", you can place all custom layouts or styles in a specific location (for example: `hexo/source/_data`). Add the custom file to `hexo/source/_data` and uncomment the content under the `custom_file_path` section in the {% label primary@theme config file %} (`next/_config.yml`)
+As with [Data Files](https://hexo.io/docs/data-files), you can place all custom layouts or styles in a specific location (for example: `hexo/source/_data`). Add the custom file to `hexo/source/_data` and uncomment the content under the `custom_file_path` section in the {% label primary@theme config file %} (`next/_config.yml`)
 
 {% note warning %}
 The file name and path must be the same in `custom_file_path`.
@@ -102,6 +102,20 @@ So, if you want to add any variables or styles to both Pisces and Gemini schemes
 {% endtabs %}
 
 Then uncomment `variable` under the `custom_file_path` section in {% label primary@theme config file %}.
+
+### Hide Sidebar on Mobile
+
+Edit `source/_data/styles.styl` in {% label primary@Hexo root directory %} and add styles:
+
+```css
++tablet-mobile() {
+  .sidebar-toggle, .sidebar {
+    display: none;
+  }
+}
+```
+
+Then uncomment `style` under the `custom_file_path` section in {% label primary@theme config file %}.
 
 ### Overriding Default Style
 

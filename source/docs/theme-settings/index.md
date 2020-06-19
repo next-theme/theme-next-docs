@@ -8,7 +8,7 @@ NexT insists to hide complex details and gives you a simple but flexible config,
 
 ### Console Reminder
 
-Next supports automatic check for updates and alerts in the console. Set the value `reminder` to `true` in `minify` section in {% label primary@theme config file %} as following:
+Next supports automatic check for updates and alerts in the console. Set the value `reminder` to `true` in {% label primary@theme config file %} as following:
 
 ```yml next/_config.yml
 # Console reminder if new version released.

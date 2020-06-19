@@ -13,40 +13,17 @@ description: NexT User Docs – Starting to Use
 You can visit [Hexo Docs](https://hexo.io/docs/) to see how to install Hexo. Make sure that the version of Node.js and Hexo in the environment is higher than [the minimum requirements](https://github.com/next-theme/hexo-theme-next#readme) of the NexT theme, and then continue with the following steps.
 {% endnote %}
 
-### Documentation Variables
+### Configuration
 
-{% tabs common-variables %}
-<!-- tab _config.yml -->
 There are two main configuration files using by Hexo and both called `_config.yml`:
 
   1. The first one is under {% label info@site root directory %}, which contains Hexo's config.
   2. The second one is under {% label primary@theme root directory %}, which is provided by NexT and contains theme's config.
 
 Let's call the first one – {% label info@site config file %}, and the second one – {% label primary@theme config file %}.
-<!-- endtab -->
+However, we do not recommend directly modifying the {% label primary@theme config file %}. It is quite often running into conflict status when updating NexT theme via `git pull`, or need to merge configurations manually when upgrading to new releases. For Hexo 5.0 or later, the theme can be installed through npm and it is also difficult to modify the {% label primary@theme config file %} in `node_modules`.
 
-<!-- tab <code>Available Settings</code> -->
-All `available settings` will be inside code blocks (with single backtick or `<code>` tags).
-<!-- endtab -->
-
-<!-- tab <strong><code>Default Settings</code></strong> -->
-And all **`default settings`** will be bold inside code blocks (with single backtick or `<code>` and `**` or `<strong>` tags).
-<!-- endtab -->
-{% endtabs %}
-
-{% tabs colored-variables %}
-<!-- tab {% label success@Recommended Settings %} -->
-All {% label success@recommended settings %} will be highlighted under the success label.
-<!-- endtab -->
-
-<!-- tab {% label warning@Deprecated Settings %} -->
-All {% label warning@deprecated settings %} will be highlighted under the warning label.
-<!-- endtab -->
-
-<!-- tab {% label danger@Possible Errors %} -->
-And all {% label danger@possible errors %} will be highlighted under the danger label.
-<!-- endtab -->
-{% endtabs %}
+In order to resolve this issue, we recommend using the [Alternate Theme Config](/docs/getting-started/configuration.html) feature to configure theme NexT.
 
 ### NexT Installation
 

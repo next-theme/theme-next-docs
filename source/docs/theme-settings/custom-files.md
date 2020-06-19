@@ -103,7 +103,7 @@ So, if you want to add any variables or styles to both Pisces and Gemini schemes
 
 Then uncomment `variable` under the `custom_file_path` section in {% label primary@theme config file %}.
 
-### Overriding default style
+### Overriding Default Style
 
 Edit `source/_data/styles.styl` in {% label primary@Hexo root directory %} and add styles:
 

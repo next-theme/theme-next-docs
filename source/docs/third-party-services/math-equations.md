@@ -9,7 +9,7 @@ NexT provides two render engines for displaying Math Equations: [MathJax](https:
 To use this feature, you just need to choose a render engine and turn on `enable` for it (located in {% label primary@theme config file %}). Then you need to install the **corresponding Hexo Renderer** to fully support the display of Math Equations - Only turn on `enable` **may not let you see the displayed equations correctly**. The corresponding Hexo Renderer engine will be [provided below](#Render-Engines).
 
 {% note warning %}
-Except for the required renderer, any other Hexo plugins are unnecessary and there is no need to manually import any JS or CSS files. If you have installed plugins such as `hexo-math`, they may conflict with the built-in render engine of NexT.
+Except for the required renderer, any other Hexo plugins are unnecessary and there is no need to manually import any JS or CSS files. If you have installed plugins such as `hexo-math` or `hexo-katex`, they may conflict with the built-in render engine of NexT.
 {% endnote %}
 
 ### Settings
@@ -25,8 +25,6 @@ math:
   # hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.
   mathjax:
     enable: true
-    # See: https://mhchem.github.io/MathJax-mhchem/
-    mhchem: false
 
   # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) required for full Katex support.
   katex:
@@ -36,39 +34,36 @@ math:
 ```
 
 {% note info %}
-The `per_page` option is to control whether to render Math Equations every page.
+The `per_page` option controls whether to render Math Equations every page.
 
 * **`true`** → Equations will be processed on demand. It will only render those posts which have `mathjax: true` in their Front-matter.
 * `false` → Equations will be processed on every page. Even if they not exists on one or another page.
 
 {% note default %}
-**Examples with `true` option**
+**Examples with `per_page: true` option**
 
-```md
-<!-- This post will render the Math Equations -->
----
-title: Will Render Math
-mathjax: true
----
-....
-```
+- This post will render the Math Equations
+  ```md
+  ---
+  title: Will Render Math
+  mathjax: true
+  ---
+  ```
 
-```md
-<!-- This post will NOT render the Math Equations -->
----
-title: Not Render Math
-mathjax: false
----
-....
-```
+- This post will NOT render the Math Equations
+  ```md
+  ---
+  title: Not Render Math
+  mathjax: false
+  ---
+  ```
 
-```md
-<!-- This post will NOT render the Math Equations either -->
----
-title: Not Render Math Either
----
-....
-```
+- This post will NOT render the Math Equations either
+  ```md
+  ---
+  title: Not Render Math Either
+  ---
+  ```
 {% endnote %}
 {% endnote %}
 
@@ -201,14 +196,6 @@ markdown:
    Then in corresponding TOC item it will show the related LaTex code 3 times ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-359018694)).
 6. If you use math in your post's title, it will not be rendered ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-359142879)).
 {% endnote %}
-
-{% note info %}
-We currently use KaTeX 0.11.1, some of those bugs might be caused by the outdated version of KaTeX we use.
-
-But, as what is described in the beginning, the render of Math Equations relies on Hexo Renderer. Currently, KaTeX-related renderers only support KaTeX version until 0.11.1.
-
-We will continuously monitor the updates of corresponding renderers, if there is a renderer which supports newer version of KaTeX, we will update the KaTeX we use.
-{% endnote %}
 <!-- endtab -->
 {% endtabs %}
 
@@ -216,14 +203,14 @@ We will continuously monitor the updates of corresponding renderers, if there is
 
 NexT also integrates some plugins for MathJax and KaTeX. You can easily configure them by setting the CDN URLs.
 
-`mhchem` is a third-party extension for MathJax, it's a tool for writing beautiful chemical equations easily. More infomation: [MathJax/mhchem Manual](https://mhchem.github.io/MathJax-mhchem/).
+All extensions of MathJax are loaded automatically. For example, `mhchem` is a tool for writing beautiful chemical equations easily. It implements the `\ce` and `\pu` chemical equation macros of the LaTeX mhchem package. More infomation: [MathJax/mhchem Manual](https://mhchem.github.io/MathJax-mhchem/).
 
 Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supporting the Clipboard API so that, when selecting and copying whole KaTeX-rendered elements, the text content of the resulting clipboard renders KaTeX elements as their LaTeX source surrounded by specified delimiters. More infomation: [Copy-tex extension](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex).
 
 ### Examples
 
 {% note info %}
-For examples below (and for all other examples in this domain) NexT uses `hexo-renderer-marked` renderer with `mathjax` engine.
+The following examples are rendered by `hexo-renderer-marked` with `mathjax` engine.
 {% endnote %}
 
 {% note danger %}

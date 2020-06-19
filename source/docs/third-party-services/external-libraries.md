@@ -9,6 +9,10 @@ description: NexT User Docs – Third-party Service Integration – External Lib
 
 It allows you to completely transform the user experience of standard websites (server-side generated or static ones) to make users feel like they are browsing an app, especially for those with low bandwidth connections.
 
+{% note warning %}
+Please use the absolute path of the image or [Hexo asset_img tag](https://hexo.io/docs/tag-plugins#Include-Assets) in your posts, otherwise the images may fail to load during Pjax refresh.
+{% endnote %}
+
 {% tabs pjax %}
 <!-- tab Installation → -->
 Change dir to NexT directory, and install module to `source/lib` directory.

@@ -177,11 +177,15 @@ scheme: Gemini
 
 #### Dark Mode
 
-You can enable Dark Mode by setting `darkmode` to `true` in {% label primary@theme config file %}. The `prefers-color-scheme` CSS media feature is used to bring Dark Mode to all 4 schemes above, make sure your browser supports it.
+You can enable Dark Mode by setting `darkmode` to `true` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 darkmode: true
 ```
+
+The `prefers-color-scheme` CSS media feature is used to bring Dark Mode to all 4 schemes above, make sure your browser supports it.
+
+{% caniuse prefers-color-scheme @ current,past_1,past_2,past_3,past_4,past_5 %}
 
 Theme NexT automatically shows Dark Mode if the OS prefered theme is dark. It's supported by macOS Mojave, iOS 13 and Android 10 or above. Relevant docs:
 [How to use Dark Mode on your Mac](https://support.apple.com/en-us/HT208976)

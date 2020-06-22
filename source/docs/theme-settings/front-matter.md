@@ -58,7 +58,7 @@ quicklink:
   ignores:
 ```
 
-### Undocumented Front Matter Variables
+### Undocumented Front-matter Variables
 
 The following variables are not mentioned in the Hexo documentation, but are required by [hexo-theme-unit-test](https://github.com/hexojs/hexo-theme-unit-test).
 

@@ -3,6 +3,37 @@ title: Comment Systems
 description: NexT User Docs – Third-party Service Integration – Comment Systems
 ---
 
+### Multiple Comment System Support
+
+NexT allows you to enable multiple commenting systems at the same time. You can modify the following configuration to adjust the style or behavior of multiple commenting systems.
+
+```yml
+# Multiple Comment System Support
+comments:
+  # Available values: tabs | buttons
+  style: tabs
+  # Choose a comment system to be displayed by default
+  # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
+  active:
+  # Setting `true` means remembering the comment system selected by the visitor
+  storage: true
+  # Lazyload all comment systems.
+  lazyload: false
+  # Modify icons and texts for any style, here are some examples
+  nav:
+    #disqus:
+    #  text: Load Disqus
+    #  order: -1
+    #gitalk:
+    #  order: -2
+```
+
+You can enable lazyload by setting value `comments.lazyload` to `true` in {% label primary@theme config file %}. NexT uses IntersectionObserver to lazyload the comments, which is not supported by IE and most browsers released before 2017.
+
+{% caniuse intersectionobserver @ current,past_1,past_2,past_3,past_4,past_5 %}
+
+If your blog readers are mostly using legacy browsers, please consider using [Intersection Observer polyfill](https://github.com/w3c/IntersectionObserver/tree/master/polyfill).
+
 ### Disqus
 
 Disqus is a global comment system that improves discussion on websites and connects conversations across the web.
@@ -131,26 +162,3 @@ Changyan is the industry's leading social commenting system, supporting both PC 
 {% note warning %}
 Please note that you should fill in the ICP record number of your website in time. If not, or the record information is not correct, the comment service will be stopped after 13 days. [Useful link](http://changyan.kuaizhan.com/help/o-beian.html)
 {% endnote %}
-
-### Multiple Comment System Support
-
-NexT allows you to enable multiple commenting systems at the same time. You can modify the following configuration to adjust the style or behavior of multiple commenting systems.
-
-```yml
-# Multiple Comment System Support
-comments:
-  # Available values: tabs | buttons
-  style: tabs
-  # Choose a comment system to be displayed by default
-  # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active:
-  # Setting `true` means remembering the comment system selected by the visitor
-  storage: true
-  # Modify icons and texts for any style, here are some examples
-  nav:
-    #disqus:
-    #  text: Load Disqus
-    #  order: -1
-    #gitalk:
-    #  order: -2
-```

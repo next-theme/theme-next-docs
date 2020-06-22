@@ -56,6 +56,10 @@ post_meta:
 
 <!-- tab <code>updated_at</code> -->
 
+{% note warning %}
+Make sure you set `use_date_for_updated` and `updated_option` in {% label info@site config file %} correctly, otherwise this option will not take effect.
+{% endnote %}
+
 {% subtabs postmeta1 %}
 <!-- tab <code>enable</code> -->
 By default NexT shows the post updated date in post meta section and updated time in popup. You can disable it by setting value `post_meta.updated_at.enable` to `false` in {% label primary@theme config file %}.

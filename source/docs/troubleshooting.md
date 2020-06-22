@@ -5,7 +5,7 @@ description: NexT User Docs – Troubleshooting
 
 ### Quick Debug Instructions
 
-Before submitting an Issue on GitHub, you can follow the steps below to debug:
+**Before submitting an Issue on GitHub, you can follow the steps below to debug:**
 
 * If the error comes from a third-party service, such as the Gitalk comment system, please submit an Issue to its GitHub repository.
 * Execute `hexo clean`, clear the browser cache and disable all CDN services (e.g. Cloudflare Rocket Loader) - This may take some time to take effect.

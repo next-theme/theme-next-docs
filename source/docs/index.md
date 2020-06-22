@@ -9,7 +9,7 @@ description: NexT User Docs
 Theme NexT has the following features:
 
 * No jQuery.
-* Support native dark mode.
+* Support [native dark mode](https://caniuse.com/#feat=prefers-color-scheme).
 * Support Pjax to deliver a fast browsing experience.
 * Integrated KaTeX and MathJax mathematical formula rendering.
 * Integrated PDF.js and mermaid diagram.
@@ -42,12 +42,20 @@ NexT uses code highlighting themes from the [Highlight.js](https://highlightjs.o
 
 ### Supported Browsers
 
-We design NexT to support the latest web browsers. We support the current versions of Chrome, Firefox, Safari, and Microsoft Edge. Many CSS3 and ES6 features are used in theme NexT, including `Promise`, Arrow functions, Template Literals and CSS Variables.
-We use IntersectionObserver to lazyload the comments and track TOC links, which is not supported by IE and most browsers released before 2016.
+We design NexT to support the latest web browsers. We support the current versions of Chrome, Firefox, Safari, and Microsoft Edge. Many CSS3 and ES6 features are used in theme NexT, including CSS Variables, Template Literals, Arrow functions and Spread operator.
 
-{% caniuse intersectionobserver @ current,past_1,past_2,past_3,past_4,past_5 %}
+| Browser | Supported versions | Release date | Limitation
+| - | - | - | - |
+<i class="fab fa-internet-explorer fa-2x"></i> IE | N/A | Oct 17, 2013 | N/A |
+<i class="fab fa-edge fa-2x"></i> Edge | 16+ | Oct 17, 2017 | [CSS Variables](https://caniuse.com/#feat=css-variables) |
+<i class="fab fa-firefox fa-2x"></i> Firefox | 34+ | Dec 1, 2014 | [Template Literals](https://caniuse.com/#feat=template-literals) |
+<i class="fab fa-chrome fa-2x"></i> Chrome | 49+ | Mar 3, 2016 | CSS Variables |
+<i class="fab fa-safari fa-2x"></i> Safari | 10+ | Sep 20, 2016 | [Arrow functions](https://caniuse.com/#feat=arrow-functions) |
+<i class="fab fa-opera fa-2x"></i> Opera | 37+ | May 4, 2016 | [Spread operator](https://caniuse.com/#feat=mdn-javascript_operators_spread_spread_in_arrays) |
 
-If your blog readers are mostly using legacy browsers, please consider using [Intersection Observer polyfill](https://github.com/w3c/IntersectionObserver/tree/master/polyfill).
+Some other new Web APIs, such as [IntersectionObserver](https://caniuse.com/#feat=intersectionobserver) and [Fetch API](https://caniuse.com/#feat=fetch), are used by NexT plugins. They are not core functions of NexT, so we have no plans to fix their compatibility issues with legacy browsers.
+
+In addition, [CSS position: sticky](https://caniuse.com/#feat=css-sticky) is used for sidebar positioning. On browsers that do not support this property, its fallback style `position: static` will be used.
 
 ### Customize Your NexT
 

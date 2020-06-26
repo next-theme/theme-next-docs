@@ -33,7 +33,7 @@
     "hexo-generator-index": "1.0.0",
     "hexo-generator-searchdb": "1.3.0",
     "hexo-generator-tag": "1.0.0",
-    "hexo-renderer-marked": "2.0.0",
+    "hexo-renderer-marked": "3.0.0",
     "hexo-renderer-stylus": "1.1.0",
     "hexo-server": "1.0.0",
     "hexo-theme-next": "8.0.0-rc.3"

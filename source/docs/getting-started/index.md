@@ -86,30 +86,19 @@ Now you've installed and enabled NexT. In next steps we will change some setting
 
 #### Adding Plugins
 
-There are 2 variants to hook up NexT plugins:
+Plugins extend and expand the functionality of NexT. There are two types of plugins: core plugins and third-party plugins. The core plugins are loaded from your site, they are required by the basic functions of NexT. Third-party plugins are loaded from jsDelivr CDN by default, and they provide a large number of optional features.
 
-* Local installation (plugins scripts will be loaded from your site).
-* CDN links (plugins scripts will be loaded from remote CDN hosts).
-
-{% note info %}
-If your site is deployed to any free hosting service (Github, Gitlab, etc.), CDN links is recommended. CDN usually have faster speeds and no traffic restrictions.
-{% endnote %}
-
-{% tabs adding-plugins %}
-<!-- tab Local -->
-In NexT config now you can find dependencies on each module which was moved to external repositories which can be found by [main organization link](https://github.com/next-theme). For example, you want to use `pjax` in your site. Go to {% label primary@theme config file %} and see:
+Configuring these plugins is very easy. For example, if you want to use `pjax` in your site, just set `pjax` to `true` in {% label primary@theme config file %}:
 
 ```yml next/_config.yml
 # Easily enable fast Ajax navigation on your website.
-# Dependencies: https://github.com/next-theme/pjax
-pjax: false
+# For more information: https://github.com/next-theme/pjax
+pjax: true
 ```
 
-Then turn on `pjax` and go to «Dependencies» link with installation instructions of this module.
-<!-- endtab -->
+If you want to specify the CDN provider for any plugins, you need to set / update the CDN URL.
 
-<!-- tab CDN -->
-If you use cdn for any plugins, you need to replace your cdn link. For example, you want to use `mediumzoom` and you configured a cdn link. Go to {% label primary@theme config file %} and see:
+For example, if you want to set the CDN URL for `mediumzoom`, go to {% label primary@theme config file %} and see:
 
 ```yml next/_config.yml
 vendors:
@@ -119,7 +108,7 @@ vendors:
   mediumzoom: # Set or update mediumzoom CDN URL.
 ```
 
-And jsDelivr CDN is recommended to deliver our third-party plugins because it is fast in everywhere and has the valid ICP license issued by the Chinese government. It does not only crawl the js files from npm packages, and it crawls from the GitHub Releases! We could use the following link to reference the js files, just as other CDNs.
+And jsDelivr CDN is used by default to deliver our third-party plugins because it is fast in everywhere and has the valid ICP license issued by the Chinese government. It does not only crawl the js files from npm packages, and it crawls from the GitHub Releases! We could use the following link to reference the js files, just as other CDNs.
 
 ```
 //cdn.jsdelivr.net/gh/user/repo@version/file
@@ -127,10 +116,11 @@ And jsDelivr CDN is recommended to deliver our third-party plugins because it is
 
 And it could automatically minify the JS and CSS files, even if you don't have the minified version. Just use the `filename.min.js` or the `filename.min.css` to replace the file above.
 
-And we also provide other optional CDNs, including the famous [CDNJS](https://cdnjs.com/).
+And we also provide other optional CDNs, including the famous [UNPKG](https://unpkg.com) and [CDNJS](https://cdnjs.com/).
 
-<!-- endtab -->
-{% endtabs %}
+{% note info %}
+If your site is deployed to any free hosting service (Github, Gitlab, etc.), CDN links is recommended for core plugins. CDN usually have faster speeds and no traffic restrictions.
+{% endnote %}
 
 ### NexT Configuration
 
@@ -192,7 +182,7 @@ Names of that icons can be found in [Font Awesome](https://fontawesome.com) site
 <!-- endtab -->
 {% endtabs %}
 
-By default, all menu items are commented out to ensure that you can override them in the `next.yml` configuration file.
+By default, all menu items are commented out to ensure that you can override them in the [Alternate Theme Config](/docs/getting-started/configuration.html).
 To customize menu items, edit the following content in {% label primary@theme config file %}:
 
 ```yml next/_config.yml

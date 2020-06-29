@@ -123,7 +123,7 @@ Valine is a fast, simple & efficient Leancloud based no back end comment system.
 
 1. Create an account or log into [LeanCloud](https://leancloud.cn/dashboard/login.html#/signin), and then click on the bottom left corner to [create the application](https://leancloud.cn/dashboard/applist.html#/newapp) in [dashboard](https://leancloud.cn/dashboard/applist.html#/apps).
     ![Valine](/images/docs/valine-1.png)
-2. Go to the application you just created, select `Settings -> Apply Key` in the lower left corner, and you will see your APP ID and APP Key.
+2. Go to the application you just created, select `Settings -> App Keys` in the lower left corner, and you will see your APP ID and APP Key.
     ![Valine](/images/docs/valine-2.png)
 3. Set the value `enable` to `true`, add the obtained APP ID (`appid`) and APP Key (`appkey`), and edit other configurations in `valine` section in the {% label primary@theme config file %} as following:
 

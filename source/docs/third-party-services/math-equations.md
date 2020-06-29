@@ -22,7 +22,7 @@ math:
   # If you set it to false, it will load mathjax / katex srcipt EVERY PAGE.
   per_page: true
 
-  # hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.
+  # hexo-renderer-pandoc is recommended for MathJax.
   mathjax:
     enable: true
 
@@ -79,7 +79,7 @@ For now, NexT provides two Render Engines: MathJax and KaTeX.
 
 If you use MathJax to render Math Equations, you can choose one of the renderers below:
 
-* [hexo-renderer-pandoc](https://github.com/wzpan/hexo-renderer-pandoc) (Need to install [pandoc](https://github.com/jgm/pandoc))
+* [hexo-renderer-pandoc](https://github.com/wzpan/hexo-renderer-pandoc) (Need to install [pandoc](https://github.com/jgm/pandoc) first)
 * [hexo-renderer-kramed](https://github.com/sun11/hexo-renderer-kramed) (Deprecated, not recommended)
 
 as the renderer for Markdown.
@@ -92,7 +92,7 @@ as the renderer for Markdown.
 
    ```bash
    $ npm un hexo-renderer-marked
-   $ npm i hexo-renderer-pandoc # or hexo-renderer-kramed
+   $ npm i hexo-renderer-pandoc
    ```
 
 2. In {% label primary@theme config file %}, choose `mathjax` as render engine.

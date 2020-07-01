@@ -114,10 +114,9 @@ sidebar:
   display: post
   padding: 18
   offset: 12
-  onmobile: true
 
 avatar:
-  url: /images/apple-touch-icon-next.png
+  url: /images/logo.svg
   rounded: true
 
 social:
@@ -167,7 +166,6 @@ codeblock:
     dark: tomorrow-night
   copy_button:
     enable: true
-    show_result: true
     style: default
 
 back2top:
@@ -261,4 +259,3 @@ motion:
 vendors:
   anime: //cdn.jsdelivr.net/npm/animejs@3/lib/anime.min.js
   fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css
-  pjax: //cdn.jsdelivr.net/gh/next-theme/pjax@0/pjax.min.js

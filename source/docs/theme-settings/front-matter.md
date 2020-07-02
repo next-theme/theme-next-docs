@@ -33,7 +33,7 @@ Setting | Type | Description | Default
 `header` | `boolean` | Whether to display the post header in index page | `true`
 `mathjax` | `boolean` | MathJax support | `!math.per_page` in `_config.yml`
 `sidebar` | `boolean` | Whether the sidebar will be shown | Depends on `sidebar.display` in `_config.yml`
-`sticky` | `number` | [hexo-generator-indexed](http://github.com/next-theme/hexo-generator-indexed) plugin required | 0
+`sticky` | `number` | [hexo-generator-indexed](https://github.com/next-theme/hexo-generator-indexed) plugin required | 0
 `quicklink` | `object` (1) | Quicklink support | From `_config.yml`
 `reward_settings` | `object` (1) | Reward settings | From `_config.yml`
 `toc` | `object` (1) | Table of Contents in the sidebar | From `_config.yml`

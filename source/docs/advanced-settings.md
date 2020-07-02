@@ -41,9 +41,8 @@ You can set it to a proper CDN URL, which can make static assets (JavaScript Thi
 | Name               | Original Link                                            | Internal Version      |
 | ------------------ | -------------------------------------------------------- | --------------------- |
 | Anime.js           | [animejs.com](https://animejs.com)                       | 3.1.0                 |
-| FontAwesome        | [fontawesome.io](http://fontawesome.io)                  | 5.13.0                |
-| VelocityJS         | [velocityjs.org](http://velocityjs.org)                  | 1.2.1                 |
-| VelocityJS UI Pack | [velocityjs.org/#uiPack](http://velocityjs.org/#uiPack)  | 1.2.1                 |
+| FontAwesome        | [fontawesome.com](https://fontawesome.com)               | 5.13.0                |
+| Animate.css        | [animate.style](https://animate.style)                   | 3.1.1                 |
 
 If you leave it blank, NexT will use [jsDelivr](https://www.jsdelivr.com/) as the default CDN provider. The reason that jsDelivr is chosen is because it is fast everywhere, and jsDelivr has the valid ICP license issued by the Chinese government, it can be accessed in China pretty well.
 

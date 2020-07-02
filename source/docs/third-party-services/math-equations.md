@@ -219,7 +219,7 @@ In some cases, the syntax of Markdown and TeX will conflict. For example, an und
 
 #### Numbering and referring equations in MathJax
 
-In the new version of NexT, we have added feature to [automatic equation numbering](http://docs.mathjax.org/en/latest/tex.html#automatic-equation-numbering) with opportunity to make reference to that equations. We briefly describe how to use this feature below.
+In the new version of NexT, we have added feature to [automatic equation numbering](https://docs.mathjax.org/en/latest/input/tex/eqnumbers.html) with opportunity to make reference to that equations. We briefly describe how to use this feature below.
 
 In general, to make the automatic equation numbering work, you have to wrap your LaTeX equations in `equation` environment. Using the plain old style (i.e., wrap an equation with two dollar signs in each side) will not work. How to refer to an equation? Just give a `\label{}` tag and then in your later text, use `\ref{}` or `\eqref{}` to refer it. Using `\eqref{}` is preferred since if you use `\ref{}`, there are no parentheses around the equation number. Below are some of the common scenarios for equation numbering.
 

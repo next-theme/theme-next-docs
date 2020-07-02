@@ -27,7 +27,7 @@ The benefit of using this instead of `only_pageview: false` is reduce a external
 
 {% tabs baidu-analytics %}
 <!-- tab Login → -->
-Login to [Baidu Analytics](http://tongji.baidu.com) and locate to site code getting page.
+Login to [Baidu Analytics](https://tongji.baidu.com) and locate to site code getting page.
 <!-- endtab -->
 
 <!-- tab Script ID → -->
@@ -50,7 +50,7 @@ Official documentation: https://docs.growingio.com/sdk-integration/sdk-2.x-docs/
 
 #### CNZZ Analytics (China)
 
-1. Create an account and log into [CNZZ Analytics](http://www.umeng.com/). [More detailed documentation](https://developer.umeng.com/docs/67963/detail/68609)
+1. Create an account and log into [CNZZ Analytics](https://www.umeng.com/). [More detailed documentation](https://developer.umeng.com/docs/67963/detail/68609)
 2. Set the value of section `cnzz_siteid` in {% label primary@theme config file %} to your CNZZ site ID. You can find this ID in link or the auto-generated script.
     ```yml next/_config.yml
     # CNZZ count

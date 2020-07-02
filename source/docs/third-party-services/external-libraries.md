@@ -248,30 +248,25 @@ quicklink:
 
 ### Animation Effect
 
-NexT enables animation effect by default which is supported by JavaScript, so it will wait for JavaScript loaded to show content.
-If you need speed you can set this section to `false` to disable it.
+NexT enables animation effect by default which is supported by Anime.js and Animate.css, so it will wait for JavaScript loaded to show content.
+If you need speed you can set this section `enable` to `false` to disable it.
 
 Edit {% label primary@theme config file %} and set the needed values under the `motion` to fit your demand.
 
 ```yml next/_config.yml
-# Use velocity to animate everything.
+# Use Animate.css to animate everything.
+# For more information: https://animate.style
 motion:
   enable: true
   async: false
   transition:
-    # Transition variants:
-    # fadeIn | fadeOut | flipXIn | flipXOut | flipYIn | flipYOut | flipBounceXIn | flipBounceXOut | flipBounceYIn | flipBounceYOut
-    # swoopIn | swoopOut | whirlIn | whirlOut | shrinkIn | shrinkOut | expandIn | expandOut
-    # bounceIn | bounceOut | bounceUpIn | bounceUpOut | bounceDownIn | bounceDownOut | bounceLeftIn | bounceLeftOut | bounceRightIn | bounceRightOut
-    # slideUpIn | slideUpOut | slideDownIn | slideDownOut | slideLeftIn | slideLeftOut | slideRightIn | slideRightOut
-    # slideUpBigIn | slideUpBigOut | slideDownBigIn | slideDownBigOut | slideLeftBigIn | slideLeftBigOut | slideRightBigIn | slideRightBigOut
-    # perspectiveUpIn | perspectiveUpOut | perspectiveDownIn | perspectiveDownOut | perspectiveLeftIn | perspectiveLeftOut | perspectiveRightIn | perspectiveRightOut
+    # All available Transition variants: https://theme-next.js.org/animate/
     post_block: fadeIn
-    post_header: slideDownIn
-    post_body: slideDownIn
-    coll_header: slideLeftIn
+    post_header: fadeInDown
+    post_body: fadeInDown
+    coll_header: fadeInLeft
     # Only for Pisces | Gemini.
-    sidebar: slideUpIn
+    sidebar: fadeInUp
 ```
 
 ### Progress Bar
@@ -312,7 +307,7 @@ pace:
 ```
 <!-- endtab -->
 <!-- tab <code>theme</code> -->
-Pace includes a bunch of [themes](http://github.hubspot.com/pace/docs/welcome/) to get you started. Just include the appropriate css file.
+Pace includes a bunch of [themes](https://github.hubspot.com/pace/docs/welcome/) to get you started. Just include the appropriate css file.
 
 * pace-theme-big-counter
 * pace-theme-bounce

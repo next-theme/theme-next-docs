@@ -179,8 +179,8 @@ Edit the `links` section in {% label primary@theme config file %} and add your f
 
 ```yml next/_config.yml
 links:
-  Title1: http://example1.com/
-  Title2: http://example2.com/
+  Title1: https://example1.com/
+  Title2: https://example2.com/
 ```
 <!-- endtab -->
 

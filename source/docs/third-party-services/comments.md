@@ -160,5 +160,5 @@ Changyan is the industry's leading social commenting system, supporting both PC 
     ```
 
 {% note warning %}
-Please note that you should fill in the ICP record number of your website in time. If not, or the record information is not correct, the comment service will be stopped after 13 days. [Useful link](http://changyan.kuaizhan.com/help/o-beian.html)
+Please note that you should fill in the ICP record number of your website in time. If not, or the record information is not correct, the comment service will be stopped after 13 days. [Useful link](https://changyan.kuaizhan.com/help/o-beian.html)
 {% endnote %}

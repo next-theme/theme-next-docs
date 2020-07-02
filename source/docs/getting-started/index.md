@@ -33,7 +33,7 @@ It's easy to install Hexo theme: you can just download the NexT theme, copy the 
 
 {% tabs downloading-next %}
 <!-- tab Newest Version -->
-If you know about [Git](http://git-scm.com), you can clone the whole repository and update it in any time with `git pull` command instead of downloading archive manually.
+If you know about [Git](https://git-scm.com), you can clone the whole repository and update it in any time with `git pull` command instead of downloading archive manually.
 
 Open your Terminal, change to Hexo {% label info@site root directory %} and clone latest master branch of NexT theme:
 ```bash

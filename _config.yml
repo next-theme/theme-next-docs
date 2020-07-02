@@ -76,6 +76,7 @@ server:
 marked:
   # For preserve original quotes in code blocks.
   smartypants: false
+  lazyload: true
 
 search:
   path: search.json

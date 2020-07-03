@@ -155,7 +155,7 @@ GitLab offers a continuous integration service and pages service. If you add a `
       - npm install hexo-cli -g
       - npm install
       # NEXT External Libraries installation start
-      - git clone https://github.com/next-theme/theme-next-pace themes/next/source/lib/pace
+      - git clone https://github.com/next-theme/theme-next-three themes/next/source/lib/three
       # NEXT External Libraries installation end
       - hexo deploy
       artifacts:
@@ -256,7 +256,7 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
       - npm install -g hexo-cli
       - npm install
       # NEXT External Libraries installation start
-      - git clone https://github.com/next-theme/theme-next-pace themes/next/source/lib/pace
+      - git clone https://github.com/next-theme/theme-next-three themes/next/source/lib/three
       # NEXT External Libraries installation end
       - hexo deploy
 

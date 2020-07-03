@@ -14,35 +14,27 @@ Please use the absolute path of the image or [Hexo asset_img tag](https://hexo.i
 {% endnote %}
 
 {% tabs pjax %}
-<!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
+<!-- tab NexT Config → -->
 
-```bash
-$ cd themes/next
-$ git clone https://github.com/next-theme/pjax source/lib/pjax
-```
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-```yml next/_config.yml
-vendors:
-  ...
-  pjax: //cdn.jsdelivr.net/gh/next-theme/pjax@0/pjax.min.js
-  ...
-```
-{% endnote %}
-
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-
-After the plugin installed, you can enable it by setting value `pjax` to `true` in {% label primary@theme config file %}.
+You can enable it by setting value `pjax` to `true` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 # Easily enable fast Ajax navigation on your website.
 # Dependencies: https://github.com/next-theme/pjax
 # For moreinformation: https://github.com/MoOx/pjax
 pjax: true
+```
+
+<!-- endtab -->
+
+<!-- tab CDN Settings -->
+
+If you want to use a different version from CDN, then need to **set vendors** in {% label primary@theme config file %}:
+```yml next/_config.yml
+vendors:
+  ...
+  pjax: //cdn.jsdelivr.net/gh/next-theme/pjax@0/pjax.min.js
+  ...
 ```
 
 <!-- endtab -->
@@ -58,7 +50,15 @@ There is support for old version 2 and new version 3. Please, choose only any on
 <!-- tab Version 2.x -->
 
 {% subtabs fancybox1 %}
-<!-- tab Installation → -->
+<!-- tab NexT Config → -->
+You can enable it by setting value `fancybox` to `true` in {% label primary@theme config file %}.
+
+```yml next/_config.yml
+fancybox: true
+```
+<!-- endtab -->
+
+<!-- tab CDN Settings -->
 If you want to use a different version from CDN, please follow the instructions below.
 
 You need to **set vendors** in {% label primary@theme config file %}:
@@ -72,14 +72,6 @@ vendors:
 ```
 
 <!-- endtab -->
-
-<!-- tab NexT Config -->
-After the plugin installed, you can enable it by setting value `fancybox` to `true` in {% label primary@theme config file %}.
-
-```yml next/_config.yml
-fancybox: true
-```
-<!-- endtab -->
 {% endsubtabs %}
 
 <!-- endtab -->
@@ -87,7 +79,15 @@ fancybox: true
 <!-- tab Version 3.x -->
 
 {% subtabs fancybox2 %}
-<!-- tab Installation → -->
+<!-- tab NexT Config → -->
+You can enable it by setting value `fancybox` to `true` in {% label primary@theme config file %}.
+
+```yml next/_config.yml
+fancybox: true
+```
+<!-- endtab -->
+
+<!-- tab CDN Settings -->
 If you want to use a different version from CDN, please follow the instructions below.
 
 You need to **set vendors** in {% label primary@theme config file %}:
@@ -101,14 +101,6 @@ vendors:
 ```
 
 <!-- endtab -->
-
-<!-- tab NexT Config -->
-After the plugin installed, you can enable it by setting value `fancybox` to `true` in {% label primary@theme config file %}.
-
-```yml next/_config.yml
-fancybox: true
-```
-<!-- endtab -->
 {% endsubtabs %}
 
 <!-- endtab -->
@@ -120,22 +112,9 @@ fancybox: true
 [Medium Zoom](https://github.com/francoischalifour/medium-zoom) is a JavaScript library for zooming images like Medium.
 
 {% tabs medium-zoom %}
-<!-- tab Installation → -->
-If you want to use a different version from CDN, please follow the instructions below.
+<!-- tab NexT Config → -->
 
-You need to **set vendors** in {% label primary@theme config file %}:
-```yml next/_config.yml
-vendors:
-  ...
-  mediumzoom: https://cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js
-  ...
-```
-
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-
-After the plugin installed, you can enable it by setting value `mediumzoom` to `true` in {% label primary@theme config file %}.
+You can enable it by setting value `mediumzoom` to `true` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 # A JavaScript library for zooming images like Medium.
@@ -147,6 +126,19 @@ Do not enable both `fancybox` and `mediumzoom`.
 {% endnote %}
 
 <!-- endtab -->
+
+<!-- tab CDN Settings -->
+If you want to use a different version from CDN, please follow the instructions below.
+
+You need to **set vendors** in {% label primary@theme config file %}:
+```yml next/_config.yml
+vendors:
+  ...
+  mediumzoom: https://cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js
+  ...
+```
+
+<!-- endtab -->
 {% endtabs %}
 
 ### Lazyload
@@ -154,7 +146,18 @@ Do not enable both `fancybox` and `mediumzoom`.
 [Lazyload](https://github.com/ApoorvSaxena/lozad.js) is a modern vanilla JavaScript version of the original Lazy Load plugin. Lazy Load delays loading of images in long web pages. Images outside of viewport will not be loaded before user scrolls to them. This is opposite of image preloading.
 
 {% tabs lazyload %}
-<!-- tab Installation → -->
+<!-- tab NexT Config → -->
+
+You can enable it by setting value `lazyload` to `true` in {% label primary@theme config file %}.
+
+```yml next/_config.yml
+# Vanilla JavaScript plugin for lazyloading images.
+lazyload: true
+```
+
+<!-- endtab -->
+
+<!-- tab CDN Settings -->
 If you want to use a different version from CDN, please follow the instructions below.
 
 You need to **set vendors** in {% label primary@theme config file %}:
@@ -166,17 +169,6 @@ vendors:
 ```
 
 <!-- endtab -->
-
-<!-- tab NexT Config -->
-
-After the plugin installed, you can enable it by setting value `lazyload` to `true` in {% label primary@theme config file %}.
-
-```yml next/_config.yml
-# Vanilla JavaScript plugin for lazyloading images.
-lazyload: true
-```
-
-<!-- endtab -->
 {% endtabs %}
 
 ### Pangu Autospace
@@ -184,7 +176,16 @@ lazyload: true
 [pangu.js](https://github.com/vinta/pangu.js) will automatically insert a blank space between all the Chinese characters and the hexagonal English numeric symbols on the page.
 
 {% tabs pangu %}
-<!-- tab Installation → -->
+<!-- tab NexT Config → -->
+You can enable it by setting value `pangu` to `true` in {% label primary@theme config file %}.
+
+```yml next/_config.yml
+# Pangu Support
+pangu: true
+```
+<!-- endtab -->
+
+<!-- tab CDN Settings -->
 If you want to use a different version from CDN, please follow the instructions below.
 
 You need to **set vendors** in {% label primary@theme config file %}:
@@ -197,15 +198,6 @@ vendors:
 ```
 
 <!-- endtab -->
-
-<!-- tab NexT Config -->
-After the plugin installed, you can enable it by setting value `pangu` to `true` in {% label primary@theme config file %}.
-
-```yml next/_config.yml
-# Pangu Support
-pangu: true
-```
-<!-- endtab -->
 {% endtabs %}
 
 ### Quicklink
@@ -213,22 +205,9 @@ pangu: true
 [Quicklink](https://github.com/GoogleChromeLabs/quicklink) is a JavaScript plugin that faster subsequent page-loads by prefetching in-viewport links during idle time. Chrome, Firefox, Edge are supported without polyfills.
 
 {% tabs quicklink %}
-<!-- tab Installation → -->
-If you want to use a different version from CDN, please follow the instructions below.
+<!-- tab NexT Config → -->
 
-You need to **set vendors** in {% label primary@theme config file %}:
-```yml next/_config.yml
-vendors:
-  ...
-  quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
-  ...
-```
-
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-
-After the plugin installed, you can enable it by setting value `quicklink.enable` to `true` in {% label primary@theme config file %}.
+You can enable it by setting value `quicklink.enable` to `true` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 ...
@@ -241,6 +220,19 @@ quicklink:
   priority: true
   ignores:
 ...
+```
+
+<!-- endtab -->
+
+<!-- tab CDN Settings -->
+If you want to use a different version from CDN, please follow the instructions below.
+
+You need to **set vendors** in {% label primary@theme config file %}:
+```yml next/_config.yml
+vendors:
+  ...
+  quicklink: //cdn.jsdelivr.net/npm/quicklink@2/dist/quicklink.umd.js
+  ...
 ```
 
 <!-- endtab -->
@@ -274,32 +266,11 @@ motion:
 Pace will automatically monitor your Ajax requests, event loop lag, document ready state and elements on your page to decide on the progress.
 
 {% tabs pace %}
-<!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
-
-```bash
-$ cd themes/next
-$ git clone https://github.com/next-theme/theme-next-pace source/lib/pace
-```
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-```yml next/_config.yml
-vendors:
-  ...
-  pace: //cdn.jsdelivr.net/npm/pace-js@1/pace.min.js
-  pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
-  ...
-```
-{% endnote %}
-
-<!-- endtab -->
-
-<!-- tab NexT Config -->
+<!-- tab NexT Config → -->
 
 {% subtabs pace1 %}
 <!-- tab <code>pace</code> -->
-After the plugin installed, you can enable it by setting value `pace.enable` to `true` in {% label primary@theme config file %}.
+You can enable it by setting value `pace.enable` to `true` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 pace:
@@ -346,6 +317,19 @@ vendors:
 {% endsubtabs %}
 
 <!-- endtab -->
+
+<!-- tab CDN Settings -->
+
+If you want to use a different version from CDN, then need to **set vendors** in {% label primary@theme config file %}:
+```yml next/_config.yml
+vendors:
+  ...
+  pace: //cdn.jsdelivr.net/npm/pace-js@1/pace.min.js
+  pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
+  ...
+```
+
+<!-- endtab -->
 {% endtabs %}
 
 ### Backgroud JS
@@ -355,7 +339,23 @@ vendors:
 The aim of [JavaScript 3D library](https://github.com/mrdoob/three.js) is to create an easy to use, lightweight, 3D library. The library provides `<canvas>`, `<svg>`, `CSS3D` and `WebGL` renderers.
 
 {% tabs JavaScript-3D %}
-<!-- tab Installation → -->
+<!-- tab NexT Config → -->
+
+You can enable it by setting value `three.enable` and `three.three_waves` or `three.canvas_lines` or `three.canvas_sphere` to `true` in {% label primary@theme config file %}.
+
+```yml next/_config.yml
+# JavaScript 3D library.
+# Dependencies: https://github.com/next-theme/theme-next-three
+three:
+  enable: true
+  three_waves: false
+  canvas_lines: false
+  canvas_sphere: false
+```
+
+<!-- endtab -->
+
+<!-- tab CDN Settings -->
 Change dir to NexT directory, and install module to `source/lib` directory.
 
 ```bash
@@ -385,22 +385,6 @@ vendors:
 {% endnote %}
 
 <!-- endtab -->
-
-<!-- tab NexT Config -->
-
-After the plugin installed, you can enable it by setting value `three.enable` and `three.three_waves` or `three.canvas_lines` or `three.canvas_sphere` to `true` in {% label primary@theme config file %}.
-
-```yml next/_config.yml
-# JavaScript 3D library.
-# Dependencies: https://github.com/next-theme/theme-next-three
-three:
-  enable: true
-  three_waves: false
-  canvas_lines: false
-  canvas_sphere: false
-```
-
-<!-- endtab -->
 {% endtabs %}
 
 #### Canvas Ribbon
@@ -408,30 +392,9 @@ three:
 [canvas-ribbon.js](https://github.com/zproo/canvas-ribbon) is a ribbon backgroud of website draw on canvas.
 
 {% tabs canvas_ribbon %}
-<!-- tab Installation → -->
-Change dir to NexT directory, and install module to `source/lib` directory.
+<!-- tab NexT Config → -->
 
-```bash
-$ cd themes/next
-$ git clone https://github.com/next-theme/theme-next-canvas-ribbon source/lib/canvas-ribbon
-```
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-```yml next/_config.yml
-vendors:
-  ...
-  # https://github.com/zproo/canvas-ribbon
-  canvas_ribbon: //cdn.jsdelivr.net/gh/next-theme/theme-next-canvas-ribbon@1/canvas-ribbon.js
-  ...
-```
-{% endnote %}
-
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-
-After the plugin installed, you can enable it by setting value `canvas_ribbon` to `true` in {% label primary@theme config file %}. You can also configure the ribbon setting by editing values in `canvas_ribbon` section:
+You can enable it by setting value `canvas_ribbon` to `true` in {% label primary@theme config file %}. You can also configure the ribbon setting by editing values in `canvas_ribbon` section:
 
 * size: The width of the ribbon.
 * alpha: The transparency of the ribbon.
@@ -443,6 +406,19 @@ canvas_ribbon:
   size: 300
   alpha: 0.6
   zIndex: -1
+```
+
+<!-- endtab -->
+
+<!-- tab CDN Settings -->
+
+If you want to use a different version from CDN, then need to **set vendors** in {% label primary@theme config file %}:
+```yml next/_config.yml
+vendors:
+  ...
+  # https://github.com/hustcc/ribbon.js
+  canvas_ribbon: //cdn.jsdelivr.net/npm/ribbon.js@1/dist/ribbon.min.js
+  ...
 ```
 
 <!-- endtab -->

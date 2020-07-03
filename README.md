@@ -1,8 +1,10 @@
-# <div align="center"><a href="https://github.com/next-theme/hexo-theme-next">NexT Theme</a> <a href="https://theme-next.js.org/">Website</a> <a href="https://github.com/next-theme/theme-next-docs">Source</a></div>
+<a title="NexT website" href="https://theme-next.js.org"><img align="right" alt="NexT logo" width="100" height="100" src="https://raw.githubusercontent.com/next-theme/hexo-theme-next/master/source/images/logo.svg"></a>
 
-<p align="center">
-  <a href="https://app.netlify.com/sites/hexo-theme-next/deploys"><img src="https://api.netlify.com/api/v1/badges/bc28ebb2-8371-4a33-a1eb-e0a15e909168/deploy-status" title="Building and Deploying status [Multi-Schemes]"></a>
-</p>
+# [NexT](https://github.com/next-theme/hexo-theme-next) [Documentation](https://theme-next.js.org)
+
+> «NexT» is a high quality elegant [Hexo](https://hexo.io) theme. It is crafted from scratch with love.
+
+[![Build Status](https://img.shields.io/netlify/bc28ebb2-8371-4a33-a1eb-e0a15e909168?logo=netlify&style=flat-square)](https://app.netlify.com/sites/hexo-theme-next/deploys)
 
 ## Schemes
 
@@ -11,10 +13,35 @@
 * :pisces: [Pisces](https://theme-next.js.org/pisces/)
 * :gemini: [Gemini](https://theme-next.js.org) (**Default**)
 
-## Autoinstall Hexo & NexT & NexT Website Source on Localhost
+## Getting started
+
+Autoinstall Hexo & NexT & NexT Website Source on Localhost:
 
 ```bash
 git clone https://github.com/next-theme/theme-next-docs
 cd theme-next-docs
 sh ./install.sh
 ```
+
+Generate:
+
+```bash
+npx hexo generate
+```
+
+Run server:
+
+```bash
+npx hexo server
+```
+
+### Checkout docs for older versions
+
+```bash
+git checkout v8.0.0-rc.4
+sh ./install.sh
+```
+
+## License
+
+[![CC BY-NC-SA 4.0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)

@@ -22,4 +22,5 @@ echo
 echo "=============================================================="
 echo " Strarting Hexo server on \"http://localhost:4000\"..."
 echo "=============================================================="
+    npx hexo clean
     npx hexo s

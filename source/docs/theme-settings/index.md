@@ -6,15 +6,6 @@ description: NexT User Docs – Theme Settings
 
 NexT insists to hide complex details and gives you a simple but flexible config, so you can use it easily.
 
-### Console Reminder
-
-Next supports automatic check for updates and alerts in the console. Set the value `reminder` to `true` in {% label primary@theme config file %} as following:
-
-```yml next/_config.yml
-# Console reminder if new version released.
-reminder: false
-```
-
 ### Cache Support
 
 NexT v6+ allows to cache content generation. Set the value `enable` to `true` in `cache` section in {% label primary@theme config file %} as following:

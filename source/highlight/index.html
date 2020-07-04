@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@10/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/plugins/autoloader/prism-autoloader.min.js"></script>
+<title>Highlight</title>
+<style>
+#code {
+    font-family: monospace;
+    font-size: 1.2rem;
+    resize: none;
+    white-space: pre;
+    width: 100%;
+}
+</style>
+</head>
+<body>
+<div class="navbar navbar-expand-md navbar-light bg-light mb-4">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            NexT Highlight Theme Preview
+        </a>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <aside class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    Configuration
+                </div>
+                <div class="card-body">
+                    <p>Which code highlight engine do you prefer?</p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="engine">Engine</label>
+                        </div>
+                        <select class="custom-select" id="engine">
+                            <option value="highlight">Highlight.js</option>
+                            <option value="prism">Prism</option>
+                        </select>
+                    </div>
+                    <p>Configuration in Hexo <code>_config.yml</code></p>
+                    <pre class="render hexo"></pre>
+                    <p>And run <code>hexo clean</code></p>
+                    <p>Which highlight theme do you prefer?</p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="theme">Theme</label>
+                        </div>
+                        <select class="custom-select" id="theme">
+                        </select>
+                    </div>
+                    <p class="note d-none">Install <code>prism-themes</code> with <code>npm install prism-themes</code> command in Hexo root directory first.</p>
+                    <p>Configuration in NexT <code>_config.yml</code></p>
+                    <pre class="render next"></pre>
+                </div>
+            </div>
+        </aside>
+        <section class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    Code
+                </div>
+                <div class="card-body">
+                    <p>Write some code to preview.</p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Language</span>
+                        </div>
+                        <input type="text" class="form-control" id="language">
+                    </div>
+                    <div class="input-group">
+                        <textarea class="form-control" id="code" rows="25"></textarea>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    Preview
+                </div>
+                <div class="card-body">
+                    <div id="preview">
+                        <pre class="render"></pre>
+                    </div>
+                </div>
+            </div>
+        </main>
+	</div>
+</div>
+<script>
+window.Prism.manual = true;
+const version = {
+    highlight: '10.1.1',
+    prism: '1.20.0',
+    themes: '1.4.0'
+};
+
+const source = {
+    api: 'https://data.jsdelivr.com/v1/package/npm/',
+    src: 'https://cdn.jsdelivr.net/npm/'
+};
+
+class Style {
+    constructor() {
+        this.origin = {
+            highlight: {
+                src: `highlight.js@${version.highlight}`,
+                dir: 'styles'
+            },
+            prism: {
+                src: `prismjs@${version.prism}`,
+                dir: 'themes'
+            },
+            themes: {
+                src: `prism-themes@${version.themes}`,
+                dir: 'themes'
+            }
+        };
+        this.link = document.createElement('link');
+        this.link.rel = 'stylesheet';
+        document.head.appendChild(this.link);
+    }
+    async fetch(name) {
+        let target = this.origin[name];
+        if (target.cache) return target.cache;
+        let response = await fetch(source.api + target.src);
+        let data = await response.json();
+        target.cache = data.files.find(item => item.name === target.dir).files;
+        return target.cache;
+    }
+    async getAllStyles(name) {
+        let data = await this.fetch(name);
+        data = data.filter(item => item.name.endsWith('.css'));
+        let target = this.origin[name];
+        return data.map(item => [`${source.src}${target.src}/${target.dir}/${item.name}`, item.name.replace('.css', '')]);
+    }
+    getStyle(href) {
+        this.link.href = href;
+    }
+}
+
+class Code {
+    constructor() {
+        ;
+    }
+    hexo(engine) {
+        return `<code class="language-yaml">highlight:
+  enable: ${engine === 'highlight'}
+  ...
+prismjs:
+  enable: ${engine !== 'highlight'}
+  ...</code>`;
+    }
+    next(engine, theme) {
+        let content;
+        if (engine === 'highlight') {
+            content = `theme:
+    light: ${theme}
+    dark: ${theme}`;
+        } else {
+            content = `prism:
+    light: ${theme}
+    dark: ${theme}`;
+        }
+        return `<code class="language-yaml">codeblock:
+# Code Highlight theme
+# All available themes: https://theme-next.js.org/highlight/
+  ...
+  ${content}
+  ...
+</code>`;
+    }
+}
+
+const CODE = `const nunjucks = require('nunjucks');
+const path = require('path');
+
+function njkCompile(data) {
+  const templateDir = path.dirname(data.path);
+  const env = nunjucks.configure(templateDir, {
+    autoescape: false
+  });
+  env.addFilter('safedump', dictionary => {
+    if (typeof dictionary !== 'undefined' && dictionary !== null) {
+      return JSON.stringify(dictionary);
+    }
+    return '""';
+  });
+  return nunjucks.compile(data.text, env, data.path);
+}
+
+function njkRenderer(data, locals) {
+  return njkCompile(data).render(locals);
+}
+
+// Return a compiled renderer.
+njkRenderer.compile = function(data) {
+  const compiledTemplate = njkCompile(data);
+  // Need a closure to keep the compiled template.
+  return function(locals) {
+    return compiledTemplate.render(locals);
+  };
+};`;
+
+class Controller {
+    constructor() {
+        this.style = new Style();
+        this.code = new Code();
+        this.element = {
+            engine: document.getElementById('engine'),
+            theme: document.getElementById('theme'),
+            language: document.getElementById('language'),
+            code: document.getElementById('code')
+        };
+        this.value = {
+            engine: localStorage.getItem('engine') || 'highlight',
+            theme: localStorage.getItem('theme') || 'tomorrow',
+            language: localStorage.getItem('language') || 'javascript',
+            code: localStorage.getItem('code') || CODE
+        };
+        this.onchange = {
+            engine: async () => {
+                let styles = await this.style.getAllStyles(this.value.engine);
+                let html;
+                if (this.value.engine === 'highlight') {
+                    html = this.options(styles);
+                } else {
+                    let extra = await this.style.getAllStyles('themes');
+                    html = `<optgroup label="Prism official themes">
+                        ${this.options(styles)}
+                    </optgroup>
+                    <optgroup label="Prism additional themes">
+                        ${this.options(extra)}
+                    </optgroup>`;
+                }
+                let { theme } = this.element;
+                theme.innerHTML = html;
+                theme.selectedIndex = this.value.theme;
+                if (theme.selectedIndex === -1) theme.selectedIndex = 0;
+                this.update('theme');
+            },
+            theme: () => {
+                let href = this.element.theme.value;
+                this.style.getStyle(href);
+                document.querySelector('.note').classList.toggle('d-none', !href.startsWith(source.src + this.style.origin.themes.src));
+            },
+            language: () => {},
+            code: () => {}
+        };
+        Object.keys(this.element).forEach(key => {
+            this.element[key].value = this.value[key];
+            this.element[key].addEventListener('input', () => {
+                this.update(key);
+            });
+        });
+        this.onchange.engine();
+    }
+    options(array) {
+        return array.map(item => {
+            let [value, name] = item;
+            return `<option value="${value}">${name}</option>`;
+        }).join('');
+    }
+    update(key) {
+        this.value[key] = key === 'theme' ? this.element[key].selectedIndex : this.element[key].value;
+        localStorage.setItem(key, this.value[key]);
+        this.onchange[key]();
+        this.render();
+    }
+    render() {
+        document.querySelector('.hexo').innerHTML = this.code.hexo(this.value.engine);
+        document.querySelector('.next').innerHTML = this.code.next(this.value.engine, this.element.theme[this.value.theme].text);
+        const preview = document.querySelector('#preview .render');
+        preview.innerHTML = `<code class="language-${this.value.language}">${this.value.code}</code>`;
+        document.querySelectorAll('.render code').forEach(element => {
+            this.value.engine === 'highlight' ? hljs.highlightBlock(element) : Prism.highlightElement(element);
+        });
+    }
+}
+
+const controller = new Controller();
+</script>
+</body>
+</html>

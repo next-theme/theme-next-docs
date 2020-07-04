@@ -43,6 +43,7 @@ i18n_dir: :lang
 skip_render:
   - 'robots.txt'
   - animate/*
+  - highlight/*
 
 new_post_name: :title.md
 default_layout: post

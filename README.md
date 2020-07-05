@@ -20,7 +20,7 @@ Autoinstall Hexo & NexT & NexT Website Source on Localhost:
 ```bash
 git clone https://github.com/next-theme/theme-next-docs
 cd theme-next-docs
-sh ./install.sh
+npm install
 ```
 
 Generate:
@@ -39,7 +39,8 @@ npx hexo server
 
 ```bash
 git checkout v8.0.0-rc.4
-sh ./install.sh
+npm install
+npx hexo clean
 ```
 
 ## License

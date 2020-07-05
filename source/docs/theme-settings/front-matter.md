@@ -49,7 +49,7 @@ toc:
   max_depth: 3
 reward_settings:
   enable: true
-  comment: Donate comment here.
+  comment: Buy me a coffee
 quicklink:
   enable: true
   delay: true

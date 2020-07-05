@@ -28,9 +28,15 @@ By using different Schemes in NexT, you can simply change the style of your blog
 
 Thanks to the contribution of our users and developers, [NexT now supports over 20 languages](/docs/getting-started/internationalization.html#Choosing-Language).
 
+{% gp 3-1 %}
+![English translation](/images/docs/en.png)
+![Chinese translation](/images/docs/cn.png)
+![Russian translation](/images/docs/ru.png)
+{% endgp %}
+
 ### Code Highlighting Themes
 
-NexT uses code highlighting themes from the [Highlight.js](https://highlightjs.org) and [Prism](https://prismjs.com) package, and makes more than 90 themes available to you.
+NexT uses code highlighting themes from the [Highlight.js](https://highlightjs.org) and [Prism](https://prismjs.com) package, and makes [more than 90 themes](/docs/theme-settings/#Codeblock-Style) available to you.
 
 {% gp 5-2 %}
 ![Tomorrow Normal](/images/docs/tomorrow.png)

@@ -87,7 +87,7 @@
                 </div>
                 <div class="card-body">
                     <div id="preview">
-                        <pre class="render"></pre>
+                        <pre class="render"><code></code></pre>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,11 @@
 	</div>
 </div>
 <script>
-window.Prism.manual = true;
+Prism.manual = true;
+// https://github.com/PrismJS/prism/issues/832
+Prism.hooks.add('before-highlight', env => {
+  env.code = env.element.innerText;
+});
 const version = {
     highlight: '10.1.1',
     prism: '1.20.0',
@@ -277,8 +281,10 @@ class Controller {
     render() {
         document.querySelector('.hexo').innerHTML = this.code.hexo(this.value.engine);
         document.querySelector('.next').innerHTML = this.code.next(this.value.engine, this.element.theme[this.value.theme].text);
-        const preview = document.querySelector('#preview .render');
-        preview.innerHTML = `<code class="language-${this.value.language}">${this.value.code}</code>`;
+        const preview = document.querySelector('#preview .render code');
+        preview.className = `language-${this.value.language}`;
+        // Escape html
+        preview.innerText = this.value.code;
         document.querySelectorAll('.render code').forEach(element => {
             this.value.engine === 'highlight' ? hljs.highlightBlock(element) : Prism.highlightElement(element);
         });

@@ -332,62 +332,7 @@ vendors:
 <!-- endtab -->
 {% endtabs %}
 
-### Backgroud JS
-
-#### JavaScript 3D library
-
-The aim of [JavaScript 3D library](https://github.com/mrdoob/three.js) is to create an easy to use, lightweight, 3D library. The library provides `<canvas>`, `<svg>`, `CSS3D` and `WebGL` renderers.
-
-{% tabs JavaScript-3D %}
-<!-- tab NexT Config → -->
-
-You can enable it by setting value `three.enable` and `three.three_waves` or `three.canvas_lines` or `three.canvas_sphere` to `true` in {% label primary@theme config file %}.
-
-```yml next/_config.yml
-# JavaScript 3D library.
-# Dependencies: https://github.com/next-theme/theme-next-three
-three:
-  enable: true
-  three_waves: false
-  canvas_lines: false
-  canvas_sphere: false
-```
-
-<!-- endtab -->
-
-<!-- tab CDN Settings -->
-Change dir to NexT directory, and install module to `source/lib` directory.
-
-```bash
-$ cd themes/next
-$ git clone https://github.com/next-theme/theme-next-three source/lib/three
-```
-
-{% note info %}
-If you want to use the CDN instead of clone this repo, then need to **set vendors** in {% label primary@theme config file %}:
-```yml next/_config.yml
-vendors:
-  ...
-  # three
-  three: //cdn.jsdelivr.net/gh/next-theme/theme-next-three@1/three.min.js
-
-  # three_waves
-  three_waves: //cdn.jsdelivr.net/gh/next-theme/theme-next-three@1/three-waves.min.js
-
-  # canvas_lines
-  canvas_lines: //cdn.jsdelivr.net/gh/next-theme/theme-next-three@1/canvas_lines.min.js
-
-  # canvas_sphere
-  canvas_sphere: //cdn.jsdelivr.net/gh/next-theme/theme-next-three@1/canvas_sphere.min.js
-
-  ...
-```
-{% endnote %}
-
-<!-- endtab -->
-{% endtabs %}
-
-#### Canvas Ribbon
+### Canvas Ribbon
 
 [canvas-ribbon.js](https://github.com/zproo/canvas-ribbon) is a ribbon backgroud of website draw on canvas.
 

@@ -1,6 +1,7 @@
 const https = require('https');
 const path = require('path');
 const fs = require('fs');
+const { spawnSync } = require('child_process');
 
 https.get('https://api.github.com/repos/next-theme/hexo-theme-next/releases', {
   headers: {
@@ -13,6 +14,7 @@ https.get('https://api.github.com/repos/next-theme/hexo-theme-next/releases', {
   });
   res.on('end', () => {
     if (res.statusCode === 200) {
+      data = JSON.parse(data);
       parse(data);
     }
   });
@@ -22,8 +24,11 @@ https.get('https://api.github.com/repos/next-theme/hexo-theme-next/releases', {
 });
 
 function parse(data) {
-  JSON.parse(data).forEach(release => {
-    let version = release.html_url.replace('https://github.com/next-theme/hexo-theme-next/releases/tag/v', '');
+  data.sort((a, b) => {
+    return new Date(a.created_at) - new Date(b.created_at);
+  });
+  data.forEach(release => {
+    let version = release.tag_name.replace('v', '');
     console.log('Processing version %s', version);
     let filename = path.join(__dirname, `source/_posts/next-${version.split('.').join('-')}-released.md`);
     if (fs.existsSync(filename)) return;
@@ -40,5 +45,8 @@ date: ${time}
 ${body}
 `;
     fs.writeFileSync(filename, content);
+  });
+  spawnSync('npm', ['version', data[0].tag_name.replace('v', '')], {
+    stdio: "inherit"
   });
 }

@@ -71,4 +71,4 @@ comments: false
 * [Quicklink](/docs/third-party-services/external-libraries.html#Quicklink)
 * [Motion](/docs/third-party-services/external-libraries.html#Animation-Effect)
 * [Progress bar](/docs/third-party-services/external-libraries.html#Progress-Bar)
-* [Backgroud JS](/docs/third-party-services/external-libraries.html#Backgroud-JS)
+* [Canvas Ribbon](/docs/third-party-services/external-libraries.html#Canvas-Ribbon)

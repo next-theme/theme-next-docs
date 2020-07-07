@@ -254,7 +254,7 @@ tabs:
 # ============================================================= #
 
 motion:
-  enable: false
+  enable: true
 
 vendors:
   anime: //cdn.jsdelivr.net/npm/animejs@3/lib/anime.min.js

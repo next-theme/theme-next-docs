@@ -20,8 +20,7 @@ You can enable it by setting value `pjax` to `true` in {% label primary@theme co
 
 ```yml next/_config.yml
 # Easily enable fast Ajax navigation on your website.
-# Dependencies: https://github.com/next-theme/pjax
-# For moreinformation: https://github.com/MoOx/pjax
+# For more information: https://github.com/next-theme/pjax
 pjax: true
 ```
 

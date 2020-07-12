@@ -249,11 +249,19 @@ follow_me:
   #RSS: /atom.xml || fa fa-rss
 ```
 
-#### Related popular posts (REDOCS)
+#### Related popular posts
 
 NexT supports the related posts functionality according to [hexo-related-popular-posts](https://github.com/tea3/hexo-related-popular-posts).
 
 {% tabs related_posts %}
+<!-- tab Installation → -->
+Install `hexo-related-popular-posts` by run following command in {% label info@site root dir %}:
+```bash
+$ npm install hexo-related-popular-posts
+$ hexo clean
+```
+<!-- endtab -->
+
 <!-- tab <code>enable</code> -->
 You can enable it by setting value `related_posts.enable` to `true` in {% label primary@theme config file %}.
 

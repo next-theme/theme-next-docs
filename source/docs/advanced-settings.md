@@ -111,9 +111,9 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 });
 ```
 
-**Two:** add a custom `my-favourite-food.swig` to sidebar.
+**Two:** add a custom `my-favourite-food.njk` to sidebar.
 
-Step1: you should create `my-favourite-food.swig` in any path(e.g. `source/_data/`) as below. You can get variable from `hexo` or `local` defined in filter.
+Step1: you should create `my-favourite-food.njk` in any path(e.g. `source/_data/`) as below. You can get variable from `hexo` or `local` defined in filter.
 ```html
 {% for food in foods %}
   <div>{{food}}</div>
@@ -123,7 +123,7 @@ Step1: you should create `my-favourite-food.swig` in any path(e.g. `source/_data
 Step2: add filter to load it.
 ```js
 hexo.extend.filter.register('theme_inject', function(injects) {
-  injects.sidebar.file('my-favourite-food', 'source/_data/my-favourite-food.swig', {
+  injects.sidebar.file('my-favourite-food', 'source/_data/my-favourite-food.njk', {
     foods: ['apple', 'orange']
   });
 });

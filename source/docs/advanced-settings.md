@@ -6,7 +6,7 @@ description: NexT User Docs – Advanced Settings
 Besides normal [Theme Settings](/docs/theme-settings/) and [Third-party Services](/docs/third-party-services/), NexT supports some advanced settings which makes NexT customizable.
 Please note that those settings may lead to abnormal behavior if they are wrong. Change them only when you know for what they are.
 
-### Third-party JS Libraries
+### CDN Settings
 
 This feature is located under `vendors` section in {% label primary@theme config file %}.
 
@@ -36,21 +36,56 @@ And next part is the config of each library. Each config is in format of `libnam
 anime: //unpkg.com/animejs@3.1.0/lib/anime.min.js
 ```
 
-You can set it to a proper CDN URL, which can make static assets (JavaScript Third-party Library) load faster. Now NexT contains following third-party library:
+You can set it to a proper CDN URL, which can make static assets (JavaScript Third-party Library) load faster.
 
-| Name               | Original Link                                            | Internal Version      |
+#### Core plugins
+
+Now NexT contains following libraries as core plugins:
+
+| Name               | Official Site                                            | Internal Version      |
 | ------------------ | -------------------------------------------------------- | --------------------- |
 | Anime.js           | [animejs.com](https://animejs.com)                       | 3.1.0                 |
 | FontAwesome        | [fontawesome.com](https://fontawesome.com)               | 5.13.0                |
 | Animate.css        | [animate.style](https://animate.style)                   | 3.1.1                 |
 
-If you leave it blank, NexT will use [jsDelivr](https://www.jsdelivr.com/) as the default CDN provider. The reason that jsDelivr is chosen is because it is fast everywhere, and jsDelivr has the valid ICP license issued by the Chinese government, it can be accessed in China pretty well.
+The core plugins are loaded from your site by default, they are required by the basic functions of NexT.
+
+{% note info %}
+If your site is deployed to any free hosting service (Github, Gitlab, etc.), CDN links are recommended for core plugins. CDN usually has faster speeds and no traffic restrictions.
+{% endnote %}
+
+#### Third-party plugins
+
+Third-party plugins are loaded from [jsDelivr](https://www.jsdelivr.com/) CDN by default, and they provide a large number of optional features.
 
 And we also provide other optional CDNs, including the famous [UNPKG](https://unpkg.com) and [CDNJS](https://cdnjs.com/).
 Particularly, if you are a Chinese blogger or most of your visits come from China, please note that **the CDNJS is blocked in some parts of China**, don't use it as your CDN provider.
 
+For example, if you want to set the CDN URL for `mediumzoom`, go to {% label primary@theme config file %} and see:
+
+```yml next/_config.yml
+vendors:
+  # ...
+  # Some contents...
+  # ...
+  mediumzoom: # Set or update mediumzoom CDN URL.
+```
+
+If you leave it blank, NexT will use jsDelivr as the default CDN provider. jsDelivr CDN is used to deliver our third-party plugins because it is fast in everywhere. It does not only provide mirrors for the files from npm packages, but also fetch from the GitHub releases! We could use the following link to reference the js files, just as other CDNs.
+
+```
+//cdn.jsdelivr.net/gh/user/repo@version/file
+```
+
+And it could automatically minify the JS and CSS files, even if you don't have the minified version. Just use the `filename.min.js` or the `filename.min.css` to replace the file above. For more information: https://www.jsdelivr.com/features
+
 If you want to try the other CDNs not included in the optional list, you would better use the corresponding version.
 «Internal version» is the version that NexT tested and uses. And if you need other versions you need to test them first.
+
+{% note info %}
+If your would like to load all third-party plugins from your site, please install the `@next-theme/plugins` package: https://github.com/next-theme/plugins
+If your website is deployed in the local area network, then this will have a faster loading speed than CDN services.
+{% endnote %}
 
 ### Injects
 

@@ -131,3 +131,11 @@ npm install markdown-it-named-headings
 ```
 See: https://github.com/theme-next/hexo-theme-next/issues/1168
 Here is the [PR with bugfix for default config](https://github.com/hexojs/hexo-renderer-markdown-it/pull/90) of `hexo-renderer-markdown-it` plugin.
+
+### Favicon Set but Doesn't Work
+
+Put your `favicon` under {% label info@site's %} `source` dir. If you find that your Favicon doesn't work, please clean your browser's cache first and then visit your Favicon's URL directly, which should be `http(s)://your-domain.com/favicon.ico`.
+
+{% note warning %}
+If your site is in a subdirectory please set it to `favicon: favicon.ico`.
+{% endnote %}

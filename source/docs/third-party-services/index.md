@@ -6,6 +6,22 @@ description: NexT User Docs – Third-party Service Integration
 Static website is limited in some functions, so we need third-party services to extend our site.
 In any time you can extend needed functions by using third-party services supported by NexT.
 
+### Adding Plugins
+
+Plugins extend and expand the functionality of NexT. There are two types of plugins: core plugins and third-party plugins. The core plugins are loaded from your site, they are required by the basic functions of NexT. Third-party plugins are loaded from jsDelivr CDN by default, and they provide a large number of optional features. The reason that jsDelivr is chosen is because it is fast everywhere, and jsDelivr has the valid ICP license issued by the Chinese government, it can be accessed in China pretty well.
+
+Configuring these plugins is very easy. For example, if you want to use `pjax` in your site, just set `pjax` to `true` in {% label primary@theme config file %}:
+
+```yml next/_config.yml
+# Easily enable fast Ajax navigation on your website.
+# For more information: https://github.com/next-theme/pjax
+pjax: true
+```
+
+If you want to specify the CDN provider for any plugins, you need to set / update the CDN URL. See [Advanced Settings](/docs/advanced-settings.html) for more information.
+
+Detailed documentation about these plugins is listed below.
+
 ### Math Equations
 
 * [Math Equations](/docs/third-party-services/math-equations.html)

@@ -84,43 +84,29 @@ If you find your site looks like this picture, you have installed it correctly. 
 
 Now you've installed and enabled NexT. In next steps we will change some settings including personalization and third-party services integration.
 
-#### Adding Plugins
+### Hexo Configuration
 
-Plugins extend and expand the functionality of NexT. There are two types of plugins: core plugins and third-party plugins. The core plugins are loaded from your site, they are required by the basic functions of NexT. Third-party plugins are loaded from jsDelivr CDN by default, and they provide a large number of optional features.
+The following settings in {% label info@site config file %} are very helpful for optimizing your website.
 
-Configuring these plugins is very easy. For example, if you want to use `pjax` in your site, just set `pjax` to `true` in {% label primary@theme config file %}:
+#### Configuring Author
 
-```yml next/_config.yml
-# Easily enable fast Ajax navigation on your website.
-# For more information: https://github.com/next-theme/pjax
-pjax: true
+Edit {% label info@site config file %} and set the value of `author` to your nickname.
+
+```yml hexo/_config.yml
+# Site
+author:
 ```
 
-If you want to specify the CDN provider for any plugins, you need to set / update the CDN URL.
+#### Configuring Description
 
-For example, if you want to set the CDN URL for `mediumzoom`, go to {% label primary@theme config file %} and see:
+Edit {% label info@site config file %} and set the value of `description` to your description, which can be a sentence you like.
 
-```yml next/_config.yml
-vendors:
-  # ...
-  # Some contents...
-  # ...
-  mediumzoom: # Set or update mediumzoom CDN URL.
+```yml hexo/_config.yml
+# Site
+description:
 ```
 
-And jsDelivr CDN is used by default to deliver our third-party plugins because it is fast in everywhere and has the valid ICP license issued by the Chinese government. It does not only crawl the js files from npm packages, and it crawls from the GitHub Releases! We could use the following link to reference the js files, just as other CDNs.
-
-```
-//cdn.jsdelivr.net/gh/user/repo@version/file
-```
-
-And it could automatically minify the JS and CSS files, even if you don't have the minified version. Just use the `filename.min.js` or the `filename.min.css` to replace the file above.
-
-And we also provide other optional CDNs, including the famous [UNPKG](https://unpkg.com) and [CDNJS](https://cdnjs.com/).
-
-{% note info %}
-If your site is deployed to any free hosting service (Github, Gitlab, etc.), CDN links is recommended for core plugins. CDN usually have faster speeds and no traffic restrictions.
-{% endnote %}
+After that we can [configure deployment](/docs/getting-started/deployment.html).
 
 ### NexT Configuration
 
@@ -261,14 +247,6 @@ favicon:
   ms_browserconfig: /images/browserconfig.xml
 ```
 
-##### Favicon Set but Doesn't Work
-
-Put your `favicon` under {% label info@site's %} `source` dir. If you find that your Favicon doesn't work, please clean your browser's cache first and then visit your Favicon's URL directly, which should be `http(s)://your-domain.com/favicon.ico`.
-
-{% note warning %}
-If your site is in a subdirectory please set it to `favicon: favicon.ico`.
-{% endnote %}
-
 #### Configuring Avatar
 
 By default NexT doesn't show avatar in sidebar. You can configure it by editing values under `avatar` setting in {% label primary@theme config file %}.
@@ -339,23 +317,3 @@ avatar:
 
 <!-- endtab -->
 {% endtabs %}
-
-#### Configuring Author
-
-Edit {% label info@site config file %} and set the value of `author` to your nickname.
-
-```yml hexo/_config.yml
-# Site
-author:
-```
-
-#### Configuring Description
-
-Edit {% label info@site config file %} and set the value of `description` to your description, which can be a sentence you like.
-
-```yml hexo/_config.yml
-# Site
-description:
-```
-
-After that we can [configure deployment](/docs/getting-started/deployment.html).

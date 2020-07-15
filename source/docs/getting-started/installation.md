@@ -8,7 +8,7 @@ description: NexT User Docs – Starting to Use – Detailed Installation
 Change dir to {% label info@site root directory %}. There must be `node_modules`, `source`, `themes` and other directories:
 
 ```bash
-$ cd hexo
+$ cd hexo-site
 $ ls
 _config.yml  node_modules  package.json  public  scaffolds  source  themes
 ```

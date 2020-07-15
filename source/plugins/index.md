@@ -17,3 +17,7 @@ description: NexT Plugins
 * [hexo-next-three](https://github.com/next-theme/hexo-next-three)
 * [hexo-next-fireworks](https://github.com/next-theme/hexo-next-fireworks)
 * [hexo-next-exif](https://github.com/next-theme/hexo-next-exif)
+
+---
+
+* Visit the [Awesome NexT](https://github.com/next-theme/awesome-next) list for more plugins.

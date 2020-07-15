@@ -7,6 +7,7 @@
   },
   "description": "Elegant and powerful theme for Hexo.",
   "scripts": {
+    "start": "hexo s",
     "update": "node update.js"
   },
   "repository": {
@@ -35,7 +36,7 @@
     "hexo-renderer-marked": "hexojs/hexo-renderer-marked",
     "hexo-renderer-stylus": "1.1.0",
     "hexo-server": "1.0.0",
-    "hexo-theme-next": "next-theme/hexo-theme-next"
+    "hexo-theme-next": "8.0.0-rc.4"
   },
   "engines": {
     "node": ">=10.9.0"

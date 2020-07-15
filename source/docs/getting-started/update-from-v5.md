@@ -8,7 +8,7 @@ NexT version 5 works fine with Hexo 3, but for frequent users, you maybe need to
 There are no hard breaking changes between 5.1.x and the latest version. It's change major version to 8 because:
 
 1. Main repositorie was rebased from [iissnan's](https://github.com/iissnan/hexo-theme-next) profile to [next-theme](https://github.com/next-theme) organization.
-2. Most libraries under the `next/source/lib` directory was moved out to [external repositories under NexT organization](https://github.com/next-theme).
+2. Most libraries under the `next/source/lib` directory was moved out to [external repositories under NexT organization](https://github.com/next-theme/plugins).
 3. 3rd-party plugin [`hexo-wordcount`](https://github.com/willin/hexo-wordcount) was replaced by [`hexo-word-counter`](https://github.com/next-theme/hexo-word-counter) because `hexo-word-counter` doesn't have any external nodejs dependencies, nor [language filter](https://github.com/willin/hexo-wordcount/issues/7) which causes better performance on speed at site generation.
 
 So, NexT suggest to update from version 5 to version 8 in this way:
@@ -29,4 +29,4 @@ So, NexT suggest to update from version 5 to version 8 in this way:
 
     If after completing the above steps, an error occurs when executing `hexo s` or` hexo g`, it means that there may be a conflict between the old version of Hexo / Hexo plugin and the new version of the theme NexT. We recommend upgrading Hexo to versions 4.0 and higher and upgrading Hexo plugins to the latest version. You can run `npm outdated` to see all the upgradeable plugins.
 
-And how to enable 3rd-party libraries see [here](/docs/getting-started/#Adding-Plugins).
+And how to enable 3rd-party libraries see [here](/docs/third-party-services/#Adding-Plugins).

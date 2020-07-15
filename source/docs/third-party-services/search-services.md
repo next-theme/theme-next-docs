@@ -39,7 +39,7 @@ algolia:
 1. Algolia requires users to upload their search index data either manually or via provided APIs. Install and configure [Hexo Algolia](https://github.com/oncletom/hexo-algolia) in your Hexo directory. This plugin will index your site and upload selected data to Algolia.
 
    ```bash
-   $ cd hexo
+   $ cd hexo-site
    $ npm install hexo-algolia
    ```
 

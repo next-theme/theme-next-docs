@@ -9,25 +9,25 @@ Next allows users to add custom pages in menu.
 
 {% tabs adding-custom-page %}
 <!-- tab Adding New Page → -->
-In your terminal emulator, change to Hexo site dir. Use `hexo new page custom_name` to create a new `custom_name` page:
+In your terminal emulator, change to Hexo site dir. Use `hexo new page custom-name` to create a new `custom-name` page:
 ```bash
-$ cd your-hexo-site
-$ hexo new page custom_name
+$ cd hexo-site
+$ hexo new page custom-name
 ```
 <!-- endtab -->
 
 <!-- tab Setting Front-matter Values → -->
-Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Settings Front-matter values and more detailed can be found in [Front-matter](https://hexo.io/docs/front-matter). You can also add contents in `custom_name/index.md` if you like.
+Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Settings Front-matter values and more detailed can be found in [Front-matter](https://hexo.io/docs/front-matter). You can also add contents in `custom-name/index.md` if you like.
 
 ```md
-title: custom_name
+title: custom-name
 date: 2014-12-22 12:39:04
 ---
 ```
 <!-- endtab -->
 
 <!-- tab Editting Menu -->
-Add `custom_name` to `menu` by editing {% label primary@theme config file %}, like adding `about` page:
+Add `custom-name` to `menu` by editing {% label primary@theme config file %}, like adding `about` page:
 ```yml next/_config.yml
 menu:
   home: / || fa fa-home
@@ -69,7 +69,7 @@ Adding «Tags» page and show «Tags» link in menu. «Tags» page will show all
 <!-- tab Adding New Page → -->
 In your terminal emulator, change to Hexo site dir. Use `hexo new page tags` to create a new `tags` page:
 ```bash
-$ cd your-hexo-site
+$ cd hexo-site
 $ hexo new page tags
 ```
 <!-- endtab -->
@@ -128,7 +128,7 @@ tagcloud:
 <!-- tab Adding Schedule Page → -->
 In your terminal emulator, change to Hexo site dir. Use `hexo new page schedule` to create a new `schedule` page:
 ```bash
-$ cd your-hexo-site
+$ cd hexo-site
 $ hexo new page schedule
 ```
 <!-- endtab -->
@@ -192,7 +192,7 @@ calendar:
 <!-- tab Adding New Page → -->
 In your terminal emulator, change to the `source` folder of Hexo site dir. Create a new folder called `404`, then create a new page in it:
 ```bash
-$ cd your-hexo-site/source
+$ cd hexo-site/source
 $ mkdir 404
 $ touch 404/index.md
 ```

@@ -42,6 +42,16 @@ The files in the `language` directory are automatically generated, you do not ne
 
 ### Multilingual Switcher
 
+Set multiple languages in {% label info@site config file %}, e.g.
+
+```yml hexo/_config.yml
+language:
+  - zh-CN
+  - en
+```
+
+Then turn on `language_switcher` in {% label primary@theme config file %}:
+
 ```yml next/_config.yml
 # Show multilingual switcher in footer.
 language_switcher: true

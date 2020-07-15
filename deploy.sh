@@ -49,7 +49,9 @@ echo
 echo "=============================================================="
 echo " ${yellow}Checking Hexo version...${norm}"
 echo "=============================================================="
-    alias hexo="npx hexo"
+    hexo() {
+        node --no-warnings node_modules/hexo/bin/hexo "$@" --silent
+    }
     hexo -v
     npm ls --depth 0
 
@@ -58,21 +60,12 @@ echo "=============================================================="
 echo " ${lpurple}Generating content for Muse...${norm}"
 echo "=============================================================="
     hexo config url https://theme-next.js.org/muse
-    echo "${yellow}Setted url:${norm} ${lcyan}`hexo config url`${norm}"
-
     hexo config root /muse/
-    echo "${yellow}Setted root:${norm} ${lcyan}`hexo config root`${norm}"
-
     hexo config theme_config.scheme Muse
-    echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
-
     hexo config theme_config.sidebar.position right
-    echo "${yellow}Setted sidebar position:${norm} ${lcyan}`hexo config theme_config.sidebar.position`${norm}"
-
     hexo config theme_config.back2top.sidebar false
-    echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
+    hexo clean && hexo g
 
-    hexo clean && hexo g --silent
     echo "${lred}`mv -v public muse`${norm}"
 
 echo
@@ -80,21 +73,10 @@ echo "=============================================================="
 echo " ${lpurple}Generating content for Mist...${norm}"
 echo "=============================================================="
     hexo config url https://theme-next.js.org/mist
-    echo "${yellow}Setted url:${norm} ${lcyan}`hexo config url`${norm}"
-
     hexo config root /mist/
-    echo "${yellow}Setted root:${norm} ${lcyan}`hexo config root`${norm}"
-
     hexo config theme_config.scheme Mist
-    echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
+    hexo clean && hexo g
 
-    hexo config theme_config.sidebar.position right
-    echo "${yellow}Setted sidebar position:${norm} ${lcyan}`hexo config theme_config.sidebar.position`${norm}"
-
-    hexo config theme_config.back2top.sidebar false
-    echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
-
-    hexo clean && hexo g --silent
     echo "${lred}`mv -v public mist`${norm}"
 
 echo
@@ -102,21 +84,12 @@ echo "=============================================================="
 echo " ${lpurple}Generating content for Pisces...${norm}"
 echo "=============================================================="
     hexo config url https://theme-next.js.org/pisces
-    echo "${yellow}Setted url:${norm} ${lcyan}`hexo config url`${norm}"
-
     hexo config root /pisces/
-    echo "${yellow}Setted root:${norm} ${lcyan}`hexo config root`${norm}"
-
     hexo config theme_config.scheme Pisces
-    echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
-
     hexo config theme_config.sidebar.position left
-    echo "${yellow}Setted sidebar position:${norm} ${lcyan}`hexo config theme_config.sidebar.position`${norm}"
-
     hexo config theme_config.back2top.sidebar true
-    echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
+    hexo clean && hexo g
 
-    hexo clean && hexo g --silent
     echo "${lred}`mv -v public pisces`${norm}"
 
 echo
@@ -124,21 +97,9 @@ echo "=============================================================="
 echo " ${lpurple}Prepairing content for Gemini...${norm}"
 echo "=============================================================="
     hexo config url https://theme-next.js.org
-    echo "${yellow}Setted url:${norm} ${lcyan}`hexo config url`${norm}"
-
     hexo config root /
-    echo "${yellow}Setted root:${norm} ${lcyan}`hexo config root`${norm}"
-
     hexo config theme_config.scheme Gemini
-    echo "${yellow}Setted scheme:${norm} ${lcyan}`hexo config theme_config.scheme`${norm}"
-
-    hexo config theme_config.sidebar.position left
-    echo "${yellow}Setted sidebar position:${norm} ${lcyan}`hexo config theme_config.sidebar.position`${norm}"
-
-    hexo config theme_config.back2top.sidebar true
-    echo "${yellow}Setted back2top in sidebar:${norm} ${lcyan}`hexo config theme_config.back2top.sidebar`${norm}"
-
-    hexo clean && hexo g --silent
+    hexo clean && hexo g
 
     echo "${yellow}robots.txt:${norm}"
     echo "User-agent: *

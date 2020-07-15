@@ -37,7 +37,7 @@ If you know about [Git](https://git-scm.com), you can clone the whole repository
 
 Open your Terminal, change to Hexo {% label info@site root directory %} and clone latest master branch of NexT theme:
 ```bash
-$ cd hexo
+$ cd hexo-site
 $ git clone https://github.com/next-theme/hexo-theme-next themes/next
 ```
 <!-- endtab -->

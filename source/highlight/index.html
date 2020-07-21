@@ -111,6 +111,9 @@ const source = {
     src: 'https://cdn.jsdelivr.net/npm/'
 };
 
+// npm run highlight
+const unavailable = ['brown-paper', 'darkula', 'gradient-dark', 'lightfair', 'pojoaque', 'school-book'];
+
 class Style {
     constructor() {
         this.origin = {
@@ -234,6 +237,7 @@ class Controller {
                 let styles = await this.style.getAllStyles(this.value.engine);
                 let html;
                 if (this.value.engine === 'highlight') {
+                    styles = styles.filter(item => !unavailable.includes(item[1]));
                     html = this.options(styles);
                 } else {
                     let extra = await this.style.getAllStyles('themes');

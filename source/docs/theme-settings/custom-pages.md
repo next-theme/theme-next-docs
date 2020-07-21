@@ -9,7 +9,7 @@ Next allows users to add custom pages in menu.
 
 {% tabs adding-custom-page %}
 <!-- tab Adding New Page → -->
-In your terminal emulator, change to Hexo site dir. Use `hexo new page custom-name` to create a new `custom-name` page:
+Change to {% label info@site root directory %} in your terminal. Use `hexo new page custom-name` to create a new `custom-name` page:
 ```bash
 $ cd hexo-site
 $ hexo new page custom-name
@@ -67,7 +67,7 @@ Adding «Tags» page and show «Tags» link in menu. «Tags» page will show all
 
 {% tabs adding-tags-page %}
 <!-- tab Adding New Page → -->
-In your terminal emulator, change to Hexo site dir. Use `hexo new page tags` to create a new `tags` page:
+Change to {% label info@site root directory %} in your terminal. Use `hexo new page tags` to create a new `tags` page:
 ```bash
 $ cd hexo-site
 $ hexo new page tags
@@ -126,7 +126,7 @@ tagcloud:
 
 {% tabs calendar %}
 <!-- tab Adding Schedule Page → -->
-In your terminal emulator, change to Hexo site dir. Use `hexo new page schedule` to create a new `schedule` page:
+Change to {% label info@site root directory %} in your terminal. Use `hexo new page schedule` to create a new `schedule` page:
 ```bash
 $ cd hexo-site
 $ hexo new page schedule
@@ -190,7 +190,7 @@ calendar:
 
 {% tabs custom-404-page %}
 <!-- tab Adding New Page → -->
-In your terminal emulator, change to the `source` folder of Hexo site dir. Create a new folder called `404`, then create a new page in it:
+In your terminal, change to the `source` folder of {% label info@site root directory %}. Create a new folder called `404`, then create a new page in it:
 ```bash
 $ cd hexo-site/source
 $ mkdir 404

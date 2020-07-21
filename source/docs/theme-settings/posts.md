@@ -103,7 +103,7 @@ post_meta:
 
 {% tabs wordcount %}
 <!-- tab Installation → -->
-Install `hexo-word-counter` by run following command in {% label info@site root dir %}:
+Install `hexo-word-counter` by executing the following command in {% label info@site root dir %}:
 ```bash
 $ npm install hexo-word-counter
 $ hexo clean
@@ -255,7 +255,7 @@ NexT supports the related posts functionality according to [hexo-related-popular
 
 {% tabs related_posts %}
 <!-- tab Installation → -->
-Install `hexo-related-popular-posts` by run following command in {% label info@site root dir %}:
+Install `hexo-related-popular-posts` by executing the following command in {% label info@site root dir %}:
 ```bash
 $ npm install hexo-related-popular-posts
 $ hexo clean

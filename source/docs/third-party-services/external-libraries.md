@@ -154,6 +154,11 @@ You can enable it by setting value `lazyload` to `true` in {% label primary@them
 lazyload: true
 ```
 
+Then run the following command in {% label info@site root dir %} to ensure that `lazyload` can be enabled or disabled correctly:
+```bash
+$ hexo clean
+```
+
 <!-- endtab -->
 
 <!-- tab CDN Settings -->

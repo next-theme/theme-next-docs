@@ -49,10 +49,16 @@ This tag was created exceptionally for better SEO-optimization. Any attempts to 
 {% endnote %}
 
 #### Settings
-Just one setting must be turned on under the `Tags Settings` section in {% label primary@theme config file %}:
+
+Just one setting must be turned on under the `SEO Settings` section in {% label primary@theme config file %}:
 
 ```yml next/_config.yml
 exturl: true
+```
+
+Then run the following command in {% label info@site root dir %} to ensure that `exturl` can be enabled or disabled correctly:
+```bash
+$ hexo clean
 ```
 
 ### Webmaster Tools

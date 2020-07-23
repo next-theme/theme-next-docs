@@ -9,7 +9,7 @@ NexT provides Algolia search plugin for index your Hexo website content. What yo
 
 {% tabs algolia-search %}
 <!-- tab Registration → -->
-Register at [Algolia](https://www.algolia.com), you can log in directly using GitHub or Google Account. Upon Customer’s initial sign-up for an Account, Customer will have a free, fourteen (14) day evaluation period (the «Evaluation Period») for the Algolia Services commencing on the Effective Date, subject to the limitations on Algolia’s website. After that, Algolia offers a free, branded version for up to 10k records and 100k operations per month.
+Register at [Algolia](https://www.algolia.com), you can log in directly using GitHub or Google Account. Upon Customer's initial sign-up for an Account, Customer will have a free, fourteen (14) day evaluation period (the «Evaluation Period») for the Algolia Services commencing on the Effective Date, subject to the limitations on Algolia's website. After that, Algolia offers a free, branded version for up to 10k records and 100k operations per month.
 <!-- endtab -->
 
 <!-- tab Algolia Config → -->

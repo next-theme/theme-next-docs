@@ -6,7 +6,7 @@ description: NexT User Docs – Starting to Use — Deployment
 ### Local Deployment
 
 1. Modify files locally.
-2. Localization testing: `hexo clean && hexo g && hexo s`.
+2. Localization testing: `hexo clean && hexo s`.
 3. Deployment: `hexo g -d`.
 
 {% note danger %}
@@ -18,15 +18,25 @@ If you are using macOS with `hexo-deployer-git`, make sure that `lib/` directory
 * Edit the file directly online, effective immediately
 * Automatic deployment, simultaneous deployment to multiple locations
 
+#### Netlify
+
+Netlify is an all-in-one platform for automating modern web projects. Replace your hosting infrastructure, continuous integration, and deployment pipeline with a single workflow. Integrate dynamic functionality like serverless functions, user authentication, and form handling as your projects grow.
+
+Perhaps you have already found that this website is deployed on Netlify. Checkout `deploy.sh` and `netlify.toml` in [theme-next-docs](https://github.com/next-theme/theme-next-docs) repository for more information.
+
+#### GitHub Actions
+
+This Github Action automating hexo deployment workflow, to allow you to leverage GitHub Actions to publish your hexo site on Github Pages: [hexo-action](https://github.com/sma11black/hexo-action).
+
 #### Travis CI
 
-Travis CI enables your team to test and ship your apps with confidence. It’s built for everyone and for projects and teams of all sizes, supporting over 20 different languages out of the box, including Javascript and Node.js, Ruby, PHP, Python, Mac/iOS, as well as Docker, while giving you full control over the build environment to customize it to your own needs.
+Travis CI enables your team to test and ship your apps with confidence. It's built for everyone and for projects and teams of all sizes, supporting over 20 different languages out of the box, including Javascript and Node.js, Ruby, PHP, Python, Mac/iOS, as well as Docker, while giving you full control over the build environment to customize it to your own needs.
 
-{% tabs CI1 %}
+{% tabs Travis CI %}
 <!-- tab Get permissions → -->
 There are two ways to obtain the necessary permissions for Travis CI. Deploy Key has the advantage of high security, while Access Token has the advantage of being more flexible.
 
-{% subtabs CI2 %}
+{% subtabs Get permissions %}
 <!-- tab Access Token  -->
 This method applies to a warehouse with a private Submodule
 
@@ -152,12 +162,8 @@ GitLab offers a continuous integration service and pages service. If you add a `
         paths:
         - node_modules/
       script:
-      - npm install hexo-cli -g
       - npm install
-      # NEXT External Libraries installation start
-      - git clone https://github.com/next-theme/theme-next-three themes/next/source/lib/three
-      # NEXT External Libraries installation end
-      - hexo deploy
+      - npx hexo deploy
       artifacts:
         paths:
         - public
@@ -178,7 +184,7 @@ Now, your static website is available at `https://yourname.gitlab.io/project` th
 
 Of course, you also can pulish static website on GitHub Pages or others pages service. There are two ways to configure `.gitlab-ci.yml`:
 
-{% tabs Gitlab-CI-1 %}
+{% tabs Gitlab CI %}
 <!-- tab <code>HTTPS</code> -->
 
 * Get the Access Token: `Settings` → `Developer settings` → `Personal access token` → `Generate new token`. Set access rights according to the actual situation. It should be noted that the access token is only displayed once on this page, and it should be copied, otherwise it can only be regenerated.
@@ -253,12 +259,8 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
         paths:
         - node_modules/
       script:
-      - npm install -g hexo-cli
       - npm install
-      # NEXT External Libraries installation start
-      - git clone https://github.com/next-theme/theme-next-three themes/next/source/lib/three
-      # NEXT External Libraries installation end
-      - hexo deploy
+      - npx hexo deploy
 
       artifacts:
         paths:

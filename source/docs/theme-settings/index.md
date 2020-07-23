@@ -274,6 +274,24 @@ font:
     family: PT Mono
 ```
 
+And you can apply multiple font families for each option. This is especially useful for those who often writes both Chinese and English.
+
+```yml next/_config.yml
+font:
+  ...
+  title:
+    external: true
+    family: Roboto Slab, Noto Serif SC
+    size:
+```
+
+{% note info %}
+According to the [CSS Fonts Module Level 3](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/#propdef-font-family) spec:
+> Font family names other than generic families must either be given quoted as strings, or unquoted as a sequence of one or more identifiers.
+
+To avoid escaping mistakes, quote font family names if necessary.
+{% endnote %}
+
 If you still need more customization, following change will cover Fonts Customization function. Edit `source/_data/variables.styl` in {% label primary@Hexo root directory %} and add two varibles:
 
 ```styl hexo/source/_data/variables.styl

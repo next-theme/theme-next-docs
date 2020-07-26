@@ -84,6 +84,74 @@ For now only Pisces / Gemini Schemes supports `offset` setting under **6.0.x** v
 
 {% endtabs %}
 
+#### Configuring Avatar
+
+By default NexT doesn't show avatar in sidebar. You can configure it by editing values under `avatar` setting in {% label primary@theme config file %}.
+
+{% tabs avatar %}
+<!-- tab <code>url</code> -->
+For first test you can uncomment `/images/avatar.gif` value near the `avatar.url` setting to see default avatar:
+
+```yml next/_config.yml
+avatar:
+  url: /images/avatar.gif
+```
+
+Then you need to specify your own avatar. It can be done one of the ways below:
+
+{% subtabs avatar1 %}
+<!-- tab {% label success@Hexo directory %} -->
+Put your avatar under {% label info@site directory %} `source/uploads/` (create directory if it doesn't exists).
+And then change option to `url: /uploads/avatar.png`.
+<!-- endtab -->
+
+<!-- tab NexT directory -->
+Put your avatar under {% label primary@theme directory %} `source/images/`.
+And then change option to `url: /images/avatar.png`.
+
+{% note info %}
+Current site uses avatar under {% label primary@theme directory %} from file located in `next/source/images/apple-touch-icon-next.png` with following config:
+
+```yml next/_config.yml
+avatar:
+  url: /images/apple-touch-icon-next.png
+```
+
+{% endnote %}
+<!-- endtab -->
+
+<!-- tab Absolute URL from Internet -->
+You also can specify any external URL with absolute path to image: `http(s)://example.com/avatar.png`
+<!-- endtab -->
+{% endsubtabs %}
+<!-- endtab -->
+
+<!-- tab <code>rounded</code> -->
+Set up rounded of avatar by changing the value of `avatar.rounded`:
+
+* `true` → Avatar will be rounded.
+* **`false`** → Avatar will be squared.
+
+```yml next/_config.yml
+avatar:
+  rounded: true
+```
+<!-- endtab -->
+
+<!-- tab <code>rotated</code> -->
+Set up rotated of avatar by changing the value of `avatar.rotated`:
+
+* `true` → Avatar will be rotate under the mouse hovering.
+* **`false`** → Avatar will not rotate under the mouse hovering.
+
+```yml next/_config.yml
+avatar:
+  rotated: true
+```
+
+<!-- endtab -->
+{% endtabs %}
+
 #### Sidebar Site State
 
 By default NexT shows the categories and counts of Posts / Categories / Tags in sidebar. You can configure it by editing value `site_state` in {% label primary@theme config file %}.
@@ -95,7 +163,7 @@ site_state: true
 #### Sidebar Social Links
 
 {% note default %}
-Social Links have similar fucture as [Menu Items](../getting-started/#Configuring-Menu-Items), only target link there is difference: specified link must have full url path (permalink).
+Social Links have similar fucture as [Menu Items](/docs/getting-started/#Configuring-Menu-Items), only target link there is difference: specified link must have full url path (permalink).
 {% endnote %}
 
 Edit the `social` section in {% label primary@theme config file %} as following:
@@ -231,37 +299,5 @@ By default maximum heading depth of generated toc is 6. You can set it by settin
 toc:
   max_depth: 3
 ```
-<!-- endtab -->
-{% endtabs %}
-
-### Back To Top
-
-{% tabs b2t %}
-<!-- tab <code>enable</code> -->
-```yml next/_config.yml
-back2top:
-  enable: true
-```
-Set the value `back2top.enable` to `true` to display `Back to top` button.
-<!-- endtab -->
-
-<!-- tab <code>sidebar</code> -->
-```yml next/_config.yml
-back2top:
-  # Back to top in sidebar.
-  sidebar: true
-```
-
-Set the value `back2top.sidebar` to `true` to put the button in sidebar.
-<!-- endtab -->
-
-<!-- tab <code>scrollpercent</code> -->
-```yml next/_config.yml
-back2top:
-  # Scroll percent label in b2t button.
-  scrollpercent: true
-```
-
-Set the value `back2top.scrollpercent` to `true` to display scroll percent label in `Back to top` button.
 <!-- endtab -->
 {% endtabs %}

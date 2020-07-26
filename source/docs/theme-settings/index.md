@@ -29,20 +29,6 @@ NexT allows to minify Hexo generation. Set the value `minify` to `true` in {% la
 minify: true
 ```
 
-### Creative Commons
-
-NexT supports the display of [Creative Commons 4.0 International License](https://creativecommons.org/) in sidebar and post including `by`, `by-nc`, `by-nc-nd`, `by-nc-sa`, `by-nd`, `by-sa`, `zero`. These licenses allow creators to communicate which rights they reserve, and which rights they waive for the benefit of recipients or other creators.
-
-You can configure it by editing values in `creative_commons` section in {% label primary@theme config file %}, for example:
-
-```yml next/_config.yml
-creative_commons:
-  license: by-nc-sa
-  sidebar: true
-  post: true
-  language: deed.zh
-```
-
 ### Text Align
 
 NexT allows to customize the text alignment in posts / pages. The `text-align` CSS property sets the horizontal alignment of a block element or table-cell box.
@@ -152,6 +138,38 @@ codeblock:
 
 <!-- endtab -->
 
+{% endtabs %}
+
+### Back To Top
+
+{% tabs b2t %}
+<!-- tab <code>enable</code> -->
+```yml next/_config.yml
+back2top:
+  enable: true
+```
+Set the value `back2top.enable` to `true` to display `Back to top` button.
+<!-- endtab -->
+
+<!-- tab <code>sidebar</code> -->
+```yml next/_config.yml
+back2top:
+  # Back to top in sidebar.
+  sidebar: true
+```
+
+Set the value `back2top.sidebar` to `true` to put the button in sidebar.
+<!-- endtab -->
+
+<!-- tab <code>scrollpercent</code> -->
+```yml next/_config.yml
+back2top:
+  # Scroll percent label in b2t button.
+  scrollpercent: true
+```
+
+Set the value `back2top.scrollpercent` to `true` to display scroll percent label in `Back to top` button.
+<!-- endtab -->
 {% endtabs %}
 
 ### Reading Progress
@@ -266,7 +284,7 @@ font:
   # Font settings for posts (.post-body).
   posts:
     external: true
-    family: Roboto Slab
+    family: Montserrat
 
   # Font settings for <code> and code blocks.
   codes:

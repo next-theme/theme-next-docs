@@ -57,7 +57,7 @@ post_meta:
 <!-- tab <code>updated_at</code> -->
 
 {% note warning %}
-Make sure you set `use_date_for_updated` and `updated_option` in {% label info@site config file %} correctly, otherwise this option will not take effect.
+Make sure you set `use_date_for_updated` and `updated_option` in {% label info@site config file %} correctly, otherwise this option will not take effect. See also [Date / Time format](https://hexo.io/docs/configuration#Date-Time-format).
 {% endnote %}
 
 {% subtabs postmeta1 %}

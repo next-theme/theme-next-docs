@@ -26,11 +26,10 @@ type : type of the mermaid chart, visit https://github.com/mermaid-js/mermaid fo
 
 ```md
 {% mermaid graph TD %}
-A[Christmas] -->|Get money| B(Go shopping)
-B --> C{Let me thinksssss<br>ssssssssssssssssssssss<br>sssssssssssssssssssssssssss}
-C -->|One| D[Laptop]
-C -->|Two| E[iPhone]
-C -->|Three| F[Car]
+A[Hard] -->|Text| B(Round)
+B --> C{Decision}
+C -->|One| D[Result 1]
+C -->|Two| E[Result 2]
 {% endmermaid %}
 ```
 

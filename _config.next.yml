@@ -83,16 +83,15 @@ menu:
 
     Tag Plugins:
       default: /tag-plugins/ || fa fa-rocket
-      Note: /note.html || fa fa-adjust
-      Tabs: /tabs.html || fa fa-columns
-      PDF: /pdf.html || far fa-file-pdf
-      Mermaid: /mermaid.html || fa fa-project-diagram
-      Label: /label.html || fa fa-hat-wizard
-      Video: /video.html || fa fa-play-circle
       Button: /button.html || fa fa-cube
       Caniuse: /caniuse.html || fa fa-signal
       Group Pictures: /group-pictures.html || far fa-images
+      Label: /label.html || fa fa-hat-wizard
       Link Grid: /link-grid.html || fa fa-grip-vertical
+      Mermaid: /mermaid.html || fa fa-project-diagram
+      Note: /note.html || fa fa-adjust
+      PDF: /pdf.html || far fa-file-pdf
+      Tabs: /tabs.html || fa fa-columns
 
     Advanced Settings: /advanced-settings.html || fa fa-cog
     Troubleshooting: /troubleshooting.html || fa fa-life-ring

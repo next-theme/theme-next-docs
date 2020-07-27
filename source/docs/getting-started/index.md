@@ -119,7 +119,41 @@ description:
 
 After that we can [configure deployment](/docs/getting-started/deployment.html).
 
-### NexT Configuration
+### NexT Quick Start
+
+#### Configuring Favicon
+
+By default the Hexo site use NexT favicons in `hexo-site/themes/next/source/images/` directory with different size for different device. You can replace them with your own favicons.
+
+For example, you can put your favicons in `hexo-site/source/images/` directory. Then you need to rename them and change the settings in `favicon` section in {% label primary@theme config file %}, otherwise icons from Next will rewrite your custom icons in Hexo.
+
+You can also put custom favicons into `hexo-site/source/` directory. In this way, you **must remove** `/images` prefix from paths.
+
+To generate custom favicons, you can visit [Favicon Generator](https://realfavicongenerator.net).
+
+```yml hexo/_config.yml
+favicon:
+  small: /images/favicon-16x16-next.png
+  medium: /images/favicon-32x32-next.png
+  apple_touch_icon: /images/apple-touch-icon-next.png
+  safari_pinned_tab: /images/logo.svg
+  android_manifest: /images/manifest.json
+  ms_browserconfig: /images/browserconfig.xml
+```
+
+#### Creative Commons
+
+NexT supports the display of [Creative Commons 4.0 International License](https://creativecommons.org/) in sidebar and post including `by`, `by-nc`, `by-nc-nd`, `by-nc-sa`, `by-nd`, `by-sa`, `zero`. These licenses allow creators to communicate which rights they reserve, and which rights they waive for the benefit of recipients or other creators.
+
+You can configure it by editing values in `creative_commons` section in {% label primary@theme config file %}, for example:
+
+```yml next/_config.yml
+creative_commons:
+  license: by-nc-sa
+  sidebar: true
+  post: true
+  language: deed.zh
+```
 
 #### Choosing Scheme
 
@@ -195,7 +229,9 @@ menu:
 ```
 
 {% note warning %}
-Except `home` and `archives`, all custom pages under `menu` section need to be created manually. See [«Custom Page Support»](/docs/theme-settings/#Custom-Page-Support)
+Except `home` and `archives`, all custom pages under `menu` section need to be created manually. See [«Custom Page Support»](/docs/theme-settings/custom-pages.html).
+
+Besides, [hexo-generator-sitemap](https://github.com/hexojs/hexo-generator-sitemap) plugin is required for `sitemap` support.
 {% endnote %}
 
 Dynamic sub-menu within hierarchy structure is also supported. Add your sub-menu items in `menu` section in {% label primary@theme config file %} as following:
@@ -236,95 +272,4 @@ menu_settings:
 ```
 <!-- endtab -->
 
-{% endtabs %}
-
-#### Configuring Favicon
-
-By default the Hexo site use NexT favicons in `hexo-site/themes/next/source/images/` directory with different size for different device. You can replace them with your own favicons.
-
-For example, you can put your favicons in `hexo-site/source/images/` directory. Then you need to rename them and change the settings in `favicon` section in {% label primary@theme config file %}, otherwise icons from Next will rewrite your custom icons in Hexo.
-
-You can also put custom favicons into `hexo-site/source/` directory. In this way, you **must remove** `/images` prefix from paths.
-
-To generate custom favicons, you can visit [Favicon Generator](https://realfavicongenerator.net).
-
-```yml hexo/_config.yml
-favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
-  android_manifest: /images/manifest.json
-  ms_browserconfig: /images/browserconfig.xml
-```
-
-#### Configuring Avatar
-
-By default NexT doesn't show avatar in sidebar. You can configure it by editing values under `avatar` setting in {% label primary@theme config file %}.
-
-{% tabs avatar %}
-<!-- tab <code>url</code> -->
-For first test you can uncomment `/images/avatar.gif` value near the `avatar.url` setting to see default avatar:
-
-```yml next/_config.yml
-avatar:
-  url: /images/avatar.gif
-```
-
-Then you need to specify your own avatar. It can be done one of the ways below:
-
-{% subtabs avatar1 %}
-<!-- tab {% label success@Hexo directory %} -->
-Put your avatar under {% label info@site directory %} `source/uploads/` (create directory if it doesn't exists).
-And then change option to `avatar: /uploads/avatar.png`.
-<!-- endtab -->
-
-<!-- tab NexT directory -->
-Put your avatar under {% label primary@theme directory %} `source/images/`.
-And then change option to `avatar: /images/avatar.png`.
-
-{% note info %}
-Current site uses avatar under {% label primary@theme directory %} from file located in `next/source/images/apple-touch-icon-next.png` with following config:
-
-```yml hexo/_config.yml
-theme_config:
-  avatar:
-    url: /images/apple-touch-icon-next.png
-    rounded: true
-    rotated: false
-```
-
-{% endnote %}
-<!-- endtab -->
-
-<!-- tab Absolute URL from Internet -->
-You also can specify any external URL with absolute path to image: `http(s)://example.com/avatar.png`
-<!-- endtab -->
-{% endsubtabs %}
-<!-- endtab -->
-
-<!-- tab <code>rounded</code> -->
-Set up rounded of avatar by changing the value of `avatar.rounded`:
-
-* `true` → Avatar will be rounded.
-* **`false`** → Avatar will be squared.
-
-```yml next/_config.yml
-avatar:
-  rounded: true
-```
-<!-- endtab -->
-
-<!-- tab <code>rotated</code> -->
-Set up rotated of avatar by changing the value of `avatar.rotated`:
-
-* `true` → Avatar will be rotate under the mouse hovering.
-* **`false`** → Avatar will not rotate under the mouse hovering.
-
-```yml next/_config.yml
-avatar:
-  rotated: true
-```
-
-<!-- endtab -->
 {% endtabs %}

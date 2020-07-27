@@ -22,12 +22,13 @@ note:
 ### Usage
 
 ```md note.js
-{% note [class] [no-icon] %}
-Any content (support inline tags too.io).
+{% note [class] [no-icon] [summary] %}
+Any content (support inline tags too).
 {% endnote %}
 
 [class]   : default | primary | success | info | warning | danger.
 [no-icon] : Disable icon in note.
+[summary] : Optional summary of the note.
 
 All parameters are optional.
 ```
@@ -72,7 +73,7 @@ Welcome to [Hexo!](https://hexo.io)
 
 ```md
 {% note info %}
-### Info Header
+#### Info Header
 **Welcome** to [Hexo!](https://hexo.io)
 {% endnote %}
 ```
@@ -136,6 +137,17 @@ Note **without** icon: `note info no-icon`
 note info, note info, note info
 note info, note info, note info
 note info, note info, note info
+{% endnote %}
+
+```md
+{% note primary This is a summary %}
+#### Details and summary
+Note with summary: `note primary This is a summary`
+```
+
+{% note primary This is a summary %}
+#### Details and summary
+Note with summary: `note primary This is a summary`
 {% endnote %}
 
 ```md

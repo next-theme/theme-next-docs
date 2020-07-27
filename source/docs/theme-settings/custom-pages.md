@@ -173,9 +173,9 @@ calendar:
   calendar_id: <required>
   api_key: <required>
   orderBy: startTime
-  offsetMax: 24
+  showLocation: false
+  offsetMax: 72
   offsetMin: 4
-  timeZone:
   showDeleted: false
   singleEvents: true
   maxResults: 250

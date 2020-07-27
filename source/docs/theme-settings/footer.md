@@ -1,11 +1,9 @@
 ---
-title: Footer
+title: Site Footer Setting
 description: NexT User Docs – Theme Settings – Footer
 ---
 
-### Site Footer Setting
-
-#### Site Start Time
+### Site Start Time
 
 By default NexT shows current year in the footer like `© 2018`. You can configure it to show the time gap like `© 2015 - 2018` by editing values in `since` section in {% label primary@theme config file %}.
 
@@ -14,7 +12,7 @@ footer:
   since: 2015
 ```
 
-#### Site Footer Icon
+### Site Footer Icon
 
 By default NexT shows red `heart` icon {% btn #,, heart %} with animation between year and copyright information in the footer. You can configure it by editing values in `icon` section in {% label primary@theme config file %}.
 
@@ -55,7 +53,7 @@ footer:
 <!-- endtab -->
 {% endtabs %}
 
-#### Site Copyright Name
+### Site Copyright Name
 
 By default NexT shows the name of `author` from {% label info@site config file %}. You can configure it by editing values in `copyright` section in {% label primary@theme config file %}.
 
@@ -64,7 +62,7 @@ footer:
   copyright:
 ```
 
-#### Site Platform Information
+### Site Platform Information
 
 By default NexT shows Hexo and Theme & scheme information like `Powered by Hexo & NexT.Muse`. You can configure it by editing `powered` section in {% label primary@theme config file %}.
 
@@ -73,7 +71,7 @@ footer:
   powered: true
 ```
 
-#### Site Beian Information
+### Site Beian Information
 
 Beian information is for Chinese users. By default NexT will not show the information of beian. You can configure it by editing values in `beian` section in {% label primary@theme config file %}.
 

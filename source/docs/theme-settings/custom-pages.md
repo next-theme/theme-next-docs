@@ -61,7 +61,7 @@ tags:
 <!-- endtab -->
 {% endtabs %}
 
-#### Adding «Tags» Page
+### Adding «Tags» Page
 
 Adding «Tags» page and show «Tags» link in menu. «Tags» page will show all tags of site. If no article has tags, this page will leave blank.
 
@@ -101,7 +101,7 @@ If you enable any comment system for your site, comments will be shown for all p
 See [«How to Disable Comments on Page»](/docs/third-party-services/#How-to-Disable-Comments-on-Page) if you want to do it for pages like `tags` or `categories`.
 {% endnote %}
 
-#### Tagcloud
+### Tagcloud
 
 By default, NexT has setted font color and size for tagcloud in tags page.
 From NexT v7.0.2 you can customize them, just set related values in {% label primary@theme config file %}:
@@ -116,13 +116,13 @@ tagcloud:
   order: 1 # Sort order
 ```
 
-#### Adding «Categories» Page
+### Adding «Categories» Page
 
 {% note default %}
 «Categories» page can be added in similar way as [«Tags» page](#Adding-%C2%ABTags%C2%BB-Page), only name there is difference: just need to replace `tags` with `categories`.
 {% endnote %}
 
-#### Adding Google Calendar Page
+### Adding Google Calendar Page
 
 {% tabs calendar %}
 <!-- tab Adding Schedule Page → -->
@@ -186,7 +186,7 @@ calendar:
 <!-- endtab -->
 {% endtabs %}
 
-#### Custom 404 Page
+### Custom 404 Page
 
 {% tabs custom-404-page %}
 <!-- tab Adding New Page → -->

@@ -1,11 +1,9 @@
 ---
-title: Posts
+title: Post Settings
 description: NexT User Docs – Theme Settings – Posts
 ---
 
-### Post Settings
-
-#### Preamble Text
+### Preamble Text
 
 It's a common need to show some part of article in home page and then give a link to full article. NexT gives two ways to control how article is shown in home page. In other words, you can use following ways to show summary of articles and a **Read More** button.
 
@@ -31,7 +29,7 @@ excerpt_description: true
 It is recommended to use `<!-- more -->` (the first way) which can not only control what you want to show better, but also let Hexo's plugins use it easily.
 {% endnote %}
 
-#### Post Meta Display
+### Post Meta Display
 
 NexT supports post created date, post updated date and post categories display.
 
@@ -99,7 +97,7 @@ post_meta:
 
 {% endtabs %}
 
-#### Post Wordcount
+### Post Wordcount
 
 {% tabs wordcount %}
 <!-- tab Installation → -->
@@ -199,7 +197,7 @@ symbols_count_time:
 <!-- endtab -->
 {% endtabs %}
 
-#### Tag Icon
+### Tag Icon
 
 By default, tags at the bottom of posts have a symbol # at there left side.
 
@@ -209,7 +207,7 @@ If you prefer icon instead of symbol, edit {% label primary@theme config file %}
   tag_icon: true
   ```
 
-#### Donate settings
+### Donate settings
 
 More and more online blogging platforms (e.g. WeChat public accounts, Jianshu, Zhihu) support donate (sponsor). To catch paid reading trends, we added donate feature, supports WeChat, Alipay and Bitcoin. What you need is:
 
@@ -237,7 +235,7 @@ paypal: /images/paypal.png
 monero: /images/monero.png
 ```
 
-#### Follow me
+### Follow me
 
 ```yml next/_config.yml
 # Subscribe through Telegram Channel, Twitter, etc.
@@ -249,7 +247,7 @@ follow_me:
   #RSS: /atom.xml || fa fa-rss
 ```
 
-#### Related popular posts
+### Related popular posts
 
 NexT supports the related posts functionality according to [hexo-related-popular-posts](https://github.com/tea3/hexo-related-popular-posts).
 
@@ -347,7 +345,7 @@ related_posts:
 <!-- endtab -->
 {% endtabs %}
 
-#### Post Edit
+### Post Edit
 
 NexT supports the edit functionality of your posts. By enabling this feature, users can quickly browse and modify the blog's source code on GitHub.
 
@@ -379,7 +377,7 @@ post_edit:
 
 {% endtabs %}
 
-#### Post Navigation
+### Post Navigation
 
 Show previous post and next post in post footer if exists.
 

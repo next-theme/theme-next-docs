@@ -7,7 +7,7 @@ How to configure Hexo and NexT? The traditional approach is to store some option
 
 At present, NexT encourages users to use the Alternate Theme Config. It's a feature of Hexo and the documentation is here: [Hexo Configuration](https://hexo.io/docs/configuration.html).
 
-Please choose only one of the following solutions and resume next steps.
+This tutorial shows you how to configure NexT using Alternate Theme Config. Please choose only one of the following solutions and resume next steps.
 
 ### `_config.[name].yml`
 

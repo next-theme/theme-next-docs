@@ -61,6 +61,19 @@ tags:
 <!-- endtab -->
 {% endtabs %}
 
+### Use archive page as home page
+
+You can configure the path of archive and index generator in {% label info@site config file %}, e.g.
+
+```yml hexo/_config.yml
+archive_dir: /
+
+index_generator:
+  path: archives
+  per_page: 10
+  order_by: -date
+```
+
 ### Adding «Tags» Page
 
 Adding «Tags» page and show «Tags» link in menu. «Tags» page will show all tags of site. If no article has tags, this page will leave blank.
@@ -101,7 +114,7 @@ If you enable any comment system for your site, comments will be shown for all p
 See [«How to Disable Comments on Page»](/docs/third-party-services/#How-to-Disable-Comments-on-Page) if you want to do it for pages like `tags` or `categories`.
 {% endnote %}
 
-### Tagcloud
+#### Tagcloud
 
 By default, NexT has setted font color and size for tagcloud in tags page.
 From NexT v7.0.2 you can customize them, just set related values in {% label primary@theme config file %}:

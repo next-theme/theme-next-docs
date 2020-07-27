@@ -2,36 +2,19 @@
 ###################### Hexo Configuration #######################
 #################################################################
 
+# Site
 title: NexT
-
 keywords: "Hexo, NexT"
-
 language: en
-
-index_generator:
-  per_page: 4
-  order_by: -date
-
-archive_generator:
-  per_page: 12
-  yearly: true
-  monthly: true
-  daily: false
-
-category_generator:
-  per_page: 5
-
-tag_generator:
-  per_page: 5
-  enable_index_page: false
-
 timezone: UTC
 
+# URL
 url: https://theme-next.js.org
 root: /
 permalink: :title/
 permalink_defaults:
 
+# Directory
 source_dir: source
 public_dir: public
 tag_dir: tags
@@ -39,16 +22,19 @@ archive_dir: archives/
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-
 skip_render:
   - 'robots.txt'
   - animate/*
   - highlight/*
 
-new_post_name: :title.md
+# Writing
+new_post_name: :title.md # File name of new posts
 default_layout: post
-titlecase: false
-external_link: true
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -58,19 +44,34 @@ highlight:
   enable: true
   line_number: false
   auto_detect: false
-  tab_replace:
+  tab_replace: ''
 
+# Home page setting
+index_generator:
+  per_page: 4
+  order_by: -date
+
+# Category & Tag
 default_category: uncategorized
 category_map:
 tag_map:
 
+# Date / Time format
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
+# Pagination
 per_page: 5
 pagination_dir: page
 
+# Extensions
 theme: next
+
+archive_generator:
+  per_page: 12
+  yearly: true
+  monthly: true
+  daily: false
 
 server:
   port: 4000

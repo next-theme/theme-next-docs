@@ -61,7 +61,7 @@ tags:
 <!-- endtab -->
 {% endtabs %}
 
-### Use archive page as home page
+### Use Archive Page as Home Page
 
 You can configure the path of archive and index generator in {% label info@site config file %}, e.g.
 

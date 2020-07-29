@@ -63,7 +63,7 @@ menu:
 
     Theme Settings:
       default: /theme-settings/ || fa fa-star
-      Footer: /footer.html || far fa-sticky-note
+      Footer: /footer.html || far fa-swatchbook
       Sidebar: /sidebar.html || fa fa-bars
       Posts: /posts.html || fa fa-paragraph
       Custom Pages: /custom-pages.html || far fa-edit

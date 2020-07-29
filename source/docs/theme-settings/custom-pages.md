@@ -61,7 +61,20 @@ tags:
 <!-- endtab -->
 {% endtabs %}
 
-#### Adding «Tags» Page
+### Use Archive Page as Home Page
+
+You can configure the path of archive and index generator in {% label info@site config file %}, e.g.
+
+```yml hexo/_config.yml
+archive_dir: /
+
+index_generator:
+  path: archives
+  per_page: 10
+  order_by: -date
+```
+
+### Adding «Tags» Page
 
 Adding «Tags» page and show «Tags» link in menu. «Tags» page will show all tags of site. If no article has tags, this page will leave blank.
 
@@ -116,13 +129,13 @@ tagcloud:
   order: 1 # Sort order
 ```
 
-#### Adding «Categories» Page
+### Adding «Categories» Page
 
 {% note default %}
 «Categories» page can be added in similar way as [«Tags» page](#Adding-%C2%ABTags%C2%BB-Page), only name there is difference: just need to replace `tags` with `categories`.
 {% endnote %}
 
-#### Adding Google Calendar Page
+### Adding Google Calendar Page
 
 {% tabs calendar %}
 <!-- tab Adding Schedule Page → -->
@@ -186,7 +199,7 @@ calendar:
 <!-- endtab -->
 {% endtabs %}
 
-#### Custom 404 Page
+### Custom 404 Page
 
 {% tabs custom-404-page %}
 <!-- tab Adding New Page → -->

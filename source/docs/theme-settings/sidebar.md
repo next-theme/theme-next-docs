@@ -1,11 +1,9 @@
 ---
-title: Sidebar
+title: Sidebar Setting
 description: NexT User Docs – Theme Settings – Sidebar
 ---
 
-### Sidebar Setting
-
-#### Sidebar Style
+### Sidebar Style
 
 By default sidebar only shows in posts (have a table of content), and is placed in left side. You can change it by editing values under `sidebar` setting in {% label primary@theme config file %}.
 
@@ -84,7 +82,7 @@ For now only Pisces / Gemini Schemes supports `offset` setting under **6.0.x** v
 
 {% endtabs %}
 
-#### Configuring Avatar
+### Configuring Avatar
 
 By default NexT doesn't show avatar in sidebar. You can configure it by editing values under `avatar` setting in {% label primary@theme config file %}.
 
@@ -152,7 +150,7 @@ avatar:
 <!-- endtab -->
 {% endtabs %}
 
-#### Sidebar Site State
+### Sidebar Site State
 
 By default NexT shows the categories and counts of Posts / Categories / Tags in sidebar. You can configure it by editing value `site_state` in {% label primary@theme config file %}.
 
@@ -160,7 +158,7 @@ By default NexT shows the categories and counts of Posts / Categories / Tags in 
 site_state: true
 ```
 
-#### Sidebar Social Links
+### Sidebar Social Links
 
 {% note default %}
 Social Links have similar fucture as [Menu Items](/docs/getting-started/#Configuring-Menu-Items), only target link there is difference: specified link must have full url path (permalink).
@@ -214,7 +212,7 @@ social_icons:
 
 {% endtabs %}
 
-#### Sidebar Blogrolls
+### Sidebar Blogrolls
 
 You can add blog rolls within sidebar in NexT.
 
@@ -254,7 +252,7 @@ links:
 
 {% endtabs %}
 
-#### Sidebar TOC
+### Sidebar TOC
 
 {% tabs toc %}
 <!-- tab <code>enable</code> -->

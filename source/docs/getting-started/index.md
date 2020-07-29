@@ -32,7 +32,17 @@ It's easy to install Hexo theme: you can just download the NexT theme, copy the 
 #### Downloading NexT
 
 {% tabs downloading-next %}
-<!-- tab Newest Version -->
+<!-- tab Using <code>npm</code> -->
+If you're using Hexo 5.0 or later, the simplest way to install is through npm.
+
+Open your Terminal, change to Hexo {% label info@site root directory %} and install NexT theme:
+```bash
+$ cd hexo-site
+$ npm install hexo-theme-next
+```
+<!-- endtab -->
+
+<!-- tab Using <code>git</code> -->
 If you know about [Git](https://git-scm.com), you can clone the whole repository and update it in any time with `git pull` command instead of downloading archive manually.
 
 Open your terminal, change to Hexo {% label info@site root directory %} and clone latest master branch of NexT theme:
@@ -42,7 +52,7 @@ $ git clone https://github.com/next-theme/hexo-theme-next themes/next
 ```
 <!-- endtab -->
 
-<!-- tab Stable Version -->
+<!-- tab Download zip -->
 1. Go to NexT version [Release Page](https://github.com/next-theme/hexo-theme-next/releases).
 2. Choose the version you need and download the Source Code (zip) in the Download section. For example v8.0.0-rc.3.
 3. Extract the zip file to site's themes directory and rename the extracted folder (`hexo-theme-next-8.0.0-rc.3`) to `next`.
@@ -65,11 +75,12 @@ Like all Hexo themes, after you download it, open {% label info@site config file
 theme: next
 ```
 
-Now you have installed NexT theme, next we will verify whether it is enabled correctly. Between changing the theme and verifying it, we'd better use `hexo clean` to clean Hexo's cache.
+Now you have installed NexT theme and enabled it. The following steps will help you verify whether NexT is enabled correctly.
 
 #### Checking NexT
 
-First start Hexo local server, and enable debug parameter (by adding `--debug`), the whole command is `hexo s --debug`. You can see the output while running, and if you find problem, you can use the output to help others locate error better. When it prints:
+It's recommended to use `hexo clean` to clean Hexo's cache first.
+Then start Hexo local server with debug parameter (by adding `--debug`), the whole command is `hexo s --debug`. You can see the output while running, and if you find problem, you can use the output to help others locate error better. When it prints:
 
 ```
 INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
@@ -82,7 +93,7 @@ If you find your site looks like this picture, you have installed it correctly. 
 ![Default Scheme – Muse](/images/docs/next-default-scheme.png)
 {% endnote %}
 
-Now you've installed and enabled NexT. In next steps we will change some settings including personalization and third-party services integration.
+If everything is OK, in next steps we will change some settings including personalization and third-party services integration.
 
 ### Hexo Configuration
 
@@ -174,7 +185,7 @@ The `prefers-color-scheme` CSS media feature is used to bring Dark Mode to all 4
 
 {% caniuse prefers-color-scheme @ current,past_1,past_2,past_3,past_4,past_5 %}
 
-Theme NexT automatically shows Dark Mode if the OS prefered theme is dark. It's supported by macOS Mojave, iOS 13 and Android 10 or above. Relevant docs:
+Theme NexT automatically shows Dark Mode if the OS prefered theme is dark. It's supported by macOS Mojave, iOS 13 and Android 10 or later. Relevant docs:
 [How to use Dark Mode on your Mac](https://support.apple.com/en-us/HT208976)
 [Use Dark Mode on your iPhone, iPad, or iPod touch](https://support.apple.com/en-us/HT210332)
 [Dark theme | Android Developers](https://developer.android.com/guide/topics/ui/look-and-feel/darktheme)

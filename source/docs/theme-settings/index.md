@@ -4,7 +4,7 @@ date: 2018-02-08 18:50:03
 description: NexT User Docs – Theme Settings
 ---
 
-NexT insists to hide complex details and gives you a simple but flexible config, so you can use it easily.
+One of the guiding principles of NexT is to hide complex details and give you a simple but flexible config, so you can use it easily.
 
 ### Cache Support
 
@@ -148,6 +148,7 @@ codeblock:
 back2top:
   enable: true
 ```
+
 Set the value `back2top.enable` to `true` to display `Back to top` button.
 <!-- endtab -->
 
@@ -310,7 +311,7 @@ According to the [CSS Fonts Module Level 3](https://www.w3.org/TR/2018/REC-css-f
 To avoid escaping mistakes, quote font family names if necessary.
 {% endnote %}
 
-If you still need more customization, following change will cover Fonts Customization function. Edit `source/_data/variables.styl` in {% label primary@Hexo root directory %} and add two varibles:
+If you still need more customization, following change will cover Fonts Customization function. Edit `source/_data/variables.styl` in {% label info@site root directory %} and add two varibles:
 
 ```styl hexo/source/_data/variables.styl
 // Title Font, set it to font family you want.

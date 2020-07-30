@@ -142,7 +142,7 @@ vendors:
 
 ### Lazyload
 
-[Lazyload](https://github.com/ApoorvSaxena/lozad.js) is a modern vanilla JavaScript version of the original Lazy Load plugin. Lazy Load delays loading of images in long web pages. Images outside of viewport will not be loaded before user scrolls to them. This is opposite of image preloading.
+[Lozad.js](https://github.com/ApoorvSaxena/lozad.js) is a lazy loader plugin in modern vanilla JavaScript. It delays loading of images in long web pages. Images outside of viewport will not be loaded before user scrolls to them. This is opposite of image preloading.
 
 {% tabs lazyload %}
 <!-- tab NexT Config → -->
@@ -338,7 +338,7 @@ vendors:
 
 ### Canvas Ribbon
 
-[canvas-ribbon.js](https://github.com/zproo/canvas-ribbon) is a ribbon backgroud of website draw on canvas.
+[canvas-ribbon.js](https://github.com/hustcc/ribbon.js) is a ribbon backgroud of website draw on canvas.
 
 {% tabs canvas_ribbon %}
 <!-- tab NexT Config → -->

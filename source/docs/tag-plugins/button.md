@@ -12,8 +12,8 @@ description: NexT User Docs – NexT Supported Tags – Button
 
 url     : Absolute or relative path to URL.
 text    : Button text. Required if no icon specified.
-icon    : FontAwesome icon name (without 'fa-' at the begining). Required if no text specified.
-[class] : FontAwesome class(es): fa-fw | fa-lg | fa-2x | fa-3x | fa-4x | fa-5x
+icon    : Font Awesome icon name (without 'fa-' at the begining). Required if no text specified.
+[class] : Font Awesome class(es): fa-fw | fa-lg | fa-2x | fa-3x | fa-4x | fa-5x
           Optional parameter.
 [title] : Tooltip at mouseover.
           Optional parameter.

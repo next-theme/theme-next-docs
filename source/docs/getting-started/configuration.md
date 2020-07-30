@@ -5,7 +5,7 @@ description: NexT User Docs – Starting to Use – Configuration
 
 How to configure Hexo and NexT? The traditional approach is to store some options in {% label info@site config file %} and other options in {% label primary@theme config file %}. This approach is applicable, but it is not smooth to update NexT theme from pulling or downloading new releases.
 
-At present, NexT encourages users to use the Alternate Theme Config. It's a feature of Hexo and the documentation is here: [Hexo Configuration](https://hexo.io/docs/configuration.html).
+At present, NexT encourages users to use the Alternate Theme Config. It's a feature of Hexo and the documentation is here: [Hexo Configuration](https://hexo.io/docs/configuration.html#Using-an-Alternate-Config).
 
 This tutorial shows you how to configure NexT using Alternate Theme Config. Please choose only one of the following solutions and resume next steps.
 

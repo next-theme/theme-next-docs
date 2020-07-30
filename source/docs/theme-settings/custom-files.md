@@ -40,7 +40,7 @@ By default NexT has following setting of content width:
 * 900px → when screen width >= 1600px.
 * In mobile / tablet devices it will use responsive width.
 
-You can change content width by editing CSS style file. Edit `source/_data/variables.styl` in {% label primary@Hexo root directory %} and add varibles:
+You can change content width by editing CSS style file. Edit `source/_data/variables.styl` in {% label info@site root directory %} and add varibles:
 
 {% tabs change-content-width %}
 <!-- tab Muse / Mist schemes -->
@@ -105,7 +105,7 @@ Then uncomment `variable` under the `custom_file_path` section in {% label prima
 
 ### Hide Sidebar on Mobile
 
-Edit `source/_data/styles.styl` in {% label primary@Hexo root directory %} and add styles:
+Edit `source/_data/styles.styl` in {% label info@site root directory %} and add styles:
 
 ```css
 +tablet-mobile() {
@@ -119,7 +119,7 @@ Then uncomment `style` under the `custom_file_path` section in {% label primary@
 
 ### Overriding Default Style
 
-Edit `source/_data/styles.styl` in {% label primary@Hexo root directory %} and add styles:
+Edit `source/_data/styles.styl` in {% label info@site root directory %} and add styles:
 
 ```css
 .archive .collection-title {

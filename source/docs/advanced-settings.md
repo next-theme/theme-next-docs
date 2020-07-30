@@ -45,7 +45,7 @@ Now NexT contains following libraries as core plugins:
 | Name               | Official Site                                            | Internal Version      |
 | ------------------ | -------------------------------------------------------- | --------------------- |
 | Anime.js           | [animejs.com](https://animejs.com)                       | 3.1.0                 |
-| FontAwesome        | [fontawesome.com](https://fontawesome.com)               | 5.13.0                |
+| Font Awesome       | [fontawesome.com](https://fontawesome.com)               | 5.13.0                |
 | Animate.css        | [animate.style](https://animate.style)                   | 3.1.1                 |
 
 The core plugins are loaded from your site by default, they are required by the basic functions of NexT.

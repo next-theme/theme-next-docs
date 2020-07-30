@@ -208,7 +208,7 @@ Value before `||` delimeter (`/link/`) → is the target link to relative url in
 <!-- endtab -->
 
 <!-- tab <code>icon</code> -->
-Value after `||` delimeter (`icon`) → is the name of FontAwesome icon.
+Value after `||` delimeter (`icon`) → is the name of Font Awesome icon.
 Names of that icons can be found in [Font Awesome](https://fontawesome.com) site.
 <!-- endtab -->
 {% endtabs %}

@@ -247,6 +247,8 @@ tabs:
     tabs: true
     labels: true
 
+mermaid:
+  enable: true
 
 # ============================================================= #
 # ==================== External Libraries ===================== #

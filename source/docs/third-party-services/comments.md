@@ -7,7 +7,7 @@ description: NexT User Docs – Third-party Service Integration – Comment Syst
 
 NexT allows you to enable multiple commenting systems at the same time. You can modify the following configuration to adjust the style or behavior of multiple commenting systems.
 
-```yml
+```yml next/_config.yml
 # Multiple Comment System Support
 comments:
   # Available values: tabs | buttons

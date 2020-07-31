@@ -38,21 +38,21 @@ algolia:
 <!-- tab Algolia Module → -->
 1. Algolia requires users to upload their search index data either manually or via provided APIs. Install and configure [Hexo Algolia](https://github.com/oncletom/hexo-algolia) in your Hexo directory. This plugin will index your site and upload selected data to Algolia.
 
-   ```bash
-   $ cd hexo-site
-   $ npm install hexo-algolia
-   ```
+    ```bash
+    $ cd hexo-site
+    $ npm install hexo-algolia
+    ```
 
 2. Run the following command to upload index data, keep a weather eye out the output of the command.
 
-   ```bash
-   $ export HEXO_ALGOLIA_INDEXING_KEY=High-privilege API key # Use Git Bash
-   # set HEXO_ALGOLIA_INDEXING_KEY=High-privilege API key # Use Windows command line
-   $ hexo clean
-   $ hexo algolia
-   ```
+    ```bash
+    $ export HEXO_ALGOLIA_INDEXING_KEY=High-privilege API key # Use Git Bash
+    # set HEXO_ALGOLIA_INDEXING_KEY=High-privilege API key # Use Windows command line
+    $ hexo clean
+    $ hexo algolia
+    ```
 
-   ![Reload Index](/images/docs/algolia-5.png)
+    ![Reload Index](/images/docs/algolia-5.png)
 <!-- endtab -->
 
 <!-- tab NexT Config -->

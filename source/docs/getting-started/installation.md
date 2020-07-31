@@ -13,7 +13,7 @@ $ ls
 _config.yml  node_modules  package.json  public  scaffolds  source  themes
 ```
 
-### Select version
+### Select Version
 
 A new version of NexT will be released every month. You can choose to install the latest version or choose a stable old version.
 
@@ -175,6 +175,6 @@ Same as before under `curl & tar & wget` variant, but will download **only concr
 <!-- endtab -->
 {% endtabs %}
 
-### Set it up
+### Set It Up
 
 When NexT download will complete, we must go back to previous guide and follow [Enabling NexT](/docs/getting-started/#Enabling-NexT) instructions.

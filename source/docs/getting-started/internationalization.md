@@ -64,7 +64,7 @@ If you would like to customize the default translation, you do not need to modif
 1. Creat a `languages.yml` in `source/_data`.
 2. Insert following codes: (be careful about the two-space indent)
 
-    ```yml
+    ```yml languages.yml
     # language
     zh-CN:
       # items
@@ -79,7 +79,7 @@ If you would like to customize the default translation, you do not need to modif
 
 This situation is also available for off-list items. For example, Next uses [Theme Inject](/docs/advanced-settings.html#Injects) to introduce the commments systems. You can rename the returned value in chinese as followed:
 
-```yml
+```yml languages.yml
 # language
 zh-CN:
   # items

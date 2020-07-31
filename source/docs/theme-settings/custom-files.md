@@ -15,7 +15,7 @@ As with [Data Files](https://hexo.io/docs/data-files), you can place all custom 
 The file name and path must be the same in `custom_file_path`.
 {% endnote %}
 
-```
+```yml next/_config.yml
 custom_file_path:
   #head: source/_data/head.njk
   #header: source/_data/header.njk

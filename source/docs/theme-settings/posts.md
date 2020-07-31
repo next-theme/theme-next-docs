@@ -203,31 +203,31 @@ By default, tags at the bottom of posts have a symbol # at there left side.
 
 If you prefer icon instead of symbol, edit {% label primary@theme config file %} like following:
 
-  ```yml next/_config.yml
-  tag_icon: true
-  ```
+```yml next/_config.yml
+tag_icon: true
+```
 
-### Donate settings
+### Donate Settings
 
 More and more online blogging platforms (e.g. WeChat public accounts, Jianshu, Zhihu) support donate (sponsor). To catch paid reading trends, we added donate feature, supports WeChat, Alipay and Bitcoin. What you need is:
 
 1. Get your WeChat / Alipay / Bitcoin receive money QRcode image(s) and put into `source/images` under {% label primary@theme directory %} or upload it(them) to an image cloud to get the absolute HTTP address(es).
 2. Set needed values in  {% label primary@theme config file %}:
 
-   ```yml next/_config.yml
-   # Donate (Sponsor) settings
-   # Front-matter variable (unsupport animation).
-   reward_settings:
-     # If true, a donate button will be displayed in every article by default.
-     enable: true
-     animation: false
-     #comment: Buy me a coffee
+    ```yml next/_config.yml
+    # Donate (Sponsor) settings
+    # Front-matter variable (unsupport animation).
+    reward_settings:
+      # If true, a donate button will be displayed in every article by default.
+      enable: true
+      animation: false
+      #comment: Buy me a coffee
 
-   reward:
-     wechatpay: /images/wechatpay.png
-     alipay: /images/alipay.png
-     bitcoin: /images/bitcoin.png
-   ```
+    reward:
+      wechatpay: /images/wechatpay.png
+      alipay: /images/alipay.png
+      bitcoin: /images/bitcoin.png
+    ```
 
 You can also add QRcode of other platforms, e.g.
 ```yml next/_config.yml
@@ -235,7 +235,7 @@ paypal: /images/paypal.png
 monero: /images/monero.png
 ```
 
-### Follow me
+### Follow Me
 
 ```yml next/_config.yml
 # Subscribe through Telegram Channel, Twitter, etc.
@@ -247,7 +247,7 @@ follow_me:
   #RSS: /atom.xml || fa fa-rss
 ```
 
-### Related popular posts
+### Related Popular Posts
 
 NexT supports the related posts functionality according to [hexo-related-popular-posts](https://github.com/tea3/hexo-related-popular-posts).
 

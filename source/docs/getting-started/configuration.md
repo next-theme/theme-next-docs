@@ -27,8 +27,8 @@ With this way, all your configurations locate in main {% label info@site config 
 
 1. Please confirm that the `/source/_data/next.yml` file does not exist (backup and delete it if exists).
 2. Copy needed NexT theme options from {% label primary@theme config file %} into {% label info@site config file %}, then
-   2.1. Move all this settings to the right with two spaces (in Visual Studio Code: select all strings, <kbd>CTRL</kbd> + <kbd>]</kbd>).
-   2.2. Add `theme_config:` parameter above all this settings.
+    2.1. Move all this settings to the right with two spaces (in Visual Studio Code: select all strings, <kbd>CTRL</kbd> + <kbd>]</kbd>).
+    2.2. Add `theme_config:` parameter above all this settings.
 
 ### `next.yml` (Deprecated)
 

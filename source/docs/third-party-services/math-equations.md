@@ -6,6 +6,10 @@ mathjax: true
 
 NexT provides two render engines for displaying Math Equations: [MathJax](https://www.mathjax.org) and [KaTeX](https://khan.github.io/KaTeX/).
 
+MathJax is a JavaScript display engine for mathematics that works in all browsers. It is highly modular on input and output. Use MathML, TeX, and ASCIImath as input and produce HTML+CSS, SVG, or MathML as output.
+
+[KaTeX is a faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php) math render engine compared to MathJax 3. And it could survive without JavaScript. But, for now [KaTeX supports less features](https://github.com/Khan/KaTeX/wiki/Things-that-KaTeX-does-not-%28yet%29-support) than MathJax. Here is a list of [TeX functions supported by KaTeX](https://khan.github.io/KaTeX/function-support.html).
+
 To use this feature, you just need to choose a render engine and turn on `enable` for it (located in {% label primary@theme config file %}). Then you need to install the **corresponding Hexo Renderer** to fully support the display of Math Equations - Only turn on `enable` **may not let you see the displayed equations correctly**. The corresponding Hexo Renderer engine will be [provided below](#Render-Engines).
 
 {% note warning %}
@@ -43,27 +47,27 @@ The `per_page` option controls whether to render Math Equations every page.
 **Examples with `per_page: true` option**
 
 - This post will render the Math Equations
-  ```md
-  ---
-  title: Will Render Math
-  mathjax: true
-  ---
-  ```
+    ```md
+    ---
+    title: Will Render Math
+    mathjax: true
+    ---
+    ```
 
 - This post will NOT render the Math Equations
-  ```md
-  ---
-  title: Not Render Math
-  mathjax: false
-  ---
-  ```
+    ```md
+    ---
+    title: Not Render Math
+    mathjax: false
+    ---
+    ```
 
 - This post will NOT render the Math Equations either
-  ```md
-  ---
-  title: Not Render Math Either
-  ---
-  ```
+    ```md
+    ---
+    title: Not Render Math Either
+    ---
+    ```
 {% endnote %}
 {% endnote %}
 
@@ -90,38 +94,30 @@ as the renderer for Markdown.
 
 1. Firstly, you need to uninstall the original renderer `hexo-renderer-marked`, and install one of the renderer above:
 
-   ```bash
-   $ npm un hexo-renderer-marked
-   $ npm i hexo-renderer-pandoc
-   ```
+    ```bash
+    $ npm un hexo-renderer-marked
+    $ npm i hexo-renderer-pandoc
+    ```
 
 2. In {% label primary@theme config file %}, choose `mathjax` as render engine.
 
-   ```yml
-   math:
-     ...
-     mathjax:
-       enable: true
-   ```
+    ```yml next/_config.yml
+    math:
+      ...
+      mathjax:
+        enable: true
+    ```
 
 3. Run standard Hexo generate, deploy process or start the server:
 
-   ```bash
-   $ hexo clean && hexo g -d
-   # or hexo clean && hexo s
-   ```
+    ```bash
+    $ hexo clean && hexo g -d
+    # or hexo clean && hexo s
+    ```
 {% endnote %}
 <!-- endtab -->
 
 <!-- tab <code>katex</code> -->
-{% note success %}
-[KaTeX is a faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php) math render engine compared to MathJax 3. And it could survive without JavaScript.
-{% endnote %}
-
-{% note danger %}
-But, for now [KaTeX supports less features](https://github.com/Khan/KaTeX/wiki/Things-that-KaTeX-does-not-%28yet%29-support) than MathJax. Here is a list of [TeX functions supported by KaTeX](https://khan.github.io/KaTeX/function-support.html).
-{% endnote %}
-
 {% note warning %}
 **Render Choosing**
 
@@ -140,7 +136,7 @@ npm i markdown-it-katex
 
 And then in {% label info@site config file %} you need to add `markdown-it-katex` as a plugin for `hexo-renderer-markdown-it`:
 
-```yml
+```yml hexo/_config.yml
 # config of hexo-renderer-markdown-it
 markdown:
   render:
@@ -162,26 +158,26 @@ markdown:
 
 1. Firstly, you need to uninstall the original renderer `hexo-renderer-marked` and install one of selected by you renderer:
 
-   ```bash
-   $ npm un hexo-renderer-marked
-   $ npm i hexo-renderer-markdown-it-plus # or hexo-renderer-markdown-it
-   ```
+    ```bash
+    $ npm un hexo-renderer-marked
+    $ npm i hexo-renderer-markdown-it-plus # or hexo-renderer-markdown-it
+    ```
 
 2. In {% label primary@theme config file %}, choose `katex` as render engine.
 
-   ```yml
-   math:
-     ...
-     katex:
-       enable: true
-   ```
+    ```yml next/_config.yml
+    math:
+      ...
+      katex:
+        enable: true
+    ```
 
 3. Run standard Hexo generate, deploy process or start the server:
 
-   ```bash
-   $ hexo clean && hexo g -d
-   # or hexo clean && hexo s
-   ```
+    ```bash
+    $ hexo clean && hexo g -d
+    # or hexo clean && hexo s
+    ```
 {% endnote %}
 
 {% note danger %}
@@ -189,11 +185,11 @@ markdown:
 
 1. Firstly, please check [Common Issues](https://github.com/Khan/KaTeX#common-issues) of KaTeX.
 2. Displayed Math (i.e. ` $$...$$ `) needs to started with new clear line.
-   In other words: you must not have any characters (except of whitespaces) **before the opening ` $$ ` and after the ending ` $$ `** ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509)).
+    In other words: you must not have any characters (except of whitespaces) **before the opening ` $$ ` and after the ending ` $$ `** ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509)).
 3. Don't support Unicode ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509)).
 4. Inline Math (..` $...$ `) must not have white spaces **after the opening ` $ ` and before the ending ` $ `** ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509)).
 5. If you use math in Heading (i.e. `## Heading`).
-   Then in corresponding TOC item it will show the related LaTex code 3 times ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-359018694)).
+    Then in corresponding TOC item it will show the related LaTex code 3 times ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-359018694)).
 6. If you use math in your post's title, it will not be rendered ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-359142879)).
 {% endnote %}
 <!-- endtab -->

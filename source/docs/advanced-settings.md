@@ -32,13 +32,13 @@ vendors:
 
 And next part is the config of each library. Each config is in format of `libname: CDN URL`. For example:
 
-```yml
+```yml next/_config.yml
 anime: //unpkg.com/animejs@3.1.0/lib/anime.min.js
 ```
 
 You can set it to a proper CDN URL, which can make static assets (JavaScript Third-party Library) load faster.
 
-#### Core plugins
+#### Core Plugins
 
 Now NexT contains following libraries as core plugins:
 
@@ -54,7 +54,7 @@ The core plugins are loaded from your site by default, they are required by the 
 If your site is deployed to any free hosting service (Github, Gitlab, etc.), CDN links are recommended for core plugins. CDN usually has faster speeds and no traffic restrictions.
 {% endnote %}
 
-#### Third-party plugins
+#### Third-party Plugins
 
 Third-party plugins are loaded from [jsDelivr](https://www.jsdelivr.com/) CDN by default, and they provide a large number of optional features.
 

@@ -14,10 +14,10 @@ There are no hard breaking changes between 5.1.x and the latest version. It's ch
 So, NexT suggest to update from version 5 to version 8 in this way:
 
 1. You don't touch old `next` dir and just do some copies of NexT files:
-   1.1. `_config.yml` or `next.yml` (if you used [Alternate Theme Config](/docs/getting-started/configuration.html)).
-   1.2. Custom CSS styles what placed in `next/source/css/_custom/*` and `next/source/css/_variables/*` directories.
-   1.3. Custom layout styles what placed in `next/layout/_custom/*`.
-   1.4. Any another possible custom additions which can be finded by compare tools between repositories.
+    1.1. `_config.yml` or `next.yml` (if you used [Alternate Theme Config](/docs/getting-started/configuration.html)).
+    1.2. Custom CSS styles what placed in `next/source/css/_custom/*` and `next/source/css/_variables/*` directories.
+    1.3. Custom layout styles what placed in `next/layout/_custom/*`.
+    1.4. Any another possible custom additions which can be finded by compare tools between repositories.
 2. Clone new repositorie to any another directory instead of `next`. For example, in `next-reloaded` directory: `git clone https://github.com/next-theme/hexo-theme-next themes/next-reloaded`. So, you don't touch your old NexT 5.1.x directory and can work with new `next-reloaded` dir.
 3. Go to Hexo main config and set theme parameter: `theme: next-reloaded`. So, your `next-reloaded` directory must loading with your generation. If you may see any bugs or you simply not like this version, in anytime you can switch for 5.1.x version back.
 4. Update language configuration (For Chinese)

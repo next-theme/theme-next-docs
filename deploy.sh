@@ -63,7 +63,6 @@ echo "=============================================================="
     hexo config root /muse/
     hexo config theme_config.scheme Muse
     hexo config theme_config.sidebar.position right
-    hexo config theme_config.back2top.sidebar false
     hexo clean && hexo g
 
     echo "${lred}`mv -v public muse`${norm}"
@@ -87,7 +86,6 @@ echo "=============================================================="
     hexo config root /pisces/
     hexo config theme_config.scheme Pisces
     hexo config theme_config.sidebar.position left
-    hexo config theme_config.back2top.sidebar true
     hexo clean && hexo g
 
     echo "${lred}`mv -v public pisces`${norm}"

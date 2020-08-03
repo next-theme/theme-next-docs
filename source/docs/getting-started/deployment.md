@@ -182,7 +182,7 @@ GitLab offers a continuous integration service and pages service. If you add a `
 
 Now, your static website is available at `https://yourname.gitlab.io/project` that is similar to GitHub. [More GitLab Pages config in here](https://gitlab.com/help/user/project/pages/index.md).
 
-Of course, you also can pulish static website on GitHub Pages or others pages service. There are two ways to configure `.gitlab-ci.yml`:
+Of course, you can also pulish static website on GitHub Pages or others pages service. There are two ways to configure `.gitlab-ci.yml`:
 
 {% tabs Gitlab CI %}
 <!-- tab <code>HTTPS</code> -->

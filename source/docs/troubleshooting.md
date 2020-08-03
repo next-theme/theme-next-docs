@@ -55,7 +55,7 @@ theme_config:
 scheme: Gemini
 ```
 
-Here will nothing happen because indentation not keeped up. Hexo just can't see these parameters because subparameters (children parameters of `theme_config` parameter) are not exists. Let's see [same configuration with indents](#2-spaces-indents-2).
+Nothing will happen here because indentation not keeped up. Hexo just can't read these parameters because subparameters (children parameters of `theme_config` parameter) does not exist. Let's see [same configuration with indents](#2-spaces-indents-2).
 <!-- endtab -->
 
 <!-- tab {% label success@Working Normally %}-->
@@ -81,7 +81,7 @@ For Hexo before version 4.0, when backtick code block(s) exists inside other tag
 
 {% tabs backtick-code-block %}
 <!-- tab {% label success@Tagged Code Block %} -->
-Instead of [Backtick Code Block](https://hexo.io/docs/tag-plugins#Backtick-Code-Block) you also can use tagged [Code Block](https://hexo.io/docs/tag-plugins#Code-Block).
+Instead of [Backtick Code Block](https://hexo.io/docs/tag-plugins#Backtick-Code-Block) you can also use tagged [Code Block](https://hexo.io/docs/tag-plugins#Code-Block).
 But in rare cases standard code block can obtain errors inside other tags.
 <!-- endtab -->
 

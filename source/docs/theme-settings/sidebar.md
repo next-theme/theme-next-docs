@@ -119,7 +119,7 @@ avatar:
 <!-- endtab -->
 
 <!-- tab Absolute URL from Internet -->
-You also can specify any external URL with absolute path to image: `http(s)://example.com/avatar.png`
+You can also specify any external URL with absolute path to image: `http(s)://example.com/avatar.png`
 <!-- endtab -->
 {% endsubtabs %}
 <!-- endtab -->

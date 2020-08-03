@@ -60,7 +60,7 @@ $ git clone https://github.com/next-theme/hexo-theme-next themes/next
 {% endtabs %}
 
 {% note primary %}
-You also can read [detailed installation instructions](/docs/getting-started/installation.html) if you want any other installation variant.
+You can also read [detailed installation instructions](/docs/getting-started/installation.html) if you want any other installation variant.
 {% endnote %}
 
 {% note warning %}
@@ -242,13 +242,18 @@ menu:
   archives: /archives/ || fa fa-archive
   Docs:
     default: /docs/ || fa fa-book
+    Getting Started:
+      default: /getting-started/ || fa fa-flag
+      Installation: /installation.html || fa fa-download
+      Configuration: /configuration.html || fa fa-wrench
     Third Party Services:
-      default: /third-party-services/ || fa fa-plug
-      Algolia Search: /algolia-search/ || fa fa-search-plus
+      default: /third-party-services/ || fa fa-puzzle-piece
+      Math Equations: /math-equations.html || fa fa-square-root-alt
+      Comment Systems: /comments.html || far fa-comment
 ```
 
-{% note info %}
-If your site runs in a sub-directory, please remove the prefix `/` from the link.
+{% note warning %}
+A `default` page is required for each sub-menu item.
 {% endnote %}
 
 By default NexT shows the icons of menu items without badges.

@@ -13,10 +13,10 @@ This feature is located under `vendors` section in {% label primary@theme config
 ```yml next/_config.yml
 vendors:
   # The CDN provider of NexT internal scripts.
-  # Available values: local, jsdelivr, unpkg
+  # Available values: local | jsdelivr | unpkg
   internal: local
   # The default CDN provider of third-party plugins.
-  # Available values: local, jsdelivr, unpkg, cdnjs
+  # Available values: local | jsdelivr | unpkg | cdnjs
   # Dependencies for `plugins: local`: https://github.com/next-theme/plugins
   plugins: jsdelivr
 
@@ -24,9 +24,11 @@ vendors:
   # If left blank, the default CDN provider set by `plugins` option will be used.
 
   # Anime.js
+  # For more information: https://animejs.com
   anime:
 
   # Font Awesome
+  # For more information: https://fontawesome.com
   fontawesome:
 
   ...
@@ -51,7 +53,7 @@ The reason that jsDelivr is chosen to deliver our third-party plugins is because
 
 And it could automatically minify the JS and CSS files, even if you don't have the minified version. Just use the `filename.min.js` or the `filename.min.css` to replace the file above. For more information: https://www.jsdelivr.com/features
 
-And we also provide other optional CDNs, including the famous [UNPKG](https://unpkg.com) and [CDNJS](https://cdnjs.com/). Set `plugins` to `unpkg` or `cdnjs` to load them from different CDN provider.
+And we also provide other optional CDNs, including the famous [UNPKG](https://unpkg.com) and [CDNJS](https://cdnjs.com). Set `plugins` to `unpkg` or `cdnjs` to load them from different CDN provider.
 
 {% note warning %}
 Particularly, if you are a Chinese blogger or most of your visits come from China, please note that **the CDNJS is blocked in some parts of China**, don't use it as your CDN provider.

@@ -34,7 +34,8 @@
                     Configuration
                 </div>
                 <div class="card-body">
-                    <p>Which code highlight engine do you prefer? (Prism requires Hexo v5 or later.)</p>
+                    <p>Which code highlight engine do you prefer?</p>
+                    <div class="alert alert-danger" role="alert">Prism requires Hexo v5 or later.</div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="engine">Engine</label>
@@ -55,7 +56,7 @@
                         <select class="custom-select" id="theme">
                         </select>
                     </div>
-                    <p class="note d-none">Install <code>prism-themes</code> with <code>npm install prism-themes</code> command in Hexo root directory first.</p>
+                    <div class="alert alert-danger d-none" role="alert">Install <code>prism-themes</code> with <code>npm install prism-themes</code> command in Hexo root directory first.</div>
                     <p>Configuration in NexT <code>_config.yml</code></p>
                     <pre class="render next"></pre>
                 </div>
@@ -257,7 +258,7 @@ class Controller {
             theme: () => {
                 let href = this.element.theme.value;
                 this.style.getStyle(href);
-                document.querySelector('.note').classList.toggle('d-none', !href.startsWith(source.src + this.style.origin.themes.src));
+                document.querySelectorAll('.alert')[1].classList.toggle('d-none', !href.startsWith(source.src + this.style.origin.themes.src));
             },
             language: () => {},
             code: () => {}

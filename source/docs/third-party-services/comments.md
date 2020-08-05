@@ -3,7 +3,9 @@ title: Comment Systems
 description: NexT User Docs – Third-party Service Integration – Comment Systems
 ---
 
-### Multiple Comment System Support
+### Overview
+
+#### Multiple Comment System Support
 
 NexT allows you to enable multiple commenting systems at the same time. You can modify the following configuration to adjust the style or behavior of multiple commenting systems.
 
@@ -34,6 +36,17 @@ You can enable lazyload by setting value `comments.lazyload` to `true` in {% lab
 
 If your blog readers are mostly using legacy browsers, please consider using [Intersection Observer polyfill](https://github.com/w3c/IntersectionObserver/tree/master/polyfill).
 
+#### How to Disable Comments on Page
+
+When you enabled comment service like Disqus, all new page will have comment service automatically. If you want to disable it in one page, just add `comments` key to [Front-matter](https://hexo.io/docs/front-matter) and set its value to `false`. Like following:
+
+```md your-post.md
+title: All tags
+type: "tags"
+comments: false
+---
+```
+
 ### Disqus
 
 Disqus is a global comment system that improves discussion on websites and connects conversations across the web.
@@ -54,7 +67,7 @@ Disqus is a global comment system that improves discussion on websites and conne
 Render Disqus comment component using Disqus API.
 
 1. Get your Disqus API Key from [Disqus API Application](https://disqus.com/api/applications/).
-2. Go to the settings page of your Disqus Application, enter your domain in Settings -> Domains.
+2. Go to the settings page of your Disqus Application, enter your domain in Settings → Domains.
 3. Get your Disqus Shortname from [General Settings - Disqus Admin](https://disqus.com/admin/settings/general/).
 4. Set the value `enable` to `true`, add the obtained Disqus API Key (`apikey`) and Shortname (`shortname`), and edit other configurations in `disqusjs` section in the {% label primary@theme config file %} as following:
     ```yml next/_config.yml
@@ -123,9 +136,9 @@ Valine is a fast, simple & efficient Leancloud based no back end comment system.
 
 1. Create an account or log into [LeanCloud](https://leancloud.cn/dashboard/login.html#/signin), and then click on the bottom left corner to [create the application](https://leancloud.cn/dashboard/applist.html#/newapp) in [dashboard](https://leancloud.cn/dashboard/applist.html#/apps).
     ![Valine](/images/docs/valine-1.png)
-2. Go to the application you just created, select `Settings -> App Keys` in the lower left corner, and you will see your APP ID and APP Key.
+2. Go to the application you just created, select `Settings → App Keys` in the lower left corner, and you will see your APP ID and APP Key.
     ![Valine](/images/docs/valine-2.png)
-3. Set the value `enable` to `true`, add the obtained APP ID (`appid`) and APP Key (`appkey`), and edit other configurations in `valine` section in the {% label primary@theme config file %} as following:
+3. Set the value `enable` to `true`, add the obtained APP ID (`appId`) and APP Key (`appKey`), and edit other configurations in `valine` section in the {% label primary@theme config file %} as following:
 
     ```yml next/_config.yml
     # Valine

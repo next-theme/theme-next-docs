@@ -63,7 +63,7 @@ $content-desktop-largest = 90%
 {% note warning %}
 If values will in percents, during opening sidebar will dynamically decrease content width to defined by you percent.
 But in standard behaviour, sidebar must displace content from yourself.
-To around it, you can to specify content width in `em`:
+To around it, you can specify content width in `em`:
 
 ```styl hexo/source/_data/variables.styl
 $content-desktop         = 50em

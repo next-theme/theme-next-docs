@@ -45,7 +45,7 @@ $ npm install hexo-theme-next
 <!-- tab Using <code>git</code> -->
 If you know about [Git](https://git-scm.com), you can clone the whole repository and update it in any time with `git pull` command instead of downloading archive manually.
 
-Open your terminal, change to Hexo {% label info@site root directory %} and clone latest master branch of NexT theme:
+Open your terminal, change to Hexo {% label info@site root directory %} and clone the latest master branch of NexT theme:
 ```bash
 $ cd hexo-site
 $ git clone https://github.com/next-theme/hexo-theme-next themes/next

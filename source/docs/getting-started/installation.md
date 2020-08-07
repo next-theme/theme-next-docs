@@ -19,19 +19,19 @@ A new version of NexT will be released every month. You can choose to install th
 
 {% tabs download-next %}
 <!-- tab {% label success@Latest Master Branch %} -->
-**Option 1: Download [Latest Master Branch](https://github.com/next-theme/hexo-theme-next/archive/master.zip)**
+**Option 1: Download the [Latest Master Branch](https://github.com/next-theme/hexo-theme-next/archive/master.zip)**
 
 May be **unstable**, but includes **latest features**. At most cases useful and recommended for advanced users and for developers.
 <!-- endtab -->
 
 <!-- tab Latest Release Version -->
-**Option 2: Download [Latest Release Version](https://github.com/next-theme/hexo-theme-next/releases/latest)**
+**Option 2: Download the [Latest Release Version](https://github.com/next-theme/hexo-theme-next/releases/latest)**
 
 At most cases **stable**. Recommended for beginners.
 <!-- endtab -->
 
-<!-- tab Tagged Release Version -->
-**Option 3: Download [Tagged Release Version](https://github.com/next-theme/hexo-theme-next/releases)**
+<!-- tab Specific Release Version -->
+**Option 3: Download the [Specific Release Version](https://github.com/next-theme/hexo-theme-next/releases)**
 
 In rare cases useful, but not recommended.
 You must define version. Let's take `v8.0.0-rc.3` as an example. Replace it with any version from [tags list](https://github.com/next-theme/hexo-theme-next/tags).
@@ -55,12 +55,12 @@ $ npm install hexo-theme-next@latest
 This variant will install the **latest release version**.
 <!-- endtab -->
 
-<!-- tab Tagged Release Version -->
+<!-- tab Specific Release Version -->
 ```bash
 $ npm install hexo-theme-next@8.0.0-rc.3
 ```
 
-This variant will install the **defined release version**.
+This variant will install the **specific release version**.
 <!-- endtab -->
 {% endtabs %}
 
@@ -115,7 +115,7 @@ $ git checkout master
 ```
 <!-- endtab -->
 
-<!-- tab Tagged Release Version -->
+<!-- tab Specific Release Version -->
 ```bash
 $ git clone --branch v8.0.0-rc.3 https://github.com/next-theme/hexo-theme-next themes/next
 ```
@@ -126,13 +126,13 @@ Or download via mirror on GitLab:
 $ git clone --branch v8.0.0-rc.3 https://gitlab.com/hexo-theme-next/hexo-theme-next themes/next
 ```
 
-This variant will install the **defined release version** (with `.git` directory inside).
-And in any time you can switch to any tagged release, but with limit to defined version.
+This variant will install the **specific release version** (with `.git` directory inside).
+And in any time you can switch to any tagged release, but with limit to specific version.
 <!-- endtab -->
 {% endtabs %}
 
 **Update**
-You can update to latest master branch by the following command:
+You can update to the latest master branch by the following command:
 
 ```bash
 $ cd themes/next
@@ -153,7 +153,7 @@ $ mkdir themes/next
 $ curl -L https://api.github.com/repos/next-theme/hexo-theme-next/tarball | tar -zxv -C themes/next --strip-components=1
 ```
 
-Same as before under `curl & tar & wget` variant, but will download **only latest master branch version**.
+This variant will install the **latest master branch**.
 <!-- endtab -->
 
 <!-- tab Latest Release Version -->
@@ -162,16 +162,16 @@ $ mkdir themes/next
 $ curl -s https://api.github.com/repos/next-theme/hexo-theme-next/releases/latest | grep tarball_url | cut -d '"' -f 4 | wget -i - -O- | tar -zx -C themes/next --strip-components=1
 ```
 
-This variant will install **only latest release version**.
+This variant will install the **latest release version**.
 <!-- endtab -->
 
-<!-- tab Tagged Release Version -->
+<!-- tab Specific Release Version -->
 ```bash
 $ mkdir themes/next
 $ curl -L https://api.github.com/repos/next-theme/hexo-theme-next/tarball/v8.0.0-rc.3 | tar -zxv -C themes/next --strip-components=1
 ```
 
-Same as before under `curl & tar & wget` variant, but will download **only concrete version**.
+This variant will install the **specific release version**.
 <!-- endtab -->
 {% endtabs %}
 

@@ -1,0 +1,111 @@
+<svg fill="none" viewBox="0 0 300 360" width="300" height="360" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+pre {
+  font-size: 13px;
+  line-height: 1.2;
+  margin: 0;
+}
+/* Tomorrow Night Blue Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+  color: #7285b7;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+  color: #ff9da4;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+  color: #ffc58f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+  color: #ffeead;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+  color: #d1f1a9;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+  color: #bbdaff;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #ebbbff;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  background: #002451;
+  color: white;
+  padding: 0.5em;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+			</style>
+<pre><code class="language-ruby hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>
+  <span class="hljs-keyword">include</span> ActiveModel::Conversion
+  <span class="hljs-keyword">include</span> ActiveModel::Validations
+
+  validates_presence_of <span class="hljs-symbol">:name</span>
+
+  <span class="hljs-keyword">attr_accessor</span> <span class="hljs-symbol">:name</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">initialize</span><span class="hljs-params">(attributes = {})</span></span>
+    @name = attributes[<span class="hljs-symbol">:name</span>]
+  <span class="hljs-keyword">end</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">persist</span></span>
+    @persisted = <span class="hljs-literal">true</span>
+  <span class="hljs-keyword">end</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">persisted?</span></span>
+    @persisted
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+
+person1 = Person.new(<span class="hljs-symbol">:name</span> =&gt; <span class="hljs-string">"matz"</span>)
+p person1.valid?</code></pre>
+		</div>
+	</foreignObject>
+</svg>

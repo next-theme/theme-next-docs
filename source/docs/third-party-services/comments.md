@@ -47,6 +47,10 @@ comments: false
 ---
 ```
 
+#### Rename Comment Count Text
+
+You can rename the post meta text of comment count using `languages.yml`: [Override Default Translations](/docs/getting-started/internationalization.html#Override-Default-Translations).
+
 ### Disqus
 
 Disqus is a global comment system that improves discussion on websites and connects conversations across the web.

@@ -26,7 +26,7 @@ Perhaps you have already found that this website is deployed on Netlify. Checkou
 
 #### GitHub Actions
 
-This Github Action automating hexo deployment workflow, to allow you to leverage GitHub Actions to publish your hexo site on Github Pages: [hexo-action](https://github.com/sma11black/hexo-action).
+This Github Action automating Hexo deployment workflow, to allow you to leverage GitHub Actions to publish your Hexo site on Github Pages: [hexo-action](https://github.com/sma11black/hexo-action).
 
 #### Travis CI
 

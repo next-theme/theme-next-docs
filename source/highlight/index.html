@@ -187,35 +187,29 @@ prismjs:
     }
 }
 
-const CODE = `const nunjucks = require('nunjucks');
-const path = require('path');
+const CODE = `class Person
+  include ActiveModel::Conversion
+  include ActiveModel::Validations
 
-function njkCompile(data) {
-  const templateDir = path.dirname(data.path);
-  const env = nunjucks.configure(templateDir, {
-    autoescape: false
-  });
-  env.addFilter('safedump', dictionary => {
-    if (typeof dictionary !== 'undefined' && dictionary !== null) {
-      return JSON.stringify(dictionary);
-    }
-    return '""';
-  });
-  return nunjucks.compile(data.text, env, data.path);
-}
+  validates_presence_of :name
 
-function njkRenderer(data, locals) {
-  return njkCompile(data).render(locals);
-}
+  attr_accessor :name
 
-// Return a compiled renderer.
-njkRenderer.compile = function(data) {
-  const compiledTemplate = njkCompile(data);
-  // Need a closure to keep the compiled template.
-  return function(locals) {
-    return compiledTemplate.render(locals);
-  };
-};`;
+  def initialize(attributes = {})
+    @name = attributes[:name]
+  end
+
+  def persist
+    @persisted = true
+  end
+
+  def persisted?
+    @persisted
+  end
+end
+
+person1 = Person.new(:name => "matz")
+p person1.valid?`;
 
 class Controller {
     constructor() {
@@ -230,7 +224,7 @@ class Controller {
         this.value = {
             engine: localStorage.getItem('engine') || 'highlight',
             theme: localStorage.getItem('theme') || 'tomorrow',
-            language: localStorage.getItem('language') || 'javascript',
+            language: localStorage.getItem('language') || 'ruby',
             code: localStorage.getItem('code') || CODE
         };
         this.onchange = {

@@ -37,13 +37,14 @@ Thanks to the contribution of our users and developers, [NexT now supports over 
 
 NexT uses code highlighting themes from the [Highlight.js](https://highlightjs.org) and [Prism](https://prismjs.com) package, and makes [more than 90 themes](/docs/theme-settings/#Codeblock-Style) available to you.
 
-{% gp 5-2 %}
-![Tomorrow Normal](/images/docs/tomorrow.png)
-![Tomorrow Night](/images/docs/tomorrow-night.png)
-![Tomorrow Night Eighties](/images/docs/tomorrow-night-eighties.png)
-![Tomorrow Night Blue](/images/docs/tomorrow-night-blue.png)
-![Tomorrow Night Bright](/images/docs/tomorrow-night-bright.png)
-{% endgp %}
+<!-- Inspired by https://github.com/sindresorhus/css-in-readme-like-wat -->
+| Tomorrow                       | Tomorrow Night                       | Tomorrow Night Eighties                       |
+| :----------------------------: | :----------------------------------: | :-------------------------------------------: |
+| ![](/images/docs/tomorrow.svg) | ![](/images/docs/tomorrow-night.svg) | ![](/images/docs/tomorrow-night-eighties.svg) |
+
+| Tomorrow Night Blue                       | Tomorrow Night Bright                       | Default                       |
+| :---------------------------------------: | :-----------------------------------------: | :---------------------------: |
+| ![](/images/docs/tomorrow-night-blue.svg) | ![](/images/docs/tomorrow-night-bright.svg) | ![](/images/docs/default.svg) |
 
 ### Supported Browsers
 

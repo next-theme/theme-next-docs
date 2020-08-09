@@ -26,9 +26,12 @@ note:
 Any content (support inline tags too).
 {% endnote %}
 
-[class]   : default | primary | success | info | warning | danger.
-[no-icon] : Disable icon in note.
-[summary] : Optional summary of the note.
+[class]   : Optional parameter.
+            Supported values: default | primary | success | info | warning | danger.
+[no-icon] : Optional parameter.
+            Disable icon in note.
+[summary] : Optional parameter.
+            Optional summary of the note.
 
 All parameters are optional.
 ```

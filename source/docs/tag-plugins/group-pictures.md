@@ -9,8 +9,10 @@ description: NexT User Docs – NexT Supported Tags – Group Pictures
 {% grouppicture [group]-[layout] %}{% endgrouppicture %}
 {% gp [group]-[layout] %}{% endgp %}
 
-[group]  : Total number of pictures to add in the group.
-[layout] : Default picture under the group to show.
+[group]  : Optional parameter.
+           Total number of pictures to add in the group.
+[layout] : Optional parameter.
+           Default picture under the group to show.
 ```
 
 ### Examples

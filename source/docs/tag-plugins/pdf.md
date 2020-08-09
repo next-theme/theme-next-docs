@@ -17,8 +17,9 @@ pdf:
 ```md pdf.js
 {% pdf url [height] %}
 
-[url]    : The URL (Absolute path) of the PDF file.
-[height] : Optional. Height of the PDF display element, e.g. 800px.
+url      : The URL (Absolute path) of the PDF file.
+[height] : Optional parameter.
+           Height of the PDF display element, e.g. 800px.
 ```
 
 {% note warning %}

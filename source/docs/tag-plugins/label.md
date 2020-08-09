@@ -6,12 +6,14 @@ description: NexT User Docs – NexT Supported Tags – Label
 ### Usage
 
 ```md label.js
-{% label [class]@Text %}
+{% label [class]@text %}
 
-[class] : default | primary | success | info | warning | danger.
-          '@Text' can be specified with or without space
-          E.g. 'success @text' similar to 'success@text'.
-          If not specified, default class will be selected.
+[class] : Optional parameter.
+          Supported values: default | primary | success | info | warning | danger.
+          If not specified, the default style of the browser will be used,
+          which may be different in different browsers.
+text    : '@text' can be specified with or without space
+          E.g. 'success @text' is the same as 'success@text'.
 ```
 
 ### Examples

@@ -9,9 +9,12 @@ description: NexT User Docs – NexT Supported Tags – Link Grid
 {% linkgrid [image] [delimiter] [comment] %}{% endlinkgrid %}
 {% lg [image] [delimiter] [comment] %}{% endlg %}
 
-[image]     : Default image URL.
-[delimiter] : If the optional delimiter parameter is given, it is interpreted as the delimiter of items in each line.
-[comment]   : If the optional comment parameter is given, it is interpreted as the symbol to comment out a line.
+[image]     : Optional parameter.
+              Default image URL.
+[delimiter] : Optional parameter.
+              If the optional delimiter parameter is given, it is interpreted as the delimiter of items in each line.
+[comment]   : Optional parameter.
+              If the optional comment parameter is given, it is interpreted as the symbol to comment out a line.
 ```
 
 ### Examples

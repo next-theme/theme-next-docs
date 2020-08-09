@@ -143,11 +143,24 @@ note info, note info, note info
 {% note primary This is a summary %}
 #### Details and summary
 Note with summary: `note primary This is a summary`
+{% endnote %}
 ```
 
 {% note primary This is a summary %}
 #### Details and summary
 Note with summary: `note primary This is a summary`
+{% endnote %}
+
+```md
+{% note info no-icon This is a summary %}
+#### Details and summary (No icon)
+Note with summary: `note info no-icon This is a summary`
+{% endnote %}
+```
+
+{% note info no-icon This is a summary %}
+#### Details and summary (No icon)
+Note with summary: `note info no-icon This is a summary`
 {% endnote %}
 
 ```md

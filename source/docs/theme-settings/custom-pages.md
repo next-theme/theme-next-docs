@@ -111,7 +111,7 @@ menu:
 
 {% note warning %}
 If you enable any comment system for your site, comments will be shown for all posts and pages.
-See [«How to Disable Comments on Page»](/docs/third-party-services/#How-to-Disable-Comments-on-Page) if you want to do it for pages like `tags` or `categories`.
+See [«How to Disable Comments on Page»](/docs/third-party-services/comments.html#How-to-Disable-Comments-on-Page) if you want to do it for pages like `tags` or `categories`.
 {% endnote %}
 
 #### Tagcloud

@@ -37,7 +37,7 @@ Travis CI enables your team to test and ship your apps with confidence. It's bui
 There are two ways to obtain the necessary permissions for Travis CI. Deploy Key has the advantage of high security, while Access Token has the advantage of being more flexible.
 
 {% subtabs Get permissions %}
-<!-- tab Access Token  -->
+<!-- tab Access Token -->
 This method applies to a warehouse with a private Submodule
 
 * Create an empty branch of `source` in the repository where the blog source is hosted.

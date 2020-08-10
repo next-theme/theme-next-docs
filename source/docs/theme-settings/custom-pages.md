@@ -170,7 +170,7 @@ menu:
 <!-- tab Setting Google Calendar-->
 
 {% subtabs calendar1 %}
-<!-- tab Get calendar ID and API KEY →  -->
+<!-- tab Get calendar ID and API KEY → -->
 Login to [Google developers](https://console.developers.google.com/flows/enableapi?apiid=calendar) and add Google Calendar API, you will get your calendar ID and API KEY. [More detailed documentation](https://developers.google.com/calendar/quickstart/js)
 
 References:
@@ -178,7 +178,7 @@ References:
 - To get api_key: https://console.developers.google.com
 - Create & manage a public Google calendar: https://support.google.com/calendar/answer/37083
 <!-- endtab -->
-<!-- tab NexT Config  -->
+<!-- tab NexT Config -->
 You can enable it by setting values in `calendar` part. Copy the value of calendar ID and API KEY in {% label primary@theme config file %}.
 
 ```yml next/_config.yml

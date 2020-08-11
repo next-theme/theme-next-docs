@@ -249,7 +249,7 @@ menu:
     Third Party Services:
       default: /third-party-services/ || fa fa-puzzle-piece
       Math Equations: /math-equations.html || fa fa-square-root-alt
-      Comment Systems: /comments.html || far fa-comment
+      Comment Systems: /comments.html || fa fa-comment-alt
 ```
 
 {% note warning %}

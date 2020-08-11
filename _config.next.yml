@@ -63,10 +63,10 @@ menu:
 
     Theme Settings:
       default: /theme-settings/ || fa fa-star
-      Footer: /footer.html || far fa-swatchbook
+      Footer: /footer.html || fa fa-swatchbook
       Sidebar: /sidebar.html || fa fa-bars
       Posts: /posts.html || fa fa-paragraph
-      Custom Pages: /custom-pages.html || far fa-edit
+      Custom Pages: /custom-pages.html || fa fa-edit
       Custom Files: /custom-files.html || fa fa-palette
       SEO: /seo.html || fa fa-external-link-square-alt
       Front Matter: /front-matter.html || fa fa-heading
@@ -74,7 +74,7 @@ menu:
     Third Party Services:
       default: /third-party-services/ || fa fa-puzzle-piece
       Math Equations: /math-equations.html || fa fa-square-root-alt
-      Comment Systems: /comments.html || far fa-comment
+      Comment Systems: /comments.html || fa fa-comment-alt
       Statistics and Analytics: /statistics-and-analytics.html || fa fa-chart-pie
       Post Widgets: /post-widgets.html || fa fa-gift
       Search Services: /search-services.html || fa fa-search-plus
@@ -85,12 +85,12 @@ menu:
       default: /tag-plugins/ || fa fa-rocket
       Button: /button.html || fa fa-cube
       Caniuse: /caniuse.html || fa fa-signal
-      Group Pictures: /group-pictures.html || far fa-images
+      Group Pictures: /group-pictures.html || fa fa-images
       Label: /label.html || fa fa-hat-wizard
       Link Grid: /link-grid.html || fa fa-grip-vertical
       Mermaid: /mermaid.html || fa fa-project-diagram
       Note: /note.html || fa fa-adjust
-      PDF: /pdf.html || far fa-file-pdf
+      PDF: /pdf.html || fa fa-file-pdf
       Tabs: /tabs.html || fa fa-columns
 
     Advanced Settings: /advanced-settings.html || fa fa-cog

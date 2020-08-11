@@ -7,16 +7,26 @@ description: NexT User Docs – Troubleshooting
 
 **Before submitting an Issue on GitHub, you can follow the steps below to debug:**
 
+If you get an error message from Hexo or your browser:
+* If the error comes from a Hexo plugin, such as hexo-enhancer, please submit an Issue to its GitHub repository.
 * If the error comes from a third-party service, such as the Gitalk comment system, please submit an Issue to its GitHub repository.
+* Otherise, please search in Google / Stackoverflow / GitHub Issues, or report it to us when submitting a new Issue.
+
+The following steps will help you determine the cause of the problem:
 * Execute `hexo clean`, clear the browser cache and disable all CDN services (e.g. Cloudflare Rocket Loader) - This may take some time to take effect.
 * Disable browser plug-ins or use other devices and browsers to test, because bugs may only occur in specific browsers.
 * Switch to another theme and check if the bug still exists (e.g. default theme landscape). In other words, prove that this is a bug of NexT, not Hexo.
 * Upgrade theme NexT to the latest version.
-* Upgrade Hexo and Hexo plugins to the latest version.
+* Upgrade Hexo and all Hexo plugins to the latest version.
 * Upgrade or downgrade Node.js to the latest LTS version.
 * Uninstall all non-essential Hexo plugins, or delete `node_modules` and then reinstall all plugins using `npm install --force`.
 
-If you get an error message from Hexo or your browser, please search in Google / Stackoverflow / GitHub Issues, or report it to us when submitting a new Issue.
+If you decide to submit an Issue, please answer the following questions based on the Issue template:
+* Can you reproduce the problem? Can you reliably reproduce the issue? If not, provide details about how often the problem happens and under which conditions it normally happens.
+* Did the problem start happening recently or was this always a problem?
+* If the problem started happening recently, can you reproduce the problem in an older version of NexT? What's the most recent version in which the problem doesn't happen? You can download older versions of NexT from [the releases page](https://github.com/next-theme/hexo-theme-next/releases).
+* Which version of Node, Hexo and NexT are you using? You can get the exact version by running `node -v`, `hexo version` in your terminal.
+* Which packages do you have installed? You can get that list by copying the output from `npm ls --depth 0` in Hexo root directory.
 
 ### Keep Up Indentation
 

@@ -31,7 +31,43 @@ custom_file_path:
 
 In addition to `custom_file_path`, we also provide a more flexible way to customize, you can read the [Theme Inject](/docs/advanced-settings.html#Injects) in documentation.
 
-### How to Change Content Width
+### Examples of Modifying Layout
+
+#### Live2d Widget
+
+Edit `source/_data/head.njk` in {% label info@site root directory %} and add the following content:
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+```
+
+Then uncomment `head` under the `custom_file_path` section in {% label primary@theme config file %}.
+
+```yml next/_config.yml
+custom_file_path:
+  head: source/_data/head.njk
+```
+
+#### Netlify Logo in Sidebar
+
+Edit `source/_data/sidebar.njk` in {% label info@site root directory %} and add the following content:
+
+```html
+<div class="cc-license animated" itemprop="sponsor">
+  <a href="https://www.netlify.com" class="cc-opacity" title="Deploy with Netlify → https://www.netlify.com" target="_blank"><img width="80" src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Netlify"></a>
+</div>
+```
+
+Then uncomment `sidebar` under the `custom_file_path` section in {% label primary@theme config file %}.
+
+```yml next/_config.yml
+custom_file_path:
+  sidebar: source/_data/sidebar.njk
+```
+
+### Examples of Modifying Style
+
+#### How to Change Content Width
 
 By default NexT has following setting of content width:
 
@@ -103,7 +139,44 @@ So, if you want to add any variables or styles to both Pisces and Gemini schemes
 
 Then uncomment `variable` under the `custom_file_path` section in {% label primary@theme config file %}.
 
-### Hide Sidebar on Mobile
+```yml next/_config.yml
+custom_file_path:
+  variable: source/_data/variables.styl
+```
+
+#### Custom Icon Image
+
+NexT uses Font Awesome as the default icon library. However, Font Awesome does not include the icons of some Chinese social networking site. In this tutorial, we use local images to replace the missing Font Awesome icons.
+
+Let's take the Bilibili icon as an example. You need to prepare a icon in svg format, e.g. `/source/images/bilibili.svg`.
+
+Edit `source/_data/styles.styl` in {% label info@site root directory %} and add styles:
+
+```css
+.fab.fa-bilibili {
+  background: url(/bilibili.svg);
+  background-position: 50% 75%;
+  background-repeat: no-repeat;
+  height: 1rem;
+  width: 1rem;
+}
+```
+
+Then uncomment `style` under the `custom_file_path` section in {% label primary@theme config file %}.
+
+```yml next/_config.yml
+custom_file_path:
+  style: source/_data/styles.styl
+```
+
+The usage is:
+
+```yml next/_config.yml
+social:
+  Bilibili: https://space.bilibili.com/userid/ || fab fa-bilibili
+```
+
+#### Hide Sidebar on Mobile
 
 Edit `source/_data/styles.styl` in {% label info@site root directory %} and add styles:
 
@@ -117,7 +190,12 @@ Edit `source/_data/styles.styl` in {% label info@site root directory %} and add 
 
 Then uncomment `style` under the `custom_file_path` section in {% label primary@theme config file %}.
 
-### Overriding Default Style
+```yml next/_config.yml
+custom_file_path:
+  style: source/_data/styles.styl
+```
+
+#### Overriding Default Style
 
 Edit `source/_data/styles.styl` in {% label info@site root directory %} and add styles:
 
@@ -128,3 +206,8 @@ Edit `source/_data/styles.styl` in {% label info@site root directory %} and add 
 ```
 
 Then uncomment `style` under the `custom_file_path` section in {% label primary@theme config file %}.
+
+```yml next/_config.yml
+custom_file_path:
+  style: source/_data/styles.styl
+```

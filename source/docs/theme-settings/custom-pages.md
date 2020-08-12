@@ -201,17 +201,25 @@ calendar:
 
 ### Custom 404 Page
 
-{% tabs custom-404-page %}
-<!-- tab Adding New Page → -->
 In your terminal, change to the `source` folder of {% label info@site root directory %}. Create a new folder called `404`, then create a new page in it:
 ```bash
 $ cd hexo-site/source
 $ mkdir 404
 $ touch 404/index.md
 ```
-<!-- endtab -->
 
-<!-- tab Editting Page → -->
+Make sure `relative_link` is disabled in {% label info@site config file %}:
+
+```yml hexo/_config.yml
+relative_link: false
+```
+
+{% note warning %}
+Whether users can be redirected to the 404 page depends on the settings of the website hosting service or web server, not Hexo. For example, if you use Nginx as the server, you also need to configure the 404 page in `nginx.conf` file.
+{% endnote %}
+
+#### Commonweal 404
+
 If you would like to enable `commonweal 404` (A service provided by Tencent in China), Edit `404/index.md` like this:
 ```md
 ---
@@ -224,9 +232,7 @@ date: 1970-01-01 00:00:00
 ```
 
 You can also add any content you want to it.
-<!-- endtab -->
 
-<!-- tab Editting Menu → -->
 Add `404` to `menu` by editing {% label primary@theme config file %}:
 ```yml next/_config.yml
 menu:
@@ -234,5 +240,3 @@ menu:
   archives: /archives/ || fa fa-archive
   commonweal: /404/ || fa fa-heartbeat
 ```
-<!-- endtab -->
-{% endtabs %}

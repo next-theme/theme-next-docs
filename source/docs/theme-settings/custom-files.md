@@ -9,7 +9,7 @@ PR [#868](https://github.com/theme-next/hexo-theme-next/pull/868) has adjusted t
 
 It is a good practice to separate the custom files from the theme files, so that you can add custom content without modifying the original source code of the theme, and avoid conflicts due to `git merge`.
 
-As with [Data Files](https://hexo.io/docs/data-files), you can place all custom layouts or styles in a specific location (for example: `hexo/source/_data`). Add the custom file to `hexo/source/_data` and uncomment the content under the `custom_file_path` section in the {% label primary@theme config file %} (`next/_config.yml`)
+As with [Data Files](https://hexo.io/docs/data-files), you can place all custom layouts or styles in a specific location (for example: `hexo/source/_data`). Add the custom file to `hexo/source/_data` and uncomment the content under the `custom_file_path` section in the {% label primary@theme config file %}.
 
 {% note warning %}
 The file name and path must be the same in `custom_file_path`.
@@ -37,7 +37,7 @@ In addition to `custom_file_path`, we also provide a more flexible way to custom
 
 Edit `source/_data/head.njk` in {% label info@site root directory %} and add the following content:
 
-```html
+```html hexo/source/_data/head.njk
 <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
 ```
 
@@ -52,7 +52,7 @@ custom_file_path:
 
 Edit `source/_data/sidebar.njk` in {% label info@site root directory %} and add the following content:
 
-```html
+```html hexo/source/_data/sidebar.njk
 <div class="cc-license animated" itemprop="sponsor">
   <a href="https://www.netlify.com" class="cc-opacity" title="Deploy with Netlify → https://www.netlify.com" target="_blank"><img width="80" src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Netlify"></a>
 </div>
@@ -152,9 +152,9 @@ Let's take the Bilibili icon as an example. You need to prepare a icon in svg fo
 
 Edit `source/_data/styles.styl` in {% label info@site root directory %} and add styles:
 
-```css
+```css hexo/source/_data/styles.styl
 .fab.fa-bilibili {
-  background: url(/bilibili.svg);
+  background: url(/images/bilibili.svg);
   background-position: 50% 75%;
   background-repeat: no-repeat;
   height: 1rem;
@@ -180,7 +180,7 @@ social:
 
 Edit `source/_data/styles.styl` in {% label info@site root directory %} and add styles:
 
-```css
+```css hexo/source/_data/styles.styl
 +tablet-mobile() {
   .sidebar-toggle, .sidebar {
     display: none;
@@ -199,7 +199,7 @@ custom_file_path:
 
 Edit `source/_data/styles.styl` in {% label info@site root directory %} and add styles:
 
-```css
+```css hexo/source/_data/styles.styl
 .archive .collection-title {
   display: none !important;
 }

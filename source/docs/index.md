@@ -25,7 +25,7 @@ By using different Schemes in NexT, you can simply change the style of your blog
 
 ### Multilingual Support
 
-Thanks to the contribution of our users and developers, [NexT now supports over 20 languages](/docs/getting-started/internationalization.html#Choosing-Language).
+Thanks to the contribution of our users and developers, [NexT now supports over 20 languages](/docs/theme-settings/internationalization.html#Choosing-Language).
 
 {% gp 3-1 %}
 ![English translation](/images/docs/en.png)

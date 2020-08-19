@@ -49,7 +49,7 @@ comments: false
 
 #### Rename Comment Count Text
 
-You can rename the post meta text of comment count using `languages.yml`: [Override Default Translations](/docs/getting-started/internationalization.html#Override-Default-Translations).
+You can rename the post meta text of comment count using `languages.yml`: [Override Default Translations](/docs/theme-settings/internationalization.html#Override-Default-Translations).
 
 ### Disqus
 

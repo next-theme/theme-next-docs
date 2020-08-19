@@ -18,7 +18,7 @@ Configuring these plugins is very easy. For example, if you want to use `pjax` i
 pjax: true
 ```
 
-If you want to specify the CDN provider for any plugins, you need to set / update the CDN URL. See [Advanced Settings](/docs/advanced-settings.html) for more information.
+If you want to specify the CDN provider for any plugins, you need to set / update the CDN URL. See [Advanced Settings](/docs/advanced-settings/vendors.html) for more information.
 
 Detailed documentation about these plugins is listed below.
 

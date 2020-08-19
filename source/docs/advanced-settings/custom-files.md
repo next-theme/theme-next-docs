@@ -1,6 +1,6 @@
 ---
 title: Custom Files
-description: NexT User Docs – Theme Settings - Custom Files
+description: NexT User Docs – Advanced Settings - Custom Files
 ---
 
 ### Custom File Support
@@ -29,7 +29,7 @@ custom_file_path:
   #style: source/_data/styles.styl
 ```
 
-In addition to `custom_file_path`, we also provide a more flexible way to customize, you can read the [Theme Inject](/docs/advanced-settings.html#Injects) in documentation.
+In addition to `custom_file_path`, we also provide a more flexible way to customize, you can read the [Theme Inject](/docs/advanced-settings/injects.html) in documentation.
 
 ### Examples of Modifying Layout
 

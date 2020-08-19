@@ -77,7 +77,7 @@ If you would like to customize the default translation, you do not need to modif
         schedule: Calendar
     ```
 
-This situation is also available for off-list items. For example, Next uses [Theme Inject](/docs/advanced-settings.html#Injects) to introduce the commments systems. You can rename the returned value in chinese as followed:
+This situation is also available for off-list items. For example, Next uses [Theme Inject](/docs/advanced-settings/injects.html) to introduce the commments systems. You can rename the returned value in chinese as followed:
 
 ```yml languages.yml
 # language

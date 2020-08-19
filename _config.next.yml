@@ -58,18 +58,17 @@ menu:
       Installation: /installation.html || fa fa-download
       Deployment: /deployment.html || fa fa-upload
       Configuration: /configuration.html || fa fa-wrench
-      Internationalization: /internationalization.html || fa fa-university
       Update from 5.x: /update-from-v5.html || fa fa-history
 
     Theme Settings:
       default: /theme-settings/ || fa fa-star
-      Footer: /footer.html || fa fa-swatchbook
+      Footer: /footer.html || fa fa-sticky-note
       Sidebar: /sidebar.html || fa fa-bars
       Posts: /posts.html || fa fa-paragraph
-      Custom Pages: /custom-pages.html || fa fa-edit
-      Custom Files: /custom-files.html || fa fa-palette
+      Custom Pages: /custom-pages.html || fa fa-palette
+      Miscellaneous: /miscellaneous.html || fa fa-university
       SEO: /seo.html || fa fa-external-link-square-alt
-      Front Matter: /front-matter.html || fa fa-heading
+      i18n: /internationalization.html || fa fa-globe-asia
 
     Third Party Services:
       default: /third-party-services/ || fa fa-puzzle-piece
@@ -79,7 +78,7 @@ menu:
       Post Widgets: /post-widgets.html || fa fa-gift
       Search Services: /search-services.html || fab fa-algolia
       Chat Services: /chat-services.html || fa fa-comments
-      External Libraries: /external-libraries.html || fa fa-plug
+      External Libraries: /external-libraries.html || fa fa-lightbulb
 
     Tag Plugins:
       default: /tag-plugins/ || fa fa-rocket
@@ -93,7 +92,13 @@ menu:
       PDF: /pdf.html || fa fa-file-pdf
       Tabs: /tabs.html || fa fa-columns
 
-    Advanced Settings: /advanced-settings.html || fa fa-cog
+    Advanced Settings:
+      default: /advanced-settings/ || fa fa-cog
+      Vendors: /vendors.html || fa fa-plug
+      Custom Files: /custom-files.html || fa fa-swatchbook
+      Injects: injects.html || fa fa-layer-group
+      Front Matter: /front-matter.html || fa fa-edit
+
     Troubleshooting: /troubleshooting.html || fa fa-life-ring
 
   Plugins: /plugins/ || fa fa-flask

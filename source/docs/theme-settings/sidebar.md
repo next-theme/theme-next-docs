@@ -161,7 +161,7 @@ site_state: true
 ### Sidebar Social Links
 
 {% note default %}
-Social Links have similar structure as [Menu Items](/docs/getting-started/#Configuring-Menu-Items), only target link there is difference: specified link must have full url path (permalink).
+Social Links have similar structure as [Menu Items](/docs/theme-settings/#Configuring-Menu-Items), only target link there is difference: specified link must have full url path (permalink).
 {% endnote %}
 
 Edit the `social` section in {% label primary@theme config file %} as following:

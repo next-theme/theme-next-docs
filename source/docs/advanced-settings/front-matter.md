@@ -28,6 +28,7 @@ Next extends and provide more variables. It allows users to configure a single p
 Setting | Type | Description | Default
 --- | --- | --- | ---
 `author` | `string` | Author name for post copyright | `author` in Hexo `_config.yml`
+`post_link` | `string` | Post link | None
 `description` | `string` | Docs [here](/docs/theme-settings/posts.html#Preamble-Text) | None
 `direction` | `string` | Available value: `rtl` | None
 `header` | `boolean` | Whether to display the post header in index page | `true`

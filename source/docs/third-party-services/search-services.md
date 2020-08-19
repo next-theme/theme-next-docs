@@ -110,10 +110,6 @@ algolia_search:
   enable: true
   hits:
     per_page: 10
-  labels:
-    input_placeholder: Search for Posts
-    hits_empty: "We didn't find any results for the search: ${query}"
-    hits_stats: "${hits} results found in ${time} ms"
 ```
 <!-- endtab -->
 {% endtabs %}

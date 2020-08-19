@@ -58,8 +58,8 @@ menu:
       Installation: /installation.html || fa fa-download
       Deployment: /deployment.html || fa fa-upload
       Configuration: /configuration.html || fa fa-wrench
-      Internationalization: /internationalization.html || fa fa-globe
-      Update from 5.x: /update-from-v5.html || fa fa-retweet
+      Internationalization: /internationalization.html || fa fa-university
+      Update from 5.x: /update-from-v5.html || fa fa-history
 
     Theme Settings:
       default: /theme-settings/ || fa fa-star
@@ -77,7 +77,7 @@ menu:
       Comment Systems: /comments.html || fa fa-comment-alt
       Statistics and Analytics: /statistics-and-analytics.html || fa fa-chart-pie
       Post Widgets: /post-widgets.html || fa fa-gift
-      Search Services: /search-services.html || fa fa-search-plus
+      Search Services: /search-services.html || fab fa-algolia
       Chat Services: /chat-services.html || fa fa-comments
       External Libraries: /external-libraries.html || fa fa-plug
 
@@ -147,7 +147,6 @@ post_meta:
 
 symbols_count_time:
   separated_meta: true
-  item_text_post: true
   item_text_total: true
 
 post_edit:
@@ -253,3 +252,6 @@ mermaid:
 
 motion:
   async: true
+
+vendors:
+  internal: jsdelivr

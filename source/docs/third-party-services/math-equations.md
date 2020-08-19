@@ -78,7 +78,7 @@ For now, NexT provides two Render Engines: MathJax and KaTeX.
 {% tabs render-engines %}
 <!-- tab <strong><code>mathjax</code></strong> -->
 
-{% note warning %}
+{% note info %}
 **Render Choosing**
 
 If you use MathJax to render Math Equations, you can choose one of the renderers below:
@@ -118,7 +118,7 @@ as the renderer for Markdown.
 <!-- endtab -->
 
 <!-- tab <code>katex</code> -->
-{% note warning %}
+{% note info %}
 **Render Choosing**
 
 If you use KaTeX to render Math Equations, you can choose one of renderers below:

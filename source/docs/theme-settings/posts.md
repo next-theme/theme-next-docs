@@ -176,14 +176,6 @@ symbols_count_time:
 ```
 <!-- endtab -->
 
-<!-- tab <code>item_text_post</code> -->
-By default NexT shows the text description of the words counts and estimated reading time in post meta section. You can disable it by setting value `symbols_count_time.item_text_post` to `false` in {% label primary@theme config file %}.
-```yml next/_config.yml
-symbols_count_time:
-  item_text_post: true
-```
-<!-- endtab -->
-
 <!-- tab <code>item_text_total</code> -->
 By default NexT doesn't shows the text description of the words counts and estimated reading time in footer section. You can enable it by setting value `symbols_count_time.item_text_total` to `false` in {% label primary@theme config file %}.
 ```yml next/_config.yml

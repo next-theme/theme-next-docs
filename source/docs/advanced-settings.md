@@ -42,6 +42,10 @@ vendors:
 If your site is deployed to any free hosting service (Github, Gitlab, etc.), CDN links are recommended for core plugins. CDN usually has faster speeds and no traffic restrictions.
 {% endnote %}
 
+{% note danger %}
+If you are using the latest master branch of NexT, please set `internal: local`.
+{% endnote %}
+
 #### Third-party Plugins
 
 `plugins: jsdelivr` is used to set how to load the third-party plugins, e.g. `anime.js`. Third-party plugins are loaded from [jsDelivr](https://www.jsdelivr.com/) CDN by default.

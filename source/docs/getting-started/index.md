@@ -228,7 +228,7 @@ menu:
   #commonweal: /404/ || fa fa-heartbeat
 ```
 
-{% note warning %}
+{% note danger %}
 Except `home` and `archives`, all custom pages under `menu` section need to be created manually. See [«Custom Page Support»](/docs/theme-settings/custom-pages.html).
 
 Besides, [hexo-generator-sitemap](https://github.com/hexojs/hexo-generator-sitemap) plugin is required for `sitemap` support.
@@ -252,7 +252,7 @@ menu:
       Comment Systems: /comments.html || fa fa-comment-alt
 ```
 
-{% note warning %}
+{% note danger %}
 A `default` page is required for each sub-menu item.
 {% endnote %}
 

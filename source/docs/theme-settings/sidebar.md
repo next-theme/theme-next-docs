@@ -32,7 +32,7 @@ sidebar:
   width: 300
 ```
 
-{% note warning %}
+{% note info %}
 This option is commented out by default and values are:
 
 * For Muse | Mist schemes: `320`
@@ -76,7 +76,7 @@ sidebar:
 ```
 
 {% note danger %}
-For now only Pisces / Gemini Schemes supports `offset` setting under **6.0.x** version or higher.
+For now only Pisces / Gemini Schemes supports `offset` setting under **6.0.x** version or later.
 {% endnote %}
 <!-- endtab -->
 

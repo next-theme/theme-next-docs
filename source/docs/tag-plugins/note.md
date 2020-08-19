@@ -126,20 +126,12 @@ Welcome to [Hexo!](https://hexo.io)
 {% note info no-icon %}
 #### No icon note
 Note **without** icon: `note info no-icon`
-
-note info, note info, note info
-note info, note info, note info
-note info, note info, note info
 {% endnote %}
 ```
 
 {% note info no-icon %}
 #### No icon note
 Note **without** icon: `note info no-icon`
-
-note info, note info, note info
-note info, note info, note info
-note info, note info, note info
 {% endnote %}
 
 ```md

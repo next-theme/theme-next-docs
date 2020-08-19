@@ -102,7 +102,7 @@ In this case you can't add code syntax highlighting.
 
 <!-- tab Bugfix for Backtick -->
 Here is the [PR with bugfix for backtick code block inside tags](https://github.com/hexojs/hexo/pull/2321) (Submitted in 2016, merged three years later).
-So, upgrade to Hexo 4.0 or higher, if you need to use backtick code block inside tags.
+So, upgrade to Hexo 4.0 or later, if you need to use backtick code block inside tags.
 
 {% note danger %}
 Sometimes during generate you can see «{% label danger@Error: Unmatched placeholder remains! %}» message.

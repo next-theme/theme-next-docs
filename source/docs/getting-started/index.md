@@ -93,4 +93,28 @@ If you find your site looks like this picture, you have installed it correctly. 
 ![Default Scheme – Muse](/images/docs/next-default-scheme.png)
 {% endnote %}
 
+### Hexo Configuration
+
+The following settings in {% label info@site config file %} are very helpful for optimizing your website.
+
+#### Configuring Author
+
+Edit {% label info@site config file %} and set the value of `author` to your nickname.
+
+```yml hexo/_config.yml
+# Site
+author:
+```
+
+#### Configuring Description
+
+Edit {% label info@site config file %} and set the value of `description` to your description, which can be a sentence you like.
+
+```yml hexo/_config.yml
+# Site
+description:
+```
+
+After that we can [configure deployment](/docs/getting-started/deployment.html).
+
 If everything is OK, in next steps we will change some settings including [personalization](/docs/theme-settings/) and [third-party services integration](/docs/third-party-services/).

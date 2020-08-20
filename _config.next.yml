@@ -14,24 +14,6 @@ custom_file_path:
 
 
 # ============================================================= #
-# ================= Site Information Settings ================= #
-# ============================================================= #
-
-footer:
-  since: 2014
-  icon:
-    name: fa fa-heart
-    animated: true
-    color: "#808080"
-  copyright: NexT
-  powered: false
-
-creative_commons:
-  license: by-nc-sa
-  sidebar: true
-
-
-# ============================================================= #
 # ====================== Scheme Settings ====================== #
 # ============================================================= #
 
@@ -41,6 +23,15 @@ creative_commons:
 scheme: Gemini
 
 darkmode: true
+
+
+# ============================================================= #
+# ================= Site Information Settings ================= #
+# ============================================================= #
+
+creative_commons:
+  license: by-nc-sa
+  sidebar: true
 
 
 # ============================================================= #
@@ -62,10 +53,10 @@ menu:
 
     Theme Settings:
       default: /theme-settings/ || fa fa-star
-      Footer: /footer.html || fa fa-sticky-note
       Sidebar: /sidebar.html || fa fa-bars
+      Footer: /footer.html || fa fa-sticky-note
       Posts: /posts.html || fa fa-paragraph
-      Custom Pages: /custom-pages.html || fa fa-palette
+      Custom Pages: /custom-pages.html || fa fa-swatchbook
       Miscellaneous: /miscellaneous.html || fa fa-university
       SEO: /seo.html || fa fa-external-link-square-alt
       i18n: /internationalization.html || fa fa-globe-asia
@@ -74,8 +65,8 @@ menu:
       default: /third-party-services/ || fa fa-puzzle-piece
       Math Equations: /math-equations.html || fa fa-square-root-alt
       Comment Systems: /comments.html || fa fa-comment-alt
-      Statistics and Analytics: /statistics-and-analytics.html || fa fa-chart-pie
       Post Widgets: /post-widgets.html || fa fa-gift
+      Statistics and Analytics: /statistics-and-analytics.html || fa fa-chart-pie
       Search Services: /search-services.html || fab fa-algolia
       Chat Services: /chat-services.html || fa fa-comments
       External Libraries: /external-libraries.html || fa fa-lightbulb
@@ -95,7 +86,7 @@ menu:
     Advanced Settings:
       default: /advanced-settings/ || fa fa-cog
       Vendors: /vendors.html || fa fa-plug
-      Custom Files: /custom-files.html || fa fa-swatchbook
+      Custom Files: /custom-files.html || fa fa-palette
       Injects: injects.html || fa fa-layer-group
       Front Matter: /front-matter.html || fa fa-edit
 
@@ -140,6 +131,20 @@ toc:
   enable: true
   number: true
   wrap: true
+
+
+# ============================================================= #
+# ====================== Footer Settings ====================== #
+# ============================================================= #
+
+footer:
+  since: 2014
+  icon:
+    name: fa fa-heart
+    animated: true
+    color: "#808080"
+  copyright: NexT
+  powered: false
 
 
 # ============================================================= #
@@ -223,6 +228,9 @@ livere_uid: MTAyMC80NDkyOC8yMTQ1MA==
 # ================= Statistics and Analytics ================== #
 # ============================================================= #
 
+google_analytics:
+  tracking_id: UA-108155018-3
+
 
 # ============================================================= #
 # ====================== Search Services ====================== #
@@ -250,6 +258,7 @@ tabs:
 
 mermaid:
   enable: true
+
 
 # ============================================================= #
 # ==================== External Libraries ===================== #

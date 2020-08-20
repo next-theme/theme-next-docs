@@ -6,30 +6,6 @@ description: NexT User Docs – Theme Settings
 
 One of the guiding principles of NexT is to hide complex details and give you a simple but flexible config, so you can use it easily.
 
-### Hexo Configuration
-
-The following settings in {% label info@site config file %} are very helpful for optimizing your website.
-
-#### Configuring Author
-
-Edit {% label info@site config file %} and set the value of `author` to your nickname.
-
-```yml hexo/_config.yml
-# Site
-author:
-```
-
-#### Configuring Description
-
-Edit {% label info@site config file %} and set the value of `description` to your description, which can be a sentence you like.
-
-```yml hexo/_config.yml
-# Site
-description:
-```
-
-After that we can [configure deployment](/docs/getting-started/deployment.html).
-
 ### NexT Quick Start
 
 #### Cache Support
@@ -53,40 +29,6 @@ NexT allows to minify Hexo generation. Set the value `minify` to `true` in {% la
 ```yml next/_config.yml
 # Remove unnecessary files after hexo generate.
 minify: true
-```
-
-#### Configuring Favicon
-
-By default the Hexo site use NexT favicons in `hexo-site/themes/next/source/images/` directory with different size for different device. You can replace them with your own favicons.
-
-For example, you can put your favicons in `hexo-site/source/images/` directory. Then you need to rename them and change the settings in `favicon` section in {% label primary@theme config file %}, otherwise icons from Next will rewrite your custom icons in Hexo.
-
-You can also put custom favicons into `hexo-site/source/` directory. In this way, you **must remove** `/images` prefix from paths.
-
-To generate custom favicons, you can visit [Favicon Generator](https://realfavicongenerator.net).
-
-```yml hexo/_config.yml
-favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
-  android_manifest: /images/manifest.json
-  ms_browserconfig: /images/browserconfig.xml
-```
-
-#### Creative Commons
-
-NexT supports the display of [Creative Commons 4.0 International License](https://creativecommons.org/) in sidebar and post including `by`, `by-nc`, `by-nc-nd`, `by-nc-sa`, `by-nd`, `by-sa`, `zero`. These licenses allow creators to communicate which rights they reserve, and which rights they waive for the benefit of recipients or other creators.
-
-You can configure it by editing values in `creative_commons` section in {% label primary@theme config file %}, for example:
-
-```yml next/_config.yml
-creative_commons:
-  license: by-nc-sa
-  sidebar: true
-  post: true
-  language: deed.zh
 ```
 
 #### Choosing Scheme
@@ -123,6 +65,54 @@ Theme NexT automatically shows Dark Mode if the OS prefered theme is dark. It's 
 [How to use Dark Mode on your Mac](https://support.apple.com/en-us/HT208976)
 [Use Dark Mode on your iPhone, iPad, or iPod touch](https://support.apple.com/en-us/HT210332)
 [Dark theme | Android Developers](https://developer.android.com/guide/topics/ui/look-and-feel/darktheme)
+
+#### Configuring Favicon
+
+By default the Hexo site use NexT favicons in `hexo-site/themes/next/source/images/` directory with different size for different device. You can replace them with your own favicons.
+
+For example, you can put your favicons in `hexo-site/source/images/` directory. Then you need to rename them and change the settings in `favicon` section in {% label primary@theme config file %}, otherwise icons from Next will rewrite your custom icons in Hexo.
+
+You can also put custom favicons into `hexo-site/source/` directory. In this way, you **must remove** `/images` prefix from paths.
+
+To generate custom favicons, you can visit [Favicon Generator](https://realfavicongenerator.net).
+
+```yml hexo/_config.yml
+favicon:
+  small: /images/favicon-16x16-next.png
+  medium: /images/favicon-32x32-next.png
+  apple_touch_icon: /images/apple-touch-icon-next.png
+  safari_pinned_tab: /images/logo.svg
+  android_manifest: /images/manifest.json
+  ms_browserconfig: /images/browserconfig.xml
+```
+
+#### Custom Logo Support
+
+NexT supports the site logo personalization.
+
+You can enable it by adding images's url to `custom_logo` in {% label primary@theme config file %}.
+
+```yml next/_config.yml
+custom_logo: /uploads/custom-logo.jpg
+```
+
+{% note danger %}
+Scheme Mist does not support custom logo setting.
+{% endnote %}
+
+#### Creative Commons
+
+NexT supports the display of [Creative Commons 4.0 International License](https://creativecommons.org/) in sidebar and post including `by`, `by-nc`, `by-nc-nd`, `by-nc-sa`, `by-nd`, `by-sa`, `zero`. These licenses allow creators to communicate which rights they reserve, and which rights they waive for the benefit of recipients or other creators.
+
+You can configure it by editing values in `creative_commons` section in {% label primary@theme config file %}, for example:
+
+```yml next/_config.yml
+creative_commons:
+  license: by-nc-sa
+  sidebar: true
+  post: true
+  language: deed.zh
+```
 
 #### Configuring Menu Items
 

@@ -224,7 +224,7 @@ If you would like to enable `commonweal 404` (A service provided by Tencent in C
 ```md
 ---
 title: 404
-date: 1970-01-01 00:00:00
+date: 2014-12-22 12:39:04
 ---
 <script src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js"
         charset="utf-8" homePageUrl="/" homePageName="Back to home">

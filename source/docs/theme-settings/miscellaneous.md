@@ -48,20 +48,6 @@ android_chrome_color: "#222"
 
 {% endtabs %}
 
-### Custom Logo Support
-
-NexT supports the site logo personalization.
-
-You can enable it by adding images's url to `custom_logo` in {% label primary@theme config file %}.
-
-```yml next/_config.yml
-custom_logo: /uploads/custom-logo.jpg
-```
-
-{% note danger %}
-Scheme Mist does not support custom logo setting.
-{% endnote %}
-
 ### Codeblock Style
 
 {% tabs codeblock %}

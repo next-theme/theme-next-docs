@@ -4,18 +4,6 @@ description: NexT User Docs – Third-party Service Integration – Math Equatio
 mathjax: true
 ---
 
-NexT provides two render engines for displaying Math Equations: [MathJax](https://www.mathjax.org) and [KaTeX](https://khan.github.io/KaTeX/).
-
-MathJax is a JavaScript display engine for mathematics that works in all browsers. It is highly modular on input and output. Use MathML, TeX, and ASCIImath as input and produce HTML+CSS, SVG, or MathML as output.
-
-[KaTeX is a faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php) math render engine compared to MathJax 3. And it could survive without JavaScript. But, for now [KaTeX supports less features](https://github.com/Khan/KaTeX/wiki/Things-that-KaTeX-does-not-%28yet%29-support) than MathJax. Here is a list of [TeX functions supported by KaTeX](https://khan.github.io/KaTeX/function-support.html).
-
-To use this feature, you just need to choose a render engine and turn on `enable` for it (located in {% label primary@theme config file %}). Then you need to install the **corresponding Hexo Renderer** to fully support the display of Math Equations - Only turn on `enable` **may not let you see the displayed equations correctly**. The corresponding Hexo Renderer engine will be [provided below](#Render-Engines).
-
-{% note warning %}
-Except for the required renderer, any other Hexo plugins are unnecessary and there is no need to manually import any JS or CSS files. If you have installed plugins such as `hexo-math` or `hexo-katex`, they may conflict with the built-in render engine of NexT.
-{% endnote %}
-
 ### Settings
 
 ```yml next/_config.yml
@@ -26,26 +14,21 @@ math:
   # If you set it to false, it will load mathjax / katex srcipt EVERY PAGE.
   per_page: true
 
-  # hexo-renderer-pandoc is recommended for MathJax.
   mathjax:
     enable: true
 
-  # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) required for full Katex support.
   katex:
     enable: false
     # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
     copy_tex: false
 ```
 
-{% note info %}
 The `per_page` option controls whether to render Math Equations every page.
 
 * **`true`** → Equations will be processed on demand. It will only render those posts which have `mathjax: true` in their Front-matter.
 * `false` → Equations will be processed on every page. Even if they not exists on one or another page.
 
-{% note default %}
-**Examples with `per_page: true` option**
-
+{% note default **Examples with `per_page: true` option** %}
 - This post will render the Math Equations
     ```md
     ---
@@ -69,37 +52,30 @@ The `per_page` option controls whether to render Math Equations every page.
     ---
     ```
 {% endnote %}
-{% endnote %}
+
+The `mathjax` and `katex` options are used to set the rendering engine. Please read the detailed document below.
 
 ### Render Engines
 
-For now, NexT provides two Render Engines: MathJax and KaTeX.
+For now, NexT provides two render engines for displaying Math Equations: [MathJax](https://www.mathjax.org) and [KaTeX](https://khan.github.io/KaTeX/).
+
+MathJax is a JavaScript display engine for mathematics that works in all browsers. It is highly modular on input and output. Use MathML, TeX, and ASCIImath as input and produce HTML+CSS, SVG, or MathML as output.
+
+[KaTeX is a faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php) math render engine compared to MathJax 3. And it could survive without JavaScript. But, for now [KaTeX supports less features](https://github.com/Khan/KaTeX/wiki/Things-that-KaTeX-does-not-%28yet%29-support) than MathJax. Here is a list of [TeX functions supported by KaTeX](https://khan.github.io/KaTeX/function-support.html).
+
+To use this feature, firstly you need to choose a render engine and turn on `enable` for it (located in {% label primary@theme config file %}). Then you need to install the **corresponding Hexo Renderer** to fully support the display of Math Equations - Only turn on `enable` **may not let you see the displayed equations correctly**.
 
 {% tabs render-engines %}
-<!-- tab <strong><code>mathjax</code></strong> -->
+<!-- tab MathJax -->
+**Renderer Choosing**
 
-{% note info %}
-**Render Choosing**
+If you use MathJax to render Math Equations, you can choose one of the Markdown renderers below:
 
-If you use MathJax to render Math Equations, you can choose one of the renderers below:
+* [hexo-renderer-pandoc](https://github.com/wzpan/hexo-renderer-pandoc)
 
-* [hexo-renderer-pandoc](https://github.com/wzpan/hexo-renderer-pandoc) (Need to install [pandoc](https://github.com/jgm/pandoc) first)
-* [hexo-renderer-kramed](https://github.com/sun11/hexo-renderer-kramed) (Deprecated, not recommended)
-
-as the renderer for Markdown.
-{% endnote %}
-
-{% note primary %}
 **Installation**
 
-1. Firstly, you need to uninstall the original renderer `hexo-renderer-marked`, and install one of the renderer above:
-
-    ```bash
-    $ npm un hexo-renderer-marked
-    $ npm i hexo-renderer-pandoc
-    ```
-
-2. In {% label primary@theme config file %}, choose `mathjax` as render engine.
+1. Firstly, set `mathjax` as render engine in {% label primary@theme config file %}.
 
     ```yml next/_config.yml
     math:
@@ -108,30 +84,61 @@ as the renderer for Markdown.
         enable: true
     ```
 
-3. Run standard Hexo generate, deploy process or start the server:
+2. Then you need to uninstall the original renderer `hexo-renderer-marked`, and install `hexo-renderer-pandoc`:
 
     ```bash
-    $ hexo clean && hexo g -d
-    # or hexo clean && hexo s
+    $ npm un hexo-renderer-marked
+    $ npm i hexo-renderer-pandoc
     ```
-{% endnote %}
+
+3. [pandoc](https://github.com/jgm/pandoc) is required for hexo-renderer-pandoc, here's [how to install pandoc](https://github.com/jgm/pandoc/blob/master/INSTALL.md).
+
+**Plugins**
+
+All extensions of MathJax are loaded automatically. For example, `mhchem` is a tool for writing beautiful chemical equations easily. It implements the `\ce` and `\pu` chemical equation macros of the LaTeX mhchem package. More infomation: [MathJax/mhchem Manual](https://mhchem.github.io/MathJax-mhchem/).
 <!-- endtab -->
 
-<!-- tab <code>katex</code> -->
-{% note info %}
-**Render Choosing**
+<!-- tab KaTeX -->
+**Renderer Choosing**
 
-If you use KaTeX to render Math Equations, you can choose one of renderers below:
+If you use KaTeX to render Math Equations, you can choose one of the Markdown renderers below:
 
 * [hexo-renderer-markdown-it-plus](https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus)
 * [hexo-renderer-markdown-it](https://github.com/hexojs/hexo-renderer-markdown-it)
 
-{% tabs hexo-renderer-markdown-it, -1 %}
-<!-- tab {% label warning@Chosen hexo-renderer-markdown-it? %} -->
-If you use `hexo-renderer-markdown-it`, you also need to add `markdown-it-katex` as its plugin:
+**Installation**
+
+1. Firstly, set `katex` as render engine in {% label primary@theme config file %}.
+
+    ```yml next/_config.yml
+    math:
+      ...
+      katex:
+        enable: true
+    ```
+
+2. Then you need to uninstall the original renderer `hexo-renderer-marked` and install one of the renderer plugins:
+
+{% subtabs katex-renderer %}
+<!-- tab hexo-renderer-markdown-it-plus -->
 
 ```bash
-npm i markdown-it-katex
+$ npm un hexo-renderer-marked
+$ npm i hexo-renderer-markdown-it-plus
+```
+<!-- endtab -->
+
+<!-- tab hexo-renderer-markdown-it -->
+
+```bash
+$ npm un hexo-renderer-marked
+$ npm i hexo-renderer-markdown-it
+```
+
+If you use `hexo-renderer-markdown-it`, you also need to install `markdown-it-katex`:
+
+```bash
+$ npm i markdown-it-katex
 ```
 
 And then in {% label info@site config file %} you need to add `markdown-it-katex` as a plugin for `hexo-renderer-markdown-it`:
@@ -150,35 +157,19 @@ markdown:
     - markdown-it-katex
 ```
 <!-- endtab -->
-{% endtabs %}
-{% endnote %}
+{% endsubtabs %}
 
-{% note primary %}
-**Installation**
+**Plugins**
 
-1. Firstly, you need to uninstall the original renderer `hexo-renderer-marked` and install one of selected by you renderer:
+Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supporting the Clipboard API so that, when selecting and copying whole KaTeX-rendered elements, the text content of the resulting clipboard renders KaTeX elements as their LaTeX source surrounded by specified delimiters. More infomation: [Copy-tex extension](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex).
 
-    ```bash
-    $ npm un hexo-renderer-marked
-    $ npm i hexo-renderer-markdown-it-plus # or hexo-renderer-markdown-it
-    ```
-
-2. In {% label primary@theme config file %}, choose `katex` as render engine.
-
-    ```yml next/_config.yml
-    math:
-      ...
-      katex:
-        enable: true
-    ```
-
-3. Run standard Hexo generate, deploy process or start the server:
-
-    ```bash
-    $ hexo clean && hexo g -d
-    # or hexo clean && hexo s
-    ```
-{% endnote %}
+```yml next/_config.yml
+math:
+  ...
+  katex:
+    # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
+    copy_tex: true
+```
 
 {% note danger %}
 **Known Issues**
@@ -195,13 +186,18 @@ markdown:
 <!-- endtab -->
 {% endtabs %}
 
-### Plugins
+{% note warning %}
+After setting up the math rendering engine or installing / uninstalling the Markdown renderer, please execute `hexo clean`. Run standard Hexo generate, deploy process or start the server to test whether the plugin is working properly:
 
-NexT also integrates some plugins for MathJax and KaTeX. You can easily configure them by setting the CDN URLs.
+```bash
+$ hexo clean && hexo g -d
+# or hexo clean && hexo s
+```
+{% endnote %}
 
-All extensions of MathJax are loaded automatically. For example, `mhchem` is a tool for writing beautiful chemical equations easily. It implements the `\ce` and `\pu` chemical equation macros of the LaTeX mhchem package. More infomation: [MathJax/mhchem Manual](https://mhchem.github.io/MathJax-mhchem/).
-
-Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supporting the Clipboard API so that, when selecting and copying whole KaTeX-rendered elements, the text content of the resulting clipboard renders KaTeX elements as their LaTeX source surrounded by specified delimiters. More infomation: [Copy-tex extension](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex).
+{% note warning %}
+Except for the required renderer, any other Hexo math plugins are unnecessary and there is no need to manually import any JS or CSS files. If you have installed plugins such as `hexo-math` or `hexo-katex`, they may conflict with the built-in render engine of NexT.
+{% endnote %}
 
 ### Examples
 
@@ -209,7 +205,7 @@ Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supp
 The following examples are rendered by `hexo-renderer-marked` with `mathjax` engine.
 {% endnote %}
 
-{% note danger %}
+{% note warning %}
 In some cases, the syntax of Markdown and TeX will conflict. For example, an underscore (`_`) may be interpreted as the start of italic text in Markdown, or subscripted mark in TeX. To avoid syntax errors, please use escape characters (`\_`) instead.
 {% endnote %}
 

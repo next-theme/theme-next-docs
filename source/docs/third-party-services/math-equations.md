@@ -272,14 +272,14 @@ We can use `align` environment to align multiple equations. Each of these equati
 ```latex
 $$\begin{align}
 a &= b + c \label{eq3} \\
-x &= yz \label{eq4}\\
+x &= yz \label{eq4} \\
 l &= m - n \label{eq5}
 \end{align}$$
 ```
 
 $$\begin{align}
 a &= b + c \label{eq3} \\\\
-x &= yz \label{eq4}\\\\
+x &= yz \label{eq4} \\\\
 l &= m - n \label{eq5}
 \end{align}$$
 
@@ -297,16 +297,16 @@ In the `align` environment, if you do not want to number one or some equations, 
 
 ```latex
 $$\begin{align}
--4 + 5x &= 2+y \nonumber  \\
- w+2 &= -1+w \\
- ab &= cb
+-4 + 5x &= 2 + y \nonumber \\
+w + 2 &= -1 + w \\
+ab &= cb
 \end{align}$$
 ```
 
 $$\begin{align}
--4 + 5x &= 2+y \nonumber  \\\\
- w+2 &= -1+w \\\\
- ab &= cb
+-4 + 5x &= 2 + y \nonumber \\\\
+w + 2 &= -1 + w \\\\
+ab &= cb
 \end{align}$$
 
 #### Use `\tag` to tag equations

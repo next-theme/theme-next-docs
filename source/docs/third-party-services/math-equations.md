@@ -9,10 +9,10 @@ mathjax: true
 ```yml next/_config.yml
 # Math Formulas Render Support
 math:
-  # Default (true) will load mathjax / katex script on demand.
+  # Default (false) will load mathjax / katex script on demand.
   # That is it only render those page which has `mathjax: true` in Front-matter.
-  # If you set it to false, it will load mathjax / katex srcipt EVERY PAGE.
-  per_page: true
+  # If you set it to true, it will load mathjax / katex srcipt EVERY PAGE.
+  every_page: false
 
   mathjax:
     enable: true
@@ -23,12 +23,12 @@ math:
     copy_tex: false
 ```
 
-The `per_page` option controls whether to render Math Equations every page.
+The `every_page` option controls whether to render Math Equations every page.
 
 * **`true`** → Equations will be processed on demand. It will only render those posts which have `mathjax: true` in their Front-matter.
 * `false` → Equations will be processed on every page. Even if they not exists on one or another page.
 
-{% note default **Examples with `per_page: true` option** %}
+{% note default **Examples with `every_page: false` option** %}
 - This post will render the Math Equations
     ```md
     ---
@@ -57,11 +57,11 @@ The `mathjax` and `katex` options are used to set the rendering engine. Please r
 
 ### Render Engines
 
-For now, NexT provides two render engines for displaying Math Equations: [MathJax](https://www.mathjax.org) and [KaTeX](https://khan.github.io/KaTeX/).
+For now, NexT provides two render engines for displaying Math Equations: [MathJax](https://www.mathjax.org) and [KaTeX](https://katex.org).
 
 MathJax is a JavaScript display engine for mathematics that works in all browsers. It is highly modular on input and output. Use MathML, TeX, and ASCIImath as input and produce HTML+CSS, SVG, or MathML as output.
 
-[KaTeX is a faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php) math render engine compared to MathJax 3. And it could survive without JavaScript. But, for now [KaTeX supports less features](https://github.com/Khan/KaTeX/wiki/Things-that-KaTeX-does-not-%28yet%29-support) than MathJax. Here is a list of [TeX functions supported by KaTeX](https://khan.github.io/KaTeX/function-support.html).
+[KaTeX is a faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php) math render engine compared to MathJax 3. And it could survive without JavaScript. But, for now [KaTeX supports less features](https://github.com/KaTeX/KaTeX/wiki/Things-that-KaTeX-does-not-(yet)-support) than MathJax. Here is a list of [TeX functions supported by KaTeX](https://katex.org/docs/supported.html).
 
 To use this feature, firstly you need to choose a render engine and turn on `enable` for it (located in {% label primary@theme config file %}). Then you need to install the **corresponding Hexo Renderer** to fully support the display of Math Equations - Only turn on `enable` **may not let you see the displayed equations correctly**.
 
@@ -174,13 +174,13 @@ math:
 {% note danger %}
 **Known Issues**
 
-1. Firstly, please check [Common Issues](https://github.com/Khan/KaTeX#common-issues) of KaTeX.
+1. Firstly, please check [Common Issues](https://katex.org/docs/issues.html) of KaTeX.
 2. Displayed Math (i.e. ` $$...$$ `) needs to started with new clear line.
     In other words: you must not have any characters (except of whitespaces) **before the opening ` $$ ` and after the ending ` $$ `** ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509)).
 3. Don't support Unicode ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509)).
 4. Inline Math (..` $...$ `) must not have white spaces **after the opening ` $ ` and before the ending ` $ `** ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-357489509)).
 5. If you use math in Heading (i.e. `## Heading`).
-    Then in corresponding TOC item it will show the related LaTex code 3 times ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-359018694)).
+    Then in corresponding TOC item it will show the related LaTeX code 3 times ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-359018694)).
 6. If you use math in your post's title, it will not be rendered ([comment #32](https://github.com/theme-next/hexo-theme-next/pull/32#issuecomment-359142879)).
 {% endnote %}
 <!-- endtab -->

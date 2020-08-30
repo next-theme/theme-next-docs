@@ -23,7 +23,7 @@ You can enable it by setting value `rating.enable` to `true`, and copy `ID` valu
 rating:
   enable: false
   id:     ID #<app_id>
-  color:  fc6423
+  color:  "#fc6423"
 ```
 <!-- endtab -->
 {% endtabs %}

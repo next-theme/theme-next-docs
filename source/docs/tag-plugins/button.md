@@ -139,7 +139,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 #### Button with absolute URL
 
 ```md
-<div class="text-center">{% btn https://github.com/next-theme/hexo-theme-next, NexT, fab fa-github fa-fw fa-lg, NexT source code %}</div>
+<div class="text-center">{% btn https://github.com, GitHub, fab fa-github fa-fw fa-lg, GitHub %}</div>
 ```
 
-<div class="text-center">{% btn https://github.com/next-theme/hexo-theme-next, NexT, fab fa-github fa-fw fa-lg, NexT source code %}</div>
+<div class="text-center">{% btn https://github.com, GitHub, fab fa-github fa-fw fa-lg, GitHub %}</div>

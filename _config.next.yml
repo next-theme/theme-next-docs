@@ -205,7 +205,6 @@ google_site_verification: 5AUIVYTbHIAuz-eQtxSfZbWW5eg9_EVZMSQycIuXrG0
 # ============================================================= #
 
 math:
-  per_page: true
   mathjax:
     enable: true
 

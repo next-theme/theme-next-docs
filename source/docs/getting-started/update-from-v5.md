@@ -9,7 +9,7 @@ There are no hard breaking changes between 5.1.x and the latest version. It's ch
 
 1. Main repositorie was rebased from [iissnan's](https://github.com/iissnan/hexo-theme-next) profile to [next-theme](https://github.com/next-theme) organization.
 2. Most libraries under the `next/source/lib` directory was moved out to [external repositories under NexT organization](https://github.com/next-theme/plugins).
-3. 3rd-party plugin [`hexo-wordcount`](https://github.com/willin/hexo-wordcount) was replaced by [`hexo-word-counter`](https://github.com/next-theme/hexo-word-counter) because `hexo-word-counter` doesn't have any external nodejs dependencies, nor [language filter](https://github.com/willin/hexo-wordcount/issues/7) which causes better performance on speed at site generation.
+3. 3rd-party plugin [`hexo-wordcount`](https://github.com/willin/hexo-wordcount) was replaced by [`hexo-word-counter`](https://github.com/next-theme/hexo-word-counter) because `hexo-word-counter` doesn't have any external Node.js dependencies, nor [language filter](https://github.com/willin/hexo-wordcount/issues/7) which causes better performance on speed at site generation.
 
 So, NexT suggest to update from version 5 to version 8 in this way:
 

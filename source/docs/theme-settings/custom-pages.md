@@ -203,9 +203,8 @@ calendar:
 
 In your terminal, change to the `source` folder of {% label info@site root directory %}. Create a new folder called `404`, then create a new page in it:
 ```bash
-$ cd hexo-site/source
-$ mkdir 404
-$ touch 404/index.md
+$ cd hexo-site
+$ hexo new page 404
 ```
 
 Make sure `relative_link` is disabled in {% label info@site config file %}:
@@ -223,8 +222,9 @@ Whether users can be redirected to the 404 page depends on the settings of the w
 If you would like to enable `commonweal 404` (A service provided by Tencent in China), Edit `404/index.md` like this:
 ```md
 ---
-title: 404
+title: '404'
 date: 2014-12-22 12:39:04
+comments: false
 ---
 <script src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js"
         charset="utf-8" homePageUrl="/" homePageName="Back to home">

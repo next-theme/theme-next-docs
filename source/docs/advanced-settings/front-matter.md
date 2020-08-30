@@ -32,7 +32,7 @@ Setting | Type | Description | Default
 `description` | `string` | Docs [here](/docs/theme-settings/posts.html#Preamble-Text) | None
 `direction` | `string` | Available value: `rtl` | None
 `header` | `boolean` | Whether to display the post header in index page | `true`
-`mathjax` | `boolean` | MathJax support | `!math.per_page` in `_config.yml`
+`mathjax` | `boolean` | MathJax support | `math.every_page` in `_config.yml`
 `sidebar` | `boolean` | Whether the sidebar will be shown | Depends on `sidebar.display` in `_config.yml`
 `sticky` | `number` | [hexo-generator-index](https://github.com/hexojs/hexo-generator-index) plugin required | 0
 `quicklink` | `object` (1) | Quicklink support | From `_config.yml`

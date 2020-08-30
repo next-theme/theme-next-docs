@@ -7,7 +7,7 @@ description: NexT User Docs – Theme Settings – Footer
 
 #### Site Start Time
 
-By default NexT shows current year in the footer like `© 2018`. You can configure it to show the time gap like `© 2015 - 2018` by editing values in `since` section in {% label primary@theme config file %}.
+By default NexT shows current year in the footer like `© 2020`. You can configure it to show the time gap like `© 2015 - 2020` by editing values in `since` section in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 footer:

@@ -132,8 +132,8 @@ Edit {% label info@site config file %} and add following content:
 search:
   path: search.xml
   field: post
+  content: true
   format: html
-  limit: 10000
 ```
 <!-- endtab -->
 

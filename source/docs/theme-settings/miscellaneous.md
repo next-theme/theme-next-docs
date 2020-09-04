@@ -55,6 +55,10 @@ android_chrome_color: "#222"
 
 NexT uses the [Highlight.js](https://highlightjs.org) and [Prism](https://prismjs.com) package to support code highlight. Default style is `tomorrow` and there are more than 90 styles to choose.
 
+{% note warning %}
+Please read Hexo's documentation on [Syntax Highlighting](https://hexo.io/docs/syntax-highlight) first, and set it up in {% label info@site config file %}.
+{% endnote %}
+
 You can preview all available Code Highlight themes here: [NexT Highlight Theme Preview](https://theme-next.js.org/highlight/). Change the value of `theme` and `prism` to choose the highlight style you like.
 
 ```yml next/_config.yml

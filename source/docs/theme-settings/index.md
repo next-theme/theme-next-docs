@@ -6,6 +6,10 @@ description: NexT User Docs – Theme Settings
 
 One of the guiding principles of NexT is to hide complex details and give you a simple but flexible config, so you can use it easily.
 
+{% note info %}
+The values given in the document are often typical allowable values rather than default values. They may be different from those in {% label primary@theme config file %}.
+{% endnote %}
+
 ### NexT Quick Start
 
 #### Cache Support
@@ -19,10 +23,6 @@ cache:
 ```
 
 #### Minify Support
-
-{% note info %}
-This feature is currently a bit simplistic, and we will further improve it in the future.
-{% endnote %}
 
 NexT allows to minify Hexo generation. Set the value `minify` to `true` in {% label primary@theme config file %} as following:
 

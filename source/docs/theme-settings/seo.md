@@ -8,7 +8,7 @@ description: NexT User Docs – Theme Settings – SEO
 Next provides useful options for better Search Engine Optimization (SEO).
 
 {% note info %}
-By default a canonical link tag is created in Hexo after you have set up your URL `url: http://yoursite.com` in {% label info@site config file %}. More detailed information can be found in [Consolidate duplicate URLs](https://support.google.com/webmasters/answer/139066).
+By default a canonical link tag is created in Hexo after you have set up your URL `url: http://example.com` in {% label info@site config file %}. More detailed information can be found in [Consolidate duplicate URLs](https://support.google.com/webmasters/answer/139066).
 {% endnote %}
 
 {% tabs SEO %}

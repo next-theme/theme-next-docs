@@ -10,7 +10,7 @@ This feature is located under `vendors` section in {% label primary@theme config
 ```yml next/_config.yml
 vendors:
   # The CDN provider of NexT internal scripts.
-  # Available values: local | jsdelivr | unpkg
+  # Available values: local | jsdelivr | unpkg | cdnjs
   internal: local
   # The default CDN provider of third-party plugins.
   # Available values: local | jsdelivr | unpkg | cdnjs

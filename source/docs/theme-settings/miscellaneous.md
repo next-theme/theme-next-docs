@@ -53,7 +53,7 @@ android_chrome_color: "#222"
 {% tabs codeblock %}
 <!-- tab <code>theme</code> -->
 
-NexT uses the [Highlight.js](https://highlightjs.org) and [Prism](https://prismjs.com) package to support code highlight. Default style is `tomorrow` and there are more than 90 styles to choose.
+NexT uses the [Highlight.js](https://highlightjs.org) and [Prism](https://prismjs.com) package to support code highlight.
 
 {% note warning %}
 Please read Hexo's documentation on [Syntax Highlighting](https://hexo.io/docs/syntax-highlight) first, and set it up in {% label info@site config file %}.
@@ -66,7 +66,7 @@ codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: tomorrow
+    light: default
     dark: tomorrow-night
   prism:
     light: prism

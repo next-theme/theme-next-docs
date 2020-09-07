@@ -117,45 +117,27 @@ motion:
 
 ### Progress Bar
 
-Pace will automatically monitor your Ajax requests, event loop lag, document ready state and elements on your page to decide on the progress.
+NProgress will automatically monitor your Ajax requests, event loop lag, document ready state and elements on your page to decide on the progress.
 
-{% subtabs pace1 %}
-<!-- tab <code>pace</code> -->
-You can enable it by setting value `pace.enable` to `true` in {% label primary@theme config file %}.
+{% tabs nprogress %}
+<!-- tab <code>nprogress</code> -->
+You can enable it by setting value `nprogress.enable` to `true` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
-pace:
+nprogress:
   enable: true
 ```
 <!-- endtab -->
-<!-- tab <code>theme</code> -->
-Pace includes a bunch of [themes](https://github.hubspot.com/pace/docs/welcome/) to get you started. Just include the appropriate css file.
-
-* pace-theme-big-counter
-* pace-theme-bounce
-* pace-theme-barber-shop
-* pace-theme-center-atom
-* pace-theme-center-circle
-* pace-theme-center-radar
-* pace-theme-center-simple
-* pace-theme-corner-indicator
-* pace-theme-fill-left
-* pace-theme-flash
-* pace-theme-flat-top
-* pace-theme-loading-bar
-* pace-theme-mac-osx
-* pace-theme-material
-* pace-theme-minimal
-
-By default NexT uses `minimal` theme (pace-theme-minimal). You can configure it by editing values in `pace.theme` section in {% label primary@theme config file %}.
+<!-- tab <code>spinner</code> -->
+Turn off loading spinner by setting it to `false`.
 
 ```yml next/_config.yml
-pace:
-  theme: minimal
+nprogress:
+  spinner: false
 ```
 
 <!-- endtab -->
-{% endsubtabs %}
+{% endtabs %}
 
 ### Canvas Ribbon
 

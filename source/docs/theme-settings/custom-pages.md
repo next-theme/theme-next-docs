@@ -17,7 +17,7 @@ $ hexo new page custom-name
 <!-- endtab -->
 
 <!-- tab Setting Front-matter Values → -->
-Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Settings Front-matter values and more detailed can be found in [Front-matter](https://hexo.io/docs/front-matter). You can also add contents in `custom-name/index.md` if you like.
+Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Settings front-matter values and more detailed can be found in [front-matter](https://hexo.io/docs/front-matter). You can also add contents in `custom-name/index.md` if you like.
 
 ```md
 title: custom-name
@@ -88,7 +88,7 @@ $ hexo new page tags
 <!-- endtab -->
 
 <!-- tab Setting Page Type → -->
-Edit the new page and change the type to `"tags"`, theme will show tags cloud automatically in this page. Page content looks like following:
+Edit the new page and change the type to `tags`, theme will show tags cloud automatically in this page. Page content looks like following:
 
 ```md
 title: Tags
@@ -138,36 +138,7 @@ tagcloud:
 ### Adding Google Calendar Page
 
 {% tabs calendar %}
-<!-- tab Adding Schedule Page → -->
-Change to {% label info@site root directory %} in your terminal. Use `hexo new page schedule` to create a new `schedule` page:
-```bash
-$ cd hexo-site
-$ hexo new page schedule
-```
-<!-- endtab -->
-
-<!-- tab Setting Front-matter Values → -->
-Front-matter is a block of YAML or JSON at the beginning of the file that is used to configure settings for your writings. Settings Front-matter values and more detailed can be found in [Front-matter](https://hexo.io/docs/front-matter). You can also add contents in `schedule/index.md` if you like.
-
-```md
-title: Schedule
-date: 2014-12-22 12:39:04
-type: schedule
----
-```
-<!-- endtab -->
-
-<!-- tab Editting Menu → -->
-Add `schedule` to `menu` by editing {% label primary@theme config file %}:
-```yml next/_config.yml
-menu:
-  home: / || fa fa-home
-  archives: /archives/ || fa fa-archive
-  schedule: /schedule/ || fa fa-calendar
-```
-<!-- endtab -->
-
-<!-- tab Setting Google Calendar-->
+<!-- tab Setting Google Calendar → -->
 
 {% subtabs calendar1 %}
 <!-- tab Get calendar ID and API KEY → -->
@@ -196,6 +167,35 @@ calendar:
 <!-- endtab -->
 {% endsubtabs %}
 
+<!-- endtab -->
+
+<!-- tab Adding Schedule Page → -->
+Change to {% label info@site root directory %} in your terminal. Use `hexo new page schedule` to create a new `schedule` page:
+```bash
+$ cd hexo-site
+$ hexo new page schedule
+```
+<!-- endtab -->
+
+<!-- tab Setting Page Type → -->
+Edit the new page and change the type to `schedule`, theme will show schedule automatically in this page. Page content looks like following:
+
+```md
+title: Schedule
+date: 2014-12-22 12:39:04
+type: schedule
+---
+```
+<!-- endtab -->
+
+<!-- tab Editting Menu -->
+Add `schedule` to `menu` by editing {% label primary@theme config file %}:
+```yml next/_config.yml
+menu:
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
+  schedule: /schedule/ || fa fa-calendar
+```
 <!-- endtab -->
 {% endtabs %}
 

@@ -10,7 +10,7 @@ mathjax: true
 # Math Formulas Render Support
 math:
   # Default (false) will load mathjax / katex script on demand.
-  # That is it only render those page which has `mathjax: true` in Front-matter.
+  # That is it only render those page which has `mathjax: true` in front-matter.
   # If you set it to true, it will load mathjax / katex srcipt EVERY PAGE.
   every_page: false
 
@@ -25,7 +25,7 @@ math:
 
 The `every_page` option controls whether to render Math Equations every page.
 
-* **`true`** → Equations will be processed on demand. It will only render those posts which have `mathjax: true` in their Front-matter.
+* **`true`** → Equations will be processed on demand. It will only render those posts which have `mathjax: true` in their front-matter.
 * `false` → Equations will be processed on every page. Even if they not exists on one or another page.
 
 {% note default **Examples with `every_page: false` option** %}

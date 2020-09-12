@@ -34,7 +34,7 @@ At most cases **stable**. Recommended for beginners.
 **Option 3: Download the [Specific Release Version](https://github.com/next-theme/hexo-theme-next/releases)**
 
 In rare cases useful, but not recommended.
-You must define version. Let's take `v8.0.0-rc.3` as an example. Replace it with any version from [tags list](https://github.com/next-theme/hexo-theme-next/tags).
+You must define version. Let's take `v8.0.0` as an example. Replace it with any version from [tags list](https://github.com/next-theme/hexo-theme-next/tags).
 <!-- endtab -->
 {% endtabs %}
 
@@ -57,7 +57,7 @@ This variant will install the **latest release version**.
 
 <!-- tab Specific Release Version -->
 ```bash
-$ npm install hexo-theme-next@8.0.0-rc.3
+$ npm install hexo-theme-next@8.0.0
 ```
 
 This variant will install the **specific release version**.
@@ -93,13 +93,13 @@ v8.0.0-rc.3
 ...
 ```
 
-For example, you want to switch on `v8.0.0-rc.3` tagged release version. Input the following command:
+For example, you want to switch on `v8.0.0` tagged release version. Input the following command:
 
 ```bash
-$ git checkout tags/v8.0.0-rc.3
-Note: switching to 'tags/v8.0.0-rc.3'.
+$ git checkout tags/v8.0.0
+Note: switching to 'tags/v8.0.0'.
 ...
-HEAD is now at 036d2d3 Release v8.0.0-rc.3
+HEAD is now at 036d2d3 Release v8.0.0
 ```
 
 If you want to switch on latest release version without defining tag (optional)
@@ -117,13 +117,13 @@ $ git checkout master
 
 <!-- tab Specific Release Version -->
 ```bash
-$ git clone --branch v8.0.0-rc.3 https://github.com/next-theme/hexo-theme-next themes/next
+$ git clone --branch v8.0.0 https://github.com/next-theme/hexo-theme-next themes/next
 ```
 
 Or download via mirror on GitLab:
 
 ```bash
-$ git clone --branch v8.0.0-rc.3 https://gitlab.com/hexo-theme-next/hexo-theme-next themes/next
+$ git clone --branch v8.0.0 https://gitlab.com/hexo-theme-next/hexo-theme-next themes/next
 ```
 
 This variant will install the **specific release version** (with `.git` directory inside).
@@ -168,7 +168,7 @@ This variant will install the **latest release version**.
 <!-- tab Specific Release Version -->
 ```bash
 $ mkdir themes/next
-$ curl -L https://api.github.com/repos/next-theme/hexo-theme-next/tarball/v8.0.0-rc.3 | tar -zxv -C themes/next --strip-components=1
+$ curl -L https://api.github.com/repos/next-theme/hexo-theme-next/tarball/v8.0.0 | tar -zxv -C themes/next --strip-components=1
 ```
 
 This variant will install the **specific release version**.

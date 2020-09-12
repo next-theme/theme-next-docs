@@ -38,7 +38,7 @@ If your blog readers are mostly using legacy browsers, please consider using [In
 
 #### How to Disable Comments on Page
 
-When you enabled comment service like Disqus, all new page will have comment service automatically. If you want to disable it in one page, just add `comments` key to [Front-matter](https://hexo.io/docs/front-matter) and set its value to `false`. Like following:
+When you enabled comment service like Disqus, all new page will have comment service automatically. If you want to disable it in one page, just add `comments` key to [front-matter](https://hexo.io/docs/front-matter) and set its value to `false`. Like following:
 
 ```md your-post.md
 title: All tags

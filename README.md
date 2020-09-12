@@ -38,7 +38,7 @@ npx hexo server
 ### Checkout docs for older versions
 
 ```bash
-git checkout v8.0.0-rc.4
+git checkout v8.0.0
 npm install
 npx hexo clean
 ```

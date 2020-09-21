@@ -99,7 +99,7 @@ For example, you want to switch on `v8.0.0` tagged release version. Input the fo
 $ git checkout tags/v8.0.0
 Note: switching to 'tags/v8.0.0'.
 ...
-HEAD is now at 036d2d3 Release v8.0.0
+HEAD is now at f27e45b Release v8.0.0
 ```
 
 If you want to switch on latest release version without defining tag (optional)

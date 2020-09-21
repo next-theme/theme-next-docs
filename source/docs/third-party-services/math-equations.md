@@ -73,6 +73,20 @@ If you use MathJax to render Math Equations, you can choose one of the Markdown 
 
 * [hexo-renderer-pandoc](https://github.com/wzpan/hexo-renderer-pandoc)
 
+hexo-renderer-pandoc is recommended because it can handle mathematical formulas in markdown documents perfectly.
+
+{% note warning %}
+If you are using other renderers, such as [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked), you need to be aware of the conflict between LaTeX and Markdown syntax. For example, an underscore (`_`) may be interpreted as the start of italic text in Markdown, or subscripted mark in TeX. To avoid syntax errors, please use escape characters (`\_`) instead:
+```diff
+-$\epsilon_0$
++$\epsilon\_0$
+-\begin{eqnarray*}
++\begin{eqnarray\*}
+-\\
++\\\\
+```
+{% endnote %}
+
 **Installation**
 
 1. Firstly, set `mathjax` as render engine in {% label primary@theme config file %}.
@@ -202,11 +216,7 @@ Except for the required renderer, any other Hexo math plugins are unnecessary an
 ### Examples
 
 {% note info %}
-The following examples are rendered by `hexo-renderer-marked` with `mathjax` engine.
-{% endnote %}
-
-{% note warning %}
-In some cases, the syntax of Markdown and TeX will conflict. For example, an underscore (`_`) may be interpreted as the start of italic text in Markdown, or subscripted mark in TeX. To avoid syntax errors, please use escape characters (`\_`) instead.
+The following examples are rendered by `mathjax` engine.
 {% endnote %}
 
 #### Numbering and referring equations in MathJax

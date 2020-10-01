@@ -1,9 +1,9 @@
 {
   "name": "theme-next-docs",
-  "version": "8.0.0",
+  "version": "8.0.1",
   "private": true,
   "hexo": {
-    "version": "5.1.1"
+    "version": "5.2.0"
   },
   "description": "Elegant and powerful theme for Hexo.",
   "scripts": {
@@ -35,7 +35,7 @@
     "hexo-renderer-marked": "3.3.0",
     "hexo-renderer-stylus": "2.0.1",
     "hexo-server": "2.0.0",
-    "hexo-theme-next": "8.0.0"
+    "hexo-theme-next": "8.0.1"
   },
   "engines": {
     "node": ">=10.9.0"

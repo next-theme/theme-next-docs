@@ -64,6 +64,10 @@ footer:
   copyright:
 ```
 
+{% note warning %}
+This option will only customize the author name in the footer. The name in the Creative Commons License section at the end of each post is not affected.
+{% endnote %}
+
 #### Site Platform Information
 
 By default NexT shows Hexo and Theme & scheme information like `Powered by Hexo & NexT.Muse`. You can configure it by editing `powered` section in {% label primary@theme config file %}.

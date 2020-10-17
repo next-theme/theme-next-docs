@@ -153,7 +153,7 @@ Let's take the Bilibili icon as an example. You need to prepare a icon in svg fo
 Edit `source/_data/styles.styl` in {% label info@site root directory %} and add styles:
 
 ```css hexo/source/_data/styles.styl
-.fab.fa-bilibili {
+.fa-bilibili {
   background: url(/images/bilibili.svg);
   background-position: 50% 75%;
   background-repeat: no-repeat;

@@ -33,7 +33,7 @@ Unique name   : Unique name of tabs block tag without comma.
                 If not caption specified, unique name with tab index suffix will be used as caption of tab.
                 If not caption specified, but specified icon, caption will empty.
                 Optional parameter.
-[@icon]       : Font Awesome icon name (without 'fa-' at the begining).
+[@icon]       : Font Awesome icon name.
                 Can be specified with or without space; e.g. 'Tab caption @icon' is the same as 'Tab caption@icon'.
                 Optional parameter.
 ```
@@ -206,7 +206,7 @@ Unique name   : Unique name of tabs block tag without comma.
 **This is Tab 1.**
 <!-- endtab -->
 
-<!-- tab Solution 2 @font -->
+<!-- tab Solution 2@font -->
 **This is Tab 2.**
 <!-- endtab -->
 
@@ -221,7 +221,7 @@ Unique name   : Unique name of tabs block tag without comma.
 **This is Tab 1.**
 <!-- endtab -->
 
-<!-- tab Solution 2 @font -->
+<!-- tab Solution 2@font -->
 **This is Tab 2.**
 <!-- endtab -->
 

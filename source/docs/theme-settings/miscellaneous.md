@@ -4,6 +4,18 @@ date: 2018-02-08 18:50:03
 description: NexT User Docs – Theme Settings - Misc Theme Settings
 ---
 
+### Preconnect
+
+NexT supports adding preconnect resource hints to establish early connections to fonts and plugins origins.
+
+You can enable it by setting `preconnect: true` in {% label primary@theme config file %}.
+
+```yml next/_config.yml
+# Preconnect CDN for fonts and plugins.
+# For more information: https://www.w3.org/TR/resource-hints/#preconnect
+preconnect: true
+```
+
 ### Text Align
 
 NexT allows to customize the text alignment in posts / pages. The `text-align` CSS property sets the horizontal alignment of a block element or table-cell box.

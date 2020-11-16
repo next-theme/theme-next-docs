@@ -34,6 +34,7 @@ Setting | Type | Description | Default
 `header` | `boolean` | Whether to display the post header in index page | `true`
 `mathjax` | `boolean` | MathJax support | `math.every_page` in `_config.yml`
 `sidebar` | `boolean` | Whether the sidebar will be shown | Depends on `sidebar.display` in `_config.yml`
+`copyright` | `boolean` | Whether to display copyright notices below the post with `theme.creative_commons.license` and `theme.creative_commons.post` enabled | `true`
 `sticky` | `number` | Pin the post to the top of the index page. [hexo-generator-index](https://github.com/hexojs/hexo-generator-index) plugin required | 0
 `quicklink` | `object` (1) | Quicklink support | From `_config.yml`
 `reward_settings` | `object` (1) | Reward settings | From `_config.yml`

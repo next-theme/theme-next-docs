@@ -151,6 +151,7 @@ Valine is a fast, simple & efficient Leancloud based no back end comment system.
       enable: false
       appId:  # your leancloud application appid
       appKey:  # your leancloud application appkey
+      serverURLs: # When the custom domain name is enabled, fill it in here
       placeholder: Just go go # comment box placeholder
       avatar: mm # gravatar style
       meta: [nick, mail, link] # Custom comment header
@@ -158,7 +159,6 @@ Valine is a fast, simple & efficient Leancloud based no back end comment system.
       visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
       comment_count: true # If false, comment count will only be displayed in post page, not in home page
       recordIP: false # Whether to record the commenter IP
-      serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
     ```
 
 ### Changyan (China)
@@ -175,7 +175,3 @@ Changyan is the industry's leading social commenting system, supporting both PC 
       appid:
       appkey:
     ```
-
-{% note warning %}
-Please note that you should fill in the ICP record number of your website in time. If not, or the record information is not correct, the comment service will be stopped after 13 days. [Useful link](https://changyan.kuaizhan.com/help/o-beian.html)
-{% endnote %}

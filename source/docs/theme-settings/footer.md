@@ -11,7 +11,7 @@ By default NexT shows current year in the footer like `© 2020`. You can configu
 
 ```yml next/_config.yml
 footer:
-  since: 2015
+  since: 2020
 ```
 
 #### Site Footer Icon

@@ -17,7 +17,7 @@ The values given in the document are often typical allowable values rather than 
 NexT v6+ allows to cache content generation. Set the value `enable` to `true` in `cache` section in {% label primary@theme config file %} as following:
 
 ```yml next/_config.yml
-# Allow to cache content generation. Introduced in NexT v6.0.0.
+# Allow to cache content generation.
 cache:
   enable: true
 ```
@@ -83,7 +83,6 @@ favicon:
   apple_touch_icon: /images/apple-touch-icon-next.png
   safari_pinned_tab: /images/logo.svg
   android_manifest: /images/manifest.json
-  ms_browserconfig: /images/browserconfig.xml
 ```
 
 #### Custom Logo Support

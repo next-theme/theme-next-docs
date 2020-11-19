@@ -6,6 +6,11 @@ date: 2020-11-01 02:46:04
 ## 🌟 New Features
 
 - Support preconnect hint for CDN ([#122](https://github.com/next-theme/hexo-theme-next/pull/122))
+```diff
++# Preconnect CDN for fonts and plugins.
++# For more information: https://www.w3.org/TR/resource-hints/#preconnect
++preconnect: false
+```
 
 ## 🐞 Bug Fixes
 

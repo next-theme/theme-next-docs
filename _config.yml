@@ -18,12 +18,12 @@ permalink_defaults:
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: archives/
+archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-  - 'robots.txt'
+  - robots.txt
   - animate/*
   - highlight/*
 
@@ -72,9 +72,6 @@ archive_generator:
   yearly: true
   monthly: true
   daily: false
-
-server:
-  port: 4000
 
 marked:
   # For preserve original quotes in code blocks.

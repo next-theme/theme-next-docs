@@ -6,6 +6,19 @@ date: 2020-10-01 03:10:53
 ## 🌟 New Features
 
 - Add NProgress ([#79](https://github.com/next-theme/hexo-theme-next/pull/79))
+```diff
++# Progress bar in the top during page loading.
++# For more information: https://github.com/rstacruz/nprogress
++nprogress:
++  enable: false
++  spinner: true
+
+vendors:
+  ...
++  # NProgress.js
++  nprogress_js:
++  nprogress_css:
+```
 
 ## ⭐ Features
 

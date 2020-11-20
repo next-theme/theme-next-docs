@@ -32,7 +32,7 @@ Login to [Baidu Analytics](https://tongji.baidu.com) and locate to site code get
 
 <!-- tab Script ID → -->
 Copy the script ID after `hm.js?`, like the following picture:
-![NexT Baidu Analytics](/images/docs/analytics-baidu-id.png)
+![NexT Baidu Analytics](/images/analytics-baidu-id.png)
 <!-- endtab -->
 
 <!-- tab NexT Config -->

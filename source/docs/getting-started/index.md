@@ -90,7 +90,7 @@ Now you can open `http://localhost:4000` in your browser, and check whether the 
 
 {% note success %}
 If you find your site looks like this picture, you have installed it correctly. That's default NexT scheme – Muse.
-![Default Scheme – Muse](/images/docs/next-default-scheme.png)
+![Default Scheme – Muse](/images/next-default-scheme.png)
 {% endnote %}
 
 ### Hexo Configuration

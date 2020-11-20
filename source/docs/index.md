@@ -21,16 +21,16 @@ Theme NexT has the following features:
 
 By using different Schemes in NexT, you can simply change the style of your blog, and nearly all options can be used in all schemes.
 
-![NexT Schemes](/images/docs/next-schemes.png)
+![NexT Schemes](/images/next-schemes.png)
 
 ### Multilingual Support
 
 Thanks to the contribution of our users and developers, [NexT now supports over 20 languages](/docs/theme-settings/internationalization.html#Choosing-Language).
 
 {% gp 3-1 %}
-![English translation](/images/docs/en.png)
-![Chinese translation](/images/docs/cn.png)
-![Russian translation](/images/docs/ru.png)
+![English translation](/images/en.png)
+![Chinese translation](/images/cn.png)
+![Russian translation](/images/ru.png)
 {% endgp %}
 
 ### Code Highlighting Themes
@@ -38,13 +38,13 @@ Thanks to the contribution of our users and developers, [NexT now supports over 
 NexT uses code highlighting themes from the [Highlight.js](https://highlightjs.org) and [Prism](https://prismjs.com) package, and makes [more than 90 themes](/docs/theme-settings/#Codeblock-Style) available to you.
 
 <!-- Inspired by https://github.com/sindresorhus/css-in-readme-like-wat -->
-| Tomorrow                       | Tomorrow Night                       | Tomorrow Night Eighties                       |
-| :----------------------------: | :----------------------------------: | :-------------------------------------------: |
-| ![](/images/docs/tomorrow.svg) | ![](/images/docs/tomorrow-night.svg) | ![](/images/docs/tomorrow-night-eighties.svg) |
+| Tomorrow                  | Tomorrow Night                  | Tomorrow Night Eighties                  |
+| :-----------------------: | :-----------------------------: | :--------------------------------------: |
+| ![](/images/tomorrow.svg) | ![](/images/tomorrow-night.svg) | ![](/images/tomorrow-night-eighties.svg) |
 
-| Tomorrow Night Blue                       | Tomorrow Night Bright                       | Default                       |
-| :---------------------------------------: | :-----------------------------------------: | :---------------------------: |
-| ![](/images/docs/tomorrow-night-blue.svg) | ![](/images/docs/tomorrow-night-bright.svg) | ![](/images/docs/default.svg) |
+| Tomorrow Night Blue                  | Tomorrow Night Bright                  | Default                  |
+| :----------------------------------: | :------------------------------------: | :----------------------: |
+| ![](/images/tomorrow-night-blue.svg) | ![](/images/tomorrow-night-bright.svg) | ![](/images/default.svg) |
 
 ### Supported Browsers
 

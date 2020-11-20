@@ -37,7 +37,7 @@ Sign up in [AddThis](https://www.addthis.com). You can use Google/Facebook/Twitt
 
 <!-- tab AddThis ID → -->
 Get AddThis ID in this menu: `More..` → `General` → `ID`. See example on the picture below:
-![AddThis ID](/images/docs/add-this-id.png)
+![AddThis ID](/images/add-this-id.png)
 <!-- endtab -->
 
 <!-- tab NexT Config -->

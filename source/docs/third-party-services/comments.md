@@ -139,9 +139,9 @@ Gitalk relies on the md5 value of the page path for tagging, and this may cause 
 Valine is a fast, simple & efficient Leancloud based no back end comment system.
 
 1. Create an account or log into [LeanCloud](https://leancloud.cn/dashboard/login.html#/signin), and then click on the bottom left corner to [create the application](https://leancloud.cn/dashboard/applist.html#/newapp) in [dashboard](https://leancloud.cn/dashboard/applist.html#/apps).
-    ![Valine](/images/docs/valine-1.png)
+    ![Valine](/images/valine-1.png)
 2. Go to the application you just created, select `Settings → App Keys` in the lower left corner, and you will see your APP ID and APP Key.
-    ![Valine](/images/docs/valine-2.png)
+    ![Valine](/images/valine-2.png)
 3. Set the value `enable` to `true`, add the obtained APP ID (`appId`) and APP Key (`appKey`), and edit other configurations in `valine` section in the {% label primary@theme config file %} as following:
 
     ```yml next/_config.yml

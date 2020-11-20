@@ -32,11 +32,11 @@ rating:
 
 {% tabs addthis %}
 <!-- tab Sign Up → -->
-Sign up in [AddThis](https://www.addthis.com). You can use Google/Facebook/Twitter to login.
+Sign up in [AddThis](https://www.addthis.com). You can use Google / Facebook / Twitter to login.
 <!-- endtab -->
 
 <!-- tab AddThis ID → -->
-Get AddThis ID in this menu: `More..` → `General` → `ID`. See example on the picture below:
+Get AddThis ID in this menu: `Profile Settings` → `General` → `ID`. See example on the picture below:
 ![AddThis ID](/images/add-this-id.png)
 <!-- endtab -->
 

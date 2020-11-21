@@ -21,7 +21,7 @@ Theme NexT has the following features:
 
 By using different Schemes in NexT, you can simply change the style of your blog, and nearly all options can be used in all schemes.
 
-![NexT Schemes](/images/next-schemes.png)
+{% darkmode_preview %}
 
 ### Multilingual Support
 

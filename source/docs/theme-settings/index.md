@@ -51,6 +51,8 @@ scheme: Gemini
 
 #### Dark Mode
 
+{% darkmode_preview %}
+
 You can enable Dark Mode by setting `darkmode` to `true` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml

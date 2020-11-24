@@ -9,10 +9,10 @@ hexo.extend.tag.register('darkmode_preview', () => `<style>
 
 @keyframes next-clip-path {
     from {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
     }
     to {
-        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }
 

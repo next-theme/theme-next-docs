@@ -35,7 +35,7 @@ Thanks to the contribution of our users and developers, [NexT now supports over 
 
 ### Code Highlighting Themes
 
-NexT uses code highlighting themes from the [Highlight.js](https://highlightjs.org) and [Prism](https://prismjs.com) package, and makes [more than 90 themes](/docs/theme-settings/#Codeblock-Style) available to you.
+NexT uses code highlighting themes from the [Highlight.js](https://highlightjs.org) and [Prism](https://prismjs.com) package, and makes [more than 120 themes](/docs/theme-settings/#Codeblock-Style) available to you.
 
 <!-- Inspired by https://github.com/sindresorhus/css-in-readme-like-wat -->
 | Tomorrow                  | Tomorrow Night                  | Tomorrow Night Eighties                  |

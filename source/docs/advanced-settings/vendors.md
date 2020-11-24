@@ -33,7 +33,7 @@ vendors:
 
 #### Core Plugins
 
-`internal: local` is used to set how to load the internal library, e.g. `source/js/utils.js`. The core plugins are loaded from your site by default, they are required by the basic functions of NexT. Set `internal` to `jsdelivr` or `unpkg` to load them from the corresponding CDN.
+`internal: local` is used to set how to load the internal library, e.g. `source/js/utils.js`. The core plugins are loaded from your site by default, they are required by the basic functions of NexT. Set `internal` to `jsdelivr`, `unpkg` or `cdnjs` to load them from the corresponding CDN.
 
 {% note info %}
 If your site is deployed to any free hosting service (Github, Gitlab, etc.), CDN links are recommended for core plugins. CDN usually has faster speeds and no traffic restrictions.

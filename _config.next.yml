@@ -49,7 +49,7 @@ menu:
       Installation: /installation.html || fa fa-download
       Deployment: /deployment.html || fa fa-upload
       Configuration: /configuration.html || fa fa-wrench
-      Update from 5.x: /update-from-v5.html || fa fa-history
+      Upgrade: /upgrade.html || fa fa-history
 
     Theme Settings:
       default: /theme-settings/ || fa fa-star

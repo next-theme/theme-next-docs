@@ -1,6 +1,6 @@
 ---
 title: NexT 8.0.0-rc.2 Released
-date: 2020-05-01 02:13:37
+date: 2020-05-09 02:13:37
 ---
 
 ## 💥 Breaking Changes
@@ -73,3 +73,5 @@ codeblock:
 ***
 
 For full changes, see the [comparison between v8.0.0-rc.1 and v8.0.0-rc.2](https://github.com/next-theme/hexo-theme-next/compare/v8.0.0-rc.1...v8.0.0-rc.2)
+
+[Detailed changes for NexT v8.0.0-rc.2](https://github.com/next-theme/hexo-theme-next/releases/tag/v8.0.0-rc.2)

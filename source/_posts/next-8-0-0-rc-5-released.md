@@ -91,3 +91,4 @@ vendors:
 
 For full changes, see the [comparison between v8.0.0-rc.4 and v8.0.0-rc.5](https://github.com/next-theme/hexo-theme-next/compare/v8.0.0-rc.4...v8.0.0-rc.5)
 
+[Detailed changes for NexT v8.0.0-rc.5](https://github.com/next-theme/hexo-theme-next/releases/tag/v8.0.0-rc.5)

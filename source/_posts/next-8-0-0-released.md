@@ -71,3 +71,4 @@ math:
 
 For full changes, see the [comparison between v8.0.0-rc.5 and v8.0.0](https://github.com/next-theme/hexo-theme-next/compare/v8.0.0-rc.5...v8.0.0)
 
+[Detailed changes for NexT v8.0.0](https://github.com/next-theme/hexo-theme-next/releases/tag/v8.0.0)

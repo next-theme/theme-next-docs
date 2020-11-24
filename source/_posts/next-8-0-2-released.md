@@ -33,3 +33,4 @@ date: 2020-11-01 02:46:04
 
 For full changes, see the [comparison between v8.0.1 and v8.0.2](https://github.com/next-theme/hexo-theme-next/compare/v8.0.1...v8.0.2)
 
+[Detailed changes for NexT v8.0.2](https://github.com/next-theme/hexo-theme-next/releases/tag/v8.0.2)

@@ -58,3 +58,5 @@ valine:
 ***
 
 For full changes, see the [comparison between v8.0.0-rc.2 and v8.0.0-rc.3](https://github.com/next-theme/hexo-theme-next/compare/v8.0.0-rc.2...v8.0.0-rc.3)
+
+[Detailed changes for NexT v8.0.0-rc.3](https://github.com/next-theme/hexo-theme-next/releases/tag/v8.0.0-rc.3)

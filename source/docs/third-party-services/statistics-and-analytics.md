@@ -91,7 +91,7 @@ leancloud_counter_security:
 Edit {% label primary@theme config file %} and fill options under `leancloud_visitors` section.
 ```yml next/_config.yml
 # Show number of visitors to each article.
-# You can visit https://leancloud.cn get AppID and AppKey.
+# You can visit https://www.leancloud.cn get AppID and AppKey.
 leancloud_visitors:
   enable: true
   app_id: #<app_id>

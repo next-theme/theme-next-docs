@@ -77,10 +77,10 @@ Render Disqus comment component using Disqus API.
     ```yml next/_config.yml
     # DisqusJS
     # Alternative Disqus - Render comment component using Disqus API
-    # Demo: https://suka.js.org/DisqusJS/
+    # Demo: https://disqusjs.skk.moe
     disqusjs:
       enable: false
-      # API Endpoint of Disqus API (https://disqus.com/api/)
+      # API Endpoint of Disqus API (https://disqus.com/api/docs/)
       # leave api empty if you are able to connect to Disqus API
       # otherwise you need a reverse proxy for Disqus API
       # For example:
@@ -138,7 +138,7 @@ Gitalk relies on the md5 value of the page path for tagging, and this may cause 
 
 Valine is a fast, simple & efficient Leancloud based no back end comment system.
 
-1. Create an account or log into [LeanCloud](https://leancloud.cn/dashboard/login.html#/signin), and then click on the bottom left corner to [create the application](https://leancloud.cn/dashboard/applist.html#/newapp) in [dashboard](https://leancloud.cn/dashboard/applist.html#/apps).
+1. Create an account or log into [LeanCloud](https://www.leancloud.cn/dashboard/login.html#/signin), and then click on the bottom left corner to [create the application](https://www.leancloud.cn/dashboard/applist.html#/newapp) in [dashboard](https://www.leancloud.cn/dashboard/applist.html#/apps).
     ![Valine](/images/valine-1.png)
 2. Go to the application you just created, select `Settings → App Keys` in the lower left corner, and you will see your APP ID and APP Key.
     ![Valine](/images/valine-2.png)

@@ -5,7 +5,7 @@ description: NexT User Docs – Third-party Service Integration – Chat Service
 
 ### Chatra
 
-[Chatra](https://chatra.io) is a live chat messenger app for your website.
+[Chatra](https://chatra.com) is a live chat messenger app for your website.
 
 {% tabs Chatra %}
 <!-- tab Enable Chatra → -->
@@ -13,7 +13,7 @@ Visit [Dashboard](https://app.chatra.io/settings/general) to get your ChatraID.
 
 ```yml next/_config.yml
 # Chatra Support
-# See: https://chatra.io
+# See: https://chatra.com
 # Dashboard: https://app.chatra.io/settings/general
 chatra:
   enable: true
@@ -40,16 +40,16 @@ chat:
 
 ### Tidio
 
-[Tidio](https://www.tidiochat.com/) is a live chat messenger app for your website.
+[Tidio](https://www.tidio.com/) is a live chat messenger app for your website.
 
 {% tabs Tidio %}
 <!-- tab Enable Tidio → -->
-Visit [Dashboard](https://www.tidiochat.com/panel/dashboard) to get your Public Key.
+Visit [Dashboard](https://www.tidio.com/panel/dashboard) to get your Public Key.
 
 ```yml next/_config.yml
 # Tidio Support
-# See: https://www.tidiochat.com
-# Dashboard: https://www.tidiochat.com/panel/dashboard
+# See: https://www.tidio.com
+# Dashboard: https://www.tidio.com/panel/dashboard
 tidio:
   enable: true
   key: <Publick Key>

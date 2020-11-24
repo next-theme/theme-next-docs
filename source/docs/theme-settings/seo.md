@@ -65,7 +65,7 @@ $ hexo clean
 
 #### Google Webmaster Tools
 
-Set the verification string of [Google Webmaster Tools](https://www.google.com/webmasters/tools) which is used in submitting sitemap.
+Set the verification string of [Google Webmaster Tools](https://developers.google.com/search) which is used in submitting sitemap.
 
 {% tabs google-webmaster-tools %}
 <!-- tab Get Verification Code → -->
@@ -86,7 +86,7 @@ google_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
 
 #### Bing Webmaster Tools
 
-Set the verification string of [Bing Webmaster Tools](https://www.bing.com/webmaster/) which is used in submitting sitemap.
+Set the verification string of [Bing Webmaster Tools](https://www.bing.com/webmasters) which is used in submitting sitemap.
 
 {% tabs bing-webmaster-tools %}
 <!-- tab Get Verification Code → -->

@@ -11,10 +11,7 @@
     "update": "node lib/update.js",
     "highlight": "node lib/highlight.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/next-theme/theme-next-docs.git"
-  },
+  "repository": "next-theme/theme-next-docs",
   "keywords": [
     "hexo",
     "theme",

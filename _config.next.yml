@@ -220,7 +220,10 @@ mediumzoom: true
 comments:
   lazyload: true
 
-livere_uid: MTAyMC80NDkyOC8yMTQ1MA==
+disqus:
+  enable: true
+  shortname: next-theme
+  count: true
 
 
 # ============================================================= #

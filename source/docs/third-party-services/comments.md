@@ -15,7 +15,7 @@ comments:
   # Available values: tabs | buttons
   style: tabs
   # Choose a comment system to be displayed by default
-  # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
+  # Available values: disqus | disqusjs | changyan | livere | gitalk
   active:
   # Setting `true` means remembering the comment system selected by the visitor
   storage: true
@@ -90,6 +90,21 @@ Render Disqus comment component using Disqus API.
       shortname: # See: https://disqus.com/admin/settings/general/
     ```
 
+### Changyan (China)
+
+Changyan is the industry's leading social commenting system, supporting both PC and mobile access methods, providing a new way of commenting on websites. Changyan has a variety of common account login, triple filtering mechanism, real-time data statistics, fast data export, comprehensive support for mobile and other leading functions. It fully satisfies the needs of major websites for user login, comment, sharing, and review.
+
+1. Create an account or log into [Changyan](https://changyan.kuaizhan.com/), then add your site to get APP ID and APP KEY.
+2. Set the value `enable` to `true`, and add the obtained APP ID (`appid`) and APP KEY (`appkey`) to the `changyan` section in the {% label primary@theme config file %} as following:
+
+    ```yml next/_config.yml
+    # changyan
+    changyan:
+      enable: false
+      appid:
+      appkey:
+    ```
+
 ### LiveRe
 
 LiveRe is a content platform based on social networking site reviews to help users communicate freely.
@@ -133,45 +148,3 @@ Gitalk is a modern comment component based on Github Issue and Preact.
 Hexo has encode URLs by default since version 4.0: [PR 3708](https://github.com/hexojs/hexo/pull/3708).
 Gitalk relies on the md5 value of the page path for tagging, and this may cause issues. It's recommended to upgrade Hexo to 4.0 (or later), NexT to 7.7.0 (or later) to use Gitalk.
 {% endnote %}
-
-### Valine (China)
-
-Valine is a fast, simple & efficient Leancloud based no back end comment system.
-
-1. Create an account or log into [LeanCloud](https://www.leancloud.cn/dashboard/login.html#/signin), and then click on the bottom left corner to [create the application](https://www.leancloud.cn/dashboard/applist.html#/newapp) in [dashboard](https://www.leancloud.cn/dashboard/applist.html#/apps).
-    ![Valine](/images/valine-1.png)
-2. Go to the application you just created, select `Settings → App Keys` in the lower left corner, and you will see your APP ID and APP Key.
-    ![Valine](/images/valine-2.png)
-3. Set the value `enable` to `true`, add the obtained APP ID (`appId`) and APP Key (`appKey`), and edit other configurations in `valine` section in the {% label primary@theme config file %} as following:
-
-    ```yml next/_config.yml
-    # Valine
-    # For more information: https://valine.js.org, https://github.com/xCss/Valine
-    valine:
-      enable: false
-      appId:  # your leancloud application appid
-      appKey:  # your leancloud application appkey
-      serverURLs: # When the custom domain name is enabled, fill it in here
-      placeholder: Just go go # comment box placeholder
-      avatar: mm # gravatar style
-      meta: [nick, mail, link] # Custom comment header
-      pageSize: 10 # pagination size
-      visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
-      comment_count: true # If false, comment count will only be displayed in post page, not in home page
-      recordIP: false # Whether to record the commenter IP
-    ```
-
-### Changyan (China)
-
-Changyan is the industry's leading social commenting system, supporting both PC and mobile access methods, providing a new way of commenting on websites. Changyan has a variety of common account login, triple filtering mechanism, real-time data statistics, fast data export, comprehensive support for mobile and other leading functions. It fully satisfies the needs of major websites for user login, comment, sharing, and review.
-
-1. Create an account or log into [Changyan](https://changyan.kuaizhan.com/), then add your site to get APP ID and APP KEY.
-2. Set the value `enable` to `true`, and add the obtained APP ID (`appid`) and APP KEY (`appkey`) to the `changyan` section in the {% label primary@theme config file %} as following:
-
-    ```yml next/_config.yml
-    # changyan
-    changyan:
-      enable: false
-      appid:
-      appkey:
-    ```

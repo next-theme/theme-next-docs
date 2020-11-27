@@ -85,5 +85,5 @@ zh-CN:
   # items
   post:
     comments:
-      valine: 评论
+      disqus: 评论
 ```

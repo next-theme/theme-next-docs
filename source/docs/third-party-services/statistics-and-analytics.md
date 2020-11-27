@@ -67,6 +67,11 @@ The script will show «Webmaster Statistics» and it's not elegant, so we used a
 
 Adding article reading times counting to NexT theme. Documentation how to set the counter up and running safely aviable in [hexo-leancloud-counter-security](https://github.com/theme-next/hexo-leancloud-counter-security).
 
+1. Create an account or log into [LeanCloud](https://www.leancloud.cn/dashboard/login.html#/signin), and then click on the bottom left corner to [create the application](https://www.leancloud.cn/dashboard/applist.html#/newapp) in [dashboard](https://www.leancloud.cn/dashboard/applist.html#/apps).
+    ![Valine](/images/valine-1.png)
+2. Go to the application you just created, select `Settings → App Keys` in the lower left corner, and you will see your APP ID and APP Key.
+    ![Valine](/images/valine-2.png)
+
 {% tabs leanCloud-counter %}
 <!-- tab Installation → -->
 Install `hexo-leancloud-counter-security` by executing the following command in {% label info@site root dir %}:

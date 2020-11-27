@@ -19,36 +19,36 @@ description: NexT User Docs – NexT Supported Tags – Group Pictures
 
 ```md
 {% grouppicture 6-3 %}
-  ![](/images/next.svg)
-  ![](/images/next.svg)
-  ![](/images/next.svg)
-  ![](/images/next.svg)
-  ![](/images/next.svg)
-  ![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
 {% endgrouppicture %}
 ```
 {% grouppicture 6-3 %}
-  ![](/images/next.svg)
-  ![](/images/next.svg)
-  ![](/images/next.svg)
-  ![](/images/next.svg)
-  ![](/images/next.svg)
-  ![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
 {% endgrouppicture %}
 
 ```md
 {% gp 5-2 %}
-  ![](/images/next.svg)
-  ![](/images/next.svg)
-  ![](/images/next.svg)
-  ![](/images/next.svg)
-  ![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
 {% endgp %}
 ```
 {% gp 5-2 %}
-  ![](/images/next.svg)
-  ![](/images/next.svg)
-  ![](/images/next.svg)
-  ![](/images/next.svg)
-  ![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
+![](/images/next.svg)
 {% endgp %}

@@ -15,7 +15,7 @@ comments:
   # Available values: tabs | buttons
   style: tabs
   # Choose a comment system to be displayed by default
-  # Available values: disqus | disqusjs | changyan | livere | gitalk
+  # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances | isso
   active:
   # Setting `true` means remembering the comment system selected by the visitor
   storage: true
@@ -76,7 +76,6 @@ Render Disqus comment component using Disqus API.
 4. Set the value `enable` to `true`, add the obtained Disqus API Key (`apikey`) and Shortname (`shortname`), and edit other configurations in `disqusjs` section in the {% label primary@theme config file %} as following:
     ```yml next/_config.yml
     # DisqusJS
-    # Alternative Disqus - Render comment component using Disqus API
     # Demo: https://disqusjs.skk.moe
     disqusjs:
       enable: false
@@ -148,3 +147,29 @@ Gitalk is a modern comment component based on Github Issue and Preact.
 Hexo has encode URLs by default since version 4.0: [PR 3708](https://github.com/hexojs/hexo/pull/3708).
 Gitalk relies on the md5 value of the page path for tagging, and this may cause issues. It's recommended to upgrade Hexo to 4.0 (or later), NexT to 7.7.0 (or later) to use Gitalk.
 {% endnote %}
+
+### Utterances
+
+A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!
+
+```yml next/_config.yml
+# Utterances
+# For more information: https://utteranc.es
+utterances:
+  enable: false
+  repo: # Github repository name
+  # Available values: pathname | url | title | og:title
+  issue_term: pathname
+  # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
+  theme: github-light
+```
+
+### Isso
+
+Isso – *Ich schrei sonst* – is a lightweight commenting server written in Python and JavaScript. It aims to be a drop-in replacement for Disqus.
+
+```yml next/_config.yml
+# Isso
+# For more information: https://posativ.org/isso/
+isso: # <data_isso>
+```

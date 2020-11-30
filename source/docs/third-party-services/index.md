@@ -31,10 +31,11 @@ Detailed documentation about these plugins is listed below.
 * [Overview](/docs/third-party-services/comments.html#Overview)
 * [Disqus](/docs/third-party-services/comments.html#Disqus)
 * [DisqusJS](/docs/third-party-services/comments.html#DisqusJS)
+* [Changyan (China)](/docs/third-party-services/comments.html#Changyan)
 * [LiveRe](/docs/third-party-services/comments.html#LiveRe)
 * [Gitalk](/docs/third-party-services/comments.html#Gitalk)
-* [Valine (China)](/docs/third-party-services/comments.html#Valine)
-* [Changyan (China)](/docs/third-party-services/comments.html#Changyan)
+* [Utterances](/docs/third-party-services/comments.html#Utterances)
+* [Isso](/docs/third-party-services/comments.html#Isso)
 
 ### Statistics and Analytics
 

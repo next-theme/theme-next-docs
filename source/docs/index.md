@@ -13,7 +13,7 @@ Theme NexT has the following features:
 * Support Pjax to deliver a fast browsing experience.
 * Integrated KaTeX and MathJax mathematical formula rendering.
 * Integrated PDF.js and mermaid diagram.
-* Support Disqus, Changyan, LiveRe and Gitalk comment systems.
+* Support Disqus, Changyan, LiveRe, Gitalk, Utterances and Isso comment systems.
 * Support a large number of third-party statistics and content sharing services.
 * Easy to customize content or modify style.
 

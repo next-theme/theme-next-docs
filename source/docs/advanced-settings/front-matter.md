@@ -40,7 +40,7 @@ Setting | Type | Description | Default
 `reward_settings` | `object` (1) | Reward settings | From `_config.yml`
 `toc` | `object` (1) | Table of Contents in the sidebar | From `_config.yml`
 
-(1): they have same structure with the configuration file.
+(1): They have the same structure as the options in {% label primary@theme config file %}.
 
 **Example**
 

@@ -7,10 +7,14 @@ description: NexT User Docs – Starting to Use – Upgrade
 
 | Version                  | Hexo 3.0.0-beta.4 or earlier  | Hexo 3.0.0-rc.1 ~ 3.9 | Hexo 4.0 ~ 4.2.1     | Hexo 5.0 or later     |
 | ------------------------ | ----------------------------- | --------------------- | -------------------- | --------------------- |
-| NexT v0.4.5.1 or earlier | ✅                            | ✅                    | ❌ Icon display issue | ❌ Icon display issue |
-| NexT v0.4.5.2 ~ v7.4.1   | ⚠️ Does not support Data Files | ✅                    | ❌ Icon display issue | ❌ Icon display issue |
-| NexT v7.4.2 ~ v7.8.0     | ⚠️ Does not support Data Files | ✅                    | ✅                    | ✅                    |
-| NexT v8.0.0 or later     | ⚠️ Does not support Data Files | ✅                    | ✅                    | ✅                    |
+| NexT v0.4.5.1 or earlier | ✅                            | ✅                    | ❌ Icon (2)           | ❌ Icon (2)           |
+| NexT v0.4.5.2 ~ v7.4.1   | ⚠️ Data Files (1)              | ✅                    | ❌ Icon (2)           | ❌ Icon (2)           |
+| NexT v7.4.2 ~ v8.1.0     | ⚠️ Data Files (1)              | ✅                    | ✅                    | ✅                    |
+| NexT v8.2.0 or later     | ⚠️ Nunjucks (3)                | ⚠️ Nunjucks (3)        | ⚠️ Nunjucks (3)       | ✅                    |
+
+(1): Hexo 3.0.0-beta.4 or earlier does not support Data Files.
+(2): Icons may not be displayed normally.
+(3): Nunjucks renderer plugin required.
 
 ### NexT Repositories
 

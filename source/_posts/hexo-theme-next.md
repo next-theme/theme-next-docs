@@ -5,7 +5,7 @@ link: https://github.com/next-theme
 sticky: 100
 ---
 
-«[NexT][docs]» is a high quality elegant theme for [Hexo][]. It is crafted from scratch, with love.
+Welcome to the [NexT][docs] documentation site! NexT is a high quality elegant theme for [Hexo][]. It is crafted from scratch, with love.
 
 ### User Guide
 

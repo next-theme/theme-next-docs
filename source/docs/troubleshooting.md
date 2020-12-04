@@ -85,51 +85,6 @@ And here Hexo can read these parameters as `theme_config.scheme: Gemini` in same
 <!-- endtab -->
 {% endtabs %}
 
-### Backtick Code Block in Tags
-
-For Hexo before version 4.0, when backtick code block(s) exists inside other tags (like `blockquote`, `note`, `tabs`), that code block will be generated as «undefined» string in HTML. There are several ways to resolve this:
-
-{% tabs backtick-code-block %}
-<!-- tab {% label success@Tagged Code Block %} -->
-Instead of [Backtick Code Block](https://hexo.io/docs/tag-plugins#Backtick-Code-Block) you can also use tagged [Code Block](https://hexo.io/docs/tag-plugins#Code-Block).
-But in rare cases standard code block can obtain errors inside other tags.
-<!-- endtab -->
-
-<!-- tab HTML tags -->
-Use HTML tags instead of Hexo tags: `<pre><code>`.
-In this case you can't add code syntax highlighting.
-<!-- endtab -->
-
-<!-- tab Bugfix for Backtick -->
-Here is the [PR with bugfix for backtick code block inside tags](https://github.com/hexojs/hexo/pull/2321) (Submitted in 2016, merged three years later).
-So, upgrade to Hexo 4.0 or later, if you need to use backtick code block inside tags.
-
-{% note danger %}
-Sometimes during generate you can see «{% label danger@Error: Unmatched placeholder remains! %}» message.
-This mean somewhere in your posts, blocks with tags was commented out with `{% raw %}{#{% endraw %}` and `{% raw %}#}{% endraw %}` symbols:
-
-{% tabs unmatched-placeholder-remains %}
-<!-- tab {% label danger@Error %} -->
-```
-{% raw %}{#
-{% label error@Unmatched placeholder remains! %}
-#}{% endraw %}
-```
-<!-- endtab -->
-
-<!-- tab {% label success@Success %} -->
-```
-{% raw %}
-{% label error@Unmatched placeholder remains! %}
-{% endraw %}
-```
-<!-- endtab -->
-{% endtabs %}
-
-{% endnote %}
-<!-- endtab -->
-{% endtabs %}
-
 ### TOC Issues
 
 Do not write a skip-level heading in the post. For example, a third-tier heading `###` followed by a `#####` is not recommended.

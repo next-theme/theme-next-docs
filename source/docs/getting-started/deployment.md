@@ -170,7 +170,7 @@ GitLab offers a continuous integration service and pages service. If you add a `
       only:
       - master
     ```
-2. Upload `scaffolds`, `source`, `themes`, `.gitignor`, `.gitlab-ci.yml`, `_config.yml`, and `package.json` to [your Gitlab repository](https://gitlab.com/).
+2. Upload `scaffolds`, `source`, `themes`, `.gitignore`, `.gitlab-ci.yml`, `_config.yml`, and `package.json` to [your Gitlab repository](https://gitlab.com/).
     ```git
     $ git init
     $ ssh -T git@gitlab.com

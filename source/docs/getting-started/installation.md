@@ -3,16 +3,6 @@ title: Installation
 description: NexT User Docs – Starting to Use – Detailed Installation
 ---
 
-### Go to Hexo dir
-
-Change dir to {% label info@site root directory %}. There must be `node_modules`, `source`, `themes` and other directories:
-
-```bash
-$ cd hexo-site
-$ ls
-_config.yml  node_modules  package.json  public  scaffolds  source  themes
-```
-
 ### Select Version
 
 A new version of NexT will be released every month. You can choose to install the latest version or choose a stable old version.
@@ -40,7 +30,9 @@ You must define version. Let's take `v8.0.0` as an example. Replace it with any 
 
 ### Get NexT
 
-There are **3 ways** to download NexT: `npm`, `git` and download zip from GitHub. You need to **choose only one** of them.
+There are **2 recommended ways** to download NexT: `npm` and `git`. You need to **choose only one** of them. Other installation methods, such as downloading and decompressing the theme source code in zip format from GitHub, are no longer recommended, because the installed theme is difficult to manage and upgrade.
+
+Change dir to {% label info@site root directory %} in the command line first, and then continue with the following steps.
 
 #### Using `npm`
 
@@ -131,49 +123,7 @@ And in any time you can switch to any tagged release, but with limit to specific
 <!-- endtab -->
 {% endtabs %}
 
-**Update**
-You can update to the latest master branch by the following command:
-
-```bash
-$ cd themes/next
-$ git pull origin master
-```
-
 And if you see any error message during update (something like **«Commit your changes or stash them before you can merge»**), recommended to learn [Alternate Theme Config](/docs/getting-started/configuration.html) feature. Howbeit, you can bypass update errors by `Commit`, `Stash` or `Discard` local changes. See [here](https://stackoverflow.com/a/15745424/5861495) how to do it.
-
-#### Download zip
-
-Download zip from GitHub without `.git` directory inside. So, it is impossible to update this version with `git` later.
-Instead you always can use separate configuration (e.g. [Alternate Theme Config](/docs/getting-started/configuration.html)) and download new version inside old directory (or create new directory and redefine `theme` in {% label info@site config file %}), without losing your old configuration.
-
-{% tabs curl-tar %}
-<!-- tab Latest Master Branch -->
-```bash
-$ mkdir themes/next
-$ curl -L https://api.github.com/repos/next-theme/hexo-theme-next/tarball | tar -zxv -C themes/next --strip-components=1
-```
-
-This variant will install the **latest master branch**.
-<!-- endtab -->
-
-<!-- tab Latest Release Version -->
-```bash
-$ mkdir themes/next
-$ curl -s https://api.github.com/repos/next-theme/hexo-theme-next/releases/latest | grep tarball_url | cut -d '"' -f 4 | wget -i - -O- | tar -zx -C themes/next --strip-components=1
-```
-
-This variant will install the **latest release version**.
-<!-- endtab -->
-
-<!-- tab Specific Release Version -->
-```bash
-$ mkdir themes/next
-$ curl -L https://api.github.com/repos/next-theme/hexo-theme-next/tarball/v8.0.0 | tar -zxv -C themes/next --strip-components=1
-```
-
-This variant will install the **specific release version**.
-<!-- endtab -->
-{% endtabs %}
 
 ### Set It Up
 

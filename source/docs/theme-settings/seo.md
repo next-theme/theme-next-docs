@@ -11,24 +11,11 @@ Next provides useful options for better Search Engine Optimization (SEO).
 By default a canonical link tag is created in Hexo after you have set up your URL `url: http://example.com` in {% label info@site config file %}. More detailed information can be found in [Consolidate duplicate URLs](https://support.google.com/webmasters/answer/139066).
 {% endnote %}
 
-{% tabs SEO %}
-<!-- tab <code>disable_baidu_transformation</code> -->
-By default China's search engine Baidu will cache and rewrite your site to provide a webpage snapshot for mobile users. You can disable this by setting the value `disable_baidu_transformation` to `true` in {% label primary@theme config file %}.
-
-```yml next/_config.yml
-disable_baidu_transformation: true
-```
-<!-- endtab -->
-
-<!-- tab <code>index_with_subtitle</code> -->
 Set the value `enable` to `true` in `index_with_subtitle` section to add `subtitle` information in {% label info@site config file %} to index page.
 
 ```yml next/_config.yml
 index_with_subtitle: true
 ```
-<!-- endtab -->
-
-{% endtabs %}
 
 ### Webmaster Tools
 
@@ -115,9 +102,3 @@ baidu_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
 ```
 <!-- endtab -->
 {% endtabs %}
-
-NexT also supports the baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO. You can enable it by setting value `baidu_push` to `true` in {% label primary@theme config file %}.
-
-```yml next/_config.yml
-baidu_push: true
-```

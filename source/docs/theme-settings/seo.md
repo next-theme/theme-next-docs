@@ -90,15 +90,21 @@ Set the verification string of [Baidu Webmaster Tools](https://ziyuan.baidu.com/
 <!-- tab Get Verification Code → -->
 Login to Baidu Webmaster Tools and go to verification methods and choose `HTML Tag`, you will get some code:
 ```html
-<meta name="baidu-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXX">
+<meta name="baidu-site-verification" content="code-XXXXXXXXXX">
 ```
 <!-- endtab -->
 
 <!-- tab NexT Config -->
-Copy `XXXXXXXXXXXXXXXXXXXXXXX` value of `content` key.
+Copy `code-XXXXXXXXXX` value of `content` key.
 Edit {% label primary@theme config file %} and add or change `baidu_site_verification` section:
 ```yml next/_config.yml
-baidu_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
+baidu_site_verification: code-XXXXXXXXXX
 ```
 <!-- endtab -->
 {% endtabs %}
+
+{% note info %}
+By default Baidu will cache and rewrite your site to provide a webpage snapshot for mobile users. You can disable this by setting the site type.
+
+![Baidu Webmaster Tools](/images/baidu.png)
+{% endnote %}

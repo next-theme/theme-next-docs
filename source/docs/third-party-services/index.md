@@ -44,7 +44,6 @@ Detailed documentation about these plugins is listed below.
 * [Google Analytics](/docs/third-party-services/statistics-and-analytics.html#Google-Analytics)
 * [Baidu Analytics (China)](/docs/third-party-services/statistics-and-analytics.html#Baidu-Analytics-China)
 * [Growingio Analytics](/docs/third-party-services/statistics-and-analytics.html#Growingio-Analytics)
-* [CNZZ Analytics (China)](/docs/third-party-services/statistics-and-analytics.html#CNZZ-Analytics-China)
 
 #### Statistics
 
@@ -61,7 +60,6 @@ Detailed documentation about these plugins is listed below.
 
 * [Algolia Search](/docs/third-party-services/search-services.html#Algolia-Search)
 * [Local Search](/docs/third-party-services/search-services.html#Local-Search)
-* [Swiftype](/docs/third-party-services/search-services.html#Swiftype-Search)
 
 ### Chat Services
 

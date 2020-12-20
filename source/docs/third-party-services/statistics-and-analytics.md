@@ -48,19 +48,6 @@ baidu_analytics: your_id
 
 Official documentation: https://docs.growingio.com/sdk-integration/sdk-2.x-docs/
 
-#### CNZZ Analytics (China)
-
-1. Create an account and log into [CNZZ Analytics](https://www.umeng.com/). [More detailed documentation](https://developer.umeng.com/docs/67963/detail/68609)
-2. Set the value of section `cnzz_siteid` in {% label primary@theme config file %} to your CNZZ site ID. You can find this ID in link or the auto-generated script.
-    ```yml next/_config.yml
-    # CNZZ count
-    #cnzz_siteid:
-    ```
-
-{% note info %}
-The script will show «Webmaster Statistics» and it's not elegant, so we used a `display: none;` to hide it.
-{% endnote %}
-
 ### Counting Tools
 
 #### LeanCloud (China)

@@ -44,6 +44,7 @@ Detailed documentation about these plugins is listed below.
 * [Google Analytics](/docs/third-party-services/statistics-and-analytics.html#Google-Analytics)
 * [Baidu Analytics (China)](/docs/third-party-services/statistics-and-analytics.html#Baidu-Analytics-China)
 * [Growingio Analytics](/docs/third-party-services/statistics-and-analytics.html#Growingio-Analytics)
+* [Cloudflare Web Analytics](/docs/third-party-services/statistics-and-analytics.html#Cloudflare-Web-Analytics)
 
 #### Statistics
 

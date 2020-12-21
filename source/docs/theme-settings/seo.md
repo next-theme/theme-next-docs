@@ -11,11 +11,13 @@ Next provides useful options for better Search Engine Optimization (SEO).
 By default a canonical link tag is created in Hexo after you have set up your URL `url: http://example.com` in {% label info@site config file %}. More detailed information can be found in [Consolidate duplicate URLs](https://support.google.com/webmasters/answer/139066).
 {% endnote %}
 
-Set the value `enable` to `true` in `index_with_subtitle` section to add `subtitle` information in {% label info@site config file %} to index page.
+Set the value of `index_with_subtitle` in {% label primary@theme config file %} to `true` to add `subtitle` information to index page.
 
 ```yml next/_config.yml
 index_with_subtitle: true
 ```
+
+You can set `subtitle` in {% label info@site config file %}.
 
 ### Webmaster Tools
 
@@ -33,7 +35,7 @@ Login to Google Webmaster Tools and go to verification methods and choose `HTML 
 
 <!-- tab NexT Config -->
 Copy `XXXXXXXXXXXXXXXXXXXXXXX` value of `content` key.
-Edit {% label primary@theme config file %} and add or change `google_site_verification` section:
+Edit {% label primary@theme config file %} and add or change the value of `google_site_verification`:
 ```yml next/_config.yml
 google_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
 ```
@@ -54,7 +56,7 @@ Login to Bing Webmaster Tools and go to verification methods and choose `HTML Ta
 
 <!-- tab NexT Config -->
 Copy `XXXXXXXXXXXXXXXXXXXXXXX` value of `content` key.
-Edit {% label primary@theme config file %} and add or change `bing_site_verification` section:
+Edit {% label primary@theme config file %} and add or change the value of `bing_site_verification`:
 ```yml next/_config.yml
 bing_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
 ```
@@ -75,7 +77,7 @@ Login to Yandex Webmaster Tools and go to verification methods and choose `Meta 
 
 <!-- tab NexT Config -->
 Copy `XXXXXXXXXXXXXXXXXXXXXXX` value of `content` key.
-Edit {% label primary@theme config file %} and add or change `yandex_site_verification` section:
+Edit {% label primary@theme config file %} and add or change the value of `yandex_site_verification`:
 ```yml next/_config.yml
 yandex_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
 ```
@@ -96,7 +98,7 @@ Login to Baidu Webmaster Tools and go to verification methods and choose `HTML T
 
 <!-- tab NexT Config -->
 Copy `code-XXXXXXXXXX` value of `content` key.
-Edit {% label primary@theme config file %} and add or change `baidu_site_verification` section:
+Edit {% label primary@theme config file %} and add or change the value of `baidu_site_verification`:
 ```yml next/_config.yml
 baidu_site_verification: code-XXXXXXXXXX
 ```

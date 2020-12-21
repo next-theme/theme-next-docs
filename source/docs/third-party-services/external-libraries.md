@@ -95,7 +95,7 @@ quicklink:
 ### Animation Effect
 
 NexT enables animation effect by default which is supported by Anime.js and Animate.css, so it will wait for JavaScript loaded to show content.
-If you need speed you can set this section `enable` to `false` to disable it.
+If you need speed you can set the value of `motion.enable` to `false` to disable it.
 
 Edit {% label primary@theme config file %} and set the needed values under the `motion` to fit your demand. You can preview all Transition variants here: [NexT Animation Effect Preview](https://theme-next.js.org/animate/).
 

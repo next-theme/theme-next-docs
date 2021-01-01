@@ -32,7 +32,7 @@
     "hexo-renderer-marked": "3.3.0",
     "hexo-renderer-stylus": "2.0.1",
     "hexo-server": "2.0.0",
-    "hexo-theme-next": "8.1.0"
+    "hexo-theme-next": "8.2.0"
   },
   "engines": {
     "node": ">=10.9.0"

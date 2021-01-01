@@ -132,7 +132,7 @@ sidebar:
 - Add more contributors to contributors list ([#639](https://github.com/theme-next/hexo-theme-next/pull/639))
 - Make ISSUE and PR template more readable ([#644](https://github.com/theme-next/hexo-theme-next/pull/644))
 - Add CII badge. ([#729](https://github.com/theme-next/hexo-theme-next/pull/729))
-- Move some docs from `_config.yml` to theme-next.org site ([#725](https://github.com/theme-next/hexo-theme-next/pull/725))
+- Move some docs from `_config.yml` to official website ([#725](https://github.com/theme-next/hexo-theme-next/pull/725))
 - Update README.md, remove unused URLs ([#727](https://github.com/theme-next/hexo-theme-next/pull/727))
 - Add «Reporting Security Bugs» sections. ([#730](https://github.com/theme-next/hexo-theme-next/pull/730))
 - Change Riot chat link. ([#733](https://github.com/theme-next/hexo-theme-next/pull/733))

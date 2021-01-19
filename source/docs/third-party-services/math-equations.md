@@ -256,8 +256,8 @@ For multi-line equations, inside the `equation` environment, you can use the `al
 ```latex
 $$\begin{equation} \label{eq2}
 \begin{aligned}
-a &= b + c \\
-  &= d + e + f + g \\
+a &= b + c \\\\
+  &= d + e + f + g \\\\
   &= h + i
 \end{aligned}
 \end{equation}$$
@@ -283,8 +283,8 @@ We can use `align` environment to align multiple equations. Each of these equati
 
 ```latex
 $$\begin{align}
-a &= b + c \label{eq3} \\
-x &= yz \label{eq4} \\
+a &= b + c \label{eq3} \\\\
+x &= yz \label{eq4} \\\\
 l &= m - n \label{eq5}
 \end{align}$$
 ```
@@ -309,8 +309,8 @@ In the `align` environment, if you do not want to number one or some equations, 
 
 ```latex
 $$\begin{align}
--4 + 5x &= 2 + y \nonumber \\
-w + 2 &= -1 + w \\
+-4 + 5x &= 2 + y \nonumber \\\\
+w + 2 &= -1 + w \\\\
 ab &= cb
 \end{align}$$
 ```

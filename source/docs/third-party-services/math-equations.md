@@ -59,13 +59,12 @@ The `mathjax` and `katex` options are used to set the rendering engine. Please r
 
 ### Render Engines
 
-For now, NexT provides two render engines for displaying Math Equations: [MathJax](https://www.mathjax.org) and [KaTeX](https://katex.org).
+For now, NexT provides two rendering engines for displaying Math Equations: [MathJax](https://www.mathjax.org) and [KaTeX](https://katex.org).
 
-MathJax is a JavaScript display engine for mathematics that works in all browsers. It is highly modular on input and output. Use MathML, TeX, and ASCIImath as input and produce HTML+CSS, SVG, or MathML as output.
+- MathJax is a JavaScript display engine for mathematics that works in all browsers. It is highly modular on input and output. Use MathML, TeX, and ASCIImath as input and produce HTML+CSS, SVG, or MathML as output.
+- [KaTeX is a faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php) math rendering engine compared to MathJax 3. And it could survive without JavaScript. But, for now [KaTeX supports less features](https://github.com/KaTeX/KaTeX/wiki/Things-that-KaTeX-does-not-(yet)-support) than MathJax. Here is a list of [TeX functions supported by KaTeX](https://katex.org/docs/supported.html).
 
-[KaTeX is a faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php) math render engine compared to MathJax 3. And it could survive without JavaScript. But, for now [KaTeX supports less features](https://github.com/KaTeX/KaTeX/wiki/Things-that-KaTeX-does-not-(yet)-support) than MathJax. Here is a list of [TeX functions supported by KaTeX](https://katex.org/docs/supported.html).
-
-To use this feature, firstly you need to choose a render engine and turn on `enable` for it (located in {% label primary@theme config file %}). Then you need to install the **corresponding Hexo Renderer** to fully support the display of Math Equations - Only turn on `enable` **may not let you see the displayed equations correctly**.
+Firstly, you need to choose a rendering engine and turn on `enable` for it in {% label primary@theme config file %}. Then you need to install the **corresponding Hexo Renderer** to fully support the display of Math Equations - Only turn on `enable` **may not let you see the displayed equations correctly**.
 
 {% tabs render-engines %}
 <!-- tab MathJax -->
@@ -91,7 +90,7 @@ If you are using other renderers, such as [hexo-renderer-marked](https://github.
 
 **Installation**
 
-1. Firstly, set `mathjax` as render engine in {% label primary@theme config file %}.
+1. Firstly, set `mathjax` as rendering engine in {% label primary@theme config file %}.
 
     ```yml next/_config.yml
     math:
@@ -124,7 +123,7 @@ If you use KaTeX to render Math Equations, you can choose one of the Markdown re
 
 **Installation**
 
-1. Firstly, set `katex` as render engine in {% label primary@theme config file %}.
+1. Firstly, set `katex` as rendering engine in {% label primary@theme config file %}.
 
     ```yml next/_config.yml
     math:
@@ -212,7 +211,7 @@ $ hexo clean && hexo g -d
 {% endnote %}
 
 {% note warning %}
-Except for the required renderer, any other Hexo math plugins are unnecessary and there is no need to manually import any JS or CSS files. If you have installed plugins such as `hexo-math` or `hexo-katex`, they may conflict with the built-in render engine of NexT.
+Except for the required renderer, any other Hexo math plugins are unnecessary and there is no need to manually import any JS or CSS files. If you have installed plugins such as `hexo-math` or `hexo-katex`, they may conflict with the built-in rendering engine of NexT.
 {% endnote %}
 
 ### Examples
@@ -221,13 +220,23 @@ Except for the required renderer, any other Hexo math plugins are unnecessary an
 The following examples are rendered by `mathjax` engine.
 {% endnote %}
 
-#### Numbering and referring equations in MathJax
+#### Numbering and Referring Equations in MathJax
 
-In NexT v6.3.0, we have added feature to [automatic equation numbering](https://docs.mathjax.org/en/latest/input/tex/eqnumbers.html) with opportunity to make reference to that equations. We briefly describe how to use this feature below.
+In NexT v6.3.0, we have added feature to [automatic equation numbering](https://docs.mathjax.org/en/latest/input/tex/eqnumbers.html) with opportunity to make reference to that equations.
 
-In general, to make the automatic equation numbering work, you have to wrap your LaTeX equations in `equation` environment. Using the plain old style (i.e., wrap an equation with two dollar signs in each side) will not work. How to refer to an equation? Just give a `\label{}` tag and then in your later text, use `\ref{}` or `\eqref{}` to refer it. Using `\eqref{}` is preferred since if you use `\ref{}`, there are no parentheses around the equation number. Below are some of the common scenarios for equation numbering.
+To enable this feature, you need to set `mathjax.tags` to `ams` in {% label primary@theme config file %}.
 
-#### Simple Equation
+```yml
+math:
+  mathjax:
+    enable: true
+    # Available values: none | ams | all
+    tags: ams
+```
+
+And to make the automatic equation numbering work, you have to wrap your LaTeX equations in `equation` environment. Using the plain old style (i.e., wrap an equation with two dollar signs in each side) will not work. How to refer to an equation? Just give a `\label{}` tag and then in your later text, use `\ref{}` or `\eqref{}` to refer it. Using `\eqref{}` is preferred since if you use `\ref{}`, there are no parentheses around the equation number. Below are some of the common scenarios for equation numbering.
+
+#### Simple Equations
 
 For simple equations, use the following form to give a tag,
 
@@ -249,7 +258,7 @@ The famous matter-energy equation $\eqref{eq1}$ proposed by Einstein...
 
 The famous matter-energy equation $\eqref{eq1}$ proposed by Einstein...
 
-#### Multi-line Equation
+#### Multi-line Equations
 
 For multi-line equations, inside the `equation` environment, you can use the `aligned` environment to split it into multiple lines:
 
@@ -303,7 +312,7 @@ There are three aligned equations: equation $\eqref{eq3}$, equation $\eqref{eq4}
 
 Since `align` in and of itself is a complete equation environment (read [here](https://tex.stackexchange.com/questions/95402/what-is-the-difference-between-aligned-in-displayed-mode-and-starred-align) about the difference between `aligned` and `align` in LaTeX). You do not need to wrap it with `equation` environment.
 
-#### Exclude equations from numbering
+#### Exclude Equations from Numbering
 
 In the `align` environment, if you do not want to number one or some equations, just use `\nonumber` right behind these equations. Like the following:
 
@@ -321,7 +330,7 @@ w + 2 &= -1 + w \\\\
 ab &= cb
 \end{align}$$
 
-#### Use `\tag` to tag equations
+#### Use `\tag` to Tag Equations
 
 Sometimes, you want to use more «exotic» style to refer your equation. You can use `\tag{}` to achieve this. For example:
 

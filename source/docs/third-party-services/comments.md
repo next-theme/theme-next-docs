@@ -168,6 +168,9 @@ utterances:
 
 Isso – *Ich schrei sonst* – is a lightweight commenting server written in Python and JavaScript. It aims to be a drop-in replacement for Disqus.
 
+1. You need to [install and configure Isso](https://posativ.org/isso/docs/install/) on your server first.
+2. Set the value `isso` in the {% label primary@theme config file %} as the value `data-isso` in Isso script. An exemplary script tag is given in the `Integration` section of the [Isso quickstart document](https://posativ.org/isso/docs/quickstart/#integration), you need to modify it according to the URL of your server.
+
 ```yml next/_config.yml
 # Isso
 # For more information: https://posativ.org/isso/

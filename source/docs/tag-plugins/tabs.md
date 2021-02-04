@@ -14,33 +14,33 @@ tabs:
 
 ### Usage
 
-```md tabs.js
+```jinja
 {% tabs Unique name, [index] %}
 <!-- tab [Tab caption] [@icon] -->
 Any content (support inline tags too).
 <!-- endtab -->
 {% endtabs %}
-
-Unique name   : Unique name of tabs block tag without comma.
-                Will be used in #id's as prefix for each tab with their index numbers.
-                If there are whitespaces in name, for generate #id all whitespaces will replaced by dashes.
-                Only for current url of post/page must be unique!
-[index]       : Index number of active tab.
-                If not specified, first tab (1) will be selected.
-                If index is -1, no tab will be selected. It's will be something like spoiler.
-                Optional parameter.
-[Tab caption] : Caption of current tab.
-                If not caption specified, unique name with tab index suffix will be used as caption of tab.
-                If not caption specified, but specified icon, caption will empty.
-                Optional parameter.
-[@icon]       : Font Awesome icon name.
-                Can be specified with or without space; e.g. 'Tab caption @icon' is the same as 'Tab caption@icon'.
-                Optional parameter.
 ```
+
+- `Unique name`   : Unique name of tabs block tag without comma.
+  Will be used in #id's as prefix for each tab with their index numbers.
+  If there are whitespaces in name, for generate #id all whitespaces will replaced by dashes.
+  Only for current url of post/page must be unique!
+- `[index]`       : Index number of active tab.
+  If not specified, first tab (1) will be selected.
+  If index is -1, no tab will be selected. It's will be something like spoiler.
+  Optional parameter.
+- `[Tab caption]` : Caption of current tab.
+  If not caption specified, unique name with tab index suffix will be used as caption of tab.
+  If not caption specified, but specified icon, caption will empty.
+  Optional parameter.
+- `[@icon]`       : Font Awesome icon name.
+  Can be specified with or without space; e.g. 'Tab caption @icon' is the same as 'Tab caption@icon'.
+  Optional parameter.
 
 ### Examples
 
-```md
+```jinja
 {% tabs First unique name %}
 <!-- tab -->
 **This is Tab 1.**
@@ -72,7 +72,7 @@ Unique name   : Unique name of tabs block tag without comma.
 
 #### Tabs with 3rd tab selected
 
-```md
+```jinja
 {% tabs Second unique name, 3 %}
 <!-- tab -->
 **This is Tab 1.**
@@ -104,7 +104,7 @@ Unique name   : Unique name of tabs block tag without comma.
 
 #### Tabs with no tab selected
 
-```md
+```jinja
 {% tabs Third unique name, -1 %}
 <!-- tab -->
 **This is Tab 1.**
@@ -136,7 +136,7 @@ Unique name   : Unique name of tabs block tag without comma.
 
 #### Tabs with custom labels
 
-```md
+```jinja
 {% tabs Fourth unique name %}
 <!-- tab Solution 1 -->
 **This is Tab 1.**
@@ -168,7 +168,7 @@ Unique name   : Unique name of tabs block tag without comma.
 
 #### Tabs with icons only
 
-```md
+```jinja
 {% tabs Fifth unique name %}
 <!-- tab @text-width -->
 **This is Tab 1.**
@@ -200,7 +200,7 @@ Unique name   : Unique name of tabs block tag without comma.
 
 #### Tabs with icons and labels
 
-```md
+```jinja
 {% tabs Sixth unique name %}
 <!-- tab Solution 1@text-width -->
 **This is Tab 1.**
@@ -232,7 +232,7 @@ Unique name   : Unique name of tabs block tag without comma.
 
 #### Tabs permalinks test
 
-```md
+```jinja
 Permalink for > [Tab one](#tab-one).
 Permalink for > [Tab one 1](#tab-one-1).
 Permalink for > [Tab one 2](#tab-one-2).
@@ -312,7 +312,7 @@ Permalink for > [Tab two 3](#tab-two-3).
 
 #### Tabs with other tags
 
-```md
+```jinja
 {% tabs Tags %}
 <!-- tab -->
 **This is Tab 1.**

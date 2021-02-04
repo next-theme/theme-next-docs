@@ -15,16 +15,16 @@ mermaid:
 
 ### Usage
 
-```md mermaid.js
+```jinja
 {% mermaid type %}
 {% endmermaid %}
-
-type : type of the mermaid chart, visit https://github.com/mermaid-js/mermaid for more information.
 ```
+
+- `type` : type of the mermaid chart, visit https://github.com/mermaid-js/mermaid for more information.
 
 ### Examples
 
-```md
+```jinja
 {% mermaid graph TD %}
 A[Hard] -->|Text| B(Round)
 B --> C{Decision}
@@ -40,7 +40,7 @@ C -->|One| D[Result 1]
 C -->|Two| E[Result 2]
 {% endmermaid %}
 
-```md
+```jinja
 {% mermaid sequenceDiagram %}
 Alice->>John: Hello John, how are you?
 loop Healthcheck
@@ -64,7 +64,7 @@ John->>Bob: How about you?
 Bob-->>John: Jolly good!
 {% endmermaid %}
 
-```md
+```jinja
 {% mermaid gantt %}
 section Section
 Completed :done,    des1, 2014-01-06,2014-01-08
@@ -86,7 +86,7 @@ Parallel 3   :         des5, after des3, 1d
 Parallel 4   :         des6, after des4, 1d
 {% endmermaid %}
 
-```md
+```jinja
 {% mermaid classDiagram %}
 Class01 <|-- AveryLongClass : Cool
 <<interface>> Class01
@@ -124,7 +124,7 @@ class Class10 {
 }
 {% endmermaid %}
 
-```md
+```jinja
 {% mermaid stateDiagram %}
 [*] --> Still
 Still --> [*]
@@ -144,7 +144,7 @@ Moving --> Crash
 Crash --> [*]
 {% endmermaid %}
 
-```md
+```jinja
 {% mermaid pie %}
 "Dogs" : 386
 "Cats" : 85
@@ -158,7 +158,7 @@ Crash --> [*]
 "Rats" : 15
 {% endmermaid %}
 
-```md
+```jinja
 {% mermaid journey %}
 title My working day
 section Go to work

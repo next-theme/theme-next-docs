@@ -21,24 +21,21 @@ note:
 
 ### Usage
 
-```md note.js
+```jinja
 {% note [class] [no-icon] [summary] %}
 Any content (support inline tags too).
 {% endnote %}
+```
 
-[class]   : Optional parameter.
-            Supported values: default | primary | success | info | warning | danger.
-[no-icon] : Optional parameter.
-            Disable icon in note.
-[summary] : Optional parameter.
-            Optional summary of the note.
+- `[class]`   : *Optional parameter.* Supported values: default | primary | success | info | warning | danger.
+- `[no-icon]` : *Optional parameter.* Disable icon in note.
+- `[summary]` : *Optional parameter.* Optional summary of the note.
 
 All parameters are optional.
-```
 
 ### Examples
 
-```md
+```jinja
 {% note %}
 #### Header
 (without define class style)
@@ -50,7 +47,7 @@ All parameters are optional.
 (without define class style)
 {% endnote %}
 
-```md
+```jinja
 {% note default %}
 #### Default Header
 Welcome to [Hexo!](https://hexo.io)
@@ -62,7 +59,7 @@ Welcome to [Hexo!](https://hexo.io)
 Welcome to [Hexo!](https://hexo.io)
 {% endnote %}
 
-```md
+```jinja
 {% note primary %}
 #### Primary Header
 **Welcome** to [Hexo!](https://hexo.io)
@@ -74,7 +71,7 @@ Welcome to [Hexo!](https://hexo.io)
 **Welcome** to [Hexo!](https://hexo.io)
 {% endnote %}
 
-```md
+```jinja
 {% note info %}
 #### Info Header
 **Welcome** to [Hexo!](https://hexo.io)
@@ -86,7 +83,7 @@ Welcome to [Hexo!](https://hexo.io)
 **Welcome** to [Hexo!](https://hexo.io)
 {% endnote %}
 
-```md
+```jinja
 {% note success %}
 #### Success Header
 **Welcome** to [Hexo!](https://hexo.io)
@@ -98,7 +95,7 @@ Welcome to [Hexo!](https://hexo.io)
 **Welcome** to [Hexo!](https://hexo.io)
 {% endnote %}
 
-```md
+```jinja
 {% note warning %}
 #### Warning Header
 **Welcome** to [Hexo!](https://hexo.io)
@@ -110,7 +107,7 @@ Welcome to [Hexo!](https://hexo.io)
 **Welcome** to [Hexo!](https://hexo.io)
 {% endnote %}
 
-```md
+```jinja
 {% note danger %}
 #### Danger Header
 **Welcome** to [Hexo!](https://hexo.io)
@@ -122,7 +119,7 @@ Welcome to [Hexo!](https://hexo.io)
 **Welcome** to [Hexo!](https://hexo.io)
 {% endnote %}
 
-```md
+```jinja
 {% note info no-icon %}
 #### No icon note
 Note **without** icon: `note info no-icon`
@@ -134,7 +131,7 @@ Note **without** icon: `note info no-icon`
 Note **without** icon: `note info no-icon`
 {% endnote %}
 
-```md
+```jinja
 {% note primary This is a summary %}
 #### Details and summary
 Note with summary: `note primary This is a summary`
@@ -146,7 +143,7 @@ Note with summary: `note primary This is a summary`
 Note with summary: `note primary This is a summary`
 {% endnote %}
 
-```md
+```jinja
 {% note info no-icon This is a summary %}
 #### Details and summary (No icon)
 Note with summary: `note info no-icon This is a summary`
@@ -158,7 +155,7 @@ Note with summary: `note info no-icon This is a summary`
 Note with summary: `note info no-icon This is a summary`
 {% endnote %}
 
-```md
+```jinja
 {% note success %}
 #### Codeblock in note
 {% code %}
@@ -178,7 +175,7 @@ code block in note tag
 {% endcode %}
 {% endnote %}
 
-```md
+```jinja
 {% note default %}
 #### Lists in note
 * ul
@@ -210,7 +207,7 @@ code block in note tag
 5. ol
 {% endnote %}
 
-```md
+```jinja
 #### Table in Note
 {% note default %}
 | 1 | 2 |

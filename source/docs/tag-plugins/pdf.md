@@ -14,13 +14,12 @@ pdf:
 
 ### Usage
 
-```md pdf.js
+```jinja
 {% pdf url [height] %}
-
-url      : The URL (Absolute path) of the PDF file.
-[height] : Optional parameter.
-           Height of the PDF display element, e.g. 800px.
 ```
+
+- `url`      : The URL (Absolute path) of the PDF file.
+- `[height]` : *Optional parameter.* Height of the PDF display element, e.g. 800px.
 
 {% note warning %}
 The loading of pdf.js or pdf file might be blocked by CORS policy. If you want to load resources from another website, make sure the Access-Control-Allow-Origin header is set correctly. See also [Access-Control-Allow-Origin - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin).
@@ -28,10 +27,10 @@ The loading of pdf.js or pdf file might be blocked by CORS policy. If you want t
 
 ### Examples
 
-```md
+```jinja
 {% pdf https://example.com/sample.pdf %}
 ```
 
-```md
+```jinja
 {% pdf /path/to/your/file.pdf 600px %}
 ```

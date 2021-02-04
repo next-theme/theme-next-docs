@@ -33,7 +33,7 @@ This tag will make a quote with two lines before and after it, and text quoted w
 
 #### Examples
 
-```md
+```jinja
 {% cq %}Elegant in code, simple in core{% endcq %}
 ```
 
@@ -43,16 +43,16 @@ This tag will make a quote with two lines before and after it, and text quoted w
 
 #### Usage
 
-```md video.js
+```jinja
 {% video url %}
 ```
 
 #### Examples
 
-```md
+```jinja
 {% video https://example.com/sample.mp4 %}
 ```
 
-```md
+```jinja
 {% video /path/to/your/video.mp4 %}
 ```

@@ -25,7 +25,7 @@ This tag will make a quote with two lines before and after it, and text quoted w
 
 #### Usage
 
-```html center-quote.js
+```jinja
 {% centerquote %}Something{% endcenterquote %}
 <!-- Tag Alias -->
 {% cq %}Something{% endcq %}

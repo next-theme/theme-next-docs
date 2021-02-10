@@ -10,7 +10,7 @@ Rating service with login through any social networks like Facebook, Twitter, Go
 {% tabs rating %}
 <!-- tab Get ID → -->
 Login to [widgetpack](https://widgetpack.com/admin#signin) and add new site, you will get your site ID:
-```html
+```js
 wpac_init.push({widget: 'Rating', id: ID});
 ```
 <!-- endtab -->

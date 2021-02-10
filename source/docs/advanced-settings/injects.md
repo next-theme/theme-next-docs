@@ -65,7 +65,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 **Two:** add a custom `my-favourite-food.njk` to sidebar.
 
 Step1: you should create `my-favourite-food.njk` in any path(e.g. `source/_data/`) as below. You can get variable from `hexo` or `local` defined in filter.
-```html
+```jinja
 {% for food in foods %}
   <div>{{ food }}</div>
 {% endfor %}

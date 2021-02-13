@@ -180,14 +180,14 @@ code block in note tag
 #### Lists in note
 * ul
 * ul
-  * ul
-  * ul
+    * ul
+    * ul
 * ul
 
 1. ol
 2. ol
-  1. ol
-  2. ol
+    1. ol
+    2. ol
 3. ol
 {% endnote %}
 ```
@@ -196,15 +196,15 @@ code block in note tag
 #### Lists in note
 * ul
 * ul
-  * ul
-  * ul
+    * ul
+    * ul
 * ul
 
 1. ol
 2. ol
-  3. ol
-  4. ol
-5. ol
+    1. ol
+    2. ol
+3. ol
 {% endnote %}
 
 ```jinja

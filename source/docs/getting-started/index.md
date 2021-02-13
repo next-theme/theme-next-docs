@@ -31,8 +31,8 @@ Make sure that you have installed Hexo and created a site with it successfully, 
 
 There are two main configuration files using by Hexo and both called `_config.yml`:
 
-  1. The first one is under {% label info@site root directory %}, which contains Hexo's config.
-  2. The second one is under {% label primary@theme root directory %}, which is provided by NexT and contains theme's config.
+1. The first one is under {% label info@site root directory %}, which contains Hexo's config.
+2. The second one is under {% label primary@theme root directory %}, which is provided by NexT and contains theme's config.
 
 Let's call the first one – {% label info@site config file %}, and the second one – {% label primary@theme config file %}.
 However, we do not recommend directly modifying the {% label primary@theme config file %}. It is quite often running into conflict status when updating NexT theme via `git pull`, or need to merge configurations manually when upgrading to new releases. For Hexo 5.0 or later, the theme can be installed through npm and it is also difficult to modify the {% label primary@theme config file %} in `node_modules`.

@@ -31,6 +31,7 @@ NexT now supports following languages:
 | Portuguese                  | Português             | `pt`    |
 | Portuguese (Brazilian)      | Português (Brazilian) | `pt-BR` |
 | Russian                     | Русский               | `ru`    |
+| Sinhala                     | සිංහල                  | `si`    |
 | Spanish                     | Español               | `es`    |
 | Turkish                     | Türk                  | `tr`    |
 | Ukrainian                   | Український           | `uk`    |

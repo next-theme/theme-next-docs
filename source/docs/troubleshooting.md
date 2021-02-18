@@ -8,12 +8,12 @@ description: NexT User Docs – Troubleshooting
 **Before submitting an Issue on GitHub, you can follow the steps below to debug:**
 
 If you get an error message from Hexo or your browser:
-* If the error comes from a Hexo plugin, such as hexo-enhancer, please submit an Issue to its GitHub repository.
+* If the error comes from a Hexo plugin, such as hexo-word-counter, please submit an Issue to its GitHub repository.
 * If the error comes from a third-party service, such as the Gitalk comment system, please submit an Issue to its GitHub repository.
 * Otherise, please search in Google / Stackoverflow / GitHub Issues, or report it to us when submitting a new Issue.
 
 The following steps will help you determine the cause of the problem:
-* Execute `hexo clean`, clear the browser cache and disable all CDN services (e.g. Cloudflare Rocket Loader) - This may take some time to take effect.
+* Execute `hexo clean`, clear the browser cache and purge CDN cache (or disable all CDN services) - This may take some time to take effect.
 * Disable browser plug-ins or use other devices and browsers to test, because bugs may only occur in specific browsers.
 * Switch to another theme and check if the bug still exists (e.g. default theme landscape). In other words, prove that this is a bug of NexT, not Hexo.
 * Upgrade theme NexT to the latest version.
@@ -33,11 +33,11 @@ If you decide to submit an Issue, please answer the following questions based on
 When you edit any YAML configs, always need to keep up indents.
 Currently, in all Hexo and NexT configuration files parameters uses **2 spaces indents** from parent option.
 
-For example, we want to change NexT scheme from standart `Muse` to `Gemini` and want to use `theme_config` feature with [Alternate Theme Config](/docs/getting-started/configuration.html#theme-config).
+For example, we want to change NexT scheme from `Muse` to `Gemini` with [Alternate Theme Config](/docs/getting-started/configuration.html#theme-config):
 
 {% tabs keep-up-indentation %}
 <!-- tab NexT Config → -->
-We open {% label primary@theme config file %} and under the «Scheme Settings» section copy next parameters:
+We open {% label primary@theme config file %} and under the «Scheme Settings» section copy the following parameters:
 
 ```yml next/_config.yml
 # ---------------------------------------------------------------
@@ -78,7 +78,7 @@ theme_config:
   scheme: Gemini
 ```
 
-And here Hexo can read these parameters as `theme_config.scheme: Gemini` in same way, as NexT can read `scheme: Gemini` parameter. So, with 2 spaces indents from parent option(s) Hexo will load all NexT parameters and work fine.
+And here Hexo can read these parameters as `theme_config.scheme: Gemini` in same way, as NexT can read `scheme: Gemini` parameter. So, with 2 spaces indents from parent option(s) Hexo will load all NexT parameters and work as expected.
 <!-- endtab -->
 {% endsubtabs %}
 
@@ -95,7 +95,7 @@ If you are using `hexo-renderer-markdown-it`, it's recommended to install `markd
 npm install markdown-it-named-headings
 ```
 See: https://github.com/theme-next/hexo-theme-next/issues/1168
-Here is the [PR with bugfix for default config](https://github.com/hexojs/hexo-renderer-markdown-it/pull/90) of `hexo-renderer-markdown-it` plugin.
+Here is the [Pull Request with bugfix for default config](https://github.com/hexojs/hexo-renderer-markdown-it/pull/90) of `hexo-renderer-markdown-it` plugin.
 
 ### Favicon Set but Doesn't Work
 

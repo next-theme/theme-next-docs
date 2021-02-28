@@ -1,15 +1,16 @@
 {
   "name": "theme-next-docs",
-  "version": "8.2.1",
+  "version": "8.2.2",
   "private": true,
   "hexo": {
     "version": "5.3.0"
   },
   "description": "Elegant and powerful theme for Hexo.",
   "scripts": {
+    "highlight": "node lib/highlight.js",
     "start": "hexo s",
     "update": "node lib/update.js",
-    "highlight": "node lib/highlight.js"
+    "version": "git add source"
   },
   "repository": "next-theme/theme-next-docs",
   "keywords": [

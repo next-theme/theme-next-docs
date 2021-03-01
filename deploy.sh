@@ -60,7 +60,6 @@ echo "=============================================================="
 echo " ${lpurple}Generating content for Muse...${norm}"
 echo "=============================================================="
     hexo config url https://theme-next.js.org/muse
-    hexo config root /muse/
     hexo config theme_config.scheme Muse
     hexo config theme_config.sidebar.position right
     hexo clean && hexo g
@@ -72,7 +71,6 @@ echo "=============================================================="
 echo " ${lpurple}Generating content for Mist...${norm}"
 echo "=============================================================="
     hexo config url https://theme-next.js.org/mist
-    hexo config root /mist/
     hexo config theme_config.scheme Mist
     hexo clean && hexo g
 
@@ -83,7 +81,6 @@ echo "=============================================================="
 echo " ${lpurple}Generating content for Pisces...${norm}"
 echo "=============================================================="
     hexo config url https://theme-next.js.org/pisces
-    hexo config root /pisces/
     hexo config theme_config.scheme Pisces
     hexo config theme_config.sidebar.position left
     hexo clean && hexo g
@@ -95,7 +92,6 @@ echo "=============================================================="
 echo " ${lpurple}Prepairing content for Gemini...${norm}"
 echo "=============================================================="
     hexo config url https://theme-next.js.org
-    hexo config root /
     hexo config theme_config.scheme Gemini
     hexo clean && hexo g
 

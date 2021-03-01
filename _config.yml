@@ -10,7 +10,6 @@ timezone: UTC
 
 # URL
 url: https://theme-next.js.org
-root: /
 permalink: :title/
 permalink_defaults:
 

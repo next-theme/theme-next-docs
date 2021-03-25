@@ -281,9 +281,9 @@ class Controller {
         const preview = document.querySelector('#preview .render code');
         preview.className = `language-${this.value.language}`;
         // Escape html
-        preview.innerText = this.value.code;
+        preview.textContent = this.value.code;
         document.querySelectorAll('.render code').forEach(element => {
-            this.value.engine === 'highlight' ? hljs.highlightBlock(element) : Prism.highlightElement(element);
+            this.value.engine === 'highlight' ? hljs.highlightElement(element) : Prism.highlightElement(element);
         });
     }
 }

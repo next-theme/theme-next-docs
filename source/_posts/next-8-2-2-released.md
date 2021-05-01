@@ -6,8 +6,20 @@ date: 2021-02-28 13:17:25
 ## ⭐ Features
 
 - Add external link icon options ([#192](https://github.com/next-theme/hexo-theme-next/pull/192))
+```diff
+# Automatically add external URL with Base64 encrypt & decrypt.
+exturl: false
++# If true, an icon will be attached to each external URL
++exturl_icon: true
+```
 - Fix exturl title ([#193](https://github.com/next-theme/hexo-theme-next/pull/193))
 - New gitalk proxy option ([#205](https://github.com/next-theme/hexo-theme-next/pull/205))
+```diff
+gitalk:
+  ...
++  # When the official proxy is not available, you can change it to your own proxy address
++  proxy: https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token # This is official proxy adress
+```
 
 ## 🛠 Improvements
 

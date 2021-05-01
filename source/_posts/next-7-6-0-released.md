@@ -53,7 +53,6 @@ quicklink:
   delay: true
   timeout: 3000
   priority: true
-  ignores:
 
 # Some deprecated
 -  toc_max_depth: 4

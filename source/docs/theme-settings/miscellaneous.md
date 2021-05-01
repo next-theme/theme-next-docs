@@ -60,6 +60,17 @@ android_chrome_color: "#222"
 
 {% endtabs %}
 
+### Body Scrollbar
+
+```yml next/_config.yml
+# Override browsers' default behavior.
+body_scrollbar:
+  # Place the scrollbar over the content.
+  overlay: false
+  # Present the scrollbar even if the content is not overflowing.
+  stable: false
+```
+
 ### Codeblock Style
 
 {% tabs codeblock %}

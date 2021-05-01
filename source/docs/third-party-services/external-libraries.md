@@ -88,7 +88,6 @@ quicklink:
   delay: true
   timeout: 3000
   priority: true
-  ignores:
 ...
 ```
 

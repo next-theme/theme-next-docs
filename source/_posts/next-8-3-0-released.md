@@ -5,7 +5,19 @@ date: 2021-04-01 07:36:21
 
 ## ⭐ Features
 
-- New reversed reading progess bar option ([#221](https://github.com/next-theme/hexo-theme-next/pull/221))
+- New reversed reading progress bar option ([#221](https://github.com/next-theme/hexo-theme-next/pull/221))
+```diff
+# Reading progress bar
+reading_progress:
+  enable: false
++  # Available values: left | right
++  startAt: left
+  # Available values: top | bottom
+  position: top
++  reversed: false
+  color: "[#37](https://github.com/next-theme/hexo-theme-next/pull/37)c6c0"
+  height: 3px
+```
 
 ## 🐞 Bug Fixes
 

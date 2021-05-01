@@ -8,8 +8,23 @@ date: 2021-01-01 02:10:00
 - Remove Valine ([6c94cfb](https://github.com/next-theme/hexo-theme-next/commit/6c94cfb45fd8958c78e3532b32efdfb03efafc54))
 - Use Hexo integrated nunjucks renderer ([589fc87](https://github.com/next-theme/hexo-theme-next/commit/589fc8721e5a8ec51eabfee115f606da925e0849))
 - Remove swiftype ([f1aa098](https://github.com/next-theme/hexo-theme-next/commit/f1aa09877360f9e2a9e471b41bac22c34936c8dd))
+```diff
+-# Swiftype Search API Key
+-swiftype_key:
+```
 - Remove baidu_push and disable_baidu_transformation ([d65b03c](https://github.com/next-theme/hexo-theme-next/commit/d65b03c3e134d422ff7156995f6807c72584dd12))
+```diff
+-# Disable Baidu transformation on mobile devices.
+-disable_baidu_transformation: false
+
+-# Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
+-baidu_push: false
+```
 - Remove cnzz ([1dd1c71](https://github.com/next-theme/hexo-theme-next/commit/1dd1c71fdde61e8af7eaeb153d51a1506581408d))
+```diff
+-# CNZZ count
+-cnzz_siteid:
+```
 
 ## 🌟 New Features
 
@@ -23,6 +38,14 @@ date: 2021-01-01 02:10:00
 ## ⭐ Features
 
 - New option mathjax.tags ([ff3b957](https://github.com/next-theme/hexo-theme-next/commit/ff3b9571c0779c0ba583ee650c6fa647e3f6fef8))
+```diff
+math:
+  ...
+  mathjax:
+    enable: false
++    # Available values: none | ams | all
++    tags: none
+```
 
 ## 🐞 Bug Fixes
 

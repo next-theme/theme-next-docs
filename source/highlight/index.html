@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
 <script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@10/highlight.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-core.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1/plugins/autoloader/prism-autoloader.min.js"></script>
@@ -37,10 +37,8 @@
                     <p>Which code highlight engine do you prefer?</p>
                     <div class="alert alert-danger" role="alert">Prism requires Hexo v5 or later.</div>
                     <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <label class="input-group-text" for="engine">Engine</label>
-                        </div>
-                        <select class="custom-select" id="engine">
+                        <label class="input-group-text" for="engine">Engine</label>
+                        <select class="form-select" id="engine">
                             <option value="highlight">Highlight.js</option>
                             <option value="prism">Prism</option>
                         </select>
@@ -50,10 +48,8 @@
                     <p>And run <code>hexo clean</code></p>
                     <p>Which highlight theme do you prefer?</p>
                     <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <label class="input-group-text" for="theme">Theme</label>
-                        </div>
-                        <select class="custom-select" id="theme">
+                        <label class="input-group-text" for="theme">Theme</label>
+                        <select class="form-select" id="theme">
                         </select>
                     </div>
                     <div class="alert alert-danger d-none" role="alert">Install <code>prism-themes</code> with <code>npm install prism-themes</code> command in Hexo root directory first.</div>
@@ -70,9 +66,7 @@
                 <div class="card-body">
                     <p>Write some code to preview.</p>
                     <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">Language</span>
-                        </div>
+                        <span class="input-group-text">Language</span>
                         <input type="text" class="form-control" id="language">
                     </div>
                     <div class="input-group">

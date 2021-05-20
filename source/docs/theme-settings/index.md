@@ -103,13 +103,14 @@ Scheme Mist does not support custom logo setting.
 
 #### Creative Commons
 
-NexT supports the display of [Creative Commons 4.0 International License](https://creativecommons.org/) in sidebar and post including `by`, `by-nc`, `by-nc-nd`, `by-nc-sa`, `by-nd`, `by-sa`, `zero`. These licenses allow creators to communicate which rights they reserve, and which rights they waive for the benefit of recipients or other creators.
+NexT supports the display of [Creative Commons 4.0 International License](https://creativecommons.org/) in sidebar and post including `by`, `by-nc`, `by-nc-nd`, `by-nc-sa`, `by-nd`, `by-sa` and `cc-zero`. These licenses allow creators to communicate which rights they reserve, and which rights they waive for the benefit of recipients or other creators.
 
 You can configure it by editing values in `creative_commons` section in {% label primary@theme config file %}, for example:
 
 ```yml next/_config.yml
 creative_commons:
   license: by-nc-sa
+  size: small
   sidebar: true
   post: true
   language: deed.zh

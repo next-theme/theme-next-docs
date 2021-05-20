@@ -170,6 +170,11 @@ You can enable it by setting value `reading_progress.enable` to `true` in {% lab
 ```yml next/_config.yml
 reading_progress:
   enable: true
+  # Available values: left | right
+  startAt: left
+  # Available values: top | bottom
+  position: top
+  reversed: false
   color: "#37c6c0"
   height: 2px
 ```

@@ -128,18 +128,20 @@ Gitalk is a modern comment component based on Github Issue and Preact.
 
     ```yml next/_config.yml
     # Gitalk
-    # Demo: https://gitalk.github.io
+    # For more information: https://gitalk.github.io
     gitalk:
       enable: false
-      github_id:  # Github repo owner
-      repo:  # Repository name to store issues
-      client_id:  # Github Application Client ID
-      client_secret:  # Github Application Client Secret
-      admin_user:  # GitHub repo owner and collaborators, only these guys can initialize github issues
+      github_id: # GitHub repo owner
+      repo: # Repository name to store issues
+      client_id: # GitHub Application Client ID
+      client_secret: # GitHub Application Client Secret
+      admin_user: # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
       distraction_free_mode: true # Facebook-like distraction free mode
+      # When the official proxy is not available, you can change it to your own proxy address
+      proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token # This is official proxy adress
       # Gitalk's display language depends on user's browser or system environment
       # If you want everyone visiting your site to see a uniform language, you can set a force language value
-      # Available value: en, es-ES, fr, ru, zh-CN, zh-TW
+      # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
       language:
     ```
 

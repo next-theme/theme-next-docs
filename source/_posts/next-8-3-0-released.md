@@ -11,7 +11,7 @@ date: 2021-04-01 07:36:21
 reading_progress:
   enable: false
 +  # Available values: left | right
-+  startAt: left
++  start_at: left
   # Available values: top | bottom
   position: top
 +  reversed: false

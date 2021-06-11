@@ -171,7 +171,7 @@ You can enable it by setting value `reading_progress.enable` to `true` in {% lab
 reading_progress:
   enable: true
   # Available values: left | right
-  startAt: left
+  start_at: left
   # Available values: top | bottom
   position: top
   reversed: false

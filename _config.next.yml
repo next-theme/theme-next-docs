@@ -31,6 +31,7 @@ darkmode: true
 
 creative_commons:
   license: by-nc-sa
+  size: big
   sidebar: true
 
 
@@ -119,7 +120,6 @@ avatar:
 social:
   GitHub: https://github.com/next-theme || fab fa-github
   RSS: /atom.xml || fa fa-rss
-  Gitter: https://gitter.im/hexo-next || fab fa-gitter
 
 social_icons:
   enable: true
@@ -241,6 +241,15 @@ local_search:
   enable: true
   trigger: auto
   top_n_per_article: 1
+
+
+# ============================================================= #
+# ======================= Chat Services ======================= #
+# ============================================================= #
+
+gitter:
+  enable: true
+  room: hexo-next/community
 
 
 # ============================================================= #

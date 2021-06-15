@@ -110,7 +110,7 @@ If you are using other renderers, such as [hexo-renderer-marked](https://github.
 
 **Plugins**
 
-All extensions of MathJax are loaded automatically. For example, `mhchem` is a tool for writing beautiful chemical equations easily. It implements the `\ce` and `\pu` chemical equation macros of the LaTeX mhchem package. More infomation: [MathJax/mhchem Manual](https://mhchem.github.io/MathJax-mhchem/).
+All extensions of MathJax are loaded automatically. For example, `mhchem` is a tool for writing beautiful chemical equations easily. It implements the `\ce` and `\pu` chemical equation macros of the LaTeX mhchem package. More information: [MathJax/mhchem Manual](https://mhchem.github.io/MathJax-mhchem/).
 <!-- endtab -->
 
 <!-- tab KaTeX -->
@@ -176,7 +176,7 @@ markdown:
 
 **Plugins**
 
-Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supporting the Clipboard API so that, when selecting and copying whole KaTeX-rendered elements, the text content of the resulting clipboard renders KaTeX elements as their LaTeX source surrounded by specified delimiters. More infomation: [Copy-tex extension](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex).
+Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supporting the Clipboard API so that, when selecting and copying whole KaTeX-rendered elements, the text content of the resulting clipboard renders KaTeX elements as their LaTeX source surrounded by specified delimiters. More information: [Copy-tex extension](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex).
 
 ```yml next/_config.yml
 math:

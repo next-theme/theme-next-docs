@@ -70,7 +70,7 @@ Adding article reading times counting to NexT theme. Documentation how to set th
 
 {% tabs leanCloud-counter %}
 <!-- tab Get App Keys → -->
-1. Create an account or log into [LeanCloud](https://www.leancloud.cn/dashboard/login.html#/signin), and then click on the bottom left corner to [create the application](https://www.leancloud.cn/dashboard/applist.html#/newapp) in [dashboard](https://www.leancloud.cn/dashboard/applist.html#/apps).
+1. Create an account or log in to [LeanCloud](https://console.leancloud.app/login), and then click the button to create an application in [dashboard](https://console.leancloud.app/apps).
     ![LeanCloud](/images/valine-1.png)
 2. Go to the application you just created, select `Settings → App Keys` in the lower left corner, and you will see your APP ID and APP Key.
     ![LeanCloud](/images/valine-2.png)

@@ -238,7 +238,7 @@ Plus each section has a `external` attribute, this controls whether to use the f
 Use this can help you to use fonts installed in system and reduce unnecessary requests.
 
 {% note info %}
-To solve the unstable of [Google Fonts API](https://www.google.com/fonts) in some countries, NexT supports custom URL of fonts library by setting `font.host`.
+To solve the unstable of [Google Fonts API](https://fonts.google.com) in some countries, NexT supports custom URL of fonts library by setting `font.host`.
 In addition, we noticed that for requests from certain websites, Google Fonts will return 403. At this time, it is necessary to use `font.host` to set up a mirror site.
 Relevant issues: [#613](https://github.com/theme-next/hexo-theme-next/issues/613), [#1333](https://github.com/theme-next/hexo-theme-next/issues/1333)
 {% endnote %}

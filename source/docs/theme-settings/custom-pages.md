@@ -142,11 +142,11 @@ tagcloud:
 
 {% subtabs calendar1 %}
 <!-- tab Get calendar ID and API KEY → -->
-Login to [Google developers](https://console.developers.google.com/flows/enableapi?apiid=calendar) and add Google Calendar API, you will get your calendar ID and API KEY. [More detailed documentation](https://developers.google.com/calendar/quickstart/js)
+Login to [Google developers](https://console.cloud.google.com/flows/enableapi?apiid=calendar) and add Google Calendar API, you will get your calendar ID and API KEY. [More detailed documentation](https://developers.google.com/calendar/quickstart/js)
 
 References:
-- API Documentation: https://developers.google.com/google-apps/calendar/v3/reference/events/list
-- To get api_key: https://console.developers.google.com
+- API Documentation: https://developers.google.com/calendar/v3/reference/events/list
+- To get api_key: https://console.cloud.google.com/apis/credentials
 - Create & manage a public Google calendar: https://support.google.com/calendar/answer/37083
 <!-- endtab -->
 <!-- tab NexT Config -->

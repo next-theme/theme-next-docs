@@ -18,6 +18,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 A injects argument will get passed into the function, so we can use it add custom code in `injectPoint` as following.
 
 For inject view:
+
 ```js
 // The name of same `injectPoint` suggest be unique. If same, it will override low priority configurations.
 // `locals` and `options` is the same as partial https://hexo.io/docs/helpers#partial.
@@ -35,6 +36,7 @@ You have to note `filePath`, it must be absolute path or relative to `hexo_dir`.
 {% endnote %}
 
 For inject style:
+
 ```js
 hexo.extend.filter.register('theme_inject', function(injects) {
   // it will put styleFile into injectPoint.
@@ -43,6 +45,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 ```
 
 These are many `injectPoint`, defined in [`injects-point.js`](https://github.com/next-theme/hexo-theme-next/blob/master/scripts/events/lib/injects-point.js)
+
 ```js
 module.exports = {
   views: ['head', 'header', 'sidebar', 'postMeta', 'postBodyEnd', ..., 'footer', 'bodyEnd'],
@@ -65,6 +68,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 **Two:** add a custom `my-favourite-food.njk` to sidebar.
 
 Step1: you should create `my-favourite-food.njk` in any path(e.g. `source/_data/`) as below. You can get variable from `hexo` or `local` defined in filter.
+
 ```jinja
 {% for food in foods %}
   <div>{{ food }}</div>
@@ -72,6 +76,7 @@ Step1: you should create `my-favourite-food.njk` in any path(e.g. `source/_data/
 ```
 
 Step2: add filter to load it.
+
 ```js
 hexo.extend.filter.register('theme_inject', function(injects) {
   injects.sidebar.file('my-favourite-food', 'source/_data/my-favourite-food.njk', {
@@ -83,6 +88,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 **Three:** want to have big header, put `big-header.styl` to NexT.
 
 Of course, you need to create this file first(e.g. `source/_data/big-header.styl`).
+
 ```css
 h1 {
   font-size: 2rem;
@@ -90,6 +96,7 @@ h1 {
 ```
 
 And then add it in filter.
+
 ```js
 hexo.extend.filter.register('theme_inject', function(injects) {
   injects.style.push('source/_data/big-header.styl');

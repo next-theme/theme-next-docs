@@ -10,6 +10,7 @@ Rating service with login through any social networks like Facebook, Twitter, Go
 {% tabs rating %}
 <!-- tab Get ID → -->
 Login to [widgetpack](https://widgetpack.com/admin#signin) and add new site, you will get your site ID:
+
 ```js
 wpac_init.push({widget: 'Rating', id: ID});
 ```
@@ -42,6 +43,7 @@ Get AddThis ID in this menu: `Profile Settings` → `General` → `ID`. See exam
 
 <!-- tab NexT Config -->
 Edit the value of `add_this_id` in the {% label primary@theme config file %} as following:
+
 ```yml next/_config.yml
 add_this_id: your_add_this_id
 ```

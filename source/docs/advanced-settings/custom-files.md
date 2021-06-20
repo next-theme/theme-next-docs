@@ -106,6 +106,7 @@ $content-desktop         = 50em
 $content-desktop-large   = 55em
 $content-desktop-largest = 60em
 ```
+
 {% endnote %}
 <!-- endtab -->
 

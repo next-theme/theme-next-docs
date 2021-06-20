@@ -10,6 +10,7 @@ Next allows users to add custom pages in menu.
 {% tabs adding-custom-page %}
 <!-- tab Adding New Page → -->
 Change to {% label info@site root directory %} in your terminal. Use `hexo new page custom-name` to create a new `custom-name` page:
+
 ```bash
 $ cd hexo-site
 $ hexo new page custom-name
@@ -28,6 +29,7 @@ date: 2014-12-22 12:39:04
 
 <!-- tab Editting Menu -->
 Add `custom-name` to `menu` by editing {% label primary@theme config file %}, like adding `about` page:
+
 ```yml next/_config.yml
 menu:
   home: / || fa fa-home
@@ -81,6 +83,7 @@ Adding «Tags» page and show «Tags» link in menu. «Tags» page will show all
 {% tabs adding-tags-page %}
 <!-- tab Adding New Page → -->
 Change to {% label info@site root directory %} in your terminal. Use `hexo new page tags` to create a new `tags` page:
+
 ```bash
 $ cd hexo-site
 $ hexo new page tags
@@ -100,6 +103,7 @@ type: tags
 
 <!-- tab Editting Menu -->
 Add `tags` to `menu` by editing {% label primary@theme config file %}, like following:
+
 ```yml next/_config.yml
 menu:
   home: / || fa fa-home
@@ -145,6 +149,7 @@ tagcloud:
 Login to [Google developers](https://console.cloud.google.com/flows/enableapi?apiid=calendar) and add Google Calendar API, you will get your calendar ID and API KEY. [More detailed documentation](https://developers.google.com/calendar/quickstart/js)
 
 References:
+
 - API Documentation: https://developers.google.com/calendar/v3/reference/events/list
 - To get api_key: https://console.cloud.google.com/apis/credentials
 - Create & manage a public Google calendar: https://support.google.com/calendar/answer/37083
@@ -171,6 +176,7 @@ calendar:
 
 <!-- tab Adding Schedule Page → -->
 Change to {% label info@site root directory %} in your terminal. Use `hexo new page schedule` to create a new `schedule` page:
+
 ```bash
 $ cd hexo-site
 $ hexo new page schedule
@@ -190,6 +196,7 @@ type: schedule
 
 <!-- tab Editting Menu -->
 Add `schedule` to `menu` by editing {% label primary@theme config file %}:
+
 ```yml next/_config.yml
 menu:
   home: / || fa fa-home
@@ -202,6 +209,7 @@ menu:
 ### Custom 404 Page
 
 In your terminal, change to the `source` folder of {% label info@site root directory %}. Create a new folder called `404`, then create a new page in it:
+
 ```bash
 $ cd hexo-site
 $ hexo new page 404
@@ -220,6 +228,7 @@ Whether users can be redirected to the 404 page depends on the settings of the w
 #### Commonweal 404
 
 If you would like to enable `commonweal 404` (A service provided by Tencent in China), Edit `404/index.md` like this:
+
 ```md
 ---
 title: '404'
@@ -234,6 +243,7 @@ comments: false
 You can also add any content you want to it.
 
 Add `404` to `menu` by editing {% label primary@theme config file %}:
+
 ```yml next/_config.yml
 menu:
   home: / || fa fa-home

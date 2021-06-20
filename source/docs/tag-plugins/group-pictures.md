@@ -13,6 +13,7 @@ description: NexT User Docs – NexT Supported Tags – Group Pictures
 
 - `[number]` : *Optional parameter.* Total number of pictures to add in the group pictures.
 - `[layout]` : *Optional parameter.* The index of the layout, which can be obtained according to the figure below. For example, if you want to apply the second layout to 4 pictures, then use
+
     ```jinja
     {% grouppicture 4-2 %}{% endgrouppicture %}
     ```
@@ -32,6 +33,7 @@ description: NexT User Docs – NexT Supported Tags – Group Pictures
 ![](/images/next.svg)
 {% endgrouppicture %}
 ```
+
 {% grouppicture 6-3 %}
 ![](/images/next.svg)
 ![](/images/next.svg)
@@ -50,6 +52,7 @@ description: NexT User Docs – NexT Supported Tags – Group Pictures
 ![](/images/next.svg)
 {% endgp %}
 ```
+
 {% gp 5-2 %}
 ![](/images/next.svg)
 ![](/images/next.svg)

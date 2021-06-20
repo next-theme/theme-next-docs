@@ -50,38 +50,38 @@ description: NexT User Docs – NexT Supported Tags – Button
 #### Button with icon
 
 ```jinja
-<div>{% btn #,, home fa-5x %}{% btn #,, home fa-5x %}{% btn #,, home fa-5x %}</div>
-<div>{% btn #,, home fa-4x %}{% btn #,, home fa-4x %}{% btn #,, home fa-4x %}</div>
-<div>{% btn #,, home fa-3x %}{% btn #,, home fa-3x %}{% btn #,, home fa-3x %}</div>
-<div>{% btn #,, home fa-2x %}{% btn #,, home fa-2x %}{% btn #,, home fa-2x %}</div>
-<div>{% btn #,, home fa-lg %}{% btn #,, home fa-lg %}{% btn #,, home fa-lg %}</div>
-<div>{% btn #,, home %}{% btn #,, home %}{% btn #,, home %}</div>
+{% btn #,, home fa-5x %}
+{% btn #,, home fa-4x %}
+{% btn #,, home fa-3x %}
+{% btn #,, home fa-2x %}
+{% btn #,, home fa-lg %}
+{% btn #,, home %}
 ```
 
-<div>{% btn #,, home fa-5x %}{% btn #,, home fa-5x %}{% btn #,, home fa-5x %}</div>
-<div>{% btn #,, home fa-4x %}{% btn #,, home fa-4x %}{% btn #,, home fa-4x %}</div>
-<div>{% btn #,, home fa-3x %}{% btn #,, home fa-3x %}{% btn #,, home fa-3x %}</div>
-<div>{% btn #,, home fa-2x %}{% btn #,, home fa-2x %}{% btn #,, home fa-2x %}</div>
-<div>{% btn #,, home fa-lg %}{% btn #,, home fa-lg %}{% btn #,, home fa-lg %}</div>
-<div>{% btn #,, home %}{% btn #,, home %}{% btn #,, home %}</div>
+{% btn #,, home fa-5x %}
+{% btn #,, home fa-4x %}
+{% btn #,, home fa-3x %}
+{% btn #,, home fa-2x %}
+{% btn #,, home fa-lg %}
+{% btn #,, home %}
 
 #### Button with text & icon
 
 ```jinja
-<p>{% btn #, Text & Icon (buggy), home %}
-{% btn #, Text & Icon (fixed width), home fa-fw %}</p>
+{% btn #, Text & Icon (buggy), home %}
+{% btn #, Text & Icon (fixed width), home fa-fw %}
 ```
 
-<p>{% btn #, Text & Icon (buggy), home %}
-{% btn #, Text & Icon (fixed width), home fa-fw %}</p>
+{% btn #, Text & Icon (buggy), home %}
+{% btn #, Text & Icon (fixed width), home fa-fw %}
 
 ```jinja
-<p>{% btn #, Text & Large Icon, home fa-fw fa-lg %}
-{% btn #, Text & Large Icon & Title, home fa-fw fa-lg, Title %}</p>
+{% btn #, Text & Large Icon, home fa-fw fa-lg %}
+{% btn #, Text & Large Icon & Title, home fa-fw fa-lg, Title %}
 ```
 
-<p>{% btn #, Text & Large Icon, home fa-fw fa-lg %}
-{% btn #, Text & Large Icon & Title, home fa-fw fa-lg, Title %}</p>
+{% btn #, Text & Large Icon, home fa-fw fa-lg %}
+{% btn #, Text & Large Icon & Title, home fa-fw fa-lg, Title %}
 
 #### Button inside text
 
@@ -106,6 +106,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 [Link](#)
 {% endnote %}
 ```
+
 {% note info %}
 {% btn #, Text & Icon, home fa-fw fa-lg %}
 

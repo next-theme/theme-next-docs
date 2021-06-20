@@ -13,6 +13,7 @@ NexT will not send record to analytics service provider as long as the page's ho
 
 1. Create an account and log into [Google Analytics](https://analytics.google.com). [More detailed documentation](https://support.google.com/analytics/?hl=en#topic=3544906)
 2. Edit {% label primary@theme config file %} and fill `tracking_id` under section `google_analytics` with your Google track ID. Google track ID always starts with `UA-`.
+
     ```yml next/_config.yml
     # Google Analytics
     google_analytics:
@@ -37,6 +38,7 @@ Copy the script ID after `hm.js?`, like the following picture:
 
 <!-- tab NexT Config -->
 Edit {% label primary@theme config file %} and change the value of `baidu_analytics` to your script ID.
+
 ```yml next/_config.yml
 # Baidu Analytics ID
 baidu_analytics: your_id
@@ -49,6 +51,7 @@ baidu_analytics: your_id
 Official documentation: https://docs.growingio.com/v3/developer-manual/sdkintegrated/web-js-sdk/latest-jssdk
 
 Edit {% label primary@theme config file %} and change the value of `growingio_analytics` to your project ID.
+
 ```yml next/_config.yml
 # Growingio Analytics
 growingio_analytics: # <project_id>
@@ -57,6 +60,7 @@ growingio_analytics: # <project_id>
 #### Cloudflare Web Analytics
 
 Edit {% label primary@theme config file %} and change the value of `cloudflare_analytics` to your project ID.
+
 ```yml next/_config.yml
 # Cloudflare Web Analytics
 cloudflare_analytics:
@@ -78,6 +82,7 @@ Adding article reading times counting to NexT theme. Documentation how to set th
 
 <!-- tab Installation → -->
 Install `hexo-leancloud-counter-security` by executing the following command in {% label info@site root dir %}:
+
 ```bash
 $ npm install hexo-leancloud-counter-security
 ```
@@ -85,6 +90,7 @@ $ npm install hexo-leancloud-counter-security
 
 <!-- tab Hexo Config → -->
 Edit {% label info@site config file %} and add following content:
+
 ```yml hexo/_config.yml
 leancloud_counter_security:
   enable_sync: true
@@ -97,6 +103,7 @@ leancloud_counter_security:
 
 <!-- tab NexT Config -->
 Edit {% label primary@theme config file %} and fill options under `leancloud_visitors` section.
+
 ```yml next/_config.yml
 # Show number of visitors to each article.
 # You can visit https://www.leancloud.cn get AppID and AppKey.
@@ -129,6 +136,7 @@ Login to [Firebase](https://console.firebase.google.com/u/0/) to get apiKey and 
 
 <!-- tab NexT Config -->
 Edit {% label primary@theme config file %} and add or change `firestore` section:
+
 ```yml next/_config.yml
 firestore:
   enable: true
@@ -150,6 +158,7 @@ When `enable: true`, global setting is enabled. If `total_visitors`, `total_view
 
 <!-- tab Site UV Settings → -->
 When `total_visitors: true`, it will show site UV in footer. You can also use font-awesome by setting `total_visitors_icon` to the name of the icon.
+
 ```yml next/_config.yml
 busuanzi_count:
   total_visitors: true
@@ -159,6 +168,7 @@ busuanzi_count:
 
 <!-- tab Site PV Settings → -->
 When `total_views: true`, it will show site UV in footer. You can also use font-awesome by setting `total_views_icon` to the name of the icon.
+
 ```yml next/_config.yml
 busuanzi_count:
   total_views: true
@@ -168,6 +178,7 @@ busuanzi_count:
 
 <!-- tab Per-page PV Settings -->
 When `post_views: true`, it will show page PV in post meta. You can also use font-awesome by setting `post_views_icon` to the name of the icon.
+
 ```yml next/_config.yml
 busuanzi_count:
   post_views: true

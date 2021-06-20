@@ -59,6 +59,7 @@ Disqus is a global comment system that improves discussion on websites and conne
 2. Enter your `Website Name`, which will serve as your Disqus shortname, and select a Category from the drop-down menu. Then click `Create Site` button.
 3. Choose `I don't see my platform listed, install manually with Universal Code`, configure Disqus for your site, and click `Complete Setup` button.
 4. Set the value `enable` to `true`, add the obtained Disqus shortname (`shortname`), and edit other configurations in `disqus` section in the {% label primary@theme config file %} as following:
+
     ```yml next/_config.yml
     disqus:
       enable: false
@@ -74,6 +75,7 @@ Render Disqus comment component using Disqus API.
 2. Go to the settings page of your Disqus Application, enter your domain in Settings → Domains.
 3. Get your Disqus Shortname from [General Settings - Disqus Admin](https://disqus.com/admin/settings/general/).
 4. Set the value `enable` to `true`, add the obtained Disqus API Key (`apikey`) and Shortname (`shortname`), and edit other configurations in `disqusjs` section in the {% label primary@theme config file %} as following:
+
     ```yml next/_config.yml
     # DisqusJS
     # Demo: https://disqusjs.skk.moe

@@ -46,6 +46,7 @@ $ npm install hexo-algolia
 ```
 
 In your {% label info@site config file %}, add the following configuration and replace the `Application ID`, `Search-only API key` and `indexName` with corresponding fields obtained at Algolia.
+
 ```yml hexo/_config.yml
 algolia:
   applicationID: "Application ID"
@@ -73,6 +74,7 @@ $ npm install hexo-algoliasearch
 ```
 
 In your {% label info@site config file %}, add the following configuration and replace the `Application ID`, `Search-only API key`, `High-privilege API key` and `indexName` with corresponding fields obtained at Algolia.
+
 ```yml hexo/_config.yml
 algolia:
   appId: "Application ID"
@@ -104,6 +106,7 @@ $ hexo algolia
 
 <!-- tab NexT Config -->
 In {% label primary@theme config file %}, turn on `enable` of `algolia_search`. At the same time, you need to **turn off other search plugins** like Local Search. You can also adjust the text in `labels` according to your needs.
+
 ```yml next/_config.yml
 # Algolia Search
 algolia_search:
@@ -121,6 +124,7 @@ Local search does not require any external 3rd-party services and can be extra i
 {% tabs local-search %}
 <!-- tab Installation → -->
 Install `hexo-generator-searchdb` by executing the following command in {% label info@site root dir %}:
+
 ```bash
 $ npm install hexo-generator-searchdb
 ```
@@ -128,6 +132,7 @@ $ npm install hexo-generator-searchdb
 
 <!-- tab Hexo Config → -->
 Edit {% label info@site config file %} and add following content:
+
 ```yml hexo/_config.yml
 search:
   path: search.xml
@@ -139,6 +144,7 @@ search:
 
 <!-- tab NexT Config -->
 Edit {% label primary@theme config file %} to enable Local Search:
+
 ```yml next/_config.yml
 # Local search
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb

@@ -147,6 +147,7 @@ script:
 GitLab offers a continuous integration service and pages service. If you add a `.gitlab-ci.yml` file to the root directory of your repository, and configure your GitLab project to use a Runner, then each commit or push, triggers your CI pipeline. The `.gitlab-ci.yml` file tells the GitLab runner what to do. By default it runs a pipeline with three stages: build, test, and deploy. You don't need to use all three stages; stages with no jobs are simply ignored. And at the end, your websites will be published on GitLab Host automatically.
 
 1. Add `.gitlab-ci.yml` to the root directory of your repository, and configure it.
+
     ```yml hexo/.gitlab-ci.yml
     image: node:lts
 
@@ -170,7 +171,9 @@ GitLab offers a continuous integration service and pages service. If you add a `
       only:
       - master
     ```
+
 2. Upload `scaffolds`, `source`, `themes`, `.gitignore`, `.gitlab-ci.yml`, `_config.yml`, and `package.json` to [your Gitlab repository](https://gitlab.com/).
+
     ```git
     $ git init
     $ ssh -T git@gitlab.com
@@ -190,6 +193,7 @@ Of course, you can also pulish static website on GitHub Pages or others pages se
 * Get the Access Token: `Settings` → `Developer settings` → `Personal access token` → `Generate new token`. Set access rights according to the actual situation. It should be noted that the access token is only displayed once on this page, and it should be copied, otherwise it can only be regenerated.
 * Click `SETTINGS-CI/CD → Variables` in Gitlab, and defined access token as custom variable `GITHUB_ACCESS_TOKEN`. Or set `USERNAME` `PASSWORD` variable for coding repo.
 * Configure `.gitlab-ci.yml`: **only add deploy stage at the end of this file**
+
     ```yml hexo/.gitlab-ci.yml
     github:
       stage: deploy

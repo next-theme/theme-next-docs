@@ -28,6 +28,7 @@ Set the verification string of [Google Webmaster Tools](https://developers.googl
 {% tabs google-webmaster-tools %}
 <!-- tab Get Verification Code → -->
 Login to Google Webmaster Tools and go to verification methods and choose `HTML Tag`, you will get some code:
+
 ```html
 <meta name="google-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXX">
 ```
@@ -36,6 +37,7 @@ Login to Google Webmaster Tools and go to verification methods and choose `HTML 
 <!-- tab NexT Config -->
 Copy `XXXXXXXXXXXXXXXXXXXXXXX` value of `content` key.
 Edit {% label primary@theme config file %} and add or change the value of `google_site_verification`:
+
 ```yml next/_config.yml
 google_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
 ```
@@ -49,6 +51,7 @@ Set the verification string of [Bing Webmaster Tools](https://www.bing.com/webma
 {% tabs bing-webmaster-tools %}
 <!-- tab Get Verification Code → -->
 Login to Bing Webmaster Tools and go to verification methods and choose `HTML Tag`, you will get some code:
+
 ```html
 <meta name="msvalidate.01" content="XXXXXXXXXXXXXXXXXXXXXXX">
 ```
@@ -57,6 +60,7 @@ Login to Bing Webmaster Tools and go to verification methods and choose `HTML Ta
 <!-- tab NexT Config -->
 Copy `XXXXXXXXXXXXXXXXXXXXXXX` value of `content` key.
 Edit {% label primary@theme config file %} and add or change the value of `bing_site_verification`:
+
 ```yml next/_config.yml
 bing_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
 ```
@@ -70,6 +74,7 @@ Set the verification string of [Yandex Webmaster Tools](https://webmaster.yandex
 {% tabs yandex-webmaster-tools %}
 <!-- tab Get Verification Code → -->
 Login to Yandex Webmaster Tools and go to verification methods and choose `Meta Tag`, you will get some code:
+
 ```html
 <meta name="yandex-verification" content="XXXXXXXXXXXXXXXXXXXXXXX">
 ```
@@ -78,6 +83,7 @@ Login to Yandex Webmaster Tools and go to verification methods and choose `Meta 
 <!-- tab NexT Config -->
 Copy `XXXXXXXXXXXXXXXXXXXXXXX` value of `content` key.
 Edit {% label primary@theme config file %} and add or change the value of `yandex_site_verification`:
+
 ```yml next/_config.yml
 yandex_site_verification: XXXXXXXXXXXXXXXXXXXXXXX
 ```
@@ -91,6 +97,7 @@ Set the verification string of [Baidu Webmaster Tools](https://ziyuan.baidu.com/
 {% tabs Baidu-webmaster-tools %}
 <!-- tab Get Verification Code → -->
 Login to Baidu Webmaster Tools and go to verification methods and choose `HTML Tag`, you will get some code:
+
 ```html
 <meta name="baidu-site-verification" content="code-XXXXXXXXXX">
 ```
@@ -99,6 +106,7 @@ Login to Baidu Webmaster Tools and go to verification methods and choose `HTML T
 <!-- tab NexT Config -->
 Copy `code-XXXXXXXXXX` value of `content` key.
 Edit {% label primary@theme config file %} and add or change the value of `baidu_site_verification`:
+
 ```yml next/_config.yml
 baidu_site_verification: code-XXXXXXXXXX
 ```

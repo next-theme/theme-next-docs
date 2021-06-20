@@ -7,6 +7,7 @@ description: NexT User Docs – Theme Settings - Front Matter
 — from [Hexo site](https://hexo.io/docs/front-matter).
 
 **YAML**
+
 ```yml
 ---
 title: Hello World
@@ -15,6 +16,7 @@ date: 2013/7/13 20:46:25
 ```
 
 **JSON**
+
 ```json
 "title": "Hello World",
 "date": "2013/7/13 20:46:25"

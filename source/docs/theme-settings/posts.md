@@ -72,6 +72,7 @@ post_meta:
 <!-- tab <code>another_day</code> -->
 By default, if updated/edited date is the same as created date, edited time would be displayed in popup message. You can disable it by setting value `post_meta.updated_at.another_day` to `false` in {% label primary@theme config file %}.
 In other words:
+
 * If true, show updated date label only if `updated date` is different from `created date` (post edited in another day than was created).
 * And if post was edited in same day as created, edited time will show in popup title under created time label.
 * If false show anyway, but if post edited in same day, show only edited time.
@@ -102,6 +103,7 @@ post_meta:
 {% tabs wordcount %}
 <!-- tab Installation → -->
 Install `hexo-word-counter` by executing the following command in {% label info@site root dir %}:
+
 ```bash
 $ npm install hexo-word-counter
 $ hexo clean
@@ -114,6 +116,7 @@ Activate this plugin in {% label info@site config file %} by enabled any option:
 {% subtabs wordcount1 %}
 <!-- tab <code>symbols</code> -->
 By default NexT shows the number of post words in post meta section. You can disable it by setting value `symbols_count_time.symbols` to `false` in {% label info@site config file %}.
+
 ```yml hexo/_config.yml
 symbols_count_time:
   symbols: true
@@ -122,6 +125,7 @@ symbols_count_time:
 
 <!-- tab <code>time</code> -->
 By default NexT shows the estimated reading time of post in post meta section. You can disable it by setting value `symbols_count_time.time` to `false` in {% label info@site config file %}.
+
 ```yml hexo/_config.yml
 symbols_count_time:
   time: true
@@ -130,6 +134,7 @@ symbols_count_time:
 
 <!-- tab <code>total_symbols</code> -->
 By default NexT shows the number of all posts words in footer section. You can disable it by setting value `symbols_count_time.total_symbols` to `false` in {% label info@site config file %}.
+
 ```yml hexo/_config.yml
 symbols_count_time:
   total_symbols: true
@@ -138,6 +143,7 @@ symbols_count_time:
 
 <!-- tab <code>total_time</code> -->
 By default NexT shows the estimated reading time of all posts in footer section. You can disable it by setting value `symbols_count_time.total_time` to `false` in {% label info@site config file %}.
+
 ```yml hexo/_config.yml
 symbols_count_time:
   total_time: true
@@ -146,6 +152,7 @@ symbols_count_time:
 
 <!-- tab <code>awl</code> -->
 `awl` means the average Word Length (chars count in word). You can check this [here](https://charactercounttool.com/).
+
 ```yml next/_config.yml
 symbols_count_time:
   awl: 4
@@ -154,6 +161,7 @@ symbols_count_time:
 
 <!-- tab <code>wpm</code> -->
 `wpm` means the average words per minute. You can check this [here](https://wordcounter.net/).
+
 ```yml next/_config.yml
 symbols_count_time:
   wpm: 275
@@ -170,6 +178,7 @@ After the plugin enabled, you may adjust options in `symbols_count_time` section
 {% subtabs wordcount2 %}
 <!-- tab <code>separated_meta</code> -->
 By default NexT shows the words counts and estimated reading time in a separated line. You can add them into one line by setting value `symbols_count_time.separated_meta` to `false` in {% label primary@theme config file %}.
+
 ```yml next/_config.yml
 symbols_count_time:
   separated_meta: true
@@ -178,6 +187,7 @@ symbols_count_time:
 
 <!-- tab <code>item_text_total</code> -->
 By default NexT doesn't shows the text description of the words counts and estimated reading time in footer section. You can enable it by setting value `symbols_count_time.item_text_total` to `false` in {% label primary@theme config file %}.
+
 ```yml next/_config.yml
 symbols_count_time:
   item_text_total: true
@@ -222,6 +232,7 @@ More and more online blogging platforms (e.g. WeChat public accounts, Jianshu, Z
     ```
 
 You can also add QRcode of other platforms, e.g.
+
 ```yml next/_config.yml
 paypal: /images/paypal.png
 monero: /images/monero.png
@@ -246,6 +257,7 @@ NexT supports the related posts functionality according to [hexo-related-popular
 {% tabs related_posts %}
 <!-- tab Installation → -->
 Install `hexo-related-popular-posts` by executing the following command in {% label info@site root dir %}:
+
 ```bash
 $ npm install hexo-related-popular-posts
 $ hexo clean
@@ -355,11 +367,11 @@ post_edit:
 You should create a source repository of your post files. The `url` setting depends on the source project in github.
 
 * For site repository
-    * Link for view source: `url: https://github.com/.../tree/master/source/_posts/`
-    * Link for fork & edit: `url: https://github.com/.../edit/master/source/_posts/`
+  * Link for view source: `url: https://github.com/.../tree/master/source/_posts/`
+  * Link for fork & edit: `url: https://github.com/.../edit/master/source/_posts/`
 * For post repository
-    * Link for view source: `url: https://github.com/.../_posts/tree/master/`
-    * Link for fork & edit: `url: https://github.com/.../_posts/edit/master/`
+  * Link for view source: `url: https://github.com/.../_posts/tree/master/`
+  * Link for fork & edit: `url: https://github.com/.../_posts/edit/master/`
 
 ```yml next/_config.yml
 post_edit:

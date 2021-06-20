@@ -463,9 +463,9 @@ Note default tag.
 <!-- tab -->
 **This is Tab 2.**
 
-* Five
-* Six
-* Seven
+- Five
+- Six
+- Seven
 
 {% note primary %}
 {% youtube Kt7u5kr_P5o %}

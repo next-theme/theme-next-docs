@@ -8,11 +8,13 @@ description: NexT User Docs – Troubleshooting
 **Before submitting an Issue on GitHub, you can follow the steps below to debug:**
 
 If you get an error message from Hexo or your browser:
+
 * If the error comes from a Hexo plugin, such as hexo-word-counter, please submit an Issue to its GitHub repository.
 * If the error comes from a third-party service, such as the Gitalk comment system, please submit an Issue to its GitHub repository.
 * Otherise, please search in Google / Stackoverflow / GitHub Issues, or report it to us when submitting a new Issue.
 
 The following steps will help you determine the cause of the problem:
+
 * Execute `hexo clean`, clear the browser cache and purge CDN cache (or disable all CDN services) - This may take some time to take effect.
 * Disable browser plug-ins or use other devices and browsers to test, because bugs may only occur in specific browsers.
 * Switch to another theme and check if the bug still exists (e.g. default theme landscape). In other words, prove that this is a bug of NexT, not Hexo.
@@ -22,6 +24,7 @@ The following steps will help you determine the cause of the problem:
 * Uninstall all non-essential Hexo plugins, or delete `node_modules` and then reinstall all plugins using `npm install --force`.
 
 If you decide to submit an Issue, please answer the following questions based on the Issue template:
+
 * Can you reproduce the problem? Can you reliably reproduce the issue? If not, provide details about how often the problem happens and under which conditions it normally happens.
 * Did the problem start happening recently or was this always a problem?
 * If the problem started happening recently, can you reproduce the problem in an older version of NexT? What's the most recent version in which the problem doesn't happen? You can download older versions of NexT from [the releases page](https://github.com/next-theme/hexo-theme-next/releases).
@@ -91,9 +94,11 @@ Do not write a skip-level heading in the post. For example, a third-tier heading
 See: https://github.com/theme-next/hexo-theme-next/issues/882
 
 If you are using `hexo-renderer-markdown-it`, it's recommended to install `markdown-it-named-headings` to make the TOC work correctly.
+
 ```bash
 npm install markdown-it-named-headings
 ```
+
 See: https://github.com/theme-next/hexo-theme-next/issues/1168
 Here is the [Pull Request with bugfix for default config](https://github.com/hexojs/hexo-renderer-markdown-it/pull/90) of `hexo-renderer-markdown-it` plugin.
 

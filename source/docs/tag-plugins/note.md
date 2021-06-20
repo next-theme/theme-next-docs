@@ -43,7 +43,9 @@ All parameters are optional.
 ```
 
 {% note %}
+
 #### Header
+
 (without define class style)
 {% endnote %}
 
@@ -55,7 +57,9 @@ Welcome to [Hexo!](https://hexo.io)
 ```
 
 {% note default %}
+
 #### Default Header
+
 Welcome to [Hexo!](https://hexo.io)
 {% endnote %}
 
@@ -67,7 +71,9 @@ Welcome to [Hexo!](https://hexo.io)
 ```
 
 {% note primary %}
+
 #### Primary Header
+
 **Welcome** to [Hexo!](https://hexo.io)
 {% endnote %}
 
@@ -79,7 +85,9 @@ Welcome to [Hexo!](https://hexo.io)
 ```
 
 {% note info %}
+
 #### Info Header
+
 **Welcome** to [Hexo!](https://hexo.io)
 {% endnote %}
 
@@ -91,7 +99,9 @@ Welcome to [Hexo!](https://hexo.io)
 ```
 
 {% note success %}
+
 #### Success Header
+
 **Welcome** to [Hexo!](https://hexo.io)
 {% endnote %}
 
@@ -103,7 +113,9 @@ Welcome to [Hexo!](https://hexo.io)
 ```
 
 {% note warning %}
+
 #### Warning Header
+
 **Welcome** to [Hexo!](https://hexo.io)
 {% endnote %}
 
@@ -115,7 +127,9 @@ Welcome to [Hexo!](https://hexo.io)
 ```
 
 {% note danger %}
+
 #### Danger Header
+
 **Welcome** to [Hexo!](https://hexo.io)
 {% endnote %}
 
@@ -127,7 +141,9 @@ Note **without** icon: `note info no-icon`
 ```
 
 {% note info no-icon %}
+
 #### No icon note
+
 Note **without** icon: `note info no-icon`
 {% endnote %}
 
@@ -139,7 +155,9 @@ Note with summary: `note primary This is a summary`
 ```
 
 {% note primary This is a summary %}
+
 #### Details and summary
+
 Note with summary: `note primary This is a summary`
 {% endnote %}
 
@@ -151,7 +169,9 @@ Note with summary: `note info no-icon This is a summary`
 ```
 
 {% note info no-icon This is a summary %}
+
 #### Details and summary (No icon)
+
 Note with summary: `note info no-icon This is a summary`
 {% endnote %}
 
@@ -167,7 +187,9 @@ code block in note tag
 ```
 
 {% note success %}
+
 #### Codeblock in note
+
 {% code %}
 code block in note tag
 code block in note tag
@@ -193,12 +215,14 @@ code block in note tag
 ```
 
 {% note default %}
+
 #### Lists in note
-* ul
-* ul
-    * ul
-    * ul
-* ul
+
+- ul
+- ul
+  - ul
+  - ul
+- ul
 
 1. ol
 2. ol
@@ -219,7 +243,9 @@ code block in note tag
 ```
 
 {% note default %}
+
 #### Table in note
+
 | 1 | 2 |
 | - | - |
 | 3 | 4 |

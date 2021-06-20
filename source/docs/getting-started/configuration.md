@@ -18,6 +18,7 @@ With this way, all your configurations locate in config file `/_config.[name].ym
 1. Please ensure you are using Hexo 5.0 (or later).
 2. Create a config file in site's root directory, e.g. `_config.next.yml`.
 3. Copy needed NexT theme options from {% label primary@theme config file %} into this config file. If it is the first time to install NexT, then copy the whole {% label primary@theme config file %} by the following command:
+
     ```bash
     # Installed through npm
     cp node_modules/hexo-theme-next/_config.yml _config.next.yml

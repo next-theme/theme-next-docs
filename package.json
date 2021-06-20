@@ -10,7 +10,8 @@
     "highlight": "node lib/highlight.js",
     "start": "hexo s",
     "update": "node lib/update.js",
-    "version": "git add source"
+    "version": "git add source",
+    "lint": "markdownlint -c .markdownlint.json source/docs"
   },
   "repository": "next-theme/theme-next-docs",
   "keywords": [
@@ -34,5 +35,8 @@
     "hexo-renderer-stylus": "2.0.1",
     "hexo-server": "2.0.0",
     "hexo-theme-next": "8.5.0"
+  },
+  "devDependencies": {
+    "markdownlint-cli": "^0.27.1"
   }
 }

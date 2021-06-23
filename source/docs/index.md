@@ -38,13 +38,13 @@ Thanks to the contribution of our users and developers, [NexT now supports over 
 NexT uses code highlighting themes from the [Highlight.js](https://highlightjs.org) and [Prism](https://prismjs.com) package, and makes [more than 120 themes](/docs/theme-settings/miscellaneous.html#Codeblock-Style) available to you.
 
 <!-- Inspired by https://github.com/sindresorhus/css-in-readme-like-wat -->
-| Tomorrow                  | Tomorrow Night                  | Tomorrow Night Eighties                  |
-| :-----------------------: | :-----------------------------: | :--------------------------------------: |
-| ![](/images/tomorrow.svg) | ![](/images/tomorrow-night.svg) | ![](/images/tomorrow-night-eighties.svg) |
+| Tomorrow                  | Tomorrow Night                  | Tomorrow Night Eighties                             |
+| :-----------------------: | :-----------------------------: | :-------------------------------------------------: |
+| ![Tomorrow][Tomorrow]     | ![Tomorrow Night][]             | ![Tomorrow Night Eighties][Tomorrow Night Eighties] |
 
-| Tomorrow Night Blue                  | Tomorrow Night Bright                  | Default                  |
-| :----------------------------------: | :------------------------------------: | :----------------------: |
-| ![](/images/tomorrow-night-blue.svg) | ![](/images/tomorrow-night-bright.svg) | ![](/images/default.svg) |
+| Tomorrow Night Blue                         | Tomorrow Night Bright                           | Default                  |
+| :-----------------------------------------: | :---------------------------------------------: | :----------------------: |
+| ![Tomorrow Night Blue][Tomorrow Night Blue] | ![Tomorrow Night Bright][Tomorrow Night Bright] | ![Default][Default]      |
 
 ### Supported Browsers
 
@@ -66,3 +66,10 @@ In addition, [CSS position: sticky](https://caniuse.com/css-sticky) is used for 
 ### Customize Your NexT
 
 NexT have flexible but simple options, and you can make your own blog with built-in third-party support. Now let's [get started](/docs/getting-started/).
+
+[Tomorrow]: /images/tomorrow.svg
+[Tomorrow Night]: /images/tomorrow-night.svg
+[Tomorrow Night Eighties]: /images/tomorrow-night-eighties.svg
+[Tomorrow Night Blue]: /images/tomorrow-night-blue.svg
+[Tomorrow Night Bright]: /images/tomorrow-night-bright.svg
+[Default]: /images/default.svg

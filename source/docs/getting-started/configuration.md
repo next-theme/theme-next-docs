@@ -23,7 +23,7 @@ With this way, all your configurations locate in config file `/_config.[name].ym
     # Installed through npm
     cp node_modules/hexo-theme-next/_config.yml _config.next.yml
     # Installed through Git
-    cp theme/next/_config.yml _config.next.yml
+    cp themes/next/_config.yml _config.next.yml
     ```
 
 ### `theme_config`

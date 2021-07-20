@@ -76,7 +76,7 @@ By default NexT has following setting of content width:
 * 900px → when screen width >= 1600px.
 * In mobile / tablet devices it will use responsive width.
 
-You can change content width by editing CSS style file. Edit `source/_data/variables.styl` in {% label info@site root directory %} and add varibles:
+You can override the default content width by editing `source/_data/variables.styl` in {% label info@site root directory %} and add varibles:
 
 {% tabs change-content-width %}
 <!-- tab Muse / Mist schemes -->
@@ -145,21 +145,39 @@ custom_file_path:
   variable: source/_data/variables.styl
 ```
 
-#### Custom Icon Image
+#### Rainbow Safari
 
-NexT uses Font Awesome as the default icon library. However, Font Awesome does not include the icons of some Chinese social networking site. In this tutorial, we use local images to replace the missing Font Awesome icons.
+Rainbow Safari is a small CSS file that allows you to change the color of the title bar on browsers like Safari on iOS and macOS.
 
-Let's take the Bilibili icon as an example. You need to prepare a icon in svg format, e.g. `/source/images/bilibili.svg`.
+In current versions of Safari the trick only works if you have scrolled down a little.
 
 Edit `source/_data/styles.styl` in {% label info@site root directory %} and add styles:
 
 ```css hexo/source/_data/styles.styl
-.fa-bilibili {
-  background: url(/images/bilibili.svg);
-  background-position: 50% 75%;
-  background-repeat: no-repeat;
-  height: 1rem;
-  width: 1rem;
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  body::before {
+    animation: rainbow 15s ease infinite;
+    background: linear-gradient(124deg, #ff0000, #ff7f00, #ffff00, #7fff00, #00ff00, #00ff7f, #00ffff, #007fff, #0000ff, #7f00ff, #ff00ff, #ff007f, #ff0000);
+    background-size: 1000% 1000%;
+    content: '';
+    display: block;
+    height: 100px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateY(-99.99px);
+    z-index: $zindex-5;
+  }
+}
+
+@keyframes rainbow {
+  50% {
+    background-position: 100% 20%;
+  }
+  0%, 100% {
+    background-position: 0 80%;
+  }
 }
 ```
 
@@ -168,13 +186,6 @@ Then uncomment `style` under the `custom_file_path` section in {% label primary@
 ```yml next/_config.yml
 custom_file_path:
   style: source/_data/styles.styl
-```
-
-The usage is:
-
-```yml next/_config.yml
-social:
-  Bilibili: https://space.bilibili.com/userid/ || fab fa-bilibili
 ```
 
 #### Hide Sidebar on Mobile
@@ -196,7 +207,7 @@ custom_file_path:
   style: source/_data/styles.styl
 ```
 
-#### Overriding Default Style
+#### Hide "Keep on posting" in Archive Page
 
 Edit `source/_data/styles.styl` in {% label info@site root directory %} and add styles:
 

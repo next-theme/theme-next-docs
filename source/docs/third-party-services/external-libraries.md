@@ -117,23 +117,31 @@ motion:
 
 ### Progress Bar
 
-NProgress will automatically monitor your Ajax requests, event loop lag, document ready state and elements on your page to decide on the progress.
+Pace will automatically monitor your Ajax requests, event loop lag, document ready state and elements on your page to decide on the progress.
 
-{% tabs nprogress %}
-<!-- tab <code>nprogress</code> -->
-You can enable it by setting value `nprogress.enable` to `true` in {% label primary@theme config file %}.
+{% tabs pace %}
+<!-- tab <code>pace</code> -->
+You can enable it by setting value `pace.enable` to `true` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
-nprogress:
+pace:
   enable: true
 ```
 <!-- endtab -->
-<!-- tab <code>spinner</code> -->
-Turn off loading spinner by setting it to `false`.
+<!-- tab <code>color</code> -->
+You can change the color of progress bar by setting value `pace.color` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
-nprogress:
-  spinner: false
+pace:
+  color: orange
+```
+<!-- endtab -->
+<!-- tab <code>theme</code> -->
+Pace includes a bunch of [themes](https://codebyzach.github.io/pace/) to get you started. By default NexT uses `minimal` theme (pace-theme-minimal). You can configure it by editing values in `pace.theme` section in {% label primary@theme config file %}.
+
+```yml next/_config.yml
+pace:
+  theme: minimal
 ```
 
 <!-- endtab -->

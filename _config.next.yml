@@ -186,6 +186,13 @@ github_banner:
   permalink: https://github.com/next-theme/hexo-theme-next
   title: Fork NexT on GitHub
 
+font:
+  enable: true
+  host: //fonts.loli.net
+  codes:
+    external: true
+    family: Inconsolata
+
 
 # ============================================================= #
 # ======================= SEO Settings ======================== #

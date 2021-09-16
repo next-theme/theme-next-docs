@@ -141,21 +141,21 @@ tagcloud:
 
 ### Adding Google Calendar Page
 
+Mind that you need to make sure first you are adding a calendar that is set to public. If you are unsure, please [follow these instructions first to set a Google calendar public](https://docs.simplecalendar.io/make-google-calendar-public/) before adding it.
+
+More detailed documentation on creating & managing a public Google calendar: https://support.google.com/calendar/answer/37083
+
 {% tabs calendar %}
 <!-- tab Setting Google Calendar → -->
 
 {% subtabs calendar1 %}
-<!-- tab Get calendar ID and API KEY → -->
-Login to [Google developers](https://console.cloud.google.com/flows/enableapi?apiid=calendar) and add Google Calendar API, you will get your calendar ID and API KEY. [More detailed documentation](https://developers.google.com/calendar/quickstart/js)
+<!-- tab Get Calendar ID and API KEY → -->
+[Follow these instructions](https://docs.simplecalendar.io/find-google-calendar-id/) to find your Google Calendar ID.
 
-References:
-
-- API Documentation: https://developers.google.com/calendar/v3/reference/events/list
-- To get api_key: https://console.cloud.google.com/apis/credentials
-- Create & manage a public Google calendar: https://support.google.com/calendar/answer/37083
+Login to [Google developers](https://console.cloud.google.com/flows/enableapi?apiid=calendar) and add Google Calendar API, you will get your API KEY on the [credentials page](https://console.cloud.google.com/apis/credentials).
 <!-- endtab -->
 <!-- tab NexT Config -->
-You can enable it by setting values in `calendar` part. Copy the value of calendar ID and API KEY in {% label primary@theme config file %}.
+You can enable it by setting values in `calendar` part. Copy the value of Calendar ID and API KEY in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 calendar:

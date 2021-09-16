@@ -66,6 +66,7 @@ Bob-->>John: Jolly good!
 
 ```jinja
 {% mermaid gantt %}
+dateFormat  YYYY-MM-DD
 section Section
 Completed :done,    des1, 2014-01-06,2014-01-08
 Active        :active,  des2, 2014-01-07, 3d
@@ -77,6 +78,7 @@ Parallel 4   :         des6, after des4, 1d
 ```
 
 {% mermaid gantt %}
+dateFormat  YYYY-MM-DD
 section Section
 Completed :done,    des1, 2014-01-06,2014-01-08
 Active        :active,  des2, 2014-01-07, 3d

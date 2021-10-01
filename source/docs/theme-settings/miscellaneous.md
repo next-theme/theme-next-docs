@@ -41,25 +41,21 @@ text_align:
 
 ### Mobile Devices Adaptation
 
-{% tabs Mobile-Adaptation %}
-<!-- tab <code>mobile_layout_economy</code> -->
 If you want to reduce padding/margin indents on devices with narrow width, you can enable it by setting value `mobile_layout_economy` to `true` in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
 mobile_layout_economy: true
 ```
-<!-- endtab -->
 
-<!-- tab <code>android_chrome_color</code> -->
-By default NexT uses black-deep (`#222`) as the color of android Chrome header panel. You can configure it by editing values with Hex color in `android_chrome_color` section in {% label primary@theme config file %}.
+### Theme Color
+
+By default NexT uses black-deep (`#222`) as the color of browser header panel (it's supported by Safari 15 and Android Chrome). You can configure it by editing values with Hex color in `theme_color` section in {% label primary@theme config file %}.
 
 ```yml next/_config.yml
-android_chrome_color: "#222"
+theme_color:
+  light: "#222"
+  dark: "#222"
 ```
-<!-- endtab -->
-
-{% endtabs %}
-
 ### Body Scrollbar
 
 ```yml next/_config.yml

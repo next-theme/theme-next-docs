@@ -126,8 +126,8 @@ From NexT v7.0.2 you can customize them, just set related values in {% label pri
 ```yml next/_config.yml
 # TagCloud settings for tags page.
 tagcloud:
-  min: 12 # Minimun font size in px
-  max: 30 # Maxium font size in px
+  min: 12 # Minimum font size in px
+  max: 30 # Maximum font size in px
   amount: 200 # Total amount of tags
   orderby: name # Order of tags
   order: 1 # Sort order

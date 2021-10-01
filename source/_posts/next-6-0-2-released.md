@@ -22,7 +22,7 @@ date: 2018-01-20 16:46:25
 math:
   enable: false
 
-  # Default(false) will load mathjax/katex srcipt EVERY PAGE
+  # Default(false) will load mathjax/katex script EVERY PAGE
   # If you set to true, you need to add 'mathjax: true' in Front Matter of post
   # in order to render math equations in post
   per_page: false

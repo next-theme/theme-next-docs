@@ -18,7 +18,7 @@ exturl: false
 gitalk:
   ...
 +  # When the official proxy is not available, you can change it to your own proxy address
-+  proxy: https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token # This is official proxy adress
++  proxy: https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token # This is official proxy address
 ```
 
 ## 🛠 Improvements

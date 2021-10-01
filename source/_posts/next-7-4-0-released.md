@@ -21,7 +21,7 @@ comments:
   active:
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
-  # Modify texts or order for any navs, here are some examples.
+  # Modify texts or order for any naves, here are some examples.
   nav:
 -    #disqus: disqus
 -    #facebook_comments_plugin: <i class="fa fa-facebook-official" aria-hidden="true"></i> facebook

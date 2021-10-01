@@ -19,7 +19,7 @@ comments:
   storage: true
 +  # Lazyload all comment systems.
 +  lazyload: false
-  # Modify texts or order for any navs, here are some examples.
+  # Modify texts or order for any naves, here are some examples.
   nav:
     #disqus:
     #  text: Load Disqus

@@ -10,7 +10,9 @@ description: NexT User Docs – NexT Supported Tags – Mermaid
 mermaid:
   enable: true
   # Available themes: default | dark | forest | neutral
-  theme: forest
+  theme:
+    light: default
+    dark: dark
 ```
 
 ### Usage

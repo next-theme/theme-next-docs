@@ -218,7 +218,7 @@ More and more online blogging platforms (e.g. WeChat public accounts, Jianshu, Z
 
     ```yml next/_config.yml
     # Donate (Sponsor) settings
-    # Front-matter variable (unsupport animation).
+    # Front-matter variable (nonsupport animation).
     reward_settings:
       # If true, a donate button will be displayed in every article by default.
       enable: true

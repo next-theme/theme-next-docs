@@ -11,7 +11,7 @@ mathjax: true
 math:
   # Default (false) will load mathjax / katex script on demand.
   # That is it only render those page which has `mathjax: true` in front-matter.
-  # If you set it to true, it will load mathjax / katex srcipt EVERY PAGE.
+  # If you set it to true, it will load mathjax / katex script EVERY PAGE.
   every_page: false
 
   mathjax:

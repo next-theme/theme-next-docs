@@ -10,8 +10,8 @@ date: 2020-06-01 03:33:43
 # TagCloud settings for tags page.
 tagcloud:
 -  # All values below are same as default, change them by yourself.
-  min: 12 # Minimun font size in px
-  max: 30 # Maxium font size in px
+  min: 12 # Minimum font size in px
+  max: 30 # Maximum font size in px
 -  start: "#ccc" # Start color (hex, rgba, hsla or color keywords)
 -  end: "#111" # End color (hex, rgba, hsla or color keywords)
 -  amount: 200 # Amount of tags, change it if you have more than 200 tags

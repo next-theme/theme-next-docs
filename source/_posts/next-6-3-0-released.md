@@ -25,7 +25,7 @@ date: 2018-05-16 12:28:16
 +  # in site  directory(source/uploads): /uploads/avatar.gif
 +  # You can also use other linking images.
 +  url: #/images/avatar.gif
-+  # If true, the avatar would be dispalyed in circle.
++  # If true, the avatar would be displayed in circle.
 +  rounded: false
 +  # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
 +  opacity: 1

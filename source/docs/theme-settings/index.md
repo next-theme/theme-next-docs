@@ -109,12 +109,19 @@ You can configure it by editing values in `creative_commons` section in {% label
 
 ```yml next/_config.yml
 creative_commons:
+  # Available values: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | cc-zero
   license: by-nc-sa
+  # Available values: big | small
   size: small
   sidebar: true
   post: true
   language: deed.zh
 ```
+
+{% note info %}
+You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
+CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
+{% endnote %}
 
 #### Configuring Menu Items
 

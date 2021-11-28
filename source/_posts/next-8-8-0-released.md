@@ -8,11 +8,11 @@ date: 2021-10-01 03:52:46
 - Dark mode support for theme_color ([#378](https://github.com/next-theme/hexo-theme-next/pull/378))
 ```diff
 -# Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
--android_chrome_color: "[#222](https://github.com/next-theme/hexo-theme-next/pull/222)"
+-android_chrome_color: #222
 +# Browser header panel color.
 +theme_color:
-+  light: "[#222](https://github.com/next-theme/hexo-theme-next/pull/222)"
-+  dark: "[#222](https://github.com/next-theme/hexo-theme-next/pull/222)"
++  light: #222
++  dark: #222
 ```
 - Make the nav bar of tabs with long content stick to the top ([#361](https://github.com/next-theme/hexo-theme-next/pull/361))
 ```diff

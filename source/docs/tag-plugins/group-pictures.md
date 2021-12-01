@@ -24,20 +24,14 @@ description: NexT User Docs – NexT Supported Tags – Group Pictures
 ### Examples
 
 ```jinja
-{% grouppicture 6-3 %}
-![](/images/next.svg)
-![](/images/next.svg)
-![](/images/next.svg)
+{% grouppicture 3-3 %}
 ![](/images/next.svg)
 ![](/images/next.svg)
 ![](/images/next.svg)
 {% endgrouppicture %}
 ```
 
-{% grouppicture 6-3 %}
-![](/images/next.svg)
-![](/images/next.svg)
-![](/images/next.svg)
+{% grouppicture 3-3 %}
 ![](/images/next.svg)
 ![](/images/next.svg)
 ![](/images/next.svg)

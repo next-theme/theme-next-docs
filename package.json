@@ -34,7 +34,7 @@
     "hexo-renderer-marked": "4.1.0",
     "hexo-renderer-stylus": "2.0.1",
     "hexo-server": "2.0.0",
-    "hexo-theme-next": "8.8.2"
+    "hexo-theme-next": "8.9.0"
   },
   "devDependencies": {
     "markdownlint-cli": "0.30.0"

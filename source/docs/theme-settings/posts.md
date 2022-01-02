@@ -250,6 +250,13 @@ follow_me:
   #RSS: /atom.xml || fa fa-rss
 ```
 
+You can add links of other platforms not listed here, for example:
+
+```yml next/_config.yml
+follow_me:
+  Zhihu: https://www.zhihu.com/people/username || fab fa-zhihu
+```
+
 ### Related Popular Posts
 
 NexT supports the related posts functionality according to [hexo-related-popular-posts](https://github.com/tea3/hexo-related-popular-posts).

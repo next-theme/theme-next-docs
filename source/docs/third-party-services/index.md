@@ -8,7 +8,7 @@ In any time you can extend needed functions by using third-party services suppor
 
 ### Adding Plugins
 
-Plugins extend and expand the functionality of NexT. There are two types of plugins: core plugins and third-party plugins. The core plugins are loaded from your site by default, they are required by the basic functions of NexT. Third-party plugins provide a large number of optional features. They are loaded from jsDelivr CDN by default, because it is fast in everywhere.
+Plugins extend and expand the functionality of NexT. There are two types of libraries: internal scripts and third-party plugins. The internal scripts are loaded from your site by default, they are required by the basic functions of NexT. Third-party plugins provide a large number of optional features. They are loaded from jsDelivr CDN by default, because it is fast in everywhere.
 
 Configuring these plugins is very easy. For example, if you want to use `pjax` in your site, just set `pjax` to `true` in {% label primary@theme config file %}:
 

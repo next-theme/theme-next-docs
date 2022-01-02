@@ -10,21 +10,26 @@ You can specify a proper CDN provider in the `vendors` section in {% label prima
 ```yml next/_config.yml
 vendors:
   # The CDN provider of NexT internal scripts.
-  # Available values: local | jsdelivr | unpkg | cdnjs
+  # Available values: local | jsdelivr | unpkg | cdnjs | custom
   # Warning: If you are using the latest master branch of NexT, please set `internal: local`
   internal: local
   # The default CDN provider of third-party plugins.
-  # Available values: local | jsdelivr | unpkg | cdnjs
+  # Available values: local | jsdelivr | unpkg | cdnjs | custom
   # Dependencies for `plugins: local`: https://github.com/next-theme/plugins
   plugins: jsdelivr
+  # Custom CDN URL
+  # For example:
+  # custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified}
+  # custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file}
+  custom_cdn_url:
 ```
 
-#### Core Plugins
+#### Internal Scripts
 
-`internal: local` is used to set how to load the core plugins, e.g. `source/js/utils.js`. These plugins are loaded from your site by default, they are required by the basic functions of NexT. Set `internal` to `jsdelivr`, `unpkg` or `cdnjs` to load them from the corresponding CDN.
+`internal: local` is used to set how to load the internal scripts, e.g. `source/js/utils.js`. These libraries are loaded from your site by default, they are required by the basic functions of NexT. Set `internal` to `jsdelivr`, `unpkg` or `cdnjs` to load them from the corresponding CDN.
 
 {% note info %}
-If your site is deployed to any free hosting service (Github, Gitlab, etc.), CDN links are recommended for core plugins. CDN usually has faster speeds and no traffic restrictions.
+If your site is deployed to any free hosting service (Github, Gitlab, etc.), CDN links are recommended for internal scripts. CDN usually has faster speeds and no traffic restrictions.
 {% endnote %}
 
 {% note danger %}
@@ -33,7 +38,7 @@ If you are using the latest master branch of NexT, please set `internal: local`.
 
 #### Third-party Plugins
 
-`plugins: jsdelivr` is used to set how to load the third-party plugins, e.g. `anime.js`. Third-party plugins are loaded from [jsDelivr](https://www.jsdelivr.com/) CDN by default, because jsDelivr has the valid ICP license issued by the Chinese government, it can be accessed in China pretty well.
+`plugins: jsdelivr` is used to set how to load the third-party plugins, e.g. `anime.js`. Third-party plugins are loaded from [jsDelivr](https://www.jsdelivr.com/) CDN by default.
 
 And we also provide other optional CDNs, including the famous [UNPKG](https://unpkg.com) and [CDNJS](https://cdnjs.com). These CDN providers are chosen to deliver our third-party plugins because they are fast and reliable. Set `plugins` to `unpkg` or `cdnjs` to load them from different CDN provider.
 
@@ -48,7 +53,33 @@ If your website is deployed in the local area network, then this will have a fas
 
 #### Custom CDN URLs
 
-Sometimes you may need to use other CDNs not included in the available values of `vendors.plugins` option. In the `vendors` section, you can configure the CDN URL of each library individually.
+Sometimes you may need to use CDNs other than `jsdelivr`, `unpkg` or `cdnjs`. For example, users can get faster loading speed in certain areas using the mirror site of jsDelivr.
+
+To enable custom CDN URL, you need to set `internal: custom` and / or `plugins: custom` in the `vendors` section, and then specify a CDN URL with the `custom_cdn_url` option.
+
+Remember to use the HTTPS protocol of CDN links when you enable HTTPS on your site.
+
+##### jsDelivr Mirrors
+
+jsDelivr could automatically minify the JS and CSS files, even if the package owner doesn't publish the minified version on npm. You just need to access `*.min.js` and  `*.min.css`, instead of `*.js` and  `*.css`. For more information: https://www.jsdelivr.com/features
+
+In theme NexT, you can simply use the variable `${minified}` in `custom_cdn_url` to serve the minified version if you are using a mirror site of jsDelivr. NexT will automatically replace the variable `${minified}` with the path of each JS file to load from CDN.
+
+```yml next/_config.yml
+vendors:
+  custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified}
+```
+
+##### CDNJS Mirrors
+
+```yml next/_config.yml
+vendors:
+  custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file}
+```
+
+#### CDN URLs For Each Library
+
+Furthermore, you can configure the CDN URL of each library individually in the `vendors` section.
 
 The config is in format of `libname: CDN URL`. The `libname` is the same as in the `_vendors.yml` file. The `CDN URL` will override the default one.
 
@@ -62,16 +93,4 @@ vendors:
   anime: //cdn.jsdelivr.net/gh/juliangarnier/anime@latest/lib/anime.min.js
 ```
 
-It's recommended to use the same version of the library as in `_vendors.yml` to avoid potential problems. And if you need other versions you need to test them first.
-
-Remember to use the HTTPS protocol of CDN links when you enable HTTPS on your site.
-
-{% note info %}
-jsDelivr does not only provide mirrors for the files from npm packages, but also fetch from the GitHub releases! We could use the following link to reference the js files, just as other CDNs.
-
-```
-//cdn.jsdelivr.net/gh/user/repo@version/file
-```
-
-And it could automatically minify the JS and CSS files, even if you don't have the minified version. Just use the `filename.min.js` or the `filename.min.css` to replace the file above. For more information: https://www.jsdelivr.com/features
-{% endnote %}
+It's recommended to use the same version of the library as in `_vendors.yml` to avoid potential problems.

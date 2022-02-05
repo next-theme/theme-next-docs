@@ -37,6 +37,6 @@
     "hexo-theme-next": "8.9.0"
   },
   "devDependencies": {
-    "markdownlint-cli": "0.30.0"
+    "markdownlint-cli": "0.31.0"
   }
 }

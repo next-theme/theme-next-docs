@@ -162,7 +162,7 @@ A lightweight comments widget built on GitHub issues. Use GitHub issues for blog
 # For more information: https://utteranc.es
 utterances:
   enable: false
-  repo: # Github repository name
+  repo: user-name/repo-name # Github repository owner and name
   # Available values: pathname | url | title | og:title
   issue_term: pathname
   # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light

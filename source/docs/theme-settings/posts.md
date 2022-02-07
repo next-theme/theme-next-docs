@@ -259,14 +259,14 @@ follow_me:
 
 ### Related Popular Posts
 
-NexT supports the related posts functionality according to [hexo-related-popular-posts](https://github.com/tea3/hexo-related-popular-posts).
+NexT supports the related posts functionality according to [hexo-related-posts](https://github.com/sergeyzwezdin/hexo-related-posts).
 
 {% tabs related_posts %}
 <!-- tab Installation → -->
-Install `hexo-related-popular-posts` by executing the following command in {% label info@site root dir %}:
+Install `hexo-related-posts` by executing the following command in {% label info@site root dir %}:
 
 ```bash
-$ npm install hexo-related-popular-posts
+$ npm install hexo-related-posts
 $ hexo clean
 ```
 <!-- endtab -->
@@ -296,63 +296,6 @@ By default NexT doesn't show the related posts in homepage. You can enable it by
 related_posts:
   display_in_home: true
 ```
-<!-- endtab -->
-
-<!-- tab <code>params</code> -->
-By default NexT shows up to 5 related posts and their titles without any date, image and excerpt. You can change the default behavior by editing values of `related_posts.params` in {% label primary@theme config file %}.
-
-{% subtabs related_posts1 %}
-<!-- tab <code>maxCount</code> -->
-Maximum count of a list, change it by yourself.
-
-```yml next/_config.yml
-related_posts:
-  params:
-    maxCount: 5
-```
-<!-- endtab -->
-
-<!-- tab <code>PPMixingRate</code> -->
-Mixing ratio of popular posts and related posts.
-
-```yml next/_config.yml
-related_posts:
-  params:
-    #PPMixingRate: 0.0
-```
-<!-- endtab -->
-
-<!-- tab <code>isDate</code> -->
-Uncomment and set true to display dates of related post.
-
-```yml next/_config.yml
-related_posts:
-  params:
-    isDate: true
-```
-<!-- endtab -->
-
-<!-- tab <code>isImage</code> -->
-Uncomment and set true to display images of related posts.
-
-```yml next/_config.yml
-related_posts:
-  params:
-    isImage: true
-```
-<!-- endtab -->
-
-<!-- tab <code>isExcerpt</code> -->
-Uncomment and set true to display excerpts of related posts.
-
-```yml next/_config.yml
-related_posts:
-  params:
-    isExcerpt: true
-```
-<!-- endtab -->
-
-{% endsubtabs %}
 <!-- endtab -->
 {% endtabs %}
 

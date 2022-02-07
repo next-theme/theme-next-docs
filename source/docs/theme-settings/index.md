@@ -123,6 +123,16 @@ You can set a language value if you prefer a translated version of CC license, e
 CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
 {% endnote %}
 
+#### Open Graph
+
+```yml next/_config.yml
+open_graph:
+  enable: true
+  # Add pairs each line to customize
+  options:
+    type: blog
+```
+
 #### Configuring Menu Items
 
 Menu settings items have format `Key: /link/ || icon` which contains 3 values:

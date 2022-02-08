@@ -66,6 +66,16 @@ Edit {% label primary@theme config file %} and change the value of `cloudflare_a
 cloudflare_analytics:
 ```
 
+#### Microsoft Clarity Analytics
+
+Edit {% label primary@theme config file %} and change the value of `clarity_analytics` to your project ID.
+
+```yml next/_config.yml
+# Microsoft Clarity Analytics
+# See: https://clarity.microsoft.com/
+clarity_analytics: # <project_id>
+```
+
 ### Counting Tools
 
 #### LeanCloud (China)

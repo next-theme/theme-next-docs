@@ -35,7 +35,6 @@
                 </div>
                 <div class="card-body">
                     <p>Which code highlight engine do you prefer?</p>
-                    <div class="alert alert-danger" role="alert">Prism requires Hexo v5 or later.</div>
                     <div class="input-group mb-3">
                         <label class="input-group-text" for="engine">Engine</label>
                         <select class="form-select" id="engine">
@@ -97,9 +96,9 @@ Prism.hooks.add('before-highlight', env => {
   env.code = env.element.innerText;
 });
 const version = {
-    highlight: '10.1.1',
-    prism: '1.20.0',
-    themes: '1.4.0'
+    highlight: '11.4.0',
+    prism: '1.26.0',
+    themes: '1.9.0'
 };
 
 const source = {
@@ -112,15 +111,15 @@ class Style {
         this.origin = {
             highlight: {
                 src: `highlight.js@${version.highlight}`,
-                dir: 'styles'
+                dir: '/styles/'
             },
             prism: {
                 src: `prismjs@${version.prism}`,
-                dir: 'themes'
+                dir: '/themes/'
             },
             themes: {
                 src: `prism-themes@${version.themes}`,
-                dir: 'themes'
+                dir: '/themes/'
             }
         };
         this.link = document.createElement('link');
@@ -130,16 +129,16 @@ class Style {
     async fetch(name) {
         let target = this.origin[name];
         if (target.cache) return target.cache;
-        let response = await fetch(source.api + target.src);
+        let response = await fetch(source.api + target.src + '/flat');
         let data = await response.json();
-        target.cache = data.files.find(item => item.name === target.dir).files;
+        target.cache = data.files.filter(item => item.name.startsWith(target.dir) && item.name.endsWith('.css'));
+        console.log(target.cache.length + ' themes loaded.')
         return target.cache;
     }
     async getAllStyles(name) {
         let data = await this.fetch(name);
-        data = data.filter(item => item.name.endsWith('.css'));
         let target = this.origin[name];
-        return data.map(item => [`${source.src}${target.src}/${target.dir}/${item.name}`, item.name.replace('.css', '')]);
+        return data.map(item => [`${source.src}${target.src}${item.name}`, item.name.replace(target.dir, '').replace('.css', '')]);
     }
     getStyle(href) {
         this.link.href = href;
@@ -244,7 +243,6 @@ class Controller {
             theme: () => {
                 let href = this.element.theme.value;
                 this.style.getStyle(href);
-                document.querySelectorAll('.alert')[1].classList.toggle('d-none', !href.startsWith(source.src + this.style.origin.themes.src));
             },
             language: () => {},
             code: () => {}

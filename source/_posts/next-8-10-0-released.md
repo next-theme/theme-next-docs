@@ -11,7 +11,7 @@ date: 2022-02-08 04:18:33
 +# See: https://hexo.io/docs/helpers#open-graph
 +open_graph:
 +  enable: true
-+  # Add pairs each line to customize 
++  # Add pairs each line to customize
 +  options: ''
 ```
 - Replace hexo-related-popular-posts with hexo-related-posts ([#447](https://github.com/next-theme/hexo-theme-next/pull/447))

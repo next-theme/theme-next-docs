@@ -6,6 +6,24 @@ date: 2022-01-02 08:53:32
 ## 💥 Breaking Changes
 
 - Custom CDN options ([#428](https://github.com/next-theme/hexo-theme-next/pull/428))
+```diff
+vendors:
+  # The CDN provider of NexT internal scripts.
+-  # Available values: local | jsdelivr | unpkg | cdnjs
++  # Available values: local | jsdelivr | unpkg | cdnjs | custom
+  # Warning: If you are using the latest master branch of NexT, please set `internal: local`
+  internal: local
+  # The default CDN provider of third-party plugins.
+-  # Available values: local | jsdelivr | unpkg | cdnjs
++  # Available values: local | jsdelivr | unpkg | cdnjs | custom
+  # Dependencies for `plugins: local`: https://github.com/next-theme/plugins
+  plugins: jsdelivr
++  # Custom CDN URL
++  # For example:
++  # custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified}
++  # custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file}
++  custom_cdn_url:
+```
 
 ## 🛠 Improvements
 

@@ -132,13 +132,13 @@ class Style {
         let response = await fetch(source.api + target.src + '/flat');
         let data = await response.json();
         target.cache = data.files.filter(item => item.name.startsWith(target.dir) && item.name.endsWith('.css'));
-        console.log(target.cache.length + ' themes loaded.')
+        console.log(target.cache.length + ' themes loaded.');
         return target.cache;
     }
     async getAllStyles(name) {
         let data = await this.fetch(name);
         let target = this.origin[name];
-        return data.map(item => [`${source.src}${target.src}${item.name}`, item.name.replace(target.dir, '').replace('.css', '')]);
+        return data.map(item => [source.src + target.src + item.name, item.name.replace(target.dir, '').replace('.css', '')]);
     }
     getStyle(href) {
         this.link.href = href;

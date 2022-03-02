@@ -60,7 +60,7 @@ menu:
       Custom Pages: /custom-pages.html || fa fa-swatchbook
       Miscellaneous: /miscellaneous.html || fa fa-university
       SEO: /seo.html || fa fa-external-link-square-alt
-      i18n: /internationalization.html || fa fa-globe-asia
+      i18n: /internationalization.html || fa fa-language
 
     Third Party Services:
       default: /third-party-services/ || fa fa-puzzle-piece
@@ -119,6 +119,7 @@ avatar:
 
 social:
   GitHub: https://github.com/next-theme || fab fa-github
+  Crowdin: https://crowdin.com/project/hexo-theme-next || fa fa-globe-asia
   RSS: /atom.xml || fa fa-rss
 
 social_icons:

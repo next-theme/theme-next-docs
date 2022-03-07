@@ -27,7 +27,11 @@ This tag will make a quote with two lines before and after it, and text quoted w
 
 ```jinja
 {% centerquote %}Something{% endcenterquote %}
-<!-- Tag Alias -->
+```
+
+or
+
+```jinja
 {% cq %}Something{% endcq %}
 ```
 

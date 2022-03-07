@@ -175,26 +175,27 @@ Note with summary: `note info no-icon This is a summary`
 Note with summary: `note info no-icon This is a summary`
 {% endnote %}
 
-```jinja
+~~~jinja
 {% note success %}
 #### Codeblock in note
-{% code %}
-code block in note tag
-code block in note tag
-code block in note tag
-{% endcode %}
-{% endnote %}
+
 ```
+code block in note tag
+code block in note tag
+code block in note tag
+```
+{% endnote %}
+~~~
 
 {% note success %}
 
 #### Codeblock in note
 
-{% code %}
+```
 code block in note tag
 code block in note tag
 code block in note tag
-{% endcode %}
+```
 {% endnote %}
 
 ```jinja

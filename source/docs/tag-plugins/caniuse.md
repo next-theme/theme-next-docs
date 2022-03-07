@@ -7,7 +7,11 @@ description: NexT User Docs – NexT Supported Tags – Caniuse
 
 ```jinja
 {% caniuse feature @ [periods] %}
-<!-- Tag Alias -->
+```
+
+or
+
+```jinja
 {% can feature @ [periods] %}
 ```
 

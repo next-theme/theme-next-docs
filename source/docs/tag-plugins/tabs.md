@@ -451,11 +451,11 @@ Indented code block:
 
 Tagged code block:
 
-```
+{% code %}
 code tag
 code tag
 code tag
-```
+{% endcode %}
 
 {% note default %}
 Note default tag.

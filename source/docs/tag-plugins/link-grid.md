@@ -6,9 +6,15 @@ description: NexT User Docs – NexT Supported Tags – Link Grid
 ### Usage
 
 ```jinja
-{% linkgrid [image] [delimiter] [comment] %}{% endlinkgrid %}
-<!-- Tag Alias -->
-{% lg [image] [delimiter] [comment] %}{% endlg %}
+{% linkgrid [image] [delimiter] [comment] %}
+{% endlinkgrid %}
+```
+
+or
+
+```jinja
+{% lg [image] [delimiter] [comment] %}
+{% endlg %}
 ```
 
 - `[image]`     : *Optional parameter.* Default image URL.

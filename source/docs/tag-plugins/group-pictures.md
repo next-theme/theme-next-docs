@@ -6,9 +6,15 @@ description: NexT User Docs – NexT Supported Tags – Group Pictures
 ### Usage
 
 ```jinja
-{% grouppicture [number]-[layout] %}{% endgrouppicture %}
-<!-- Tag Alias -->
-{% gp [number]-[layout] %}{% endgp %}
+{% grouppicture [number]-[layout] %}
+{% endgrouppicture %}
+```
+
+or
+
+```jinja
+{% gp [number]-[layout] %}
+{% endgp %}
 ```
 
 - `[number]` : *Optional parameter.* Total number of pictures to add in the group pictures.

@@ -15,12 +15,27 @@ mermaid:
     dark: dark
 ```
 
+```yml hexo/_config.yml
+highlight:
+  exclude_languages:
+    - mermaid
+```
+
 ### Usage
 
 ```jinja
 {% mermaid type %}
 {% endmermaid %}
 ```
+
+or
+
+~~~markdown
+```mermaid
+type
+
+```
+~~~
 
 - `type` : type of the mermaid chart, visit https://github.com/mermaid-js/mermaid for more information.
 

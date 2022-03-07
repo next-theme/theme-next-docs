@@ -7,7 +7,11 @@ description: NexT User Docs – NexT Supported Tags – Button
 
 ```jinja
 {% button url, text, icon [class], [title] %}
-<!-- Tag Alias -->
+```
+
+or
+
+```jinja
 {% btn url, text, icon [class], [title] %}
 ```
 

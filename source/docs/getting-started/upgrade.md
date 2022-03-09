@@ -52,5 +52,5 @@ So, NexT suggest to upgrade from version 5 or 7 to version 8 in this way:
 2. Then rename the old NexT folder, for example, rename `next` to `next-old`.
 3. Install the new version according to the method provided in this article: [installation instructions](/docs/getting-started/installation.html). Run `hexo clean` and `hexo s` to check whether the site works correctly.
 4. Update Hexo and Hexo plugin
-    If after completing the above steps, an error occurs when executing `hexo s` or `hexo g`, it means that there may be a conflict between the old version of Hexo / Hexo plugin and the new version of the theme NexT. We recommend upgrading Hexo to versions 5.0 or later and upgrading Hexo plugins to the latest version. You can run `npm outdated` to see all the upgradeable plugins.
+    If after completing the above steps, an error occurs when executing `hexo s` or `hexo g`, it means that there may be a conflict between the old version of Hexo / Hexo plugin and the new version of the theme NexT. We recommend upgrading Hexo and Hexo plugins to the latest version. You can run `npm outdated` to see all the upgradeable plugins.
 5. If you see any bugs or you simply does not like this version, you can switch back to the old version at any time.

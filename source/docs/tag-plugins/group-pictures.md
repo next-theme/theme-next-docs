@@ -27,6 +27,10 @@ or
 ![Group Picture Layout](/images/group-picture-1.png)
 ![Group Picture Layout](/images/group-picture-2.png)
 
+{% note info %}
+It's recommended to use Group Pictures with [Fancybox](/docs/third-party-services/external-libraries.html#Fancybox) enabled.
+{% endnote %}
+
 ### Examples
 
 ```jinja

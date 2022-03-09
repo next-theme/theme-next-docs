@@ -45,6 +45,7 @@ Detailed documentation about these plugins is listed below.
 * [Baidu Analytics (China)](/docs/third-party-services/statistics-and-analytics.html#Baidu-Analytics-China)
 * [Growingio Analytics](/docs/third-party-services/statistics-and-analytics.html#Growingio-Analytics)
 * [Cloudflare Web Analytics](/docs/third-party-services/statistics-and-analytics.html#Cloudflare-Web-Analytics)
+* [Microsoft Clarity Analytics](/docs/third-party-services/statistics-and-analytics.html#Microsoft-Clarity-Analytics)
 
 #### Statistics
 
@@ -66,6 +67,7 @@ Detailed documentation about these plugins is listed below.
 
 * [Chatra](/docs/third-party-services/chat-services.html#Chatra)
 * [Tidio](/docs/third-party-services/chat-services.html#Tidio)
+* [Gitter](/docs/third-party-services/chat-services.html#Gitter)
 
 ### External Libraries
 

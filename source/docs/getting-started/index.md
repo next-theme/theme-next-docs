@@ -87,6 +87,8 @@ $ cd hexo-site
 $ cd themes/next
 $ git pull origin master
 ```
+
+When running `git pull`, you can bypass merge conflicts (error message like **«Commit your changes or stash them before you can merge»**) by using the `Commit`, `Stash` or `Reset` commands for local changes. See [here](https://stackoverflow.com/a/15745424/5861495) how to do it.
 <!-- endtab -->
 {% endtabs %}
 
@@ -101,41 +103,41 @@ After the installation of Hexo and NexT, you may found that there are two config
 1. The first one is under {% label info@site root directory %}, which contains Hexo's config.
 2. The second one is under {% label primary@theme root directory %} (e.g. `thems/next/_config.yml` or `node_modules/hexo-theme-next/_config.yml`), which is provided by NexT and contains theme's config.
 
-Let's call the first one – {% label info@site config file %}, and the second one – {% label primary@theme config file %}.
+Let's call the first one – {% label info@Hexo config file %}, and the second one – {% label primary@NexT config file %}.
 
 {% note warning %}
-However, we do not recommend directly modifying the {% label primary@theme config file %}. It is quite often running into conflict status when updating NexT theme via `git pull`, or need to merge configurations manually when upgrading to new releases. For the theme installed through npm, it is also difficult to modify the {% label primary@theme config file %} in `node_modules`.
+However, we do not recommend directly modifying the {% label primary@NexT config file %}. It is quite often running into conflict status when updating NexT theme via `git pull`, or need to merge configurations manually when upgrading to new releases. For the theme installed through npm, it is also difficult to modify the {% label primary@NexT config file %} in `node_modules`.
 
 In order to resolve this issue, we recommend using the [Alternate Theme Config](/docs/getting-started/configuration.html) feature to configure theme NexT.
 {% endnote %}
 
 ### Hexo Configuration
 
-The following settings in {% label info@site config file %} are very helpful for optimizing your website.
+The following settings in {% label info@Hexo config file %} are very helpful for optimizing your website.
 
 #### Configuring Author
 
-Edit {% label info@site config file %} and set the value of `author` to your nickname.
+Edit {% label info@Hexo config file %} and set the value of `author` to your nickname.
 
-```yml hexo/_config.yml
+```yml Hexo config file
 # Site
 author:
 ```
 
 #### Configuring Description
 
-Edit {% label info@site config file %} and set the value of `description` to your description, which can be a sentence you like.
+Edit {% label info@Hexo config file %} and set the value of `description` to your description, which can be a sentence you like.
 
-```yml hexo/_config.yml
+```yml Hexo config file
 # Site
 description:
 ```
 
 #### Enabling NexT
 
-Like all Hexo themes, after you download it, open {% label info@site config file %}, find `theme` option, and change its value to `next` (or another theme directory name).
+Like all Hexo themes, after you download it, open {% label info@Hexo config file %}, find `theme` option, and change its value to `next` (or another theme directory name).
 
-```yml hexo/_config.yml
+```yml Hexo config file
 theme: next
 ```
 

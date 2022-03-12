@@ -5,7 +5,7 @@ description: NexT User Docs – NexT Supported Tags – Tabs
 
 ### Settings
 
-```yml next/_config.yml
+```yml NexT config file
 tabs:
   # Make the nav bar of tabs with long content stick to the top.
   sticky: false

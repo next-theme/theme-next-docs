@@ -40,9 +40,9 @@ For example, we want to change NexT scheme from `Muse` to `Gemini` with [Alterna
 
 {% tabs keep-up-indentation %}
 <!-- tab NexT Config → -->
-We open {% label primary@theme config file %} and under the «Scheme Settings» section copy the following parameters:
+We open {% label primary@NexT config file %} and under the «Scheme Settings» section copy the following parameters:
 
-```yml next/_config.yml
+```yml NexT config file
 # ---------------------------------------------------------------
 # Scheme Settings
 # ---------------------------------------------------------------
@@ -55,11 +55,11 @@ scheme: Muse
 <!-- endtab -->
 
 <!-- tab Hexo Config -->
-Then we open {% label info@site config file %} and paste these parameters under `theme_config` section:
+Then we open {% label info@Hexo config file %} and paste these parameters under `theme_config` section:
 
 {% subtabs 2-spaces-indents %}
 <!-- tab {% label danger@Nothing Happen %}-->
-```yml hexo/_config.yml
+```yml Hexo config file
 theme_config:
 
 #scheme: Muse
@@ -72,7 +72,7 @@ Nothing will happen here because indentation not keeped up. Hexo just can't read
 <!-- endtab -->
 
 <!-- tab {% label success@Working Normally %}-->
-```yml hexo/_config.yml
+```yml Hexo config file
 theme_config:
 
   #scheme: Muse

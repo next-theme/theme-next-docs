@@ -5,7 +5,7 @@ description: NexT User Docs – NexT Supported Tags – Mermaid
 
 ### Settings
 
-```yml next/_config.yml
+```yml NexT config file
 # Mermaid tag
 mermaid:
   enable: true
@@ -15,7 +15,7 @@ mermaid:
     dark: dark
 ```
 
-```yml hexo/_config.yml
+```yml Hexo config file
 highlight:
   exclude_languages:
     - mermaid

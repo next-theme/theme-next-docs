@@ -5,7 +5,7 @@ description: NexT User Docs – Third-party Service Integration – Search Servi
 
 ### Algolia Search
 
-NexT provides Algolia search plugin to search your Hexo website content. It should be noted that only turn on `enable` of `algolia_search` in {% label primary@theme config file %} does not allow you to use the Algolia search correctly. You need to install the corresponding Hexo plugin to index your website on Algolia: [Hexo Algolia](https://github.com/oncletom/hexo-algolia) or [Hexo Algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch).
+NexT provides Algolia search plugin to search your Hexo website content. It should be noted that only turn on `enable` of `algolia_search` in {% label primary@NexT config file %} does not allow you to use the Algolia search correctly. You need to install the corresponding Hexo plugin to index your website on Algolia: [Hexo Algolia](https://github.com/oncletom/hexo-algolia) or [Hexo Algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch).
 
 {% note danger %}
 **Known Issues**
@@ -25,7 +25,7 @@ If a tutorial pops up, you can skip it. Go straight to create an `Index` which w
 <!-- endtab -->
 
 <!-- tab Algolia Config → -->
-1. Go to the `API Keys` page and find your credentials. You will need the `Application ID` and the `Search-only API key` in the following sections. The `Admin API key` need to keep confidential. Never store your Admin API Key as `apiKey` in {% label info@site config file %}: it would give full control of your Algolia index to others and you don't want to face the consequences.
+1. Go to the `API Keys` page and find your credentials. You will need the `Application ID` and the `Search-only API key` in the following sections. The `Admin API key` need to keep confidential. Never store your Admin API Key as `apiKey` in {% label info@Hexo config file %}: it would give full control of your Algolia index to others and you don't want to face the consequences.
 ![Algolia API Keys](/images/algolia-2.png)
 
 2. In the `API Keys` page, click the `All API Keys` button to switch to the corresponding tab. Then click the `New API Key` button to activate a pop-up box where you can setup authorizations and restrictions with a great level of precision. Enter `addObject`, `deleteObject`, `listIndexes`, `deleteIndex` features in ACL permissions that will be allowed for the given API key. And then click the `Create` button. Copy this newly created key to the clipboard, we call it a `High-privilege API key`.
@@ -45,9 +45,9 @@ $ cd hexo-site
 $ npm install hexo-algolia
 ```
 
-In your {% label info@site config file %}, add the following configuration and replace the `Application ID`, `Search-only API key` and `indexName` with corresponding fields obtained at Algolia.
+In your {% label info@Hexo config file %}, add the following configuration and replace the `Application ID`, `Search-only API key` and `indexName` with corresponding fields obtained at Algolia.
 
-```yml hexo/_config.yml
+```yml Hexo config file
 algolia:
   applicationID: "Application ID"
   apiKey: "Search-only API key"
@@ -73,9 +73,9 @@ $ cd hexo-site
 $ npm install hexo-algoliasearch
 ```
 
-In your {% label info@site config file %}, add the following configuration and replace the `Application ID`, `Search-only API key`, `High-privilege API key` and `indexName` with corresponding fields obtained at Algolia.
+In your {% label info@Hexo config file %}, add the following configuration and replace the `Application ID`, `Search-only API key`, `High-privilege API key` and `indexName` with corresponding fields obtained at Algolia.
 
-```yml hexo/_config.yml
+```yml Hexo config file
 algolia:
   appId: "Application ID"
   apiKey: "Search-only API key"
@@ -105,9 +105,9 @@ $ hexo algolia
 <!-- endtab -->
 
 <!-- tab NexT Config -->
-In {% label primary@theme config file %}, turn on `enable` of `algolia_search`. At the same time, you need to **turn off other search plugins** like Local Search. You can also adjust the text in `labels` according to your needs.
+In {% label primary@NexT config file %}, turn on `enable` of `algolia_search`. At the same time, you need to **turn off other search plugins** like Local Search. You can also adjust the text in `labels` according to your needs.
 
-```yml next/_config.yml
+```yml NexT config file
 # Algolia Search
 algolia_search:
   enable: true
@@ -131,9 +131,9 @@ $ npm install hexo-generator-searchdb
 <!-- endtab -->
 
 <!-- tab Hexo Config → -->
-Edit {% label info@site config file %} and add following content:
+Edit {% label info@Hexo config file %} and add following content:
 
-```yml hexo/_config.yml
+```yml Hexo config file
 search:
   path: search.xml
   field: post
@@ -143,9 +143,9 @@ search:
 <!-- endtab -->
 
 <!-- tab NexT Config -->
-Edit {% label primary@theme config file %} to enable Local Search:
+Edit {% label primary@NexT config file %} to enable Local Search:
 
-```yml next/_config.yml
+```yml NexT config file
 # Local search
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:

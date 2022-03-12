@@ -13,9 +13,9 @@ It allows you to completely transform the user experience of standard websites (
 Please use the absolute path of the image or [Hexo asset_img tag](https://hexo.io/docs/tag-plugins#Include-Assets) in your posts, otherwise the images may fail to load during Pjax refresh.
 {% endnote %}
 
-You can enable it by setting value `pjax` to `true` in {% label primary@theme config file %}.
+You can enable it by setting value `pjax` to `true` in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 # Easily enable fast Ajax navigation on your website.
 # For more information: https://github.com/next-theme/pjax
 pjax: true
@@ -25,9 +25,9 @@ pjax: true
 
 NexT supports the fancybox plugin, which is a jQuery lightbox script for displaying images, videos and more. Touch enabled, responsive and fully customizable.
 
-You can enable it by setting value `fancybox` to `true` in {% label primary@theme config file %}.
+You can enable it by setting value `fancybox` to `true` in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 fancybox: true
 ```
 
@@ -35,9 +35,9 @@ fancybox: true
 
 [Medium Zoom](https://github.com/francoischalifour/medium-zoom) is a JavaScript library for zooming images like Medium.
 
-You can enable it by setting value `mediumzoom` to `true` in {% label primary@theme config file %}.
+You can enable it by setting value `mediumzoom` to `true` in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 # A JavaScript library for zooming images like Medium.
 mediumzoom: true
 ```
@@ -50,9 +50,9 @@ Do not enable both `fancybox` and `mediumzoom`.
 
 [Lozad.js](https://github.com/ApoorvSaxena/lozad.js) is a lazy loader plugin in modern vanilla JavaScript. It delays loading of images in long web pages. Images outside of viewport will not be loaded before user scrolls to them. This is opposite of image preloading.
 
-You can enable it by setting value `lazyload` to `true` in {% label primary@theme config file %}.
+You can enable it by setting value `lazyload` to `true` in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 # Vanilla JavaScript plugin for lazyloading images.
 lazyload: true
 ```
@@ -67,9 +67,9 @@ $ hexo clean
 
 [pangu.js](https://github.com/vinta/pangu.js) will automatically insert a blank space between all the Chinese characters and the hexagonal English numeric symbols on the page.
 
-You can enable it by setting value `pangu` to `true` in {% label primary@theme config file %}.
+You can enable it by setting value `pangu` to `true` in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 # Pangu Support
 pangu: true
 ```
@@ -78,9 +78,9 @@ pangu: true
 
 [Quicklink](https://github.com/GoogleChromeLabs/quicklink) is a JavaScript plugin that faster subsequent page-loads by prefetching in-viewport links during idle time. Chrome, Firefox, Edge are supported without polyfills.
 
-You can enable it by setting value `quicklink.enable` to `true` in {% label primary@theme config file %}.
+You can enable it by setting value `quicklink.enable` to `true` in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 ...
 quicklink:
   enable: true
@@ -97,9 +97,9 @@ quicklink:
 NexT enables animation effect by default which is supported by Anime.js and Animate.css, so it will wait for JavaScript loaded to show content.
 If you need speed you can set the value of `motion.enable` to `false` to disable it.
 
-Edit {% label primary@theme config file %} and set the needed values under the `motion` to fit your demand. You can preview all Transition variants here: [NexT Animation Effect Preview](https://theme-next.js.org/animate/).
+Edit {% label primary@NexT config file %} and set the needed values under the `motion` to fit your demand. You can preview all Transition variants here: [NexT Animation Effect Preview](https://theme-next.js.org/animate/).
 
-```yml next/_config.yml
+```yml NexT config file
 # Use Animate.css to animate everything.
 # For more information: https://animate.style
 motion:
@@ -121,25 +121,25 @@ Pace will automatically monitor your Ajax requests, event loop lag, document rea
 
 {% tabs pace %}
 <!-- tab <code>pace</code> -->
-You can enable it by setting value `pace.enable` to `true` in {% label primary@theme config file %}.
+You can enable it by setting value `pace.enable` to `true` in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 pace:
   enable: true
 ```
 <!-- endtab -->
 <!-- tab <code>color</code> -->
-You can change the color of progress bar by setting value `pace.color` in {% label primary@theme config file %}.
+You can change the color of progress bar by setting value `pace.color` in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 pace:
   color: orange
 ```
 <!-- endtab -->
 <!-- tab <code>theme</code> -->
-Pace includes a bunch of [themes](https://codebyzach.github.io/pace/) to get you started. By default NexT uses `minimal` theme (pace-theme-minimal). You can configure it by editing values in `pace.theme` section in {% label primary@theme config file %}.
+Pace includes a bunch of [themes](https://codebyzach.github.io/pace/) to get you started. By default NexT uses `minimal` theme (pace-theme-minimal). You can configure it by editing values in `pace.theme` section in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 pace:
   theme: minimal
 ```
@@ -151,13 +151,13 @@ pace:
 
 [canvas-ribbon.js](https://github.com/hustcc/ribbon.js) is a ribbon backgroud of website draw on canvas.
 
-You can enable it by setting value `canvas_ribbon` to `true` in {% label primary@theme config file %}. You can also configure the ribbon setting by editing values in `canvas_ribbon` section:
+You can enable it by setting value `canvas_ribbon` to `true` in {% label primary@NexT config file %}. You can also configure the ribbon setting by editing values in `canvas_ribbon` section:
 
 * size: The width of the ribbon.
 * alpha: The transparency of the ribbon.
 * zIndex: The display level of the ribbon.
 
-```yml next/_config.yml
+```yml NexT config file
 canvas_ribbon:
   enable: true
   size: 300

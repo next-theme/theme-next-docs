@@ -28,9 +28,9 @@ date: 2014-12-22 12:39:04
 <!-- endtab -->
 
 <!-- tab Editting Menu -->
-Add `custom-name` to `menu` by editing {% label primary@theme config file %}, like adding `about` page:
+Add `custom-name` to `menu` by editing {% label primary@NexT config file %}, like adding `about` page:
 
-```yml next/_config.yml
+```yml NexT config file
 menu:
   home: / || fa fa-home
   archives: /archives/ || fa fa-archive
@@ -65,9 +65,9 @@ tags:
 
 ### Use Archive Page as Home Page
 
-You can configure the path of archive and index generator in {% label info@site config file %}, e.g.
+You can configure the path of archive and index generator in {% label info@Hexo config file %}, e.g.
 
-```yml hexo/_config.yml
+```yml Hexo config file
 archive_dir: /
 
 index_generator:
@@ -102,9 +102,9 @@ type: tags
 <!-- endtab -->
 
 <!-- tab Editting Menu -->
-Add `tags` to `menu` by editing {% label primary@theme config file %}, like following:
+Add `tags` to `menu` by editing {% label primary@NexT config file %}, like following:
 
-```yml next/_config.yml
+```yml NexT config file
 menu:
   home: / || fa fa-home
   archives: /archives/ || fa fa-archive
@@ -121,9 +121,9 @@ See [«How to Disable Comments on Page»](/docs/third-party-services/comments.ht
 #### Tagcloud
 
 By default, NexT has setted font color and size for tagcloud in tags page.
-From NexT v7.0.2 you can customize them, just set related values in {% label primary@theme config file %}:
+From NexT v7.0.2 you can customize them, just set related values in {% label primary@NexT config file %}:
 
-```yml next/_config.yml
+```yml NexT config file
 # TagCloud settings for tags page.
 tagcloud:
   min: 12 # Minimum font size in px
@@ -155,9 +155,9 @@ More detailed documentation on creating & managing a public Google calendar: htt
 Login to [Google developers](https://console.cloud.google.com/flows/enableapi?apiid=calendar) and add Google Calendar API, you will get your API KEY on the [credentials page](https://console.cloud.google.com/apis/credentials).
 <!-- endtab -->
 <!-- tab NexT Config -->
-You can enable it by setting values in `calendar` part. Copy the value of Calendar ID and API KEY in {% label primary@theme config file %}.
+You can enable it by setting values in `calendar` part. Copy the value of Calendar ID and API KEY in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 calendar:
   calendar_id: <required>
   api_key: <required>
@@ -195,9 +195,9 @@ type: schedule
 <!-- endtab -->
 
 <!-- tab Editting Menu -->
-Add `schedule` to `menu` by editing {% label primary@theme config file %}:
+Add `schedule` to `menu` by editing {% label primary@NexT config file %}:
 
-```yml next/_config.yml
+```yml NexT config file
 menu:
   home: / || fa fa-home
   archives: /archives/ || fa fa-archive
@@ -215,9 +215,9 @@ $ cd hexo-site
 $ hexo new page 404
 ```
 
-Make sure `relative_link` is disabled in {% label info@site config file %}:
+Make sure `relative_link` is disabled in {% label info@Hexo config file %}:
 
-```yml hexo/_config.yml
+```yml Hexo config file
 relative_link: false
 ```
 
@@ -242,9 +242,9 @@ comments: false
 
 You can also add any content you want to it.
 
-Add `404` to `menu` by editing {% label primary@theme config file %}:
+Add `404` to `menu` by editing {% label primary@NexT config file %}:
 
-```yml next/_config.yml
+```yml NexT config file
 menu:
   home: / || fa fa-home
   archives: /archives/ || fa fa-archive

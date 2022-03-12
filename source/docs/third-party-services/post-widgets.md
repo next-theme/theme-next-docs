@@ -18,9 +18,9 @@ wpac_init.push({widget: 'Rating', id: ID});
 
 <!-- tab NexT Config -->
 
-You can enable it by setting value `rating.enable` to `true`, and copy `ID` value of `id` in {% label primary@theme config file %}. You can also configure the rating color by editing the value of `rating.color`.
+You can enable it by setting value `rating.enable` to `true`, and copy `ID` value of `id` in {% label primary@NexT config file %}. You can also configure the rating color by editing the value of `rating.color`.
 
-```yml next/_config.yml
+```yml NexT config file
 rating:
   enable: false
   id:     ID #<app_id>
@@ -42,9 +42,9 @@ Get AddThis ID in this menu: `Profile Settings` → `General` → `ID`. See exam
 <!-- endtab -->
 
 <!-- tab NexT Config -->
-Edit the value of `add_this_id` in the {% label primary@theme config file %} as following:
+Edit the value of `add_this_id` in the {% label primary@NexT config file %} as following:
 
-```yml next/_config.yml
+```yml NexT config file
 add_this_id: your_add_this_id
 ```
 <!-- endtab -->

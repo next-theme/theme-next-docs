@@ -7,16 +7,16 @@ description: NexT User Docs – Theme Settings
 One of the guiding principles of NexT is to hide complex details and give you a simple but flexible config, so you can use it easily.
 
 {% note info %}
-The values given in the document are often typical allowable values rather than default values. They may be different from those in {% label primary@theme config file %}.
+The values given in the document are often typical allowable values rather than default values. They may be different from those in {% label primary@NexT config file %}.
 {% endnote %}
 
 ### NexT Quick Start
 
 #### Cache Support
 
-NexT v6+ allows to cache content generation. Set the value `enable` to `true` in `cache` section in {% label primary@theme config file %} as following:
+NexT v6+ allows to cache content generation. Set the value `enable` to `true` in `cache` section in {% label primary@NexT config file %} as following:
 
-```yml next/_config.yml
+```yml NexT config file
 # Allow to cache content generation.
 cache:
   enable: true
@@ -24,9 +24,9 @@ cache:
 
 #### Minify Support
 
-NexT allows to minify Hexo generation. Set the value `minify` to `true` in {% label primary@theme config file %} as following:
+NexT allows to minify Hexo generation. Set the value `minify` to `true` in {% label primary@NexT config file %} as following:
 
-```yml next/_config.yml
+```yml NexT config file
 # Remove unnecessary files after hexo generate.
 minify: true
 ```
@@ -40,9 +40,9 @@ Scheme is a feature supported by NexT, by using Scheme NexT gives you different 
 * `Pisces` → Double-column Scheme, fresh like your neighbor's daughter.
 * `Gemini` → Looks like Pisces, but have distinct column blocks with shadow to appear more sensitive to view.
 
-You can change Scheme by editing {% label primary@theme config file %}, searching `scheme` keyword. You'll see 4 lines of scheme settings and can enable one of them by removing it's `#` and added `#` to previous.
+You can change Scheme by editing {% label primary@NexT config file %}, searching `scheme` keyword. You'll see 4 lines of scheme settings and can enable one of them by removing it's `#` and added `#` to previous.
 
-```yml next/_config.yml
+```yml NexT config file
 #scheme: Muse
 #scheme: Mist
 #scheme: Pisces
@@ -53,9 +53,9 @@ scheme: Gemini
 
 {% darkmode_preview %}
 
-You can enable Dark Mode by setting `darkmode` to `true` in {% label primary@theme config file %}.
+You can enable Dark Mode by setting `darkmode` to `true` in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 darkmode: true
 ```
 
@@ -72,13 +72,13 @@ Theme NexT automatically shows Dark Mode if the OS prefered theme is dark. It's 
 
 By default the Hexo site use NexT favicons in `hexo-site/themes/next/source/images/` directory with different size for different device. You can replace them with your own favicons.
 
-For example, you can put your favicons in `hexo-site/source/images/` directory. Then you need to rename them and change the settings in `favicon` section in {% label primary@theme config file %}, otherwise icons from Next will rewrite your custom icons in Hexo.
+For example, you can put your favicons in `hexo-site/source/images/` directory. Then you need to rename them and change the settings in `favicon` section in {% label primary@NexT config file %}, otherwise icons from Next will rewrite your custom icons in Hexo.
 
 You can also put custom favicons into `hexo-site/source/` directory. In this way, you **must remove** `/images` prefix from paths.
 
 To generate custom favicons, you can visit [Favicon Generator](https://realfavicongenerator.net).
 
-```yml hexo/_config.yml
+```yml Hexo config file
 favicon:
   small: /images/favicon-16x16-next.png
   medium: /images/favicon-32x32-next.png
@@ -91,9 +91,9 @@ favicon:
 
 NexT supports the site logo personalization.
 
-You can enable it by adding images's url to `custom_logo` in {% label primary@theme config file %}.
+You can enable it by adding images's url to `custom_logo` in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 custom_logo: /uploads/custom-logo.jpg
 ```
 
@@ -105,9 +105,9 @@ Scheme Mist does not support custom logo setting.
 
 NexT supports the display of [Creative Commons 4.0 International License](https://creativecommons.org/) in sidebar and post including `by`, `by-nc`, `by-nc-nd`, `by-nc-sa`, `by-nd`, `by-sa` and `cc-zero`. These licenses allow creators to communicate which rights they reserve, and which rights they waive for the benefit of recipients or other creators.
 
-You can configure it by editing values in `creative_commons` section in {% label primary@theme config file %}, for example:
+You can configure it by editing values in `creative_commons` section in {% label primary@NexT config file %}, for example:
 
-```yml next/_config.yml
+```yml NexT config file
 creative_commons:
   # Available values: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | cc-zero
   license: by-nc-sa
@@ -125,7 +125,7 @@ CC licenses are available in 39 languages, you can find the specific and correct
 
 #### Open Graph
 
-```yml next/_config.yml
+```yml NexT config file
 open_graph:
   enable: true
   # Add pairs each line to customize
@@ -157,9 +157,9 @@ Names of that icons can be found in [Font Awesome](https://fontawesome.com) site
 {% endtabs %}
 
 By default, all menu items are commented out to ensure that you can override them in the [Alternate Theme Config](/docs/getting-started/configuration.html).
-To customize menu items, edit the following content in {% label primary@theme config file %}:
+To customize menu items, edit the following content in {% label primary@NexT config file %}:
 
-```yml next/_config.yml
+```yml NexT config file
 menu:
   home: / || fa fa-home
   #about: /about/ || fa fa-user
@@ -177,9 +177,9 @@ Except `home` and `archives`, all custom pages under `menu` section need to be c
 Besides, [hexo-generator-sitemap](https://github.com/hexojs/hexo-generator-sitemap) plugin is required for `sitemap` support.
 {% endnote %}
 
-Dynamic sub-menu within hierarchy structure is also supported. Add your sub-menu items in `menu` section in {% label primary@theme config file %} as following:
+Dynamic sub-menu within hierarchy structure is also supported. Add your sub-menu items in `menu` section in {% label primary@NexT config file %} as following:
 
-```yml next/_config.yml
+```yml NexT config file
 menu:
   home: / || fa fa-home
   archives: /archives/ || fa fa-archive
@@ -203,18 +203,18 @@ By default NexT shows the icons of menu items without badges.
 
 {% tabs menu_settings %}
 <!-- tab <code>icons</code> -->
-You can configure it by editing values in `menu_settings.icons` section in {% label primary@theme config file %}.
+You can configure it by editing values in `menu_settings.icons` section in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 menu_settings:
   icons: true
 ```
 <!-- endtab -->
 
 <!-- tab <code>badges</code> -->
-Set the value `badges` to `true` to display the count of Posts / Categories / Tags within menu items in `menu_settings` section in {% label primary@theme config file %} as following:
+Set the value `badges` to `true` to display the count of Posts / Categories / Tags within menu items in `menu_settings` section in {% label primary@NexT config file %} as following:
 
-```yml next/_config.yml
+```yml NexT config file
 menu_settings:
   badges: true
 ```

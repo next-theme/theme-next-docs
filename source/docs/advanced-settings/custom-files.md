@@ -5,17 +5,17 @@ description: NexT User Docs – Advanced Settings - Custom Files
 
 ### Custom File Support
 
-[Pull Request #868](https://github.com/theme-next/hexo-theme-next/pull/868) has adjusted the way of customizing the layout or style, canceling the custom files (such as `_custom/custom.styl`) in the original theme directory, and only retaining the way of specifying the custom file in the {% label primary@theme config file %}.
+[Pull Request #868](https://github.com/theme-next/hexo-theme-next/pull/868) has adjusted the way of customizing the layout or style, canceling the custom files (such as `_custom/custom.styl`) in the original theme directory, and only retaining the way of specifying the custom file in the {% label primary@NexT config file %}.
 
 It is a good practice to separate the custom files from the theme files, so that you can add custom content without modifying the original source code of the theme, and avoid conflicts due to `git merge`.
 
-As with [Data Files](https://hexo.io/docs/data-files), you can place all custom layouts or styles in a specific location (for example: `hexo/source/_data`). Add the custom file to `hexo/source/_data` and uncomment the content under the `custom_file_path` section in the {% label primary@theme config file %}.
+As with [Data Files](https://hexo.io/docs/data-files), you can place all custom layouts or styles in a specific location (for example: `hexo/source/_data`). Add the custom file to `hexo/source/_data` and uncomment the content under the `custom_file_path` section in the {% label primary@NexT config file %}.
 
 {% note warning %}
 The file name and path must be the same in `custom_file_path`.
 {% endnote %}
 
-```yml next/_config.yml
+```yml NexT config file
 custom_file_path:
   #head: source/_data/head.njk
   #header: source/_data/header.njk
@@ -41,9 +41,9 @@ Edit `source/_data/head.njk` in {% label info@site root directory %} and add the
 <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
 ```
 
-Then uncomment `head` under the `custom_file_path` section in {% label primary@theme config file %}.
+Then uncomment `head` under the `custom_file_path` section in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 custom_file_path:
   head: source/_data/head.njk
 ```
@@ -58,9 +58,9 @@ Edit `source/_data/sidebar.njk` in {% label info@site root directory %} and add 
 </div>
 ```
 
-Then uncomment `sidebar` under the `custom_file_path` section in {% label primary@theme config file %}.
+Then uncomment `sidebar` under the `custom_file_path` section in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 custom_file_path:
   sidebar: source/_data/sidebar.njk
 ```
@@ -138,9 +138,9 @@ So, if you want to add any variables or styles to both Pisces and Gemini schemes
 <!-- endtab -->
 {% endtabs %}
 
-Then uncomment `variable` under the `custom_file_path` section in {% label primary@theme config file %}.
+Then uncomment `variable` under the `custom_file_path` section in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 custom_file_path:
   variable: source/_data/variables.styl
 ```
@@ -157,9 +157,9 @@ Edit `source/_data/styles.styl` in {% label info@site root directory %} and add 
 }
 ```
 
-Then uncomment `style` under the `custom_file_path` section in {% label primary@theme config file %}.
+Then uncomment `style` under the `custom_file_path` section in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 custom_file_path:
   style: source/_data/styles.styl
 ```
@@ -174,9 +174,9 @@ Edit `source/_data/styles.styl` in {% label info@site root directory %} and add 
 }
 ```
 
-Then uncomment `style` under the `custom_file_path` section in {% label primary@theme config file %}.
+Then uncomment `style` under the `custom_file_path` section in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 custom_file_path:
   style: source/_data/styles.styl
 ```

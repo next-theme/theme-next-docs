@@ -5,7 +5,7 @@ description: NexT User Docs – NexT Supported Tags – Note
 
 ### Settings
 
-```yml next/_config.yml
+```yml NexT config file
 note:
   # Note tag style values:
   #  - simple    bs-callout old alert style. Default.

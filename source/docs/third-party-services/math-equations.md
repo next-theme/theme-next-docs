@@ -6,7 +6,7 @@ mathjax: true
 
 ### Settings
 
-```yml next/_config.yml
+```yml NexT config file
 # Math Formulas Render Support
 math:
   # Default (false) will load mathjax / katex script on demand.
@@ -69,7 +69,7 @@ For now, NexT provides two rendering engines for displaying Math Equations: [Mat
 - MathJax is a JavaScript display engine for mathematics that works in all browsers. It is highly modular on input and output. Use MathML, TeX, and ASCIImath as input and produce HTML+CSS, SVG, or MathML as output.
 - [KaTeX is a faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php) math rendering engine compared to MathJax 3. And it could survive without JavaScript. But, for now [KaTeX supports less features](https://github.com/KaTeX/KaTeX/wiki/Things-that-KaTeX-does-not-(yet)-support) than MathJax. Here is a list of [TeX functions supported by KaTeX](https://katex.org/docs/supported.html).
 
-Firstly, you need to choose a rendering engine and turn on `enable` for it in {% label primary@theme config file %}. Then you need to install the **corresponding Hexo Renderer** to fully support the display of Math Equations - Only turn on `enable` **may not let you see the displayed equations correctly**.
+Firstly, you need to choose a rendering engine and turn on `enable` for it in {% label primary@NexT config file %}. Then you need to install the **corresponding Hexo Renderer** to fully support the display of Math Equations - Only turn on `enable` **may not let you see the displayed equations correctly**.
 
 {% tabs render-engines %}
 <!-- tab MathJax -->
@@ -97,9 +97,9 @@ If you are using other renderers, such as [hexo-renderer-marked](https://github.
 
 **Installation**
 
-1. Firstly, set `mathjax` as rendering engine in {% label primary@theme config file %}.
+1. Firstly, set `mathjax` as rendering engine in {% label primary@NexT config file %}.
 
-    ```yml next/_config.yml
+    ```yml NexT config file
     math:
       ...
       mathjax:
@@ -130,9 +130,9 @@ If you use KaTeX to render Math Equations, you can choose one of the Markdown re
 
 **Installation**
 
-1. Firstly, set `katex` as rendering engine in {% label primary@theme config file %}.
+1. Firstly, set `katex` as rendering engine in {% label primary@NexT config file %}.
 
-    ```yml next/_config.yml
+    ```yml NexT config file
     math:
       ...
       katex:
@@ -163,9 +163,9 @@ If you use `hexo-renderer-markdown-it`, you also need to install `markdown-it-ka
 $ npm i markdown-it-katex
 ```
 
-And then in {% label info@site config file %} you need to add `markdown-it-katex` as a plugin for `hexo-renderer-markdown-it`:
+And then in {% label info@Hexo config file %} you need to add `markdown-it-katex` as a plugin for `hexo-renderer-markdown-it`:
 
-```yml hexo/_config.yml
+```yml Hexo config file
 # config of hexo-renderer-markdown-it
 markdown:
   render:
@@ -185,7 +185,7 @@ markdown:
 
 Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supporting the Clipboard API so that, when selecting and copying whole KaTeX-rendered elements, the text content of the resulting clipboard renders KaTeX elements as their LaTeX source surrounded by specified delimiters. More information: [Copy-tex extension](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex).
 
-```yml next/_config.yml
+```yml NexT config file
 math:
   ...
   katex:
@@ -232,7 +232,7 @@ The following examples are rendered by `mathjax` engine.
 
 In NexT v6.3.0, we have added feature to [automatic equation numbering](https://docs.mathjax.org/en/latest/input/tex/eqnumbers.html) with opportunity to make reference to that equations.
 
-To enable this feature, you need to set `mathjax.tags` to `ams` in {% label primary@theme config file %}.
+To enable this feature, you need to set `mathjax.tags` to `ams` in {% label primary@NexT config file %}.
 
 ```yml
 math:

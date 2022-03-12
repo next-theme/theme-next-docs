@@ -8,9 +8,9 @@ description: NexT User Docs – Theme Settings - Misc Theme Settings
 
 NexT supports adding preconnect resource hints to establish early connections to fonts and plugins origins.
 
-You can enable it by setting `preconnect: true` in {% label primary@theme config file %}.
+You can enable it by setting `preconnect: true` in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 # Preconnect CDN for fonts and plugins.
 # For more information: https://www.w3.org/TR/resource-hints/#preconnect
 preconnect: true
@@ -31,7 +31,7 @@ NexT allows to customize the text alignment in posts / pages. The `text-align` C
 | `justify-all`  | Same as `justify`, but also forces the last line to be justified.                                                                                                      |
 | `match-parent` | Similar to `inherit`, but the values `start` and `end` are calculated according to the parent's direction and are replaced by the appropriate `left` or `right` value. |
 
-```yml next/_config.yml
+```yml NexT config file
 # Set the text alignment in the posts.
 text_align:
   # Available values: start | end | left | right | center | justify | justify-all | match-parent
@@ -41,24 +41,24 @@ text_align:
 
 ### Mobile Devices Adaptation
 
-If you want to reduce padding/margin indents on devices with narrow width, you can enable it by setting value `mobile_layout_economy` to `true` in {% label primary@theme config file %}.
+If you want to reduce padding/margin indents on devices with narrow width, you can enable it by setting value `mobile_layout_economy` to `true` in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 mobile_layout_economy: true
 ```
 
 ### Theme Color
 
-By default NexT uses black-deep (`#222`) as the color of browser header panel (it's supported by Safari 15 and Android Chrome). You can configure it by editing values with Hex color in `theme_color` section in {% label primary@theme config file %}.
+By default NexT uses black-deep (`#222`) as the color of browser header panel (it's supported by Safari 15 and Android Chrome). You can configure it by editing values with Hex color in `theme_color` section in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 theme_color:
   light: "#222"
   dark: "#222"
 ```
 ### Body Scrollbar
 
-```yml next/_config.yml
+```yml NexT config file
 # Override browsers' default behavior.
 body_scrollbar:
   # Place the scrollbar over the content.
@@ -75,12 +75,12 @@ body_scrollbar:
 NexT uses the [Highlight.js](https://highlightjs.org) and [Prism](https://prismjs.com) package to support code highlight.
 
 {% note warning %}
-Please read Hexo's documentation on [Syntax Highlighting](https://hexo.io/docs/syntax-highlight) first, and set it up in {% label info@site config file %}.
+Please read Hexo's documentation on [Syntax Highlighting](https://hexo.io/docs/syntax-highlight) first, and set it up in {% label info@Hexo config file %}.
 {% endnote %}
 
 You can preview all available Code Highlight themes here: [NexT Highlight Theme Preview](https://theme-next.js.org/highlight/). Change the value of `theme` and `prism` to choose the highlight style you like.
 
-```yml next/_config.yml
+```yml NexT config file
 codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
@@ -100,9 +100,9 @@ NexT supports the copy-and-paste functionality of codeblock.
 
 {% subtabs codeblock1 %}
 <!-- tab <code>enable</code> -->
-You can enable it by setting value `copy_button.enable` to `true` in {% label primary@theme config file %}. By default NexT shows copy result of the copy-and-paste functionality.
+You can enable it by setting value `copy_button.enable` to `true` in {% label primary@NexT config file %}. By default NexT shows copy result of the copy-and-paste functionality.
 
-```yml next/_config.yml
+```yml NexT config file
 codeblock:
   copy_button:
     enable: true
@@ -112,7 +112,7 @@ codeblock:
 With `style` option, you can change your copy button style.
 There are three style available currently: `default` (Just leave it empty), `flat` and `mac`.
 
-```yml next/_config.yml
+```yml NexT config file
 codeblock:
   copy_button:
     style: flat
@@ -128,7 +128,7 @@ codeblock:
 
 {% tabs b2t %}
 <!-- tab <code>enable</code> -->
-```yml next/_config.yml
+```yml NexT config file
 back2top:
   enable: true
 ```
@@ -137,7 +137,7 @@ Set the value `back2top.enable` to `true` to display `Back to top` button.
 <!-- endtab -->
 
 <!-- tab <code>sidebar</code> -->
-```yml next/_config.yml
+```yml NexT config file
 back2top:
   # Back to top in sidebar.
   sidebar: true
@@ -147,7 +147,7 @@ Set the value `back2top.sidebar` to `true` to put the button in sidebar.
 <!-- endtab -->
 
 <!-- tab <code>scrollpercent</code> -->
-```yml next/_config.yml
+```yml NexT config file
 back2top:
   # Scroll percent label in b2t button.
   scrollpercent: true
@@ -161,9 +161,9 @@ Set the value `back2top.scrollpercent` to `true` to display scroll percent label
 
 NexT supports the page scroll reading progress indicator.
 
-You can enable it by setting value `reading_progress.enable` to `true` in {% label primary@theme config file %}.
+You can enable it by setting value `reading_progress.enable` to `true` in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 reading_progress:
   enable: true
   # Available values: left | right
@@ -179,9 +179,9 @@ reading_progress:
 
 Bookmark is a plugin that allow the users save their reading progress. Users could just click the bookmark icon (like 🔖) in left-top of the page to save the scroll position. And when they visit your blog in the next time, they can resume the last scroll position of each page automatically.
 
-You can enable it by setting value `bookmark.enable` to `true` in {% label primary@theme config file %}.
+You can enable it by setting value `bookmark.enable` to `true` in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 bookmark:
   enable: false
   # Customize the color of the bookmark.
@@ -195,7 +195,7 @@ bookmark:
 
 NexT provides `Follow me on GitHub` banner in right-top corner.
 
-```yml next/_config.yml
+```yml NexT config file
 # Follow me on GitHub banner in right-top corner.
 github_banner:
   enable: true
@@ -239,7 +239,7 @@ In addition, we noticed that for requests from certain websites, Google Fonts wi
 Relevant issues: [#613](https://github.com/theme-next/hexo-theme-next/issues/613), [#1333](https://github.com/theme-next/hexo-theme-next/issues/1333)
 {% endnote %}
 
-```yml next/_config.yml
+```yml NexT config file
 font:
   # Use custom fonts families or not.
   # Depended options: `external` and `family`.
@@ -284,7 +284,7 @@ font:
 
 And you can apply multiple font families for each option. This is especially useful for those who often writes both Chinese and English.
 
-```yml next/_config.yml
+```yml NexT config file
 font:
   ...
   title:
@@ -319,4 +319,4 @@ $font-size-base = 16px
 $table-font-size = 13px
 ```
 
-Then uncomment `variable` under the `custom_file_path` section in {% label primary@theme config file %}.
+Then uncomment `variable` under the `custom_file_path` section in {% label primary@NexT config file %}.

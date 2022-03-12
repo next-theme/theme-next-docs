@@ -37,7 +37,7 @@ There are some breaking changes that need attention when upgrading across versio
 1. Update language configuration (for Simplified Chinese)
     Since v6.0.3, `zh-Hans` has been renamed to `zh-CN`: https://github.com/theme-next/hexo-theme-next/releases/tag/v6.0.3
 
-    Users upgrading to v6.0.3 and later need to explicitly modify the `language` configuration in {% label info@site config file %}, otherwise the language display is incorrect.
+    Users upgrading to v6.0.3 and later need to explicitly modify the `language` configuration in {% label info@Hexo config file %}, otherwise the language display is incorrect.
 2. Since v8.0.0, all libraries under the `next/source/lib` directory was moved out to [@next-theme/plugins](https://github.com/next-theme/plugins). Please see this article for the new 3rd-party libraries installation method: [Adding Plugins](/docs/third-party-services/#Adding-Plugins).
 
 #### Upgrade

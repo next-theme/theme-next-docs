@@ -11,7 +11,7 @@ description: NexT User Docs – Third-party Service Integration – Chat Service
 <!-- tab Enable Chatra → -->
 Visit [Dashboard](https://app.chatra.io/settings/general) to get your ChatraID.
 
-```yml next/_config.yml
+```yml NexT config file
 # Chatra Support
 # See: https://chatra.com
 # Dashboard: https://app.chatra.io/settings/general
@@ -24,9 +24,9 @@ chatra:
 <!-- endtab -->
 
 <!-- tab Activate sidebar button -->
-After Chatra enabled, you can set `chat.enable` to `true` in {% label primary@theme config file %}.
+After Chatra enabled, you can set `chat.enable` to `true` in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 # A button to open designated chat widget in sidebar.
 # Firstly, you need enable the chat service you want to activate its sidebar button.
 chat:
@@ -45,7 +45,7 @@ chat:
 <!-- tab Enable Tidio → -->
 Visit [Dashboard](https://www.tidio.com/panel/dashboard) to get your Public Key.
 
-```yml next/_config.yml
+```yml NexT config file
 # Tidio Support
 # See: https://www.tidio.com
 # Dashboard: https://www.tidio.com/panel/dashboard
@@ -57,9 +57,9 @@ tidio:
 <!-- endtab -->
 
 <!-- tab Activate sidebar button -->
-After Tidio enabled, you can set `chat.enable` to `true` in {% label primary@theme config file %}.
+After Tidio enabled, you can set `chat.enable` to `true` in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 # A button to open designated chat widget in sidebar.
 # Firstly, you need enable the chat service you want to activate its sidebar button.
 chat:
@@ -78,7 +78,7 @@ chat:
 <!-- tab Enable Gitter → -->
 You need to create a community, then create a webapp room under that community.
 
-```yml next/_config.yml
+```yml NexT config file
 # Gitter Support
 # For more information: https://gitter.im
 gitter:
@@ -89,9 +89,9 @@ gitter:
 <!-- endtab -->
 
 <!-- tab Activate sidebar button -->
-After Gitter enabled, you can set `chat.enable` to `true` in {% label primary@theme config file %}.
+After Gitter enabled, you can set `chat.enable` to `true` in {% label primary@NexT config file %}.
 
-```yml next/_config.yml
+```yml NexT config file
 # A button to open designated chat widget in sidebar.
 # Firstly, you need enable the chat service you want to activate its sidebar button.
 chat:

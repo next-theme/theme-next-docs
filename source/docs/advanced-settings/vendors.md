@@ -5,9 +5,9 @@ description: NexT User Docs – Advanced Settings - Vendors
 
 ### CDN Settings
 
-You can specify a proper CDN provider in the `vendors` section in {% label primary@theme config file %}, which can make the static assets of plugins load faster.
+You can specify a proper CDN provider in the `vendors` section in {% label primary@NexT config file %}, which can make the static assets of plugins load faster.
 
-```yml next/_config.yml
+```yml NexT config file
 vendors:
   # The CDN provider of NexT internal scripts.
   # Available values: local | jsdelivr | unpkg | cdnjs | custom
@@ -65,14 +65,14 @@ jsDelivr could automatically minify the JS and CSS files, even if the package ow
 
 In theme NexT, you can simply use the variable `${minified}` in `custom_cdn_url` to serve the minified version if you are using a mirror site of jsDelivr. NexT will automatically replace the variable `${minified}` with the path of each JS file to load from CDN.
 
-```yml next/_config.yml
+```yml NexT config file
 vendors:
   custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified}
 ```
 
 ##### CDNJS Mirrors
 
-```yml next/_config.yml
+```yml NexT config file
 vendors:
   custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file}
 ```
@@ -83,9 +83,9 @@ Furthermore, you can configure the CDN URL of each library individually in the `
 
 The config is in format of `libname: CDN URL`. The `libname` is the same as in the `_vendors.yml` file. The `CDN URL` will override the default one.
 
-For example, if you want to set the CDN URL for `anime`, go to {% label primary@theme config file %} and add a key named `anime` in the `vendors` section, and set its value to the CDN URL of anime.js:
+For example, if you want to set the CDN URL for `anime`, go to {% label primary@NexT config file %} and add a key named `anime` in the `vendors` section, and set its value to the CDN URL of anime.js:
 
-```yml next/_config.yml
+```yml NexT config file
 vendors:
   # ...
   # Some contents...

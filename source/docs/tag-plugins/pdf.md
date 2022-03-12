@@ -5,7 +5,7 @@ description: NexT User Docs – NexT Supported Tags – PDF
 
 ### Settings
 
-```yml next/_config.yml
+```yml NexT config file
 pdf:
   enable: true
   # Default height

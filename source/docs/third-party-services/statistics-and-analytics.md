@@ -4,7 +4,7 @@ description: NexT User Docs – Third-party Service Integration – Statistics a
 ---
 
 {% note warning %}
-NexT will not send record to analytics service provider as long as the page's host name does not match `url` option set in {% label info@site config file %}. This will prevent local debugging from polluting analytics. Make sure you have configured `url` correctly, otherwise these statistics tools may not work as expected.
+NexT will not send record to analytics service provider as long as the page's host name does not match `url` option set in {% label info@Hexo config file %}. This will prevent local debugging from polluting analytics. Make sure you have configured `url` correctly, otherwise these statistics tools may not work as expected.
 {% endnote %}
 
 ### Analytics Tools
@@ -12,9 +12,9 @@ NexT will not send record to analytics service provider as long as the page's ho
 #### Google Analytics
 
 1. Create an account and log into [Google Analytics](https://analytics.google.com). [More detailed documentation](https://support.google.com/analytics/?hl=en#topic=3544906)
-2. Edit {% label primary@theme config file %} and fill `tracking_id` under section `google_analytics` with your Google track ID. Google track ID always starts with `UA-`.
+2. Edit {% label primary@NexT config file %} and fill `tracking_id` under section `google_analytics` with your Google track ID. Google track ID always starts with `UA-`.
 
-    ```yml next/_config.yml
+    ```yml NexT config file
     # Google Analytics
     google_analytics:
       tracking_id: UA-XXXXXXXX-X
@@ -37,9 +37,9 @@ Copy the script ID after `hm.js?`, like the following picture:
 <!-- endtab -->
 
 <!-- tab NexT Config -->
-Edit {% label primary@theme config file %} and change the value of `baidu_analytics` to your script ID.
+Edit {% label primary@NexT config file %} and change the value of `baidu_analytics` to your script ID.
 
-```yml next/_config.yml
+```yml NexT config file
 # Baidu Analytics ID
 baidu_analytics: your_id
 ```
@@ -50,27 +50,27 @@ baidu_analytics: your_id
 
 Official documentation: https://docs.growingio.com/v3/developer-manual/sdkintegrated/web-js-sdk/latest-jssdk
 
-Edit {% label primary@theme config file %} and change the value of `growingio_analytics` to your project ID.
+Edit {% label primary@NexT config file %} and change the value of `growingio_analytics` to your project ID.
 
-```yml next/_config.yml
+```yml NexT config file
 # Growingio Analytics
 growingio_analytics: # <project_id>
 ```
 
 #### Cloudflare Web Analytics
 
-Edit {% label primary@theme config file %} and change the value of `cloudflare_analytics` to your project ID.
+Edit {% label primary@NexT config file %} and change the value of `cloudflare_analytics` to your project ID.
 
-```yml next/_config.yml
+```yml NexT config file
 # Cloudflare Web Analytics
 cloudflare_analytics:
 ```
 
 #### Microsoft Clarity Analytics
 
-Edit {% label primary@theme config file %} and change the value of `clarity_analytics` to your project ID.
+Edit {% label primary@NexT config file %} and change the value of `clarity_analytics` to your project ID.
 
-```yml next/_config.yml
+```yml NexT config file
 # Microsoft Clarity Analytics
 # See: https://clarity.microsoft.com/
 clarity_analytics: # <project_id>
@@ -99,9 +99,9 @@ $ npm install hexo-leancloud-counter-security
 <!-- endtab -->
 
 <!-- tab Hexo Config → -->
-Edit {% label info@site config file %} and add following content:
+Edit {% label info@Hexo config file %} and add following content:
 
-```yml hexo/_config.yml
+```yml Hexo config file
 leancloud_counter_security:
   enable_sync: true
   app_id: <your app id>
@@ -112,9 +112,9 @@ leancloud_counter_security:
 <!-- endtab -->
 
 <!-- tab NexT Config -->
-Edit {% label primary@theme config file %} and fill options under `leancloud_visitors` section.
+Edit {% label primary@NexT config file %} and fill options under `leancloud_visitors` section.
 
-```yml next/_config.yml
+```yml NexT config file
 # Show number of visitors to each article.
 # You can visit https://www.leancloud.cn get AppID and AppKey.
 leancloud_visitors:
@@ -145,9 +145,9 @@ Login to [Firebase](https://console.firebase.google.com/u/0/) to get apiKey and 
 <!-- endtab -->
 
 <!-- tab NexT Config -->
-Edit {% label primary@theme config file %} and add or change `firestore` section:
+Edit {% label primary@NexT config file %} and add or change `firestore` section:
 
-```yml next/_config.yml
+```yml NexT config file
 firestore:
   enable: true
   collection: articles #required, a string collection name to access firestore database
@@ -162,14 +162,14 @@ firestore:
 {% tabs busuanzi-counting %}
 
 <!-- tab Global Settings → -->
-Edit `busuanzi_count` option in {% label primary@theme config file %}.
+Edit `busuanzi_count` option in {% label primary@NexT config file %}.
 When `enable: true`, global setting is enabled. If `total_visitors`, `total_views`, `post_views` are all `false`, Busuanzi only counts but never shows.
 <!-- endtab -->
 
 <!-- tab Site UV Settings → -->
 When `total_visitors: true`, it will show site UV in footer. You can also use font-awesome by setting `total_visitors_icon` to the name of the icon.
 
-```yml next/_config.yml
+```yml NexT config file
 busuanzi_count:
   total_visitors: true
   total_visitors_icon: fa fa-user
@@ -179,7 +179,7 @@ busuanzi_count:
 <!-- tab Site PV Settings → -->
 When `total_views: true`, it will show site UV in footer. You can also use font-awesome by setting `total_views_icon` to the name of the icon.
 
-```yml next/_config.yml
+```yml NexT config file
 busuanzi_count:
   total_views: true
   total_views_icon: fa fa-eye
@@ -189,7 +189,7 @@ busuanzi_count:
 <!-- tab Per-page PV Settings -->
 When `post_views: true`, it will show page PV in post meta. You can also use font-awesome by setting `post_views_icon` to the name of the icon.
 
-```yml next/_config.yml
+```yml NexT config file
 busuanzi_count:
   post_views: true
   post_views_icon: far fa-eye

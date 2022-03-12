@@ -5,9 +5,9 @@ description: NexT User Docs – Starting to Use – Internationalization
 
 ### Choosing Language
 
-Edit {% label info@site config file %}, set the value of `language` to the language you need. For example, English looks like this:
+Edit {% label info@Hexo config file %}, set the value of `language` to the language you need. For example, English looks like this:
 
-```yml hexo/_config.yml
+```yml Hexo config file
 language: en
 ```
 
@@ -45,17 +45,17 @@ The files in the `language` directory are automatically generated, you do not ne
 
 ### Multilingual Switcher
 
-Set multiple languages in {% label info@site config file %}, e.g.
+Set multiple languages in {% label info@Hexo config file %}, e.g.
 
-```yml hexo/_config.yml
+```yml Hexo config file
 language:
   - zh-CN
   - en
 ```
 
-Then turn on `language_switcher` in {% label primary@theme config file %}:
+Then turn on `language_switcher` in {% label primary@NexT config file %}:
 
-```yml next/_config.yml
+```yml NexT config file
 # Show multilingual switcher in footer.
 language_switcher: true
 ```

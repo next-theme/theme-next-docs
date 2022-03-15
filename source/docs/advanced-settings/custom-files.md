@@ -35,7 +35,7 @@ In addition to `custom_file_path`, we also provide a more flexible way to custom
 
 #### Live2d Widget
 
-Edit `source/_data/head.njk` in {% label info@site root directory %} and add the following content:
+Create and edit `source/_data/head.njk` in {% label info@site root directory %} and add the following content:
 
 ```html hexo/source/_data/head.njk
 <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
@@ -50,7 +50,7 @@ custom_file_path:
 
 #### Netlify Logo in Sidebar
 
-Edit `source/_data/sidebar.njk` in {% label info@site root directory %} and add the following content:
+Create and edit `source/_data/sidebar.njk` in {% label info@site root directory %} and add the following content:
 
 ```html hexo/source/_data/sidebar.njk
 <div class="cc-license animated" itemprop="sponsor">
@@ -67,20 +67,38 @@ custom_file_path:
 
 ### Examples of Modifying Style
 
+#### Tagcloud Color
+
+Create and edit `source/_data/variables.styl` in {% label info@site root directory %} and add variables:
+
+```css hexo/source/_data/variables.styl
+$tag-cloud-start      = #aaa;
+$tag-cloud-end        = #111;
+$tag-cloud-start-dark = #555;
+$tag-cloud-end-dark   = #eee;
+```
+
+Then uncomment `variable` under the `custom_file_path` section in {% label primary@NexT config file %}.
+
+```yml NexT config file
+custom_file_path:
+  variable: source/_data/variables.styl
+```
+
 #### How to Change Content Width
 
-By default NexT has following setting of content width:
+By default, the content width of NexT is controlled by the following variables:
 
-* 700px → when screen width < 1200px.
-* 800px → when screen width >= 1200px.
-* 900px → when screen width >= 1600px.
+* `$content-desktop` → when screen width < 1200px.
+* `$content-desktop-large` → when screen width >= 1200px.
+* `$content-desktop-largest` → when screen width >= 1600px.
 * In mobile / tablet devices it will use responsive width.
 
-You can override the default content width by editing `source/_data/variables.styl` in {% label info@site root directory %} and add varibles:
+You can override the default content width by editing `source/_data/variables.styl` in {% label info@site root directory %}.
 
 {% tabs change-content-width %}
 <!-- tab Muse / Mist schemes -->
-Default variables for both Muse and Mist schemes are located in `source/css/_variables/base.styl` and defined as:
+Default variables for both Muse and Mist schemes are defined as:
 
 ```styl next/source/css/_variables/base.styl
 $content-desktop         = 700px
@@ -88,7 +106,7 @@ $content-desktop-large   = 800px
 $content-desktop-largest = 900px
 ```
 
-For example, you want wider content width. You may redefine this variables with percentage width:
+For example, you may override these variables with percentage value to increase content width. Create and edit `source/_data/variables.styl` in {% label info@site root directory %} and add variables:
 
 ```styl hexo/source/_data/variables.styl
 $content-desktop         = 90%
@@ -111,7 +129,7 @@ $content-desktop-largest = 60em
 <!-- endtab -->
 
 <!-- tab Pisces / Gemini schemes -->
-Default variables for Pisces (and Gemini) scheme are located in `source/css/_variables/Pisces.styl` and defined as:
+Default variables for Pisces (and Gemini) scheme are defined as:
 
 ```styl next/source/css/_variables/Pisces.styl
 $content-desktop         = 'calc(100% - %s)' % unit($content-desktop-padding / 2, 'px')
@@ -123,7 +141,7 @@ $content-desktop-largest = 73%
 `$content-desktop` value in this schemes is auto-responsive by default. It can be changed to any value too, but for better content visibility recommended to stay it as is.
 {% endnote %}
 
-In this schemes content width was defined on maximum and already balanced: if desktop width will be wider – content width will more narrowed for easier reading. But if you want to make more narrow content width in wider desktops, here is example:
+In this schemes content width was defined on maximum and already balanced: if desktop width will be wider – content width will more narrowed for easier reading. But if you want to make more narrow content width in wider desktops, here is example. Create and edit `source/_data/variables.styl` in {% label info@site root directory %} and add variables:
 
 ```styl hexo/source/_data/variables.styl
 $content-desktop-large   = 65em
@@ -133,7 +151,7 @@ $content-desktop-largest = 65%
 {% note info %}
 In fact, Gemini scheme is just fork of Pisces scheme with some style improvements.
 Therefore, almost all part of variables from Pisces scheme are imported to Gemini scheme too.
-So, if you want to add any variables or styles to both Pisces and Gemini schemes, need to edit values just in Pisces scheme.
+So, the changes of these variables or styles will be applied to both Pisces and Gemini schemes.
 {% endnote %}
 <!-- endtab -->
 {% endtabs %}
@@ -147,7 +165,7 @@ custom_file_path:
 
 #### Hide Sidebar on Mobile
 
-Edit `source/_data/styles.styl` in {% label info@site root directory %} and add styles:
+Create and edit `source/_data/styles.styl` in {% label info@site root directory %} and add styles:
 
 ```css hexo/source/_data/styles.styl
 +tablet-mobile() {
@@ -166,7 +184,7 @@ custom_file_path:
 
 #### Hide "Keep on posting" in Archive Page
 
-Edit `source/_data/styles.styl` in {% label info@site root directory %} and add styles:
+Create and edit `source/_data/styles.styl` in {% label info@site root directory %} and add styles:
 
 ```css hexo/source/_data/styles.styl
 .archive .collection-title {

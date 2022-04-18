@@ -57,7 +57,7 @@ We design NexT to support the latest web browsers. We support the current versio
 <i class="fab fa-firefox-browser fa-2x"></i> Firefox | 52+ | Mar 7, 2017 | Destructuring rest parameters |
 <i class="fab fa-chrome fa-2x"></i> Chrome | 49+ | Mar 3, 2016 | [CSS Variables](https://caniuse.com/css-variables) |
 <i class="fab fa-safari fa-2x"></i> Safari | 10+ | Sep 20, 2016 | [Arrow functions](https://caniuse.com/arrow-functions) |
-<i class="fab fa-opera fa-2x"></i> Opera | 37+ | May 4, 2016 | [Spread in array literals](https://caniuse.com/mdn-javascript_operators_spread_spread_in_arrays) |
+<i class="fab fa-opera fa-2x"></i> Opera | , 2016 | [Spread in array literals](https://caniuse.com/mdn-javascript_operators_spread_spread_in_arrays) |
 
 Some other new Web APIs, such as [IntersectionObserver](https://caniuse.com/intersectionobserver) and [Fetch API](https://caniuse.com/fetch), are used by NexT plugins. They are not core functions of NexT, so we have no plans to make them compatible with legacy browsers.
 

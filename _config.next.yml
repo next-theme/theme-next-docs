@@ -286,4 +286,5 @@ motion:
   async: true
 
 vendors:
-  internal: jsdelivr
+  internal: cdnjs
+  plugins: cdnjs

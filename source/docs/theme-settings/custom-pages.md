@@ -118,6 +118,15 @@ If you enable any comment system for your site, comments will be shown for all p
 See [«How to Disable Comments on Page»](/docs/third-party-services/comments.html#How-to-Disable-Comments-on-Page) if you want to do it for pages like `tags` or `categories`.
 {% endnote %}
 
+{% note warning %}
+The default Hexo plugin `hexo-generator-tag` provides an option called `enable_index_page`, which will conflict with the «Tags» page created above. Make sure you have the option disabled.
+
+```yml Hexo config file
+tag_generator:
+  enable_index_page: false
+```
+{% endnote %}
+
 #### Tagcloud
 
 By default, NexT has setted font color and size for tagcloud in tags page.

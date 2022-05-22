@@ -38,7 +38,7 @@ In addition to `custom_file_path`, we also provide a more flexible way to custom
 Create and edit `source/_data/head.njk` in {% label info@site root directory %} and add the following content:
 
 ```html hexo/source/_data/head.njk
-<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
 ```
 
 Then uncomment `head` under the `custom_file_path` section in {% label primary@NexT config file %}.

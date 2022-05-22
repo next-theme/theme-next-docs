@@ -16,7 +16,7 @@ vendors:
   # The default CDN provider of third-party plugins.
   # Available values: local | jsdelivr | unpkg | cdnjs | custom
   # Dependencies for `plugins: local`: https://github.com/next-theme/plugins
-  plugins: jsdelivr
+  plugins: cdnjs
   # Custom CDN URL
   # For example:
   # custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified}
@@ -38,9 +38,9 @@ If you are using the latest master branch of NexT, please set `internal: local`.
 
 #### Third-party Plugins
 
-`plugins: jsdelivr` is used to set how to load the third-party plugins, e.g. `anime.js`. Third-party plugins are loaded from [jsDelivr](https://www.jsdelivr.com/) CDN by default.
+`plugins: cdnjs` is used to set how to load the third-party plugins, e.g. `anime.js`. Third-party plugins are loaded from [CDNJS](https://cdnjs.com) CDN by default.
 
-And we also provide other optional CDNs, including the famous [UNPKG](https://unpkg.com) and [CDNJS](https://cdnjs.com). These CDN providers are chosen to deliver our third-party plugins because they are fast and reliable. Set `plugins` to `unpkg` or `cdnjs` to load them from different CDN provider.
+And we also provide other optional CDNs, including the famous [UNPKG](https://unpkg.com) and [jsDelivr](https://www.jsdelivr.com/). These CDN providers are chosen to deliver our third-party plugins because they are fast and reliable. Set `plugins` to `unpkg` or `cdnjs` to load them from different CDN provider.
 
 {% note warning %}
 Particularly, if you are a Chinese blogger or most of your visits come from China, please note that **the CDNJS is blocked in some parts of China**, don't use it as your CDN provider.
@@ -67,7 +67,7 @@ In theme NexT, you can simply use the variable `${minified}` in `custom_cdn_url`
 
 ```yml NexT config file
 vendors:
-  custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified}
+  custom_cdn_url: https://fastly.jsdelivr.net/npm/${npm_name}@${version}/${minified}
 ```
 
 ##### CDNJS Mirrors
@@ -90,7 +90,7 @@ vendors:
   # ...
   # Some contents...
   # ...
-  anime: //cdn.jsdelivr.net/gh/juliangarnier/anime@latest/lib/anime.min.js
+  anime: //fastly.jsdelivr.net/gh/juliangarnier/anime@latest/lib/anime.min.js
 ```
 
 It's recommended to use the same version of the library as in `_vendors.yml` to avoid potential problems.

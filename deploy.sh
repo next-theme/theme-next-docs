@@ -50,7 +50,7 @@ echo "=============================================================="
 echo " ${yellow}Checking Hexo version...${norm}"
 echo "=============================================================="
     hexo() {
-        node --no-warnings node_modules/hexo/bin/hexo "$@" --silent
+        npx hexo "$@" --silent
     }
     hexo -v
     npm ls --depth 0

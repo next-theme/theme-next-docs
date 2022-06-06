@@ -44,7 +44,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 });
 ```
 
-These are many `injectPoint`, defined in [`injects-point.js`](https://github.com/next-theme/hexo-theme-next/blob/master/scripts/events/lib/injects-point.js)
+These are many `injectPoint`, defined in [`utils.js`](https://github.com/next-theme/hexo-theme-next/blob/master/scripts/events/lib/utils.js#L60)
 
 ```js
 module.exports = {

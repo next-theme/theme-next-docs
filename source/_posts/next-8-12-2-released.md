@@ -10,6 +10,6 @@ date: 2022-07-05 15:41:43
 
 ***
 
-For full changes, see the [comparison between v8.12.1 and v8.12.2](https://github.com/next-theme/hexo-theme-next/compare/v8.12.2...v8.12.2)
+For full changes, see the [comparison between v8.12.1 and v8.12.2](https://github.com/next-theme/hexo-theme-next/compare/v8.12.1...v8.12.2)
 
 [Detailed changes for NexT v8.12.2](https://github.com/next-theme/hexo-theme-next/releases/tag/v8.12.2)

@@ -50,14 +50,14 @@ NexT uses code highlighting themes from the [Highlight.js](https://highlightjs.o
 
 We design NexT to support the latest web browsers. We support the current versions of Chrome, Firefox, Safari, and Microsoft Edge. Many CSS3 and ES6 features are used in theme NexT, including CSS Variables, Destructuring assignment, Arrow functions and Spread operator.
 
-| Browser | Supported versions | Release date | Limitation
-| - | - | - | - |
-<i class="fab fa-internet-explorer fa-2x"></i> IE | N/A | Oct 17, 2013 | N/A |
-<i class="fab fa-edge fa-2x"></i> Edge | 79+ | Jan 15, 2020 | [Destructuring rest parameters](https://caniuse.com/mdn-javascript_functions_rest_parameters_destructuring) |
-<i class="fab fa-firefox-browser fa-2x"></i> Firefox | 52+ | Mar 7, 2017 | Destructuring rest parameters |
-<i class="fab fa-chrome fa-2x"></i> Chrome | 49+ | Mar 3, 2016 | [CSS Variables](https://caniuse.com/css-variables) |
-<i class="fab fa-safari fa-2x"></i> Safari | 10+ | Sep 20, 2016 | [Arrow functions](https://caniuse.com/arrow-functions) |
-<i class="fab fa-opera fa-2x"></i> Opera | 37+ | May 4, 2016 | [Spread in array literals](https://caniuse.com/mdn-javascript_operators_spread_spread_in_arrays) |
+| Browser | Supported versions | Release date |
+| - | - | - |
+<i class="fab fa-internet-explorer fa-2x"></i> IE | N/A | Oct 17, 2013 |
+<i class="fab fa-chrome fa-2x"></i> Chrome | 60+ | Jul 25, 2017 |
+<i class="fab fa-firefox-browser fa-2x"></i> Firefox | 55+ | Aug 8, 2017 |
+<i class="fab fa-opera fa-2x"></i> Opera | 47+ | Aug 9, 2017 |
+<i class="fab fa-safari fa-2x"></i> Safari | 11+ | Sep 19, 2017 |
+<i class="fab fa-edge fa-2x"></i> Edge | 80+ | Feb 7, 2020 |
 
 Some other new Web APIs, such as [IntersectionObserver](https://caniuse.com/intersectionobserver) and [Fetch API](https://caniuse.com/fetch), are used by NexT plugins. They are not core functions of NexT, so we have no plans to make them compatible with legacy browsers.
 

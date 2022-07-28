@@ -31,7 +31,7 @@ C -->|Two| E[Result 2]
 - Fix Mist style with sub menu ([#479](https://github.com/next-theme/hexo-theme-next/pull/479))
 - Fix site-nav style issue ([72c28e5](https://github.com/next-theme/hexo-theme-next/commit/72c28e5e87a015abde1c1fbca5fcf31b6c8112a4))
 
-## ���� External Changes
+## 🌀 External Changes
 
 - Update actions/labeler action to v4 ([#478](https://github.com/next-theme/hexo-theme-next/pull/478))
 - Update actions/checkout action to v3 ([#476](https://github.com/next-theme/hexo-theme-next/pull/476))

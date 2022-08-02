@@ -1,9 +1,9 @@
 {
   "name": "theme-next-docs",
-  "version": "8.12.2",
+  "version": "8.12.3",
   "private": true,
   "hexo": {
-    "version": "6.1.0"
+    "version": "6.2.0"
   },
   "description": "Elegant and powerful theme for Hexo.",
   "scripts": {

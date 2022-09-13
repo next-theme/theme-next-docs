@@ -76,21 +76,6 @@ Edit {% label primary@NexT config file %} and change the value of `clarity_analy
 clarity_analytics: # <project_id>
 ```
 
-#### Matomo Analytics
-
-Official documentation: https://matomo.org/
-
-Edit {% label primary@NexT config file %}. Fill `server_url` under section `matomo` with your server URL, and change the value of `site_id` to your site ID.
-
-```yml NexT config file
-# Matomo Analytics
-# See: https://matomo.org/
-matomo:
-  enable: true
-  server_url: # https://www.example.com/
-  site_id: # <your site id>
-```
-
 #### Umami Analytics
 
 Umami is a self-hosted web analytics solution. Official documentation: https://umami.is/

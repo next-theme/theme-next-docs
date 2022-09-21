@@ -76,7 +76,20 @@ Edit {% label primary@NexT config file %} and change the value of `clarity_analy
 clarity_analytics: # <project_id>
 ```
 
-#### Umami Analytics
+#### Matomo Analytics (Self-managed)
+
+Edit {% label primary@NexT config file %} and fill `server_url` and `site_id` under section `matomo` with the url of your backend server and your customized site ID.
+
+```yml NexT config file
+# Matomo Analytics
+# See: https://matomo.org/
+matomo:
+  enable: false
+  server_url: # https://www.example.com/
+  site_id: # <your site id>
+```
+
+#### Umami Analytics (Self-managed)
 
 Umami is a self-hosted web analytics solution. Official documentation: https://umami.is/
 
@@ -91,7 +104,7 @@ umami:
   website_id: # <your website id>
 ```
 
-#### Plausible Analytics
+#### Plausible Analytics (Self-managed)
 
 Opt for paid managed hosting or self-host it on your server. Official documentation: https://plausible.io/
 

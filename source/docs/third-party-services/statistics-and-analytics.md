@@ -76,6 +76,19 @@ Edit {% label primary@NexT config file %} and change the value of `clarity_analy
 clarity_analytics: # <project_id>
 ```
 
+#### Matomo Analytics (Self-managed)
+
+Edit {% label primary@NexT config file %} and fill `server_url` and `site_id` under section `matomo` with the url of your backend server and your customized site ID.
+
+```yml NexT config file
+# Matomo Analytics
+# See: https://matomo.org/
+matomo:
+  enable: false
+  server_url: # https://www.example.com/
+  site_id: # <your site id>
+```
+
 ### Counting Tools
 
 #### LeanCloud (China)

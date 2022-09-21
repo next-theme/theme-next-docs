@@ -46,6 +46,7 @@ Detailed documentation about these plugins is listed below.
 * [Growingio Analytics](/docs/third-party-services/statistics-and-analytics.html#Growingio-Analytics)
 * [Cloudflare Web Analytics](/docs/third-party-services/statistics-and-analytics.html#Cloudflare-Web-Analytics)
 * [Microsoft Clarity Analytics](/docs/third-party-services/statistics-and-analytics.html#Microsoft-Clarity-Analytics)
+* [Matomo Analytics](/docs/third-party-services/statistics-and-analytics.html#Matomo-Analytics)
 
 #### Statistics
 

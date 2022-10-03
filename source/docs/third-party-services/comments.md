@@ -104,6 +104,7 @@ Changyan is the industry's leading social commenting system, supporting both PC 
       enable: false
       appid:
       appkey:
+      count: true
     ```
 Note: after you comment, it will take some time for you to see the increase in the number of comments.
 

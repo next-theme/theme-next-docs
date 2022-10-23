@@ -189,7 +189,6 @@ github_banner:
 
 font:
   enable: true
-  host: //fonts.loli.net
   codes:
     external: true
     family: Inconsolata

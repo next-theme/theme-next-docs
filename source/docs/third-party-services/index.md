@@ -47,6 +47,8 @@ Detailed documentation about these plugins is listed below.
 * [Cloudflare Web Analytics](/docs/third-party-services/statistics-and-analytics.html#Cloudflare-Web-Analytics)
 * [Microsoft Clarity Analytics](/docs/third-party-services/statistics-and-analytics.html#Microsoft-Clarity-Analytics)
 * [Matomo Analytics](/docs/third-party-services/statistics-and-analytics.html#Matomo-Analytics)
+* [Umami Analytics](/docs/third-party-services/statistics-and-analytics.html#Umami-Analytics)
+* [Plausible Analytics](/docs/third-party-services/statistics-and-analytics.html#Plausible-Analytics)
 
 #### Statistics
 

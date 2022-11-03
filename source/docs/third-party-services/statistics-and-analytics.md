@@ -89,6 +89,36 @@ matomo:
   site_id: # <your site id>
 ```
 
+#### Umami Analytics (Self-managed)
+
+Umami is a self-hosted web analytics solution. Official documentation: https://umami.is/
+
+Edit {% label primary@NexT config file %}. Fill `script_url` under section `umami` with your tracking script URL, and change the value of `website_id` to your website ID.
+
+```yml NexT config file
+# Umami Analytics
+# See: https://umami.is/
+umami:
+  enable: true
+  script_url: # https://umami.example.com/script.js
+  website_id: # <your website id>
+```
+
+#### Plausible Analytics (Self-managed)
+
+Opt for paid managed hosting or self-host it on your server. Official documentation: https://plausible.io/
+
+Edit {% label primary@NexT config file %}. Fill `script_url` under section `plausible` with your tracking script URL, and change the value of `site_domain` to your website domain.
+
+```yml NexT config file
+# Plausible Analytics
+# See: https://plausible.io/
+plausible:
+  enable: true
+  script_url: # https://plausible.io/js/script.js
+  site_domain: # www.example.com
+```
+
 ### Counting Tools
 
 #### LeanCloud (China)

@@ -30,7 +30,7 @@
     "hexo-generator-archive": "2.0.0",
     "hexo-generator-feed": "3.0.0",
     "hexo-generator-index": "3.0.0",
-    "hexo-generator-searchdb": "1.4.0",
+    "hexo-generator-searchdb": "1.4.1",
     "hexo-renderer-marked": "6.0.0",
     "hexo-renderer-stylus": "2.1.0",
     "hexo-server": "3.0.0",

@@ -34,8 +34,6 @@ You can enable lazyload by setting value `comments.lazyload` to `true` in {% lab
 
 {% caniuse intersectionobserver @ current,past_1,past_2,past_3,past_4,past_5 %}
 
-If your blog readers are mostly using legacy browsers, please consider using [Intersection Observer polyfill](https://github.com/w3c/IntersectionObserver/tree/master/polyfill).
-
 #### How to Disable Comments on Page
 
 When you enabled comment service like Disqus, all new page will have comment service automatically. If you want to disable it in one page, just add `comments` key to [front-matter](https://hexo.io/docs/front-matter) and set its value to `false`. Like following:
@@ -173,11 +171,11 @@ utterances:
 
 Isso – *Ich schrei sonst* – is a lightweight commenting server written in Python and JavaScript. It aims to be a drop-in replacement for Disqus.
 
-1. You need to [install and configure Isso](https://posativ.org/isso/docs/install/) on your server first.
-2. Set the value `isso` in the {% label primary@NexT config file %} as the value `data-isso` in Isso script. An exemplary script tag is given in the `Integration` section of the [Isso quickstart document](https://posativ.org/isso/docs/quickstart/#integration), you need to modify it according to the URL of your server.
+1. You need to [install and configure Isso](https://isso-comments.de/docs/reference/installation/) on your server first.
+2. Set the value `isso` in the {% label primary@NexT config file %} as the value `data-isso` in Isso script. An exemplary script tag is given in the `Integration` section of the [Isso quickstart document](https://isso-comments.de/docs/guides/quickstart/#integration), you need to modify it according to the URL of your server.
 
     ```yml NexT config file
     # Isso
-    # For more information: https://posativ.org/isso/
+    # For more information: https://isso-comments.de
     isso: # <data_isso>
     ```

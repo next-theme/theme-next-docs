@@ -8,13 +8,14 @@ description: NexT User Docs
 
 Theme NexT has the following features:
 
-* No jQuery.
+* Vanilla JavaScript.
 * Support [native dark mode](https://caniuse.com/prefers-color-scheme).
-* Support Pjax to deliver a fast browsing experience.
-* Integrated KaTeX and MathJax mathematical formula rendering.
-* Integrated PDF.js and mermaid diagram.
-* Support Disqus, Changyan, LiveRe, Gitalk, Utterances and Isso comment systems.
-* Support a large number of third-party statistics and content sharing services.
+* Support [Pjax](https://github.com/MoOx/pjax) to deliver a fast browsing experience.
+* Integrated [MathJax](https://www.mathjax.org) and [KaTeX](https://katex.org) mathematical formula rendering.
+* Integrated [PDF.js](https://mozilla.github.io/pdf.js/) and [mermaid diagram](https://mermaid-js.github.io/mermaid/).
+* Support [Disqus](https://disqus.com), [Changyan](https://changyan.kuaizhan.com), [LiveRe](https://livere.com), [Gitalk](https://gitalk.github.io), [Utterances](https://utteranc.es) and [Isso](https://isso-comments.de) comment systems.
+* Support a large number of third-party statistics services.
+* Easy to switch CDN provider.
 * Easy to customize content or modify style.
 
 ### Four Schemes in One

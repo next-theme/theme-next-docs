@@ -171,7 +171,6 @@ social:
   GitHub: https://github.com/yourname || fab fa-github
   E-Mail: mailto:yourname@gmail.com || fa fa-envelope
   Weibo: https://weibo.com/yourname || fab fa-weibo
-  Google: https://plus.google.com/yourname || fab fa-google
   Twitter: https://twitter.com/yourname || fab fa-twitter
   FB Page: https://www.facebook.com/yourname || fab fa-facebook
   StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
@@ -223,13 +222,6 @@ By default NexT shows the `globe` icon {% btn #,, globe %} before `title`. The n
 ```yml NexT config file
 links_settings:
   icon: fa fa-globe
-```
-
-By default NexT uses `Links` as the name of blogroll. You can configure it by editing value `title` in `links_settings` section in {% label primary@NexT config file %}.
-
-```yml NexT config file
-links_settings:
-  title: Links
 ```
 
 By default all blogrolls are displayed in block. You can configure it to `inline` by editing value `layout` in `links_settings` section in {% label primary@NexT config file %}.

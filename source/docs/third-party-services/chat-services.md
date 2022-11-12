@@ -32,7 +32,6 @@ After Chatra enabled, you can set `chat.enable` to `true` in {% label primary@Ne
 chat:
   enable: true
   icon: fa fa-comment
-  text: Chat
 ```
 <!-- endtab -->
 {% endtabs %}
@@ -65,7 +64,6 @@ After Tidio enabled, you can set `chat.enable` to `true` in {% label primary@Nex
 chat:
   enable: true
   icon: fa fa-comment
-  text: Chat
 ```
 <!-- endtab -->
 {% endtabs %}
@@ -97,7 +95,6 @@ After Gitter enabled, you can set `chat.enable` to `true` in {% label primary@Ne
 chat:
   enable: true
   icon: fa fa-comment
-  text: Chat
 ```
 <!-- endtab -->
 {% endtabs %}

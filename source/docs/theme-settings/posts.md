@@ -223,7 +223,6 @@ More and more online blogging platforms (e.g. WeChat public accounts, Jianshu, Z
       # If true, a donate button will be displayed in every article by default.
       enable: true
       animation: false
-      #comment: Buy me a coffee
 
     reward:
       wechatpay: /images/wechatpay.png
@@ -280,21 +279,12 @@ related_posts:
 ```
 <!-- endtab -->
 
-<!-- tab <code>title</code> -->
-By default NexT uses 'Related Posts' as title by default. You can configure it by editing value in `related_posts.title` section in {% label primary@NexT config file %}.
+<!-- tab <code>icon</code> -->
+By default NexT shows the `signs-post` icon {% btn #,, signs-post %} before `title`. The name of icon can be found in [Font Awesome](https://fontawesome.com) site. You can configure it by editing value `icon` in `related_posts` section in {% label primary@NexT config file %}.
 
 ```yml NexT config file
 related_posts:
-  title:
-```
-<!-- endtab -->
-
-<!-- tab <code>display_in_home</code> -->
-By default NexT doesn't show the related posts in homepage. You can enable it by setting value `related_posts.display_in_home` to `true` in {% label primary@NexT config file %}.
-
-```yml NexT config file
-related_posts:
-  display_in_home: true
+  icon: fa fa-signs-post
 ```
 <!-- endtab -->
 {% endtabs %}

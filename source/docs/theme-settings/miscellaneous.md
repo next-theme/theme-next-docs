@@ -200,18 +200,7 @@ NexT provides `Follow me on GitHub` banner in right-top corner.
 github_banner:
   enable: true
   permalink: https://github.com/yourname
-  title: Follow me on GitHub
 ```
-
-{% tabs github-banner %}
-<!-- tab <code>permalink</code> -->
-`permalink` → is the specified link must have full url path.
-<!-- endtab -->
-
-<!-- tab <code>title</code> -->
-`title` → is the title and aria-label name.
-<!-- endtab -->
-{% endtabs %}
 
 You can set `enable` to `true` and add your own GitHub link.
 

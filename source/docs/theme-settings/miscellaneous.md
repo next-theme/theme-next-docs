@@ -214,7 +214,7 @@ NexT gives you 5 specific font settings, they are:
 * Article Font: Font used by articles.
 * Code Font: Font used by code blocks in articles.
 
-Each font will be used as the first font of this class, NexT will fallback to internal font settings if they are unavalible.
+Each font will be used as the first font of this class, NexT will fallback to internal font settings if they are unavailable.
 
 * Non-code Font: Fallback to `"PingFang SC", "Microsoft YaHei", sans-serif`
 * Code Font: Fallback to `consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace`
@@ -289,7 +289,7 @@ According to the [CSS Fonts Module Level 3](https://www.w3.org/TR/2018/REC-css-f
 To avoid escaping mistakes, quote font family names if necessary.
 {% endnote %}
 
-If you still need more customization, following change will cover Fonts Customization function. Edit `source/_data/variables.styl` in {% label info@site root directory %} and add two varibles:
+If you still need more customization, following change will cover Fonts Customization function. Edit `source/_data/variables.styl` in {% label info@site root directory %} and add two variables:
 
 ```styl hexo/source/_data/variables.styl
 // Title Font, set it to font family you want.

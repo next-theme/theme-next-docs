@@ -183,7 +183,7 @@ markdown:
 
 **Plugins**
 
-Copy-tex extension for KaTeX modifes the copy/paste behavior in any browser supporting the Clipboard API so that, when selecting and copying whole KaTeX-rendered elements, the text content of the resulting clipboard renders KaTeX elements as their LaTeX source surrounded by specified delimiters. More information: [Copy-tex extension](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex).
+Copy-tex extension for KaTeX modifies the copy/paste behavior in any browser supporting the Clipboard API so that, when selecting and copying whole KaTeX-rendered elements, the text content of the resulting clipboard renders KaTeX elements as their LaTeX source surrounded by specified delimiters. More information: [Copy-tex extension](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex).
 
 ```yml NexT config file
 math:

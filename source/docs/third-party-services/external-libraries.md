@@ -149,7 +149,7 @@ pace:
 
 ### Canvas Ribbon
 
-[canvas-ribbon.js](https://github.com/hustcc/ribbon.js) is a ribbon backgroud of website draw on canvas.
+[canvas-ribbon.js](https://github.com/hustcc/ribbon.js) is a ribbon background of website draw on canvas.
 
 You can enable it by setting value `canvas_ribbon` to `true` in {% label primary@NexT config file %}. You can also configure the ribbon setting by editing values in `canvas_ribbon` section:
 

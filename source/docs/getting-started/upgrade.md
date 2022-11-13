@@ -48,7 +48,7 @@ So, NexT suggest to upgrade from version 5 or 7 to version 8 in this way:
     1.1. `_config.yml` or `next.yml` (if you used [Alternate Theme Config](/docs/getting-started/configuration.html)).
     1.2. Custom CSS files placed in `next/source/css/_custom/*` and `next/source/css/_variables/*` directories.
     1.3. Custom layout files placed in `next/layout/_custom/*`.
-    1.4. Any another possible custom additions which can be finded by compare tools between repositories.
+    1.4. Any another possible custom additions which can be found by compare tools between repositories.
 2. Then rename the old NexT folder, for example, rename `next` to `next-old`.
 3. Install the new version according to the method provided in this article: [installation instructions](/docs/getting-started/installation.html). Run `hexo clean` and `hexo s` to check whether the site works correctly.
 4. Update Hexo and Hexo plugin

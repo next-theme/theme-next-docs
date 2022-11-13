@@ -88,7 +88,7 @@ post_meta:
 <!-- endtab -->
 
 <!-- tab <code>categories</code> -->
-By default NexT shows the post categorie in post meta section. You can disable it by setting value `post_meta.categories` to `false` in {% label primary@NexT config file %}.
+By default NexT shows the post categories in post meta section. You can disable it by setting value `post_meta.categories` to `false` in {% label primary@NexT config file %}.
 
 ```yml NexT config file
 post_meta:

@@ -64,7 +64,7 @@ language_switcher: true
 
 If you would like to customize the default translation, you do not need to modify the translation files in the `languages` directory. You can override all translations using [Data Files](https://hexo.io/docs/data-files).
 
-1. Creat a `languages.yml` in `source/_data`.
+1. Create a `languages.yml` in `source/_data`.
 2. Insert following codes: (be careful about the two-space indent)
 
     ```yml languages.yml
@@ -73,14 +73,14 @@ If you would like to customize the default translation, you do not need to modif
       # items
       post:
         copyright:
-          # the translation you perfer
+          # the translation you prefer
           author: 本文博主
     en:
       menu:
         schedule: Calendar
     ```
 
-This situation is also available for off-list items. For example, Next uses [Theme Inject](/docs/advanced-settings/injects.html) to introduce the commments systems. You can rename the returned value in chinese as followed:
+This situation is also available for off-list items. For example, Next uses [Theme Inject](/docs/advanced-settings/injects.html) to introduce the comments systems. You can rename the returned value in chinese as followed:
 
 ```yml languages.yml
 # language

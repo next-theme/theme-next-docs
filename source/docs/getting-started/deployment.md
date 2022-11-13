@@ -75,7 +75,7 @@ GitLab offers a continuous integration service and pages service. If you add a `
 
 Now, your static website is available at `https://yourname.gitlab.io/project` that is similar to GitHub. [More GitLab Pages config in here](https://gitlab.com/help/user/project/pages/index.md).
 
-Of course, you can also pulish static website on GitHub Pages or others pages service. There are two ways to configure `.gitlab-ci.yml`:
+Of course, you can also publish static website on GitHub Pages or others pages service. There are two ways to configure `.gitlab-ci.yml`:
 
 {% tabs Gitlab CI %}
 <!-- tab <code>HTTPS</code> -->
@@ -131,7 +131,7 @@ Deploy key is a SSH key set in your repo to grant client read-only (as well as r
       # Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
       - ssh-add <(echo "$DEPLOY_PRIVATE_KEY")
       # For Docker builds disable host key checking. Be aware that by adding that
-      # you are suspectible to man-in-the-middle attacks.
+      # you are susceptible to man-in-the-middle attacks.
       # WARNING: Use this only with the Docker executor, if you use it with shell
       # you will overwrite your user's SSH config.
       - mkdir -p ~/.ssh

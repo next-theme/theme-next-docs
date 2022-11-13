@@ -71,7 +71,7 @@ A new version of NexT will be released every month. Please read the [release not
 
 {% tabs upgrading-next %}
 <!-- tab Using <code>npm</code> -->
-Install the latest version throuth npm:
+Install the latest version through npm:
 
 ```bash
 $ cd hexo-site
@@ -101,7 +101,7 @@ If you are still using NexT version 5 or 7, you can read [instructions for upgra
 After the installation of Hexo and NexT, you may found that there are two configuration files using by Hexo and both called `_config.yml`:
 
 1. The first one is under {% label info@site root directory %}, which contains Hexo's config.
-2. The second one is under {% label primary@theme root directory %} (e.g. `thems/next/_config.yml` or `node_modules/hexo-theme-next/_config.yml`), which is provided by NexT and contains theme's config.
+2. The second one is under {% label primary@theme root directory %} (e.g. `themes/next/_config.yml` or `node_modules/hexo-theme-next/_config.yml`), which is provided by NexT and contains theme's config.
 
 Let's call the first one – {% label info@Hexo config file %}, and the second one – {% label primary@NexT config file %}.
 

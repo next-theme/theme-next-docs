@@ -11,7 +11,7 @@ If you get an error message from Hexo or your browser:
 
 * If the error comes from a Hexo plugin, such as hexo-word-counter, please submit an Issue to its GitHub repository.
 * If the error comes from a third-party service, such as the Gitalk comment system, please submit an Issue to its GitHub repository.
-* Otherise, please search in Google / Stackoverflow / GitHub Issues, or report it to us when submitting a new Issue.
+* Otherwise, please search in Google / Stackoverflow / GitHub Issues, or report it to us when submitting a new Issue.
 
 The following steps will help you determine the cause of the problem:
 
@@ -68,7 +68,7 @@ theme_config:
 scheme: Gemini
 ```
 
-Nothing will happen here because indentation not keeped up. Hexo just can't read these parameters because subparameters (children parameters of `theme_config` parameter) does not exist. Let's see [same configuration with indents](#2-spaces-indents-2).
+Nothing will happen here because indentation is incorrect. Hexo just can't read these parameters because child parameters of `theme_config` parameter do not exist. Let's see [same configuration with indents](#2-spaces-indents-2).
 <!-- endtab -->
 
 <!-- tab {% label success@Working Normally %}-->

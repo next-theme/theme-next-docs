@@ -147,11 +147,11 @@ If translate for this menu will be found in languages, this translate will be lo
 <!-- endtab -->
 
 <!-- tab <code>link</code> -->
-Value before `||` delimeter (`/link/`) → is the target link to relative url inside your site.
+Value before `||` delimiter (`/link/`) → is the target link to relative url inside your site.
 <!-- endtab -->
 
 <!-- tab <code>icon</code> -->
-Value after `||` delimeter (`icon`) → is the name of Font Awesome icon.
+Value after `||` delimiter (`icon`) → is the name of Font Awesome icon.
 Names of that icons can be found in [Font Awesome](https://fontawesome.com) site.
 <!-- endtab -->
 {% endtabs %}

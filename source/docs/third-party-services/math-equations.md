@@ -1,6 +1,6 @@
 ---
 title: Math Equations
-description: NexT User Docs – Third-party Service Integration – Math Equations
+description: NexT User Docs – Third-party Plugins Integration – Math Equations
 mathjax: true
 ---
 

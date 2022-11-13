@@ -1,6 +1,6 @@
 ---
-title: Third-party Services
-description: NexT User Docs – Third-party Service Integration
+title: Third-party Plugins
+description: NexT User Docs – Third-party Plugins Integration
 ---
 
 Static website is limited in some functions, so we need third-party services to extend our site.

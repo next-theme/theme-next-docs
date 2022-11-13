@@ -189,7 +189,7 @@ menu:
       default: /getting-started/ || fa fa-flag
       Installation: /installation.html || fa fa-download
       Configuration: /configuration.html || fa fa-wrench
-    Third Party Services:
+    Third Party Plugins:
       default: /third-party-services/ || fa fa-puzzle-piece
       Math Equations: /math-equations.html || fa fa-square-root-alt
       Comment Systems: /comments.html || fa fa-comment-alt

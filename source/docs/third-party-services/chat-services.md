@@ -1,6 +1,6 @@
 ---
 title: Chat Services
-description: NexT User Docs – Third-party Service Integration – Chat Services
+description: NexT User Docs – Third-party Plugins Integration – Chat Services
 ---
 
 ### Chatra

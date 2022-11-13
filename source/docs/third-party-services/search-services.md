@@ -1,6 +1,6 @@
 ---
 title: Search Services
-description: NexT User Docs – Third-party Service Integration – Search Services
+description: NexT User Docs – Third-party Plugins Integration – Search Services
 ---
 
 ### Algolia Search

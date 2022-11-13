@@ -1,6 +1,6 @@
 ---
 title: Comment Systems
-description: NexT User Docs – Third-party Service Integration – Comment Systems
+description: NexT User Docs – Third-party Plugins Integration – Comment Systems
 ---
 
 ### Overview

@@ -1,6 +1,6 @@
 ---
 title: Post Widgets
-description: NexT User Docs – Third-party Service Integration – Post Widgets
+description: NexT User Docs – Third-party Plugins Integration – Post Widgets
 ---
 
 ### AddThis

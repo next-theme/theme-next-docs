@@ -62,16 +62,6 @@ menu:
       SEO: /seo.html || fa fa-external-link-square-alt
       i18n: /internationalization.html || fa fa-language
 
-    Third Party Services:
-      default: /third-party-services/ || fa fa-puzzle-piece
-      Math Equations: /math-equations.html || fa fa-square-root-alt
-      Comment Systems: /comments.html || fa fa-comment-alt
-      Post Widgets: /post-widgets.html || fa fa-gift
-      Statistics and Analytics: /statistics-and-analytics.html || fa fa-chart-pie
-      Search Services: /search-services.html || fab fa-algolia
-      Chat Services: /chat-services.html || fa fa-comments
-      External Libraries: /external-libraries.html || fa fa-lightbulb
-
     Tag Plugins:
       default: /tag-plugins/ || fa fa-rocket
       Button: /button.html || fa fa-cube
@@ -83,6 +73,16 @@ menu:
       Note: /note.html || fa fa-adjust
       PDF: /pdf.html || fa fa-file-pdf
       Tabs: /tabs.html || fa fa-columns
+
+    Third Party Plugins:
+      default: /third-party-services/ || fa fa-puzzle-piece
+      Math Equations: /math-equations.html || fa fa-square-root-alt
+      External Libraries: /external-libraries.html || fa fa-lightbulb
+      Comment Systems: /comments.html || fa fa-comment-alt
+      Post Widgets: /post-widgets.html || fa fa-gift
+      Statistics and Analytics: /statistics-and-analytics.html || fa fa-chart-pie
+      Search Services: /search-services.html || fab fa-algolia
+      Chat Services: /chat-services.html || fa fa-comments
 
     Advanced Settings:
       default: /advanced-settings/ || fa fa-cog

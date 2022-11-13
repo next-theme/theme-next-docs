@@ -1,6 +1,6 @@
 ---
 title: Statistics and Analytics
-description: NexT User Docs – Third-party Service Integration – Statistics and Analytics
+description: NexT User Docs – Third-party Plugins Integration – Statistics and Analytics
 ---
 
 {% note warning %}

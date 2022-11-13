@@ -1,6 +1,6 @@
 ---
 title: External Libraries
-description: NexT User Docs – Third-party Service Integration – External Libraries
+description: NexT User Docs – Third-party Plugins Integration – External Libraries
 ---
 
 ### PJAX

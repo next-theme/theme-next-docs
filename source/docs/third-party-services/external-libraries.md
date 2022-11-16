@@ -23,7 +23,7 @@ pjax: true
 
 ### Fancybox
 
-NexT supports the fancybox plugin, which is a jQuery lightbox script for displaying images, videos and more. Touch enabled, responsive and fully customizable.
+NexT supports the [fancybox](https://fancyapps.com/fancybox/) plugin, which is a jQuery lightbox script for displaying images, videos and more. Touch enabled, responsive and fully customizable.
 
 You can enable it by setting value `fancybox` to `true` in {% label primary@NexT config file %}.
 
@@ -117,7 +117,7 @@ motion:
 
 ### Progress Bar
 
-Pace will automatically monitor your Ajax requests, event loop lag, document ready state and elements on your page to decide on the progress.
+[Pace](https://github.com/CodeByZach/pace) will automatically monitor your Ajax requests, event loop lag, document ready state and elements on your page to decide on the progress.
 
 {% tabs pace %}
 <!-- tab <code>pace</code> -->

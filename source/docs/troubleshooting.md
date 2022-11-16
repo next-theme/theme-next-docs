@@ -17,9 +17,9 @@ The following steps will help you determine the cause of the problem:
 
 * Execute `hexo clean`, clear the browser cache and purge CDN cache (or disable all CDN services) - This may take some time to take effect.
 * Disable browser plug-ins or use other devices and browsers to test, because bugs may only occur in specific browsers.
-* Switch to another theme and check if the bug still exists (e.g. default theme landscape). In other words, prove that this is a bug of NexT, not Hexo.
+* Switch to another theme and check if the bug still exists (e.g. default theme landscape).
 * Upgrade theme NexT to the latest version.
-* Upgrade Hexo and all Hexo plugins to the latest version.
+* Upgrade Hexo and all Hexo plugins to the latest version. You can use tools like [npm-check](https://www.npmjs.com/package/npm-check).
 * Upgrade or downgrade Node.js to the latest LTS version.
 * Uninstall all non-essential Hexo plugins, or delete `node_modules` and then reinstall all plugins using `npm install --force`.
 
@@ -36,57 +36,26 @@ If you decide to submit an Issue, please answer the following questions based on
 When you edit any YAML configs, always need to keep up indents.
 Currently, in all Hexo and NexT configuration files parameters uses **2 spaces indents** from parent option.
 
-For example, we want to change NexT scheme from `Muse` to `Gemini` with [Alternate Theme Config](/docs/getting-started/configuration.html#theme-config):
+If you encounter other yaml errors, you can also check if there is a syntax problem in the configuration file or front-matter.
 
-{% tabs keep-up-indentation %}
-<!-- tab NexT Config → -->
-We open {% label primary@NexT config file %} and under the «Scheme Settings» section copy the following parameters:
+### Set `skip_render`
 
-```yml NexT config file
-# ---------------------------------------------------------------
-# Scheme Settings
-# ---------------------------------------------------------------
+If you want to skip rendering for some files, you can set `skip_render` in the {% label info@Hexo config file %}.
 
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
-#scheme: Gemini
-```
-<!-- endtab -->
-
-<!-- tab Hexo Config -->
-Then we open {% label info@Hexo config file %} and paste these parameters under `theme_config` section:
-
-{% subtabs 2-spaces-indents %}
-<!-- tab {% label danger@Nothing Happen %}-->
 ```yml Hexo config file
-theme_config:
-
-#scheme: Muse
-#scheme: Mist
-#scheme: Pisces
-scheme: Gemini
+skip_render:
+  - robots.txt
+  - CNAME
 ```
 
-Nothing will happen here because indentation is incorrect. Hexo just can't read these parameters because child parameters of `theme_config` parameter do not exist. Let's see [same configuration with indents](#2-spaces-indents-2).
-<!-- endtab -->
+### Dark Mode not Working
 
-<!-- tab {% label success@Working Normally %}-->
-```yml Hexo config file
-theme_config:
+There are 3 prerequisites for Dark Mode to work:
+1. Enable `darkmode` in {% label primary@NexT config file %}.
+2. Your browser supports `prefers-color-scheme` media query. (Supported by most browsers released after 2020)
+3. Enable Dark Mode in your operating system settings.
 
-  #scheme: Muse
-  #scheme: Mist
-  #scheme: Pisces
-  scheme: Gemini
-```
-
-And here Hexo can read these parameters as `theme_config.scheme: Gemini` in same way, as NexT can read `scheme: Gemini` parameter. So, with 2 spaces indents from parent option(s) Hexo will load all NexT parameters and work as expected.
-<!-- endtab -->
-{% endsubtabs %}
-
-<!-- endtab -->
-{% endtabs %}
+In some operating systems, such as macOS, you can configure to enable dark mode at night. In other operating systems, the default color scheme is light, so you need to turn on Dark Mode in the system settings manually.
 
 ### TOC Issues
 

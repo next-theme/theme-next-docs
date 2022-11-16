@@ -59,6 +59,8 @@ growingio_analytics: # <project_id>
 
 #### Cloudflare Web Analytics
 
+Official documentation: https://www.cloudflare.com/web-analytics/
+
 Edit {% label primary@NexT config file %} and change the value of `cloudflare_analytics` to your project ID.
 
 ```yml NexT config file
@@ -68,11 +70,12 @@ cloudflare_analytics:
 
 #### Microsoft Clarity Analytics
 
+Official documentation: https://clarity.microsoft.com/
+
 Edit {% label primary@NexT config file %} and change the value of `clarity_analytics` to your project ID.
 
 ```yml NexT config file
 # Microsoft Clarity Analytics
-# See: https://clarity.microsoft.com/
 clarity_analytics: # <project_id>
 ```
 
@@ -97,7 +100,6 @@ Edit {% label primary@NexT config file %}. Fill `script_url` under section `umam
 
 ```yml NexT config file
 # Umami Analytics
-# See: https://umami.is/
 umami:
   enable: true
   script_url: # https://umami.example.com/script.js
@@ -112,7 +114,6 @@ Edit {% label primary@NexT config file %}. Fill `script_url` under section `plau
 
 ```yml NexT config file
 # Plausible Analytics
-# See: https://plausible.io/
 plausible:
   enable: true
   script_url: # https://plausible.io/js/script.js

@@ -13,8 +13,6 @@ Visit [Dashboard](https://app.chatra.io/settings/general) to get your ChatraID.
 
 ```yml NexT config file
 # Chatra Support
-# See: https://chatra.com
-# Dashboard: https://app.chatra.io/settings/general
 chatra:
   enable: true
   async: true
@@ -46,8 +44,6 @@ Visit [Dashboard](https://www.tidio.com/panel/dashboard) to get your Public Key.
 
 ```yml NexT config file
 # Tidio Support
-# See: https://www.tidio.com
-# Dashboard: https://www.tidio.com/panel/dashboard
 tidio:
   enable: true
   key: <Publick Key>
@@ -78,7 +74,6 @@ You need to create a community, then create a webapp room under that community.
 
 ```yml NexT config file
 # Gitter Support
-# For more information: https://gitter.im
 gitter:
   enable: true
   room: <Community>/<Room Name>

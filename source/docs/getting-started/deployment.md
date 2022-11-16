@@ -16,7 +16,7 @@ description: NexT User Docs – Starting to Use — Deployment
 
 #### Cloudflare Pages
 
-Cloudflare Pages is a JAMstack platform for frontend developers to collaborate and deploy websites. You can connect your GitHub or GitLab account with Cloudflare Pages. After that, you just need to push your blog source code to the repository, and create a new project in Cloudflare Pages. In the project's settings, you can configure the build settings as shown below.
+[Cloudflare Pages](https://pages.cloudflare.com) is a JAMstack platform for frontend developers to collaborate and deploy websites. You can connect your GitHub or GitLab account with Cloudflare Pages. After that, you just need to push your blog source code to the repository, and create a new project in Cloudflare Pages. In the project's settings, you can configure the build settings as shown below.
 
 ![Cloudflare Pages](/images/cloudflare-pages.png)
 
@@ -24,7 +24,7 @@ Cloudflare Pages will automatically build and deploy your site.
 
 #### Netlify
 
-Netlify is an all-in-one platform for automating modern web projects. Replace your hosting infrastructure, continuous integration, and deployment pipeline with a single workflow. Integrate dynamic functionality like serverless functions, user authentication, and form handling as your projects grow.
+[Netlify](https://www.netlify.com) is an all-in-one platform for automating modern web projects. Replace your hosting infrastructure, continuous integration, and deployment pipeline with a single workflow. Integrate dynamic functionality like serverless functions, user authentication, and form handling as your projects grow.
 
 Perhaps you have already found that this website is deployed on Netlify. Checkout `deploy.sh` and `netlify.toml` in [theme-next-docs](https://github.com/next-theme/theme-next-docs) repository for more information.
 
@@ -34,7 +34,7 @@ This Github Action automating Hexo deployment workflow, to allow you to publish 
 
 #### Gitlab CI
 
-GitLab offers a continuous integration service and pages service. If you add a `.gitlab-ci.yml` file to the root directory of your repository, and configure your GitLab project to use a Runner, then each commit or push, triggers your CI pipeline. The `.gitlab-ci.yml` file tells the GitLab runner what to do. By default it runs a pipeline with three stages: build, test, and deploy. You don't need to use all three stages; stages with no jobs are simply ignored. And at the end, your websites will be published on GitLab Host automatically.
+[GitLab](https://docs.gitlab.com/ee/ci/) offers a continuous integration service and pages service. If you add a `.gitlab-ci.yml` file to the root directory of your repository, and configure your GitLab project to use a Runner, then each commit or push, triggers your CI pipeline. The `.gitlab-ci.yml` file tells the GitLab runner what to do. By default it runs a pipeline with three stages: build, test, and deploy. You don't need to use all three stages; stages with no jobs are simply ignored. And at the end, your websites will be published on GitLab Host automatically.
 
 1. Add `.gitlab-ci.yml` to the root directory of your repository, and configure it.
 

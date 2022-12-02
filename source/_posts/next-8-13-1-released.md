@@ -10,6 +10,11 @@ date: 2022-10-03 16:25:10
 ### ⭐ Features
 
 * Add changyan count configuration by @yanickxia in https://github.com/next-theme/hexo-theme-next/pull/570
+```diff
+changyan:
++  # Show comments count
++  count: true
+```
 
 ### 🌀 External Changes
 

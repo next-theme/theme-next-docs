@@ -8,6 +8,14 @@ date: 2022-09-10 16:03:39
 ## What's Changed
 ### 🌟 New Features
 * Add matomo as an analytics provider by @foliet in https://github.com/next-theme/hexo-theme-next/pull/553
+```diff
++# Matomo Analytics
++# See: https://matomo.org/
++matomo:
++  enable: false
++  server_url: # https://www.example.com/
++  site_id: # <your site id>
+```
 ### ⭐ Features
 * Upgrade to disqusjs@3 by @stevenjoezhang in https://github.com/next-theme/hexo-theme-next/pull/529
 ### 🐞 Bug Fixes

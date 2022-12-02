@@ -12,6 +12,11 @@ date: 2022-06-01 19:15:09
 
 - Minify algolia logo if not enabled ([#514](https://github.com/next-theme/hexo-theme-next/pull/514))
 - Change the default CDN provider from jsdelivr to cdnjs ([#507](https://github.com/next-theme/hexo-theme-next/pull/507))
+```diff
+vendors:
+-  plugins: jsdelivr
++  plugins: cdnjs
+```
 
 ## 🌀 External Changes
 

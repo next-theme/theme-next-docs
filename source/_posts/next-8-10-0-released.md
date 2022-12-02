@@ -12,7 +12,14 @@ date: 2022-02-08 04:18:33
 +open_graph:
 +  enable: true
 +  # Add pairs each line to customize
-+  options: ''
++  options:
++    #twitter_card: <twitter:card>
++    #twitter_id: <twitter:creator>
++    #twitter_site: <twitter:site>
++    #twitter_image: <twitter:image>
++    #google_plus: <g+:profile_link>
++    #fb_admins: <fb:admin_id>
++    #fb_app_id: <fb:app_id>
 ```
 - Replace hexo-related-popular-posts with hexo-related-posts ([#447](https://github.com/next-theme/hexo-theme-next/pull/447))
 ```diff

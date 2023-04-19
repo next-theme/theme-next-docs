@@ -31,6 +31,10 @@ or
 It's recommended to use Group Pictures with [Fancybox](/docs/third-party-services/external-libraries.html#Fancybox) enabled.
 {% endnote %}
 
+{% note warning %}
+Please use absolute pathes for `<img>` inside group picture. See [this issue](https://github.com/next-theme/hexo-theme-next/issues/639#issuecomment-1514390433) for details.
+{% endnote %}
+
 ### Examples
 
 ```jinja

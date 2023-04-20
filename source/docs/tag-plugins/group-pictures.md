@@ -32,7 +32,7 @@ It's recommended to use Group Pictures with [Fancybox](/docs/third-party-service
 {% endnote %}
 
 {% note warning %}
-Please use absolute pathes for `<img>` inside group picture. See [this issue](https://github.com/next-theme/hexo-theme-next/issues/639#issuecomment-1514390433) for details.
+Please use absolute paths for `<img>` inside group pictures. See [this issue](https://github.com/next-theme/hexo-theme-next/issues/639#issuecomment-1514390433) for details.
 {% endnote %}
 
 ### Examples

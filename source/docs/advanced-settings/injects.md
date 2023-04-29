@@ -48,7 +48,7 @@ These are many `injectPoint`, defined in [`utils.js`](https://github.com/next-th
 
 ```js
 module.exports = {
-  views: ['head', 'header', 'sidebar', 'postMeta', 'postBodyEnd', ..., 'footer', 'bodyEnd'],
+  views: ['head', 'header', 'sidebar', 'postMeta', 'postBodyStart', 'postBodyEnd', 'footer', 'bodyEnd', 'comment'],
   styles: ['variable', 'mixin', 'style']
 };
 ```

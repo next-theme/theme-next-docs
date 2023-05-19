@@ -104,6 +104,7 @@ umami:
   enable: true
   script_url: # https://umami.example.com/script.js
   website_id: # <your website id>
+  host_url: # <your umami site url>
 ```
 
 #### Plausible Analytics (Self-managed)

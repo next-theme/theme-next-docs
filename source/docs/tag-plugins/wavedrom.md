@@ -1,12 +1,12 @@
 ---
-title: Wavedrom
-description: NexT User Docs – NexT Supported Tags – Wavedrom
+title: WaveDrom
+description: NexT User Docs – NexT Supported Tags – WaveDrom
 ---
 
 ### Settings
 
 ```yml NexT config file
-# Wavedrom tag
+# WaveDrom tag
 wavedrom:
   enable: true
 ```

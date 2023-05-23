@@ -11,25 +11,12 @@ wavedrom:
   enable: true
 ```
 
-```yml Hexo config file
-highlight:
-  exclude_languages:
-    - wavedrom
-```
-
 ### Usage
 
 ```jinja
 {% wavedrom %}
 {% endwavedrom %}
 ```
-
-or
-
-~~~markdown
-```wavedrom
-```
-~~~
 
 ### Examples
 

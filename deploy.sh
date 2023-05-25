@@ -50,7 +50,8 @@ echo "=============================================================="
 echo " ${yellow}Checking Hexo version...${norm}"
 echo "=============================================================="
     hexo() {
-        npx hexo "$@" --silent
+        # Retains stderr, but suppresses stdout.
+        npx hexo "$@" > /dev/null
     }
     hexo -v
     npm ls --depth 0

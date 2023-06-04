@@ -12,6 +12,7 @@ Tag Plugin is a way to make special style contents supported by Hexo. For exampl
 * [Label](/docs/tag-plugins/label.html)
 * [Link Grid](/docs/tag-plugins/link-grid.html)
 * [Mermaid](/docs/tag-plugins/mermaid.html)
+* [WaveDrom](/doc/tag-plugins/wavedrom.html)
 * [Note](/docs/tag-plugins/note.html)
 * [PDF](/docs/tag-plugins/pdf.html)
 * [Tabs](/docs/tag-plugins/tabs.html)

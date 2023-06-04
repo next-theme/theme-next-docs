@@ -70,6 +70,7 @@ menu:
       Label: /label.html || fa fa-hat-wizard
       Link Grid: /link-grid.html || fa fa-grip-vertical
       Mermaid: /mermaid.html || fa fa-project-diagram
+      WaveDrom: /wavedrom.html || fa fa-diagram-predecessor
       Note: /note.html || fa fa-adjust
       PDF: /pdf.html || fa fa-file-pdf
       Tabs: /tabs.html || fa fa-columns
@@ -220,6 +221,9 @@ tabs:
     labels: true
 
 mermaid:
+  enable: true
+
+wavedrom:
   enable: true
 
 

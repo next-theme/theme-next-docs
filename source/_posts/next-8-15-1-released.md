@@ -8,6 +8,8 @@ date: 2023-04-02 02:50:13
 ## What's Changed
 ### ⭐ Features
 * Support reprint by @jack9603301 in https://github.com/next-theme/hexo-theme-next/pull/618
+### 🐞 Bug Fixes
+* Fix .footer-fixed toggle and position ([1501440](https://github.com/next-theme/hexo-theme-next/commit/1501440d8d06070790328fbf7a22f70ae037ff2f))
 ### 🌀 External Changes
 * Update dependency eslint to v8.37.0 by @renovate in https://github.com/next-theme/hexo-theme-next/pull/621
 ### 🌍 Localization

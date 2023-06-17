@@ -38,7 +38,7 @@ C -->|Two| E[Result 2]
 - Update dependency eslint to v8.12.0 ([#488](https://github.com/next-theme/hexo-theme-next/pull/488))
 - Update dependency mocha to v9.2.2 ([#487](https://github.com/next-theme/hexo-theme-next/pull/487))
 - Update dependency hexo to v6.1.0 ([#486](https://github.com/next-theme/hexo-theme-next/pull/486))
-- Update avilability of pjax & local_search in vendors ([#496](https://github.com/next-theme/hexo-theme-next/pull/496))
+- Update availability of pjax & local_search in vendors ([#496](https://github.com/next-theme/hexo-theme-next/pull/496))
 
 ## 🌍 Localization
 

@@ -3,23 +3,35 @@ title: Post Widgets
 description: NexT User Docs – Third-party Plugins Integration – Post Widgets
 ---
 
-### AddThis
+### AddToAny
 
-{% tabs addthis %}
-<!-- tab Sign Up → -->
-Sign up in [AddThis](https://www.addthis.com). You can use Google / Facebook / Twitter to login.
-<!-- endtab -->
-
-<!-- tab AddThis ID → -->
-Get AddThis ID in this menu: `Profile Settings` → `General` → `ID`. See example on the picture below:
-![AddThis ID](/images/add-this-id.png)
-<!-- endtab -->
-
-<!-- tab NexT Config -->
-Edit the value of `add_this_id` in the {% label primary@NexT config file %} as following:
+{% tabs AddToAny %}
+<!-- tab Enable AddToAny → -->
+Edit {% label primary@NexT config file %} to enable AddToAny Share:
 
 ```yml NexT config file
-add_this_id: your_add_this_id
+# AddToAny Share. See: https://www.addtoany.com
+addtoany:
+  enable: true
+  buttons:
+    - facebook
+    - twitter
+```
+<!-- endtab -->
+
+<!-- tab Add Buttons -->
+After AddToAny enabled, you can add more buttons.
+
+```yml NexT config file
+# AddToAny Share. See: https://www.addtoany.com
+addtoany:
+  enable: true
+  buttons:
+    - facebook
+    - twitter
+    - telegram
+    - wechat
+    - qzone
 ```
 <!-- endtab -->
 {% endtabs %}

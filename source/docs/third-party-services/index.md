@@ -58,8 +58,7 @@ Detailed documentation about these plugins is listed below.
 
 ### Post Widgets
 
-* [Widgetpack Rating](/docs/third-party-services/post-widgets.html#Widgetpack-Rating)
-* [AddThis](/docs/third-party-services/post-widgets.html#AddThis)
+* [AddToAny](/docs/third-party-services/post-widgets.html#AddToAny)
 
 ### Search Services
 

@@ -203,7 +203,7 @@ By default NexT shows the icons of menu items without badges.
 
 {% tabs menu_settings %}
 <!-- tab <code>icons</code> -->
-You can configure it by editing values in `menu_settings.icons` section in {% label primary@NexT config file %}.
+You can configure it by editing value `icons` in `menu_settings` section in {% label primary@NexT config file %}.
 
 ```yml NexT config file
 menu_settings:

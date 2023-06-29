@@ -3,11 +3,11 @@ title: Footer
 description: NexT User Docs – Theme Settings – Footer
 ---
 
-### Site Footer Setting
+### Site Copyright Setting
 
 #### Site Start Time
 
-By default NexT shows current year in the footer like `© 2020`. You can configure it to show the time gap like `© 2015 - 2020` by editing values in `since` section in {% label primary@NexT config file %}.
+By default NexT shows current year in the footer like `© 2020`. You can configure it to show the time gap like `© 2015 - 2020` by editing value `since` in `footer` section in {% label primary@NexT config file %}.
 
 ```yml NexT config file
 footer:
@@ -16,7 +16,7 @@ footer:
 
 #### Site Footer Icon
 
-By default NexT shows red `heart` icon {% btn #,, heart %} with animation between year and copyright information in the footer. You can configure it by editing values in `icon` section in {% label primary@NexT config file %}.
+By default NexT shows red `heart` icon {% btn #,, heart %} with animation between year and copyright information in the footer. You can configure it by editing value `icon` in `footer` section in {% label primary@NexT config file %}.
 
 {% tabs icon %}
 <!-- tab <code>name</code> -->
@@ -57,29 +57,31 @@ footer:
 
 #### Site Copyright Name
 
-By default NexT shows the name of `author` from {% label info@Hexo config file %}. You can configure it by editing values in `copyright` section in {% label primary@NexT config file %}.
+By default NexT shows the name of `author` from {% label info@Hexo config file %}. You can configure it by editing value `copyright` in `footer` section in {% label primary@NexT config file %}.
 
 ```yml NexT config file
 footer:
   copyright:
 ```
 
+Set `copyright` to `false` will disable the copyright statement completely.
+
 {% note warning %}
 This option will only customize the author name in the footer. The name in the Creative Commons License section at the end of each post is not affected.
 {% endnote %}
 
-#### Site Platform Information
+### Site Platform Information
 
-By default NexT shows Hexo and Theme & scheme information like `Powered by Hexo & NexT.Muse`. You can configure it by editing `powered` section in {% label primary@NexT config file %}.
+By default NexT shows Hexo and Theme & scheme information like `Powered by Hexo & NexT.Muse`. You can configure it by editing value `powered` in `footer` section in {% label primary@NexT config file %}.
 
 ```yml NexT config file
 footer:
   powered: true
 ```
 
-#### Site Beian Information
+### Site Beian Information
 
-Beian information is for Chinese users. By default NexT will not show the information of beian. You can configure it by editing values in `beian` section in {% label primary@NexT config file %}.
+Beian information is for Chinese users. By default NexT will not show the information of beian. You can configure it by editing values in `footer.beian` section in {% label primary@NexT config file %}.
 
 ```yml NexT config file
 footer:

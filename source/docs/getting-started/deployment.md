@@ -30,7 +30,82 @@ Perhaps you have already found that this website is deployed on Netlify. Checkou
 
 #### Github Pages
 
-This Github Action automating Hexo deployment workflow, to allow you to publish your Hexo site on Github Pages: [hexo-action](https://github.com/sma11black/hexo-action).
+To publish your Hexo site on Github Pages, you need create a GitHub repository and push your local repository to it. Visit your GitHub repository, from the main menu choose Settings > Pages. In then center of your screen you will see this option:
+
+![](/images/github-pages.png)
+
+Change the Source to GitHub Actions. The change is immediate; you do not have to press a Save button.
+
+Create an empty file `.github/workflows/hexo.yaml` in your local repository. Copy and paste the YAML below into the file you created. Change the branch name and other parameters as needed.
+
+```yml .github/workflows/hexo.yaml
+# Sample workflow for building and deploying a Hexo site to GitHub Pages
+name: Deploy Hexo site to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: [$default-branch]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+      - name: Install Dependencies
+        run: npm install
+      - name: Build with Hexo
+        run: npx hexo g
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./public
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+```
+
+Commit the change to your local repository with a commit message of something like "Add workflow", and push to GitHub. GitHub will build and deploy your site automatically. In the future, whenever you push a change from your local repository, GitHub will rebuild your site and deploy the changes.
 
 #### Gitlab CI
 

@@ -3,7 +3,7 @@ title: Configuration
 description: NexT User Docs – Starting to Use – Configuration
 ---
 
-How to configure NexT theme? The traditional approach is to edit {% label primary@NexT config file %} (`thems/next/_config.yml` or `node_modules/hexo-theme-next/_config.yml`) directly. However, the config file will be overwritten when upgrade NexT theme via git or npm, which brings inconvenience to the configuration of the theme.
+How to configure NexT theme? The traditional approach is to edit {% label primary@NexT config file %} (`themes/next/_config.yml` or `node_modules/hexo-theme-next/_config.yml`) directly. However, the config file will be overwritten when upgrade NexT theme via git or npm, which brings inconvenience to the configuration of the theme.
 
 At present, NexT encourages users to use the Alternate Theme Config. It's a feature of Hexo and the documentation is here: [Hexo Configuration](https://hexo.io/docs/configuration.html#Using-an-Alternate-Config).
 

@@ -24,7 +24,7 @@ It's easy to set up NexT theme. Just follow [documentation][] and create your pe
 [docs]: /docs/
 [documentation]: /docs/getting-started/
 
-[gitter-url]: https://gitter.im/hexo-next
+[gitter-url]: https://app.gitter.im/#/room/#next:gitter.im
 [i18n-url]: https://crowdin.com/project/hexo-theme-next
 
 [awesome-next-url]: https://github.com/next-theme/awesome-next

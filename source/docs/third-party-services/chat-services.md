@@ -63,33 +63,3 @@ chat:
 ```
 <!-- endtab -->
 {% endtabs %}
-
-### Gitter
-
-[Gitter](https://gitter.im) is a chat and networking platform that helps to manage, grow and connect communities through messaging, content and discovery.
-
-{% tabs Gitter %}
-<!-- tab Enable Gitter → -->
-You need to create a community, then create a webapp room under that community.
-
-```yml NexT config file
-# Gitter Support
-gitter:
-  enable: true
-  room: <Community>/<Room Name>
-```
-
-<!-- endtab -->
-
-<!-- tab Activate sidebar button -->
-After Gitter enabled, you can set `chat.enable` to `true` in {% label primary@NexT config file %}.
-
-```yml NexT config file
-# A button to open designated chat widget in sidebar.
-# Firstly, you need enable the chat service you want to activate its sidebar button.
-chat:
-  enable: true
-  icon: fa fa-comment
-```
-<!-- endtab -->
-{% endtabs %}

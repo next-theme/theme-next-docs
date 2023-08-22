@@ -223,6 +223,9 @@ More and more online blogging platforms (e.g. WeChat public accounts, Jianshu, Z
       # If true, a donate button will be displayed in every article by default.
       enable: true
       animation: false
+      comment:
+        # If false, the comment tip will hide.
+        enable: true
 
     reward:
       wechatpay: /images/wechatpay.png

@@ -1,6 +1,6 @@
 {
   "name": "theme-next-docs",
-  "version": "8.18.0",
+  "version": "8.18.1",
   "private": true,
   "hexo": {
     "version": "6.3.0"
@@ -34,7 +34,7 @@
     "hexo-renderer-marked": "6.1.1",
     "hexo-renderer-stylus": "3.0.0",
     "hexo-server": "3.0.0",
-    "hexo-theme-next": "8.18.0"
+    "hexo-theme-next": "8.18.1"
   },
   "devDependencies": {
     "markdownlint-cli": "0.35.0"

@@ -50,7 +50,7 @@ $ npm install hexo-theme-next
 <!-- endtab -->
 
 <!-- tab Using <code>git</code> -->
-If you know about [Git](https://git-scm.com), you can clone the whole repository and update it in any time with `git pull` command instead of downloading archive manually.
+If you know about [Git](https://git-scm.com), you can clone the whole repository of NexT theme.
 
 Open your terminal, change to Hexo {% label info@site root directory %} and clone the latest master branch of NexT theme:
 
@@ -71,16 +71,20 @@ A new version of NexT will be released every month. Please read the [release not
 
 {% tabs upgrading-next %}
 <!-- tab Using <code>npm</code> -->
-Install the latest version through npm:
+If you have installed NexT theme through npm, you can upgrade it to the latest version by re-installing it:
 
 ```bash
 $ cd hexo-site
 $ npm install hexo-theme-next@latest
 ```
+
+Note that any local changes to the theme inside `node_modules` directory will be lost when you run `npm install`. If you have made changes to the theme, you should back up the changes before running `npm install`, and then restore the changes after the installation is complete.
+
+It's not recommended to modify the theme files in `node_modules` directory. To customize the theme, you can use the [Custom Files](/docs/advanced-settings/custom-files.html) feature.
 <!-- endtab -->
 
 <!-- tab Using <code>git</code> -->
-Or update to the latest master branch:
+After a new version of the theme is released, you can use `git pull` to update it to the latest master branch:
 
 ```sh
 $ cd hexo-site
@@ -88,7 +92,9 @@ $ cd themes/next
 $ git pull origin master
 ```
 
-When running `git pull`, you can bypass merge conflicts (error message like **«Commit your changes or stash them before you can merge»**) by using the `Commit`, `Stash` or `Reset` commands for local changes. See [here](https://stackoverflow.com/a/15745424/5861495) how to do it.
+If you have made changes to the theme, you may encounter merge conflicts (error message like **«Commit your changes or stash them before you can merge»**) when running `git pull`. You can bypass merge conflicts by using the `Commit`, `Stash` or `Reset` commands for local changes. See [here](https://stackoverflow.com/a/15745424/5861495) how to do it.
+
+If you don't like the newer version, you can also use `git` to revert to an old version at any time.
 <!-- endtab -->
 {% endtabs %}
 

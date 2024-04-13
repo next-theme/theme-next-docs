@@ -34,7 +34,7 @@ Setting | Type | Description | Default
 `link` | `string` | Clicking on the post title on the index or archive page will redirect to the set external link | None
 `description` | `string` | Docs [here](/docs/theme-settings/posts.html#Preamble-Text) | None
 `direction` | `string` | Available value: `rtl` | None
-`header` | `boolean` | Whether to display the post header in index page | `true`
+`header` | `boolean` | Whether to display the post header | `true`
 `mathjax` | `boolean` | MathJax support | Depends on `math.every_page` in NexT config file
 `sidebar` | `boolean` | Whether the sidebar will be shown | Depends on `sidebar.display` in NexT config file
 `copyright` | `boolean` | Whether to display copyright notices below the post with `creative_commons.license` and `creative_commons.post` enabled | `true`

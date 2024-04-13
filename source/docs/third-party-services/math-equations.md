@@ -27,8 +27,8 @@ math:
 
 The `every_page` option controls whether to render Math Equations every page.
 
-- **`false`** → Equations will be processed on demand. It will only render those posts which have `mathjax: true` in their front-matter.
-- `true` → Equations will be processed on every page. Even if they not exists on one or another page.
+- **`false`** → The math rendering engine will load on demand. It will only render those posts which have `mathjax: true` in their front-matter.
+- `true` → The math rendering engine will load on every page. Even if the page does not contain any math formulas.
 
 {% note default **Examples with `every_page: false` option** %}
 

@@ -107,6 +107,7 @@ motion:
   async: false
   transition:
     # All available Transition variants: https://theme-next.js.org/animate/
+    menu_item: fadeInDown
     post_block: fadeIn
     post_header: fadeInDown
     post_body: fadeInDown

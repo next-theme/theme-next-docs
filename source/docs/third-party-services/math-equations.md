@@ -145,22 +145,22 @@ If you use KaTeX to render Math Equations, you can choose one of the Markdown re
 <!-- tab hexo-renderer-markdown-it-plus -->
 
 ```bash
-$ npm un hexo-renderer-marked
-$ npm i hexo-renderer-markdown-it-plus
+npm un hexo-renderer-marked
+npm i hexo-renderer-markdown-it-plus
 ```
 <!-- endtab -->
 
 <!-- tab hexo-renderer-markdown-it -->
 
 ```bash
-$ npm un hexo-renderer-marked
-$ npm i hexo-renderer-markdown-it
+npm un hexo-renderer-marked
+npm i hexo-renderer-markdown-it
 ```
 
 If you use `hexo-renderer-markdown-it`, you also need to install `markdown-it-katex`:
 
 ```bash
-$ npm i markdown-it-katex
+npm i markdown-it-katex
 ```
 
 And then in {% label info@Hexo config file %} you need to add `markdown-it-katex` as a plugin for `hexo-renderer-markdown-it`:
@@ -212,7 +212,7 @@ math:
 After setting up the math rendering engine or installing / uninstalling the Markdown renderer, please execute `hexo clean`. Run standard Hexo generate, deploy process or start the server to test whether the plugin is working properly:
 
 ```bash
-$ hexo clean && hexo g -d
+hexo clean && hexo g -d
 # or hexo clean && hexo s
 ```
 

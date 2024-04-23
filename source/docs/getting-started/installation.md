@@ -41,7 +41,7 @@ If you're using Hexo 5.0 or later, you can install `hexo-theme-next` through npm
 {% tabs using-npm %}
 <!-- tab Latest Release Version -->
 ```bash
-$ npm install hexo-theme-next@latest
+npm install hexo-theme-next@latest
 ```
 
 This variant will install the **latest release version**.
@@ -49,7 +49,7 @@ This variant will install the **latest release version**.
 
 <!-- tab Specific Release Version -->
 ```bash
-$ npm install hexo-theme-next@8.0.0
+npm install hexo-theme-next@8.0.0
 ```
 
 This variant will install the **specific release version**.
@@ -61,13 +61,13 @@ This variant will install the **specific release version**.
 {% tabs using-git %}
 <!-- tab Latest Master Branch -->
 ```bash
-$ git clone https://github.com/next-theme/hexo-theme-next themes/next
+git clone https://github.com/next-theme/hexo-theme-next themes/next
 ```
 
 Or download via mirror on GitLab:
 
 ```bash
-$ git clone https://gitlab.com/hexo-theme-next/hexo-theme-next themes/next
+git clone https://gitlab.com/hexo-theme-next/hexo-theme-next themes/next
 ```
 
 This variant will install the **whole repository** (with `.git` directory inside).
@@ -97,25 +97,25 @@ HEAD is now at f27e45b Release v8.0.0
 If you want to switch on latest release version without defining tag (optional)
 
 ```bash
-$ git checkout $(git describe --tags $(git rev-list --tags --max-count=1))
+git checkout $(git describe --tags $(git rev-list --tags --max-count=1))
 ```
 
 And if you want to switch back on master branch, input this command:
 
 ```bash
-$ git checkout master
+git checkout master
 ```
 <!-- endtab -->
 
 <!-- tab Specific Release Version -->
 ```bash
-$ git clone --branch v8.0.0 https://github.com/next-theme/hexo-theme-next themes/next
+git clone --branch v8.0.0 https://github.com/next-theme/hexo-theme-next themes/next
 ```
 
 Or download via mirror on GitLab:
 
 ```bash
-$ git clone --branch v8.0.0 https://gitlab.com/hexo-theme-next/hexo-theme-next themes/next
+git clone --branch v8.0.0 https://gitlab.com/hexo-theme-next/hexo-theme-next themes/next
 ```
 
 This variant will install the **specific release version** (with `.git` directory inside).

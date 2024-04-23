@@ -105,8 +105,8 @@ post_meta:
 Install `hexo-word-counter` by executing the following command in {% label info@site root dir %}:
 
 ```bash
-$ npm install hexo-word-counter
-$ hexo clean
+npm install hexo-word-counter
+hexo clean
 ```
 <!-- endtab -->
 
@@ -265,8 +265,8 @@ NexT supports the related posts functionality according to [hexo-related-posts](
 Install `hexo-related-posts` by executing the following command in {% label info@site root dir %}:
 
 ```bash
-$ npm install hexo-related-posts
-$ hexo clean
+npm install hexo-related-posts
+hexo clean
 ```
 <!-- endtab -->
 

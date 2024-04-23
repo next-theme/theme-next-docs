@@ -53,7 +53,7 @@ exturl_icon: true
 
 Then run the following command in {% label info@site root dir %} to ensure that `exturl` can be enabled or disabled correctly:
 ```bash
-$ hexo clean
+hexo clean
 ```
 
 ### Webmaster Tools

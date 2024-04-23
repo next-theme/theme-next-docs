@@ -41,8 +41,8 @@ Algolia requires users to upload their search index data either manually or via 
 Install and configure [Hexo Algolia](https://github.com/oncletom/hexo-algolia) in your Hexo directory.
 
 ```bash
-$ cd hexo-site
-$ npm install hexo-algolia
+cd hexo-site
+npm install hexo-algolia
 ```
 
 In your {% label info@Hexo config file %}, add the following configuration and replace the `Application ID`, `Search-only API key` and `indexName` with corresponding fields obtained at Algolia.
@@ -57,10 +57,10 @@ algolia:
 Run the following command to upload index data, keep a weather eye out the output of the command.
 
 ```bash
-$ export HEXO_ALGOLIA_INDEXING_KEY=High-privilege API key # Use Git Bash
+export HEXO_ALGOLIA_INDEXING_KEY=High-privilege API key # Use Git Bash
 # set HEXO_ALGOLIA_INDEXING_KEY=High-privilege API key # Use Windows command line
-$ hexo clean
-$ hexo algolia
+hexo clean
+hexo algolia
 ```
 
 ![Reload Index](/images/algolia-5.png)
@@ -69,8 +69,8 @@ $ hexo algolia
 Install and configure [Hexo Algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch) in your Hexo directory.
 
 ```bash
-$ cd hexo-site
-$ npm install hexo-algoliasearch
+cd hexo-site
+npm install hexo-algoliasearch
 ```
 
 In your {% label info@Hexo config file %}, add the following configuration and replace the `Application ID`, `Search-only API key`, `High-privilege API key` and `indexName` with corresponding fields obtained at Algolia.
@@ -96,8 +96,8 @@ algolia:
 Run the following command to upload index data, keep a weather eye out the output of the command.
 
 ```bash
-$ hexo clean
-$ hexo algolia
+hexo clean
+hexo algolia
 ```
 <!-- endtab -->
 {% endsubtabs %}
@@ -126,7 +126,7 @@ Local search does not require any external 3rd-party services and can be extra i
 Install `hexo-generator-searchdb` by executing the following command in {% label info@site root dir %}:
 
 ```bash
-$ npm install hexo-generator-searchdb
+npm install hexo-generator-searchdb
 ```
 <!-- endtab -->
 

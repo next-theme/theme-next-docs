@@ -7,7 +7,7 @@ description: NexT User Docs – Theme Settings – Sidebar
 
 By default sidebar only shows in posts (have a table of content), and is placed in left side. You can change it by editing values under `sidebar` setting in {% label primary@NexT config file %}.
 
-Sidebar has several options, including `position`, `width`, `display`, `padding` and `offset`.
+Sidebar has several options, including `position`, `width_expanded`, `width_dual_column`, `display`, `padding` and `offset`.
 
 {% tabs setting-sidebar %}
 <!-- tab <code>position</code> -->
@@ -24,19 +24,32 @@ sidebar:
 
 <!-- endtab -->
 
-<!-- tab <code>width</code> -->
-You can change sidebar width by specify `sidebar.width` setting in pixels, for example:
+<!-- tab <code>width_expanded</code> -->
+You can change sidebar width by specify `sidebar.width_expanded` setting in pixels, for example:
 
 ```yml NexT config file
 sidebar:
-  width: 300
+  width_expanded: 320
 ```
 
 {% note info %}
-This option is commented out by default and values are:
+This option is applicable to:
+* Muse and Mist scheme
+* Mobile of Pisces and Gemini scheme
 
-* For Muse | Mist schemes: `320`
-* For Pisces | Gemini schemes: `240`
+{% endnote %}
+<!-- endtab -->
+
+<!-- tab <code>width_dual_column</code> -->
+You can change sidebar width by specify `sidebar.width_dual_column` setting in pixels, for example:
+
+```yml NexT config file
+sidebar:
+  width_dual_column: 240
+```
+
+{% note info %}
+This option is applicable to desktop of Pisces and Gemini scheme.
 
 {% endnote %}
 <!-- endtab -->
@@ -75,8 +88,8 @@ sidebar:
   offset: 12
 ```
 
-{% note danger %}
-For now only Pisces / Gemini Schemes supports `offset` setting under **6.0.x** version or later.
+{% note info %}
+This option is applicable to Pisces and Gemini scheme.
 {% endnote %}
 <!-- endtab -->
 

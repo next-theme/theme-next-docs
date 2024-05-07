@@ -271,7 +271,6 @@ google_analytics:
 
 local_search:
   enable: true
-  trigger: auto
   top_n_per_article: 1
 
 

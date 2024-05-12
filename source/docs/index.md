@@ -49,20 +49,20 @@ NexT uses code highlighting themes from the [Highlight.js](https://highlightjs.o
 
 ### Supported Browsers
 
-We design NexT to support the latest web browsers. We support the current versions of Chrome, Firefox, Safari, and Microsoft Edge. Many CSS3 and ES6 features are used in theme NexT, including CSS Variables, Destructuring assignment, Arrow functions and Spread operator.
+We designed the NexT theme to support a wide range of mainstream browsers, include the current versions of Chrome, Firefox, Safari, and Microsoft Edge. Many CSS3 and ES6 features and new Web APIs have been utilized, including CSS Variables, [IntersectionObserver](https://caniuse.com/intersectionobserver) and [Fetch API](https://caniuse.com/fetch), to make the NexT theme's code more concise, reliable, and secure. Statistics show that NexT is compatible with more than 96% of browsers.
 
 | Browser | Supported versions | Release date |
 | - | - | - |
 <i class="fab fa-internet-explorer fa-2x"></i> IE | N/A | Oct 17, 2013 |
-<i class="fab fa-chrome fa-2x"></i> Chrome | 60+ | Jul 25, 2017 |
-<i class="fab fa-firefox-browser fa-2x"></i> Firefox | 55+ | Aug 8, 2017 |
-<i class="fab fa-opera fa-2x"></i> Opera | 47+ | Aug 9, 2017 |
-<i class="fab fa-safari fa-2x"></i> Safari | 11+ | Sep 19, 2017 |
+<i class="fab fa-chrome fa-2x"></i> Chrome | 69+ | Sep 4, 2018 |
+<i class="fab fa-firefox-browser fa-2x"></i> Firefox | 62+ | Sep 5, 2018 |
+<i class="fab fa-opera fa-2x"></i> Opera | 56+ | Sep 25, 2018 |
+<i class="fab fa-safari fa-2x"></i> Safari | 12.1+ | Mar 25, 2019 |
 <i class="fab fa-edge fa-2x"></i> Edge | 80+ | Feb 7, 2020 |
 
-Some other new Web APIs, such as [IntersectionObserver](https://caniuse.com/intersectionobserver) and [Fetch API](https://caniuse.com/fetch), are used by NexT plugins. They are not core functions of NexT, so we have no plans to make them compatible with legacy browsers.
+*The criterion being that on these browsers, the core functionalities and styles of the NexT theme work normally, excluding third-party plugins.*
 
-In addition, [CSS position: sticky](https://caniuse.com/css-sticky) is used for sidebar positioning. On browsers that do not support this property, its fallback style `position: static` will be used.
+Many modern browsers, such as Chrome and Edge, support automatic updates, and we recommend users keep their browsers up to date. However, the versions of some browsers are tied to the operating system, such as Safari and IE, and NexT cannot guarantee compatibility with their older versions.
 
 ### Customize Your NexT
 

@@ -178,29 +178,33 @@ prismjs:
     }
 }
 
-const CODE = `class Person
-  include ActiveModel::Conversion
-  include ActiveModel::Validations
+const CODE = `struct Person {
+    name: String,
+    age: u32,
+}
 
-  validates_presence_of :name
+impl Person {
+    fn new(name: String, age: u32) -> Person {
+        Person { name, age }
+    }
 
-  attr_accessor :name
+    fn show(&self) {
+        println!("Name: {}, Age: {}", self.name, self.age);
+    }
 
-  def initialize(attributes = {})
-    @name = attributes[:name]
-  end
+    fn set_name(&mut self, new_name: String) {
+        self.name = new_name;
+    }
 
-  def persist
-    @persisted = true
-  end
+    fn set_age(&mut self, new_age: u32) {
+        self.age = new_age;
+    }
+}
 
-  def persisted?
-    @persisted
-  end
-end
-
-person1 = Person.new(:name => "matz")
-p person1.valid?`;
+fn main() {
+    let mut person = Person::new("Alice".to_string(), 30);
+    person.show();
+}`;
 
 class Controller {
     constructor() {
@@ -215,7 +219,7 @@ class Controller {
         this.value = {
             engine: localStorage.getItem('engine') || 'highlight',
             theme: localStorage.getItem('theme') || 'tomorrow',
-            language: localStorage.getItem('language') || 'ruby',
+            language: localStorage.getItem('language') || 'rust',
             code: localStorage.getItem('code') || CODE
         };
         this.onchange = {

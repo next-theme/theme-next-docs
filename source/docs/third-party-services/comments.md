@@ -15,7 +15,7 @@ comments:
   # Available values: tabs | buttons
   style: tabs
   # Choose a comment system to be displayed by default
-  # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances | isso
+  # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances | isso | giscus
   active:
   # Setting `true` means remembering the comment system selected by the visitor
   storage: true
@@ -184,3 +184,27 @@ Isso – *Ich schrei sonst* – is a lightweight commenting server written in Py
     # For more information: https://isso-comments.de
     isso: # <data_isso>
     ```
+
+### Giscus
+
+Giscus is also a lightweight comments widget, which is built on GitHub discussions. Use GitHub discussions for blog comments, wiki pages and more!
+
+```yml NexT config file
+# Giscus
+# For more information: https://giscus.app/
+giscus:
+  enable: true
+  # Fill in the following data as the script displayed on the site https://giscus.app/
+  repo:
+  repo_id:
+  category:
+  category_id:
+  mapping:
+  strict:
+  reactions_enabled:
+  emit_metadata:
+  input_position:
+  theme:
+  lang:
+  loading:
+```

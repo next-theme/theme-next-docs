@@ -184,3 +184,21 @@ Isso – *Ich schrei sonst* – is a lightweight commenting server written in Py
     # For more information: https://isso-comments.de
     isso: # <data_isso>
     ```
+
+### Twikoo
+
+Twikoo – A simple, safe, free comment system.
+
+1. You need to [install and configure Twikoo Server](https://twikoo.js.org/quick-start.html) on your server first.
+2. Set the value `enable` to `true`, add Environment ID (`envId`), and edit other configurations in `twikoo` section in the {% label primary@NexT config file %} as following:
+
+   ```yml NexT config file
+   twikoo:
+     enable: false
+     visitor: false
+     envId: # 环境 ID，搭建教程：https://twikoo.js.org/quick-start.html
+     # region: ap-guangzhou # 环境地域，默认为 ap-shanghai
+     # path: 'window.location.pathname' # 自定义文章路径
+     # jsUrl: https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js # 自定义 JS 文件地址
+   ```
+

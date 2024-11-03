@@ -42,6 +42,7 @@ Setting | Type | Description | Default
 `quicklink` | `object` (1) | Quicklink support | From NexT config file
 `reward_settings` | `object` (1) | Reward settings | From NexT config file
 `toc` | `object` (1) | Table of Contents in the sidebar | From NexT config file
+`noindex` | `boolean` | Whether to add `noindex` in meta to disallow robots index.[block-indexing](https://developers.google.com/search/docs/crawling-indexing/block-indexing?visit_id=638645567819389813-970569186&rd=1&hl=zh-cn)| `false`
 
 (1): They have the same structure as the options in {% label primary@NexT config file %}.
 

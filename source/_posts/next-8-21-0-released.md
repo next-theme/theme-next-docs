@@ -18,6 +18,8 @@ local_search:
 * Trigger Search Event when user presses Ctrl + K by @penxian in https://github.com/next-theme/hexo-theme-next/pull/804
 ### ⭐ Features
 * Refactor Algolia search: drop instantsearch.js by @stevenjoezhang in https://github.com/next-theme/hexo-theme-next/pull/795
+* Support dark mode for note tags in modern style by @sghuang19 in https://github.com/next-theme/hexo-theme-next/pull/828
+* Add dark color scheme for text selection by @sghuang19 in https://github.com/next-theme/hexo-theme-next/pull/829
 ### 🐞 Bug Fixes
 * Fix mermaid folding ([6742735](https://github.com/next-theme/hexo-theme-next/commit/6742735db4ae77a73d7068fe1936217b5368cd31))
 * Fix .menu-item-active::after ([07acb27](https://github.com/next-theme/hexo-theme-next/commit/07acb27cc94db66fb081d14a54ebf93faaef438f))

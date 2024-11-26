@@ -115,13 +115,15 @@ sidebar:
   offset: 12
 
 avatar:
-  url: /images/logo.svg
+  url: /images/next.png
   rounded: true
 
 social:
   GitHub: https://github.com/next-theme || fab fa-github
-  Crowdin: https://crowdin.com/project/hexo-theme-next || fa fa-globe-asia
   RSS: /atom.xml || fa fa-rss
+  Crowdin: https://crowdin.com/project/hexo-theme-next || fa fa-globe-asia
+  Gitter: https://app.gitter.im/#/room/#next:gitter.im || fab fa-gitter
+  Telegram (Chinese Language): https://t.me/theme_next_cn || fab fa-telegram
 
 social_icons:
   enable: true

@@ -10,10 +10,18 @@ Welcome to the [NexT][docs] documentation site! NexT is a high quality elegant t
 
 It's easy to set up NexT theme. Just follow [documentation][] and create your personal website!
 
+## Community
+
+Connect with us and be part of our growing community!
+
+* **Telegram Group (Chinese Language)**: [Click here to join!](https://t.me/theme_next_cn)
+* **Discord Server**: [Join our Discord!](https://discord.gg/qmkgkY3jaG)
+* **Gitter**: [Join our Gitter chats!][gitter-url]
+
 ### Feedback
 
 * Visit the [Awesome NexT][awesome-next-url] list to share plugins and tutorials with other users.
-* Join our [Gitter][gitter-url] chats.
+* Join our [GitHub discussions][discussions-url].
 * [Add or improve translation][i18n-url] in few seconds.
 * Report a bug in [GitHub Issues][issues-bug-url].
 * Request a new feature on [GitHub][issues-feat-url].
@@ -23,6 +31,7 @@ It's easy to set up NexT theme. Just follow [documentation][] and create your pe
 [docs]: /docs/
 [documentation]: /docs/getting-started/
 
+[discussions-url]: https://github.com/next-theme/hexo-theme-next/discussions
 [gitter-url]: https://app.gitter.im/#/room/#next:gitter.im
 [i18n-url]: https://crowdin.com/project/hexo-theme-next
 

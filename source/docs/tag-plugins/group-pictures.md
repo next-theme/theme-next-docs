@@ -39,32 +39,32 @@ Please use absolute paths for `<img>` inside group pictures. See [this issue](ht
 
 ```jinja
 {% grouppicture 3-3 %}
-![](/images/next.svg)
-![](/images/next.svg)
-![](/images/next.svg)
+![](/images/next.png)
+![](/images/next.png)
+![](/images/next.png)
 {% endgrouppicture %}
 ```
 
 {% grouppicture 3-3 %}
-![](/images/next.svg)
-![](/images/next.svg)
-![](/images/next.svg)
+![](/images/next.png)
+![](/images/next.png)
+![](/images/next.png)
 {% endgrouppicture %}
 
 ```jinja
 {% gp 5-2 %}
-![](/images/next.svg)
-![](/images/next.svg)
-![](/images/next.svg)
-![](/images/next.svg)
-![](/images/next.svg)
+![](/images/next.png)
+![](/images/next.png)
+![](/images/next.png)
+![](/images/next.png)
+![](/images/next.png)
 {% endgp %}
 ```
 
 {% gp 5-2 %}
-![](/images/next.svg)
-![](/images/next.svg)
-![](/images/next.svg)
-![](/images/next.svg)
-![](/images/next.svg)
+![](/images/next.png)
+![](/images/next.png)
+![](/images/next.png)
+![](/images/next.png)
+![](/images/next.png)
 {% endgp %}

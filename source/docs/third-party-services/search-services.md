@@ -5,12 +5,12 @@ description: NexT User Docs – Third-party Plugins Integration – Search Servi
 
 ### Algolia Search
 
-NexT provides Algolia search plugin to search your Hexo website content. It should be noted that only turn on `enable` of `algolia_search` in {% label primary@NexT config file %} does not allow you to use the Algolia search correctly. You need to install the corresponding Hexo plugin to index your website on Algolia: [Hexo Algolia](https://github.com/oncletom/hexo-algolia) or [Hexo Algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch).
+NexT provides Algolia search plugin to search your Hexo website content. It should be noted that only turn on `enable` of `algolia_search` in {% label primary@NexT config file %} does not allow you to use the Algolia search correctly. You need to install the corresponding Hexo plugin to index your website on Algolia: [Hexo Algolia](https://github.com/thom4parisot/hexo-algolia) or [Hexo Algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch).
 
 {% note danger %}
 **Known Issues**
 
-1. The latest version of the [Hexo Algolia](https://github.com/oncletom/hexo-algolia) plugin removes the content indexing feature, given Algolia's free account limitation.
+1. The latest version of the [Hexo Algolia](https://github.com/thom4parisot/hexo-algolia) plugin removes the content indexing feature, given Algolia's free account limitation.
 2. The [Hexo Algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch) plugin provides content indexing functionality. The same problem exists with `Record Too Big` for Algolia's free account.
 {% endnote %}
 
@@ -38,7 +38,7 @@ Algolia requires users to upload their search index data either manually or via 
 
 {% subtabs algolia-plugin %}
 <!-- tab Hexo Algolia -->
-Install and configure [Hexo Algolia](https://github.com/oncletom/hexo-algolia) in your Hexo directory.
+Install and configure [Hexo Algolia](https://github.com/thom4parisot/hexo-algolia) in your Hexo directory.
 
 ```bash
 cd hexo-site

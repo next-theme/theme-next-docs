@@ -31,6 +31,7 @@ Setting | Type | Description | Default
 --- | --- | --- | ---
 `author` | `string` | Author name for post copyright | `author` in Hexo config file
 `post_link` | `string` | The original link of the reposted article | None
+`copyright_reprint` | `bool` | It shows that the article is a reprint article and needs to enter `author` and `post_link` together. | `false`
 `link` | `string` | Clicking on the post title on the index or archive page will redirect to the set external link | None
 `description` | `string` | Docs [here](/docs/theme-settings/posts.html#Preamble-Text) | None
 `direction` | `string` | Available value: `rtl` | None

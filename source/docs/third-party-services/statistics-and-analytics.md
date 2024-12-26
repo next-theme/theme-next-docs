@@ -184,10 +184,39 @@ Firebase Analytics provides the functionality of visitor statistics.
 <!-- tab Get apiKey & projectId → -->
 Login to [Firebase](https://console.firebase.google.com/u/0/) to get apiKey and projectId. The Web API Key gets generated once you go into the "Authentication" section for the first time.
 
+![Firebase](/images/firebase-1.png)
 ![Firebase](/images/firebase.png)
 
 [More detailed documentation](https://firebase.google.com/docs/firestore/)
 <!-- endtab -->
+
+<!-- tab Create Firestore Database → -->
+1. Create a Firestore database in Firebase console.
+
+![Firestore](/images/firestore-1.png)
+![Firestore](/images/firestore-2.png)
+
+2. Apply these rules in Firestore Database Rules:
+
+```js
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /articles/{document=**} {
+      allow read, create: if true;
+      allow write: if request.resource.data.count==resource.data.count+1;
+    }
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
+```
+
+This configuration allows anyone to read the visitor count but prevents unauthorized writes to the database.
+
+![Firestore](/images/firestore-3.png)
+<!-- endtab --> 
 
 <!-- tab NexT Config -->
 Edit {% label primary@NexT config file %} and add or change `firestore` section:
@@ -199,6 +228,10 @@ firestore:
   apiKey: #required
   projectId: #required
 ```
+Note: Firestore visitor counting tracks unique visitors (UV) only. The count won't increase on page refresh as it uses browser's localStorage. To test the counter:
+- Clear localStorage in Developer Tools
+- Use incognito/private mode
+- Use different browsers
 <!-- endtab -->
 {% endtabs %}
 

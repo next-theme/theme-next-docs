@@ -5,7 +5,7 @@ description: NexT User Docs – Starting to Use – Detailed Installation
 
 ### Select Version
 
-A new version of NexT will be released every month. You can choose to install the latest version or choose a stable old version.
+The NexT theme will continue to release new versions to include new features and bug fixes. You can choose to install the latest version or choose a stable old version.
 
 {% tabs download-next %}
 <!-- tab {% label success@Latest Master Branch %} -->

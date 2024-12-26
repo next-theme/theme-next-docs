@@ -3,6 +3,12 @@ title: Deployment
 description: NexT User Docs – Starting to Use — Deployment
 ---
 
+There are two main methods for deploying a Hexo site:
+
+1. **Local Deployment**: This traditional method involves generating site files locally by executing Hexo commands, and deploying the website to a server using rsync or git through the appropriate Hexo deployer plugin. This approach requires you to manually handle the deployment process each time you update your site.
+
+2. **Continuous Integration (CI)**: This is a more efficient and automated deployment method. You simply upload your blog's source code to a git repository, and the site is generated and published through an automated process. This method leverages services like GitHub Actions, GitLab CI/CD, or other CI tools to automate the deployment, making updates and management easier and more consistent.
+
 ### Local Deployment
 
 1. Modify files locally.

@@ -8,7 +8,17 @@ description: NexT User Docs – Starting to Use
 
 ### Hexo Installation
 
-If this is your first time using Hexo, you can take some time to review the Hexo Docs to see [how to install Hexo](https://hexo.io/docs/) and [initialize a site](https://hexo.io/docs/setup). After the installation is successful, you should be able to execute `hexo` (or `npx hexo`) on the command line, and there must be `package.json`, `source`, `themes` and other directories in your {% label info@site root directory %}:
+If this is your first time using Hexo, make sure you have the environment set up correctly. To get started, you need to:
+
+1. **Install Node.js**: You can download the installer from the [Node.js official website](https://nodejs.org/), use the package management tool included with your operating system, or use a Node.js version management tool like [nvm](https://github.com/nvm-sh/nvm). After installation, you should be able to execute `node` and `npm` commands in the command line.
+
+2. **Install Hexo CLI globally**: Run `npm i -g hexo-cli`. After this, you should be able to execute the `hexo` command in the command line.
+
+3. **Initialize a Hexo site**: Execute `hexo init hexo-site`. You can replace `hexo-site` with another path name, but this document will use `hexo-site` as an example. This directory will be referred to as the {% label info@site root directory %} in the following text.
+
+Ensure you have a reliable internet connection during the installation process. If you encounter any issues, consider configuring a proxy for npm or git, or using mirror sites.
+
+For more detailed installation steps, please refer to the Hexo Docs to see [how to install Hexo](https://hexo.io/docs/) and [initialize a site](https://hexo.io/docs/setup). After the installation is successful, you should be able to execute `hexo` (or `npx hexo`) on the command line, and there must be `package.json`, `source`, `themes` and other directories in your {% label info@site root directory %}:
 
 ```bash
 $ cd hexo-site
@@ -67,7 +77,7 @@ You can also read [detailed installation instructions](/docs/getting-started/ins
 
 #### Upgrading NexT
 
-A new version of NexT will be released every month. Please read the [release notes](https://github.com/next-theme/hexo-theme-next/releases) before updating the theme. You can update NexT by the following command.
+The NexT theme will continue to release new versions to include new features and bug fixes. Please read the [release notes](https://github.com/next-theme/hexo-theme-next/releases) before updating the theme. You can update NexT by the following command.
 
 {% tabs upgrading-next %}
 <!-- tab Using <code>npm</code> -->
@@ -115,7 +125,7 @@ cp themes/next/_config.yml _config.next.yml
 ```
 
 {% note warning %}
-Please be aware that some other documents or tutorials may suggest creating or directly modifying files such as `themes/next/_config.yml` and `node_modules/hexo-theme-next/_config.yml`. Indeed, doing so can be accepted by Hexo and serve as your theme configuration file. However, this approach can lead to many inconveniences. It is quite often running into conflict status when updating NexT theme via `git pull`, or need to merge configurations manually when upgrading to new releases. For the theme installed through npm, it is also difficult to modify the {% label primary@NexT config file %} in `node_modules`. Therefore, please use the previously introduced `_config.next.yml` file as the theme's configuration file, and avoid creating or modifying other theme configuration files to prevent conflicts.
+Please be aware that some other documents or tutorials may suggest creating or directly modifying files such as `themes/next/_config.yml` and `node_modules/hexo-theme-next/_config.yml`. Indeed, doing so can be accepted by Hexo and serve as your theme configuration file. However, this approach can lead to many inconveniences. For example, when upgrading the theme, custom modifications made to these default configuration files may lead to conflicts or be overwritten, causing data loss. Therefore, please use the previously introduced `_config.next.yml` file as the theme's configuration file, and avoid creating or modifying other theme configuration files to prevent conflicts.
 
 For more information, please refer to [Alternate Theme Config](/docs/getting-started/configuration.html) feature documentation.
 {% endnote %}

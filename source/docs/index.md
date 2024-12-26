@@ -62,7 +62,7 @@ We designed the NexT theme to support a wide range of mainstream browsers, inclu
 
 *The criterion being that on these browsers, the core functionalities and styles of the NexT theme work normally, excluding third-party plugins.*
 
-Many modern browsers, such as Chrome and Edge, support automatic updates, and we recommend users keep their browsers up to date. However, the versions of some browsers are tied to the operating system, such as Safari and IE, and NexT cannot guarantee compatibility with their older versions.
+If you need to support older browsers that are not on the supported list, you might consider using tools like [Babel.js](https://babeljs.io).
 
 ### Customize Your NexT
 

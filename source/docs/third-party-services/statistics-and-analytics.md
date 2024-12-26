@@ -190,7 +190,6 @@ Login to [Firebase](https://console.firebase.google.com/u/0/) to get apiKey and 
 [More detailed documentation](https://firebase.google.com/docs/firestore/)
 <!-- endtab -->
 
-//创建 firestore 数据库
 <!-- tab Create Firestore Database → -->
 1. Create a Firestore database in Firebase console.
 

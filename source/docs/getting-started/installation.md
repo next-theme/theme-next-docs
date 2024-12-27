@@ -5,19 +5,19 @@ description: NexT User Docs – Starting to Use – Detailed Installation
 
 ### Select Version
 
-The NexT theme will continue to release new versions to include new features and bug fixes. You can choose to install the latest version or choose a stable old version.
+The NexT theme will continue to release new versions to include new features and bug fixes. We recommend that ordinary users use the latest released version. If you want to experience the latest unreleased features or bug fixes, you can try the master branch version from git. If you want to develop or debug, you can also choose a stable old version.
 
 {% tabs download-next %}
-<!-- tab {% label success@Latest Master Branch %} -->
-**Option 1: Download the [Latest Master Branch](https://github.com/next-theme/hexo-theme-next/archive/master.zip)**
-
-May be **unstable**, but includes **latest features**. At most cases useful and recommended for advanced users and for developers.
-<!-- endtab -->
-
-<!-- tab Latest Release Version -->
-**Option 2: Download the [Latest Release Version](https://github.com/next-theme/hexo-theme-next/releases/latest)**
+<!-- tab {% label success@Latest Release Version %} -->
+**Option 1: Download the [Latest Release Version](https://github.com/next-theme/hexo-theme-next/releases/latest)**
 
 At most cases **stable**. Recommended for beginners.
+<!-- endtab -->
+
+<!-- tab Latest Master Branch -->
+**Option 2: Download the [Latest Master Branch](https://github.com/next-theme/hexo-theme-next/archive/master.zip)**
+
+May be **unstable**, but includes **latest features**. At most cases useful and recommended for advanced users and for developers.
 <!-- endtab -->
 
 <!-- tab Specific Release Version -->
@@ -30,7 +30,7 @@ You must define version. Let's take `v8.0.0` as an example. Replace it with any 
 
 ### Get NexT
 
-There are **2 recommended ways** to download NexT: `npm` and `git`. You need to **choose only one** of them. Other installation methods, such as downloading and decompressing the theme source code in zip format from GitHub, are no longer recommended, because the installed theme is difficult to manage and upgrade.
+There are **2 recommended ways** to download NexT: `npm` and `git`. You need to **choose only one** of them. Other installation methods, such as downloading and decompressing the theme source code in zip format from GitHub, are not recommended, because the installed theme is difficult to manage and upgrade.
 
 Change dir to {% label info@site root directory %} in the command line first, and then continue with the following steps.
 
@@ -60,20 +60,25 @@ This variant will install the **specific release version**.
 
 {% tabs using-git %}
 <!-- tab Latest Master Branch -->
+You can clone the source code of NexT via git:
+
 ```bash
 git clone https://github.com/next-theme/hexo-theme-next themes/next
 ```
 
-Or download via mirror on GitLab:
+If you encounter any network problems with the above command, you can try to set up a http proxy first:
 
 ```bash
-git clone https://gitlab.com/hexo-theme-next/hexo-theme-next themes/next
+git config --global http.proxy http://proxy-server:port
 ```
 
 This variant will install the **whole repository** (with `.git` directory inside).
 And in any time you can update current version with git (instructions below) and switch to any tagged release or on latest master or any other branch.
+<!-- endtab -->
 
-Get tags list:
+<!-- tab Specific Release Version -->
+After cloning the repository, you can switch to a specific release version. First, you need to list all available tags:
+
 
 ```bash
 $ cd themes/next
@@ -85,7 +90,7 @@ v8.0.0-rc.3
 ...
 ```
 
-For example, you want to switch on `v8.0.0` tagged release version. Input the following command:
+For example, you want to switch on `v8.0.0` tagged release version. Run the following command:
 
 ```bash
 $ git checkout tags/v8.0.0
@@ -100,26 +105,11 @@ If you want to switch on latest release version without defining tag (optional)
 git checkout $(git describe --tags $(git rev-list --tags --max-count=1))
 ```
 
-And if you want to switch back on master branch, input this command:
+And if you want to switch back on master branch, run this command:
 
 ```bash
 git checkout master
 ```
-<!-- endtab -->
-
-<!-- tab Specific Release Version -->
-```bash
-git clone --branch v8.0.0 https://github.com/next-theme/hexo-theme-next themes/next
-```
-
-Or download via mirror on GitLab:
-
-```bash
-git clone --branch v8.0.0 https://gitlab.com/hexo-theme-next/hexo-theme-next themes/next
-```
-
-This variant will install the **specific release version** (with `.git` directory inside).
-And in any time you can switch to any tagged release, but with limit to specific version.
 <!-- endtab -->
 {% endtabs %}
 

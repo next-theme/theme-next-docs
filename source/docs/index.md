@@ -49,20 +49,22 @@ NexT uses code highlighting themes from the [Highlight.js](https://highlightjs.o
 
 ### Supported Browsers
 
-We designed the NexT theme to support a wide range of mainstream browsers, include the current versions of Chrome, Firefox, Safari, and Microsoft Edge. Many CSS3 and ES6 features and new Web APIs have been utilized, including CSS Variables, [IntersectionObserver](https://caniuse.com/intersectionobserver) and [Fetch API](https://caniuse.com/fetch), to make the NexT theme's code more concise, reliable, and secure. Statistics show that NexT is compatible with more than 96% of browsers.
+We designed the NexT theme to support a wide range of mainstream browsers, include the current versions of Chrome, Firefox, Safari, and Microsoft Edge. Many CSS3 and ES6 features and new Web APIs have been utilized, including [CSS Variables](https://caniuse.com/css-variables), [IntersectionObserver](https://caniuse.com/intersectionobserver) and [prefers-color-scheme](https://caniuse.com/prefers-color-scheme), to make the NexT theme's code more concise, reliable, and secure. Statistics show that NexT is compatible with more than 95% of browsers.
 
-| Browser | Supported versions | Release date |
+NexT is tested to work on the following browsers:
+
+| Browser | Tested versions | Release date |
 | - | - | - |
 <i class="fab fa-internet-explorer fa-2x"></i> IE | N/A | Oct 17, 2013 |
-<i class="fab fa-chrome fa-2x"></i> Chrome | 69+ | Sep 4, 2018 |
-<i class="fab fa-firefox-browser fa-2x"></i> Firefox | 62+ | Sep 5, 2018 |
-<i class="fab fa-opera fa-2x"></i> Opera | 56+ | Sep 25, 2018 |
-<i class="fab fa-safari fa-2x"></i> Safari | 12.1+ | Mar 25, 2019 |
+<i class="fab fa-chrome fa-2x"></i> Chrome | 80+ | Feb 5, 2020 |
+<i class="fab fa-firefox-browser fa-2x"></i> Firefox | 74+ | Mar 10, 2020 |
+<i class="fab fa-opera fa-2x"></i> Opera | 67+ | Mar 12, 2020 |
+<i class="fab fa-safari fa-2x"></i> Safari | 13.1+ | Mar 24, 2020 |
 <i class="fab fa-edge fa-2x"></i> Edge | 80+ | Feb 7, 2020 |
 
 *The criterion being that on these browsers, the core functionalities and styles of the NexT theme work normally, excluding third-party plugins.*
 
-If you need to support older browsers that are not on the supported list, you might consider using tools like [Babel.js](https://babeljs.io).
+If you need to support older browsers that are not on the supported list, you might consider using tools like [Babel.js](https://babeljs.io) and plugins like [hexo-babel](https://www.npmjs.com/package/hexo-babel).
 
 ### Customize Your NexT
 

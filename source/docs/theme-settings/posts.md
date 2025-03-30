@@ -211,7 +211,7 @@ tag_icon: true
 
 ### Donate Settings
 
-More and more online blogging platforms (e.g. WeChat public accounts, Jianshu, Zhihu) support donate (sponsor). To catch paid reading trends, we added donate feature, supports WeChat, Alipay and Bitcoin. What you need is:
+NexT theme provides a donation feature that allows readers to show appreciation for your work. You can display QR codes for various payment methods (such as WeChat Pay, Alipay, Bitcoin, etc.) at the end of your articles, making it convenient for readers to support your content creation efforts. What you need is:
 
 1. Get your WeChat / Alipay / Bitcoin receive money QRcode image(s) and put into `source/images` under {% label primary@theme directory %} or upload it(them) to an image cloud to get the absolute HTTP address(es).
 2. Set needed values in  {% label primary@NexT config file %}:
@@ -239,6 +239,8 @@ monero: /images/monero.png
 
 ### Follow Me
 
+NexT theme offers a "Follow Me" feature that enables you to showcase your social media presence and other communication channels. This allows your readers to follow your content across various platforms, helping you build and maintain a stronger connection with your audience. You can display links to popular social networks, messaging platforms, or RSS feeds, each accompanied by its corresponding icon for better visual recognition.
+
 ```yml NexT config file
 # Subscribe through Telegram Channel, Twitter, etc.
 # Usage: `Key: permalink || icon` (Font Awesome)
@@ -258,7 +260,9 @@ follow_me:
 
 ### Related Popular Posts
 
-NexT supports the related posts functionality according to [hexo-related-posts](https://github.com/sergeyzwezdin/hexo-related-posts).
+The "Related Popular Posts" feature helps you increase reader engagement by displaying a list of related articles in the sidebar. This encourages visitors to explore more of your content that matches their interests, potentially increasing page views and create a better user experience.
+
+To utilize this feature, you'll need to install a third-party plugin [hexo-related-posts](https://github.com/sergeyzwezdin/hexo-related-posts) first, as NexT relies on its functionality to analyze and determine content relationships.
 
 {% tabs related_posts %}
 <!-- tab Installation → -->
@@ -268,15 +272,26 @@ Install `hexo-related-posts` by executing the following command in {% label info
 npm install hexo-related-posts
 hexo clean
 ```
+
+Enable this plugin in {% label info@Hexo config file %} by adding the following line:
+
+```yml Hexo config file
+related_posts:
+  enable: true
+```
+
+For more configuration options, please refer to the plugin's documentation.
 <!-- endtab -->
 
 <!-- tab <code>enable</code> -->
-You can enable it by setting value `related_posts.enable` to `true` in {% label primary@NexT config file %}.
+You can enable the "Related Popular Posts" feature by setting value `related_posts.enable` to `true` in {% label primary@NexT config file %}.
 
 ```yml NexT config file
 related_posts:
   enable: true
 ```
+
+In other words, you have to set `related_posts.enable` to `true` in both {% label info@Hexo config file %} and {% label primary@NexT config file %}, to enable this feature.
 <!-- endtab -->
 
 <!-- tab <code>icon</code> -->

@@ -78,7 +78,7 @@ You can also put custom favicons into `hexo-site/source/` directory. In this way
 
 To generate custom favicons, you can visit [Favicon Generator](https://realfavicongenerator.net).
 
-```yml Hexo config file
+```yml NexT config file
 favicon:
   small: /images/favicon-16x16-next.png
   medium: /images/favicon-32x32-next.png

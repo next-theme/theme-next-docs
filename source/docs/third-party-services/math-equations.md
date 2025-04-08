@@ -69,17 +69,13 @@ For now, NexT provides two rendering engines for displaying Math Equations: [Mat
 - MathJax is a JavaScript display engine for mathematics that works in all browsers. It is highly modular on input and output. Use MathML, TeX, and ASCIImath as input and produce HTML+CSS, SVG, or MathML as output.
 - [KaTeX is a faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php) math rendering engine compared to MathJax 3. And it could survive without JavaScript. But, for now [KaTeX supports less features](https://github.com/KaTeX/KaTeX/wiki/Things-that-KaTeX-does-not-(yet)-support) than MathJax. Here is a list of [TeX functions supported by KaTeX](https://katex.org/docs/supported.html).
 
-Firstly, you need to choose a rendering engine and turn on `enable` for it in {% label primary@NexT config file %}. Then you need to install the **corresponding Hexo Renderer** to fully support the display of Math Equations - Only turn on `enable` **may not let you see the displayed equations correctly**.
+Firstly, you need to choose a math rendering engine and turn on `enable` for it in {% label primary@NexT config file %}. Then you need to install the **corresponding Hexo Renderer** to fully support the display of Math Equations - Only turn on `enable` **may not let you see the displayed equations correctly**.
 
 {% tabs render-engines %}
 <!-- tab MathJax -->
 **Renderer Choosing**
 
-If you use MathJax to render Math Equations, you can choose one of the Markdown renderers below:
-
-- [hexo-renderer-pandoc](https://github.com/wzpan/hexo-renderer-pandoc)
-
-hexo-renderer-pandoc is recommended because it can handle mathematical formulas in markdown documents perfectly.
+If you use MathJax to render Math Equations, you can choose [hexo-renderer-pandoc](https://github.com/wzpan/hexo-renderer-pandoc) as the Markdown renderer. It is recommended because it can handle mathematical formulas in markdown documents perfectly.
 
 {% note warning %}
 If you are using other renderers, such as [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked), you need to be aware of the conflict between LaTeX and Markdown syntax. For example, an underscore (`_`) may be interpreted as the start of italic text in Markdown, or subscripted mark in TeX. To avoid syntax errors, please use escape characters (`\_`) instead:
@@ -92,7 +88,6 @@ If you are using other renderers, such as [hexo-renderer-marked](https://github.
 -\\
 +\\\\
 ```
-
 {% endnote %}
 
 **Installation**
@@ -113,7 +108,16 @@ If you are using other renderers, such as [hexo-renderer-marked](https://github.
     $ npm i hexo-renderer-pandoc
     ```
 
-3. [pandoc](https://github.com/jgm/pandoc) is required for hexo-renderer-pandoc, here's [how to install pandoc](https://github.com/jgm/pandoc/blob/master/INSTALL.md).
+3. If you are using `hexo-renderer-pandoc` version greater than 5.0.0, you need to set `pandoc.args` in {% label info@Hexo config file %}:
+
+    ```yml Hexo config file
+    # config of hexo-renderer-pandoc
+    pandoc:
+      args:
+        - --mathjax
+    ```
+
+4. `hexo-renderer-pandoc` requires [pandoc](https://github.com/jgm/pandoc) to be installed, otherwise it will throw an error. Here's [how to install pandoc](https://github.com/jgm/pandoc/blob/master/INSTALL.md).
 
 **Plugins**
 

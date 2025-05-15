@@ -42,6 +42,14 @@
                             <option value="prism">Prism</option>
                         </select>
                     </div>
+                    <p>What is your current Hexo version? <code>hexo -v</code></p>
+                    <div class="input-group mb-3">
+                    <label class="input-group-text" for="version">Version</label>
+                    <select class="form-select" id="version">
+                        <option value="blow-v7.0.0">below v7.0.0</option>
+                        <option value="v7.0.0+">v7.0.0+</option>
+                    </select>
+                    </div>
                     <p>Configuration in Hexo <code>_config.yml</code></p>
                     <pre class="render hexo"></pre>
                     <p>And run <code>hexo clean</code></p>
@@ -149,13 +157,21 @@ class Code {
     constructor() {
         ;
     }
-    hexo(engine) {
-        return `<code class="language-yaml">highlight:
+    hexo(engine, version) {
+        if (version === 'v7.0.0+') {
+            return `<code class="language-yaml">syntax_highlighter: ${engine === 'highlight' ? 'highlightjs' : 'prismjs'}
+highlight:
+  ...
+prismjs:
+  ...</code>`;
+        } else {
+            return `<code class="language-yaml">highlight:
   enable: ${engine === 'highlight'}
   ...
 prismjs:
   enable: ${engine !== 'highlight'}
   ...</code>`;
+        }
     }
     next(engine, theme) {
         let content;
@@ -212,12 +228,14 @@ class Controller {
         this.code = new Code();
         this.element = {
             engine: document.getElementById('engine'),
+            version: document.getElementById('version'),
             theme: document.getElementById('theme'),
             language: document.getElementById('language'),
             code: document.getElementById('code')
         };
         this.value = {
             engine: localStorage.getItem('engine') || 'highlight',
+            version: localStorage.getItem('version') || 'v7.0.0+',
             theme: localStorage.getItem('theme') || 'tomorrow',
             language: localStorage.getItem('language') || 'rust',
             code: localStorage.getItem('code') || CODE
@@ -244,6 +262,7 @@ class Controller {
                 if (theme.selectedIndex === -1) theme.selectedIndex = 0;
                 this.update('theme');
             },
+            version: () => {},
             theme: () => {
                 let href = this.element.theme.value;
                 this.style.getStyle(href);
@@ -272,7 +291,7 @@ class Controller {
         this.render();
     }
     render() {
-        document.querySelector('.hexo').innerHTML = this.code.hexo(this.value.engine);
+        document.querySelector('.hexo').innerHTML = this.code.hexo(this.value.engine, this.value.version);
         document.querySelector('.next').innerHTML = this.code.next(this.value.engine, this.element.theme[this.value.theme].text);
         const preview = document.querySelector('#preview .render code');
         preview.className = `language-${this.value.language}`;

@@ -6,12 +6,14 @@
 title: NexT
 description: NexT - An elegant and powerful theme for Hexo.
 keywords: "Hexo, NexT"
-language: en
+language: 
+  - en
+  - zh-CN
 timezone: UTC
 
 # URL
 url: https://theme-next.js.org
-permalink: :title/
+permalink: :lang/:title/
 permalink_defaults:
 
 # Directory
@@ -28,7 +30,7 @@ skip_render:
   - highlight/*
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :lang/:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
@@ -48,7 +50,7 @@ highlight:
 
 # Home page setting
 index_generator:
-  per_page: 4
+  per_page: 7 
   order_by: -date
 
 # Category & Tag
@@ -81,3 +83,4 @@ marked:
 search:
   path: search.json
   field: all
+

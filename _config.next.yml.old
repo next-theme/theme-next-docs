@@ -1,0 +1,289 @@
+#################################################################
+###################### NexT Configuration #######################
+#################################################################
+
+# ============================================================= #
+# ============= Theme Core Configuration Settings ============= #
+# ============================================================= #
+
+custom_file_path:
+  sidebar: source/_data/sidebar.njk
+  footer: source/_data/footer.njk
+  variable: source/_data/variables.styl
+  style: source/_data/styles.styl
+
+
+# ============================================================= #
+# ====================== Scheme Settings ====================== #
+# ============================================================= #
+
+#scheme: Muse
+#scheme: Mist
+#scheme: Pisces
+scheme: Gemini
+
+darkmode: true
+
+
+# ============================================================= #
+# ================= Site Information Settings ================= #
+# ============================================================= #
+
+creative_commons:
+  license: by-nc-sa
+  size: big
+  sidebar: true
+
+
+# ============================================================= #
+# ======================= Menu Settings ======================= #
+# ============================================================= #
+
+menu:
+  home: / || fa fa-bell
+
+  Docs:
+    default: /docs/ || fa fa-book
+
+    Getting Started:
+      default: /getting-started/ || fa fa-flag
+      Installation: /installation.html || fa fa-download
+      Deployment: /deployment.html || fa fa-upload
+      Configuration: /configuration.html || fa fa-wrench
+      Upgrade: /upgrade.html || fa fa-history
+
+    Theme Settings:
+      default: /theme-settings/ || fa fa-star
+      Sidebar: /sidebar.html || fa fa-bars
+      Footer: /footer.html || fa fa-sticky-note
+      Posts: /posts.html || fa fa-paragraph
+      Custom Pages: /custom-pages.html || fa fa-swatchbook
+      Miscellaneous: /miscellaneous.html || fa fa-university
+      SEO: /seo.html || fa fa-external-link-square-alt
+      i18n: /internationalization.html || fa fa-language
+
+    Tag Plugins:
+      default: /tag-plugins/ || fa fa-rocket
+      Button: /button.html || fa fa-cube
+      Caniuse: /caniuse.html || fa fa-signal
+      Group Pictures: /group-pictures.html || fa fa-images
+      Label: /label.html || fa fa-hat-wizard
+      Link Grid: /link-grid.html || fa fa-grip-vertical
+      Mermaid: /mermaid.html || fa fa-project-diagram
+      WaveDrom: /wavedrom.html || fa fa-diagram-predecessor
+      Note: /note.html || fa fa-adjust
+      PDF: /pdf.html || fa fa-file-pdf
+      Tabs: /tabs.html || fa fa-columns
+
+    Third Party Plugins:
+      default: /third-party-services/ || fa fa-puzzle-piece
+      Math Equations: /math-equations.html || fa fa-square-root-alt
+      External Libraries: /external-libraries.html || fa fa-lightbulb
+      Comment Systems: /comments.html || fa fa-comment-alt
+      Post Widgets: /post-widgets.html || fa fa-gift
+      Statistics and Analytics: /statistics-and-analytics.html || fa fa-chart-pie
+      Search Services: /search-services.html || fab fa-algolia
+      Chat Services: /chat-services.html || fa fa-comments
+
+    Advanced Settings:
+      default: /advanced-settings/ || fa fa-cog
+      Vendors: /vendors.html || fa fa-plug
+      Custom Files: /custom-files.html || fa fa-palette
+      Injects: injects.html || fa fa-layer-group
+      Front Matter: /front-matter.html || fa fa-edit
+
+    Troubleshooting: /troubleshooting.html || fa fa-life-ring
+
+  Plugins: /plugins/ || fa fa-flask
+  archives: /archives/ || fa fa-archive
+  #sitemap: /sitemap.xml || fa fa-sitemap
+  #commonweal: /404/ || fa fa-heartbeat
+
+menu_settings:
+  icons: true
+  badges: true
+
+
+# ============================================================= #
+# ===================== Sidebar Settings ====================== #
+# ============================================================= #
+
+sidebar:
+  position: left
+  display: post
+  padding: 18
+  offset: 12
+
+avatar:
+  url: /images/next.png
+  rounded: true
+
+social:
+  GitHub: https://github.com/next-theme || fab fa-github
+  RSS: /atom.xml || fa fa-rss
+  Crowdin: https://crowdin.com/project/hexo-theme-next || fa fa-globe-asia
+  Gitter: https://app.gitter.im/#/room/#next:gitter.im || fab fa-gitter
+  Telegram (Chinese Language): https://t.me/theme_next_cn || fab fa-telegram
+
+social_icons:
+  enable: true
+  icons_only: true
+  transition: true
+
+toc:
+  enable: true
+  number: true
+  wrap: true
+
+
+# ============================================================= #
+# ====================== Footer Settings ====================== #
+# ============================================================= #
+
+footer:
+  since: 2014
+  icon:
+    name: fa fa-heart
+    animated: true
+    color: "#808080"
+  copyright: NexT
+
+
+# ============================================================= #
+# ======================= Post Settings ======================= #
+# ============================================================= #
+
+post_meta:
+  updated_at:
+    enable: false
+
+symbols_count_time:
+  separated_meta: true
+  item_text_total: true
+
+post_edit:
+  enable: true
+  url: https://github.com/next-theme/theme-next-docs/edit/master/source/
+
+
+# ============================================================= #
+# ==================== Misc Theme Settings ==================== #
+# ============================================================= #
+
+mobile_layout_economy: true
+
+codeblock:
+  theme:
+    light: default
+    dark: stackoverflow-dark
+  copy_button:
+    enable: true
+    style: default
+
+back2top:
+  enable: true
+  sidebar: false
+  scrollpercent: true
+
+github_banner:
+  enable: true
+  permalink: https://github.com/next-theme/hexo-theme-next
+  title: Fork NexT on GitHub
+
+font:
+  enable: true
+  codes:
+    external: true
+    family: Inconsolata
+
+
+# ============================================================= #
+# ======================= SEO Settings ======================== #
+# ============================================================= #
+
+index_with_subtitle: true
+
+exturl: true
+
+google_site_verification: 5AUIVYTbHIAuz-eQtxSfZbWW5eg9_EVZMSQycIuXrG0
+
+
+# ============================================================= #
+# ======================== Tag Plugins ======================== #
+# ============================================================= #
+
+note:
+  style: simple
+  icons: true
+  light_bg_offset: -3
+
+tabs:
+  transition:
+    tabs: true
+    labels: true
+
+mermaid:
+  enable: true
+
+wavedrom:
+  enable: true
+
+
+# ============================================================= #
+# ==================== External Libraries ===================== #
+# ============================================================= #
+
+math:
+  mathjax:
+    enable: true
+    tags: ams
+
+pjax: true
+
+mediumzoom: true
+
+motion:
+  async: true
+
+
+# ============================================================= #
+# =================== Comments and Widgets ==================== #
+# ============================================================= #
+
+comments:
+  lazyload: true
+
+disqus:
+  enable: true
+  shortname: next-theme
+  count: true
+
+
+# ============================================================= #
+# ================= Statistics and Analytics ================== #
+# ============================================================= #
+
+google_analytics:
+  tracking_id: G-43861RVV8R
+
+
+# ============================================================= #
+# ====================== Search Services ====================== #
+# ============================================================= #
+
+local_search:
+  enable: true
+  top_n_per_article: 1
+
+
+# ============================================================= #
+# ======================= CDN Settings ======================== #
+# ============================================================= #
+
+vendors:
+  internal: local
+  plugins: cdnjs
+
+
+# Show multilingual switcher in footer.
+language_switcher: true

@@ -26,16 +26,16 @@
   },
   "homepage": "https://theme-next.js.org",
   "dependencies": {
-    "hexo": "7.3.0",
+    "hexo": "^7.3.0",
     "hexo-generator-archive": "2.0.0",
     "hexo-generator-feed": "3.0.0",
-    "hexo-generator-index": "4.0.0",
+    "hexo-generator-index": "^4.0.0",
     "hexo-generator-searchdb": "1.5.0",
     "hexo-renderer-marked": "7.0.1",
     "hexo-renderer-stylus": "3.0.1",
     "hexo-server": "3.0.0",
     "hexo-tag-embed": "1.0.0",
-    "hexo-theme-next": "8.23.0"
+    "hexo-theme-next": "^8.24.1"
   },
   "devDependencies": {
     "markdownlint-cli": "0.44.0"

@@ -11,7 +11,8 @@
     "start": "hexo s",
     "update": "node lib/update.js",
     "version": "git add source",
-    "lint": "markdownlint -c .markdownlint.json source/docs"
+    "lint": "markdownlint -c .markdownlint.json source/docs",
+    "postinstall":"patch-package"
   },
   "repository": "next-theme/theme-next-docs",
   "keywords": [
@@ -38,6 +39,7 @@
     "hexo-theme-next": "^8.24.1"
   },
   "devDependencies": {
-    "markdownlint-cli": "0.44.0"
+    "markdownlint-cli": "0.44.0",
+    "patch-package": "^8.0.0"
   }
 }

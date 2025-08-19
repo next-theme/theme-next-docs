@@ -1,0 +1,14 @@
+diff --git a/node_modules/hexo-theme-next/scripts/helpers/engine.js b/node_modules/hexo-theme-next/scripts/helpers/engine.js
+index 6b2f703..0b06af2 100644
+--- a/node_modules/hexo-theme-next/scripts/helpers/engine.js
++++ b/node_modules/hexo-theme-next/scripts/helpers/engine.js
+@@ -107,7 +107,8 @@ hexo.extend.helper.register('gitalk_md5', function(path) {
+ hexo.extend.helper.register('i18n_path', function(language) {
+   const { path, lang } = this.page;
+   const base = path.startsWith(lang) ? path.slice(lang.length + 1) : path;
+-  return this.url_for(`${this.languages.indexOf(language) === 0 ? '' : '/' + language}/${base}`);
++  //return this.url_for(`${this.languages.indexOf(language) === 0 ? '' : '/' + language}/${base}`);
++  return this.url_for(`${language + '/'}${base}`);
+ });
+ 
+ /**

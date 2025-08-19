@@ -52,6 +52,7 @@ highlight:
 index_generator:
   per_page: 7 
   order_by: -date
+  single_lang_index: true
 
 # Category & Tag
 default_category: uncategorized

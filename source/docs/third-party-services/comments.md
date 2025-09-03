@@ -156,6 +156,16 @@ Gitalk is a modern comment component based on Github Issue and Preact.
 Gitalk relies on the md5 value of the page path for tagging, the comments will not be loaded correctly if a page's permalink is changed.
 {% endnote %}
 
+{% note warning %}
+If your GitHub username contains only numbers, YAML will parse it as an integer, causing Gitalk to fail to load. To avoid this, you can add quotes around the `github_id` and `admin_user` values in the {% label primary@NexT config file %}. For example:
+
+```yml NexT config file
+gitalk:
+  enable: true
+  github_id: "12345678"
+```
+{% endnote %}
+
 ### Utterances
 
 A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!

@@ -17,6 +17,10 @@ Due to historical reasons, NexT has three different repositories.
 
 After 2020, the first two repositories have ceased updates. The currently active version is v8. Please ensure that you have installed the correct version.
 
+### Upgrade from Active Version
+
+If you need to upgrade the current active version (NexT v8+), please refer to the [upgrade documentation](https://theme-next.js.org/docs/getting-started/index.html?highlight=install#Upgrading-NexT) (includes essential operations like npm update and configuration checks). 
+
 ### Upgrade from Legacy Version
 
 It's recommended to upgrade NexT to version 8 to get the latest features and supports in the new [Theme-Next](https://github.com/next-theme/hexo-theme-next) repository.

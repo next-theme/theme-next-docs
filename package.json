@@ -26,7 +26,7 @@
   },
   "homepage": "https://theme-next.js.org",
   "dependencies": {
-    "hexo": "7.3.0",
+    "hexo": "8.1.1",
     "hexo-generator-archive": "2.0.0",
     "hexo-generator-feed": "3.0.0",
     "hexo-generator-index": "4.0.0",

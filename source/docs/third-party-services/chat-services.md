@@ -63,3 +63,34 @@ chat:
 ```
 <!-- endtab -->
 {% endtabs %}
+
+### Knocket
+
+[Knocket](https://trtc.io/solutions/knocket) is a 100% free live chat widget — free forever, no ads, no seat limits.
+
+{% tabs Knocket %}
+<!-- tab Enable Knocket → -->
+Visit [Knocket](https://trtc.io/solutions/knocket) to get your identifier.
+
+```yml NexT config file
+# Knocket Support
+knocket:
+  enable: true
+  async: true
+  identifier: <Your Knocket Identifier>
+```
+
+<!-- endtab -->
+
+<!-- tab Activate sidebar button -->
+After Knocket enabled, you can set `chat.enable` to `true` in {% label primary@NexT config file %}.
+
+```yml NexT config file
+# A button to open designated chat widget in sidebar.
+# Firstly, you need enable the chat service you want to activate its sidebar button.
+chat:
+  enable: true
+  icon: fa fa-comment
+```
+<!-- endtab -->
+{% endtabs %}

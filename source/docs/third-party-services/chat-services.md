@@ -94,3 +94,18 @@ chat:
 ```
 <!-- endtab -->
 {% endtabs %}
+
+### OneTag AI
+
+[OneTag AI](https://onetagai.com) adds an "ask this page" button: visitors type a question and get an answer drawn from the page they are reading.
+
+Visit [OneTag AI](https://onetagai.com) to get your key. It is a public site key with a hard usage cap, so it is safe to keep in the page source.
+
+```yml NexT config file
+# OneTag AI Support
+onetag:
+  enable: true
+  key: <Your OneTag Key>
+```
+
+The button sits in the bottom corner opposite to the sidebar toggle. Nothing is loaded until `key` is set.

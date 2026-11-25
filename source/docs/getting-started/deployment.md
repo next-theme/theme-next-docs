@@ -15,6 +15,16 @@ There are two main methods for deploying a Hexo site:
 2. Localization testing: `hexo clean && hexo s`.
 3. Deployment: `hexo g -d`.
 
+If you would rather not set up a deployer plugin, some static hosts accept the generated `public` folder as a direct upload. For example, [deed.page](https://deed.page) publishes a tarball of `public` with one request and no account. Set `url` in Hexo `_config.yml` to `https://your-blog.deed.page` first, so permalinks point to the published site:
+
+```bash
+$ hexo clean && hexo g
+$ tar -C public -czf site.tar.gz .
+$ curl -T site.tar.gz "https://deed.page/v1/sites?slug=your-blog"
+```
+
+The JSON response contains the site URL and a token that is shown only once. Send it as an `Authorization: Bearer` header to update the same slug later; uploading to an existing slug without it returns `409`. A single upload is capped at 4 MB and Free-plan sites show a small deed.page badge, see the [deed.page docs](https://deed.page/docs).
+
 ### Continuous Integration
 
 * Edit the file directly online, effective immediately
